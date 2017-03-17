@@ -10,6 +10,7 @@ import json
 import inspect
 import sys
 import array
+import base64
 
 from _protocol_version import version  # noqa
 from ga4gh.common_pb2 import *  # noqa
@@ -37,6 +38,31 @@ import ga4gh.common_pb2 as common
 
 import hacks.googhack as googhack
 
+MIMETYPE_PRIORITIES = {"application/protobuf":1, "application/x-protobuf":2, "application/json":3,
+                       "application/x-www-form-urlencoded":4, "*/*":5}
+MIMETYPES = list(MIMETYPE_PRIORITIES.keys())[:-1]
+
+def match_mimetype(proposed_mimetypes, default="application/protobuf"):
+    """
+    Returns best-matching mimetype for return values.
+    """
+    if not proposed_mimetypes:
+        return default
+
+    if isinstance(proposed_mimetypes, basestring):
+        proposed_mimetypes = [proposed_mimetypes]
+    elif not isinstance(proposed_mimetypes, list):
+        return default
+    
+    intersection = set(MIMETYPES).intersection(set(proposed_mimetypes))
+    if len(intersection) == 0:
+        return default
+    
+    best = sorted(list(intersection), key=lambda x:MIMETYPE_PRORITIES[x])[1]
+    if best == "*/*":
+        best = default
+
+    return best
 
 # This is necessary because we have a package in the same directory as this
 # file named 'google', so an 'import google' attempts to import that package
@@ -146,6 +172,22 @@ def toJsonDict(protoObject):
     """
     return json.loads(toJson(protoObject))
 
+def toProtobufString(protoObject):
+    """
+    Serialises a protobuf object as a base64-encoded protobuf string
+    """
+    # the base64-encoding shouldn't be necessary, but otherwise
+    # currently the "string" with high-bit-set bytes gets helpfully
+    # re-coded into corresponding unicode string in transit.
+    # Should find and fix that rather than base64 encoding
+    return base64.b64encode(protoObject.SerializeToString())
+
+def serialize(protoObject, mimetype_name):
+    best = match_mimetype(mimetype_name)
+    if best in ["application/protobuf", "application/x-protobuf"]:
+        return toProtobufString(protoObject)
+    else:
+        return toJson(protoObject)
 
 def fromJson(json, protoClass):
     """
@@ -153,6 +195,21 @@ def fromJson(json, protoClass):
     """
     return json_format.Parse(json, protoClass())
 
+def fromProtobufString(protobuf_string, protoClass):
+    """
+    Deserialise base-64 encoded native protobuf string
+    into an instance of protobuf class
+    """
+    msg = protoClass()
+    msg.ParseFromString(base64.b64decode(protobuf_string))
+    return msg
+
+def deserialize(data, mimetype_name, protoClass):
+    best = match_mimetype(mimetype_name)
+    if best in ["application/protobuf", "application/x-protobuf"]:
+        return fromProtobufString(data, protoClass)
+    else:
+        return fromJson(data, protoClass)
 
 def validate(json, protoClass):
     """
