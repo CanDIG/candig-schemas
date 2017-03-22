@@ -38,9 +38,7 @@ import ga4gh.common_pb2 as common
 
 import hacks.googhack as googhack
 
-MIMETYPE_PRIORITIES = {"application/protobuf":1, "application/x-protobuf":2, "application/json":3,
-                       "application/x-www-form-urlencoded":4, "*/*":5}
-MIMETYPES = list(MIMETYPE_PRIORITIES.keys())[:-1]
+MIMETYPE = ["application/protobuf", "application/x-protobuf", "application/json"]
 
 # This is necessary because we have a package in the same directory as this
 # file named 'google', so an 'import google' attempts to import that package
