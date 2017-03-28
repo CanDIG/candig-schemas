@@ -2,7 +2,7 @@
 # ensure that the specified version of protoc is installed in
 # /tmp/proto$PROTO_VERSION/bin/protoc, which maybe cached
 
-# bash tools/travis-install-protoc.sh 3.0.0-beta-3.1
+# bash tools/travis-install-protoc.sh 3.2.0
 #   
 
 
