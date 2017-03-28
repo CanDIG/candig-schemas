@@ -198,6 +198,19 @@ def validate(json, protoClass):
         return False
 
 
+def validateProtobufString(protobufstring, protoClass):
+    """
+    Check that json represents data that could be used to make
+    a given protobuf class
+    """
+    try:
+        fromProtobufString(protobufstring, protoClass)
+        # The json conversion automatically validates
+        return True
+    except Exception:
+        return False
+
+
 def getProtocolClasses(superclass=message.Message):
     """
     Returns all the protocol classes that are subclasses of the
