@@ -58,6 +58,14 @@ class TestProtocol(unittest.TestCase):
             obj2 = protocol.fromJson(jsonStr, clazz)
             self.assertTrue(obj, obj2)
 
+    def testToProtobufStringAndFromProtobufString(self):
+        classes = protocol.getProtocolClasses()
+        for clazz in classes:
+            obj = clazz()
+            pbStr = protocol.toProtobufString(obj)
+            obj2 = protocol.fromProtobufString(pbStr, clazz)
+            self.assertTrue(obj, obj2)
+
     def testToJsonDict(self):
         classes = protocol.getProtocolClasses()
         for clazz in classes:
@@ -71,6 +79,13 @@ class TestProtocol(unittest.TestCase):
             obj = clazz()
             jsonStr = protocol.toJson(obj)
             protocol.validate(jsonStr, clazz)
+
+    def testValidateProtobufString(self):
+        classes = protocol.getProtocolClasses()
+        for clazz in classes:
+            obj = clazz()
+            pbStr = protocol.toProtobufString(obj)
+            protocol.validateProtobufString(pbStr, clazz)
 
     def testGetProtocolClasses(self):
         classes = protocol.getProtocolClasses()
@@ -141,7 +156,7 @@ class TestRoundTrip(unittest.TestCase):
     Instantiate the protocol classes and convert them to and from json
     and test if the values are preserved
     """
-    def testRoundTripDataset(self):
+    def testRoundTripDatasetJson(self):
         id_ = "id"
         name = "name"
         description = "description"
@@ -158,3 +173,17 @@ class TestRoundTrip(unittest.TestCase):
         self.assertEquals(datasetDict['id'], id_)
         self.assertEquals(datasetDict['name'], name)
         self.assertEquals(datasetDict['description'], description)
+
+    def testRoundTripDatasetProtobufString(self):
+        id_ = "id"
+        name = "name"
+        description = "description"
+        dataset = protocol.Dataset()
+        dataset.id = id_
+        dataset.name = name
+        dataset.description = description
+        pbStr = protocol.toProtobufString(dataset)
+        newDataset = protocol.fromProtobufString(pbStr, Dataset)
+        self.assertEquals(newDataset.id, id_)
+        self.assertEquals(newDataset.name, name)
+        self.assertEquals(newDataset.description, description)
