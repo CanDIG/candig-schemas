@@ -184,6 +184,6 @@ class TestRoundTrip(unittest.TestCase):
         dataset.description = description
         pbStr = protocol.toProtobufString(dataset)
         newDataset = protocol.fromProtobufString(pbStr, Dataset)
-        self.assertEquals(dataset.id, id_)
-        self.assertEquals(dataset.name, name)
-        self.assertEquals(dataset.description, description)
+        self.assertEquals(newDataset.id, id_)
+        self.assertEquals(newDataset.name, name)
+        self.assertEquals(newDataset.description, description)
