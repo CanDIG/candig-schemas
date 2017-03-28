@@ -38,7 +38,8 @@ import ga4gh.common_pb2 as common
 
 import hacks.googhack as googhack
 
-MIMETYPES = ["application/protobuf", "application/x-protobuf", "application/json"]
+MIMETYPES = ["application/protobuf", "application/x-protobuf",
+             "application/json"]
 
 # This is necessary because we have a package in the same directory as this
 # file named 'google', so an 'import google' attempts to import that package
@@ -148,6 +149,7 @@ def toJsonDict(protoObject):
     """
     return json.loads(toJson(protoObject))
 
+
 def toProtobufString(protoObject):
     """
     Serialises a protobuf object as a base64-encoded protobuf string
@@ -158,17 +160,20 @@ def toProtobufString(protoObject):
     # Should find and fix that rather than base64 encoding
     return base64.b64encode(protoObject.SerializeToString())
 
+
 def serialize(protoObject, mimetype_name):
     if mimetype_name in ["application/protobuf", "application/x-protobuf"]:
         return toProtobufString(protoObject)
     else:
         return toJson(protoObject)
 
+
 def fromJson(json, protoClass):
     """
     Deserialise json into an instance of protobuf class
     """
     return json_format.Parse(json, protoClass(), ignore_unknown_fields=True)
+
 
 def fromProtobufString(protobuf_string, protoClass):
     """
@@ -179,11 +184,13 @@ def fromProtobufString(protobuf_string, protoClass):
     msg.ParseFromString(base64.b64decode(protobuf_string))
     return msg
 
+
 def deserialize(data, mimetype_name, protoClass):
     if mimetype_name in ["application/protobuf", "application/x-protobuf"]:
         return fromProtobufString(data, protoClass)
     else:
         return fromJson(data, protoClass)
+
 
 def validate(json, protoClass):
     """
