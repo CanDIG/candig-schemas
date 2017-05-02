@@ -166,12 +166,8 @@ class ProtobufGenerator(object):
         return cmp(normalize(version1), normalize(version2))
 
     def _getProtoc(self, destination_path):
-        protocs = [
-            os.path.realpath(x) for x in
-            "{}/protobuf/src/protoc".format(destination_path),
-            self._find_in_path("protoc")
-            if x is not None]
         protoc = None
+        protocs = ['/usr/local/bin/protoc']
         for c in protocs:
             if not os.path.exists(c):
                 continue
