@@ -24,7 +24,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n*ga4gh/schemas/google/api/annotations.proto\x12\x18ga4gh.schemas.google.api\x1a#ga4gh/schemas/google/api/http.proto\x1a google/protobuf/descriptor.proto:S\n\x04http\x12\x1e.google.protobuf.MethodOptions\x18\xb0\xca\xbc\" \x01(\x0b\x32\".ga4gh.schemas.google.api.HttpRuleB+\n\x0e\x63om.google.apiB\x10\x41nnotationsProtoP\x01\xa2\x02\x04GAPIb\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_google_dot_api_dot_http__pb2.DESCRIPTOR,google_dot_protobuf_dot_descriptor__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 HTTP_FIELD_NUMBER = 72295728
@@ -37,6 +36,7 @@ http = _descriptor.FieldDescriptor(
   options=None)
 
 DESCRIPTOR.extensions_by_name['http'] = http
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 http.message_type = ga4gh_dot_schemas_dot_google_dot_api_dot_http__pb2._HTTPRULE
 google_dot_protobuf_dot_descriptor__pb2.MethodOptions.RegisterExtension(http)
