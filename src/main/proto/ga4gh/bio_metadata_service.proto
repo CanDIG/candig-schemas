@@ -3,6 +3,7 @@ syntax = "proto3";
 package ga4gh;
 
 import "ga4gh/bio_metadata.proto";
+import "ga4gh/common.proto";
 import "google/api/annotations.proto";
 
 
@@ -15,6 +16,14 @@ service BioMetadataService {
     returns (SearchIndividualsResponse) {
       option (google.api.http) = {
         post: "/v0.6.0a10/individuals/search"
+        body: "*"
+      };
+    };
+  
+  rpc SearchExperiments(SearchExperimentsRequest)
+    returns (SearchExperimentsResponse) {
+      option (google.api.http) = {
+        post: "/v0.6.0a10/experiments/search"
         body: "*"
       };
     };
@@ -36,6 +45,13 @@ service BioMetadataService {
     returns (Individual) {
       option (google.api.http) = {
         get: "/v0.6.0a10/individuals/{individual_id}"
+      };
+    };
+
+  rpc GetExperiment(GetExperimentRequest)
+    returns (Experiment) {
+      option (google.api.http) = {
+        get: "/v0.6.0a10/experiments/{experiment_id}"
       };
     };
 
@@ -73,12 +89,6 @@ message GetIndividualRequest {
   string individual_id = 1;
 }
 
-// This request maps to the URL `GET /biosamples/{biosample_id}`.
-message GetBiosampleRequest {
-  // The ID of the biosample requested
-  string biosample_id = 1;
-}
-
 //This is the response from `POST /individuals/search` expressed as JSON.
 message SearchIndividualsResponse {
   // The list of individuals.
@@ -112,6 +122,12 @@ message SearchBiosamplesRequest {
   string page_token = 5;
 }
 
+// This request maps to the URL `GET /biosamples/{biosample_id}`.
+message GetBiosampleRequest {
+  // The ID of the biosample requested
+  string biosample_id = 1;
+}
+
 //This is the response from `POST /biosamples/search` expressed as JSON.
 message SearchBiosamplesResponse {
   // The list of biosamples.
@@ -123,3 +139,39 @@ message SearchBiosamplesResponse {
   string next_page_token = 2;
 }
 
+// *********************  /experiments ********************************
+//This is the request sent to `POST /experiments/search` expressed as JSON.
+message SearchExperimentsRequest {
+  // Returns Experiments with the given name found by case-sensitive string matching.
+  string name = 1;
+  
+  // Returns Experiments for the provided biosample ID.
+  // unimplemented
+  string biosample_id = 2;
+  
+  // Specifies the maximum number of results to return in a single page.
+  // If unspecified, a system default will be used.
+  int32 page_size = 3;
+  
+  // The continuation token, which is used to page through large result sets.
+  // To get the next page of results, set this parameter to the value of
+  // `nextPageToken` from the previous response.
+  string page_token = 4;
+}
+
+// This request maps to the URL `GET /experiments/{experiment_id}`.
+message GetExperimentRequest {
+  // The ID of the experiment requested
+  string experiment_id = 1;
+}
+
+//This is the response from `POST /experiments/search` expressed as JSON.
+message SearchExperimentsResponse {
+  // The list of experiments.
+  repeated Experiment experiments = 1;
+
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 2;
+}
