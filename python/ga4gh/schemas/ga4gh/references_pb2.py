@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n$ga4gh/schemas/ga4gh/references.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"\x91\x02\n\tReference\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06length\x18\x02 \x01(\x03\x12\x13\n\x0bmd5checksum\x18\x03 \x01(\t\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\x12\n\nsource_uri\x18\x05 \x01(\t\x12\x19\n\x11source_accessions\x18\x06 \x03(\t\x12\x12\n\nis_derived\x18\x07 \x01(\x08\x12\x19\n\x11source_divergence\x18\x08 \x01(\x02\x12\x32\n\x07species\x18\n \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x33\n\nattributes\x18\x0b \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"\x93\x02\n\x0cReferenceSet\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0bmd5checksum\x18\x03 \x01(\t\x12\x32\n\x07species\x18\n \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x13\n\x0b\x64\x65scription\x18\x05 \x01(\t\x12\x13\n\x0b\x61ssembly_id\x18\x06 \x01(\t\x12\x12\n\nsource_uri\x18\x07 \x01(\t\x12\x19\n\x11source_accessions\x18\x08 \x03(\t\x12\x12\n\nis_derived\x18\t \x01(\x08\x12\x33\n\nattributes\x18\x0b \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributesb\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -221,6 +220,7 @@ _REFERENCESET.fields_by_name['species'].message_type = ga4gh_dot_schemas_dot_ga4
 _REFERENCESET.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 DESCRIPTOR.message_types_by_name['Reference'] = _REFERENCE
 DESCRIPTOR.message_types_by_name['ReferenceSet'] = _REFERENCESET
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Reference = _reflection.GeneratedProtocolMessageType('Reference', (_message.Message,), dict(
   DESCRIPTOR = _REFERENCE,
