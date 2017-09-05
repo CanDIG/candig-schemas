@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n,ga4gh/schemas/ga4gh/allele_annotations.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"D\n\x0e\x41nalysisResult\x12\x13\n\x0b\x61nalysis_id\x18\x01 \x01(\t\x12\x0e\n\x06result\x18\x02 \x01(\t\x12\r\n\x05score\x18\x03 \x01(\x05\"d\n\x0e\x41lleleLocation\x12\r\n\x05start\x18\x01 \x01(\x05\x12\x0b\n\x03\x65nd\x18\x02 \x01(\x05\x12\x1a\n\x12reference_sequence\x18\x03 \x01(\t\x12\x1a\n\x12\x61lternate_sequence\x18\x04 \x01(\t\"\xae\x01\n\x14VariantAnnotationSet\x12\n\n\x02id\x18\x01 \x01(\t\x12\x16\n\x0evariant_set_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12/\n\x08\x61nalysis\x18\x04 \x01(\x0b\x32\x1d.ga4gh.schemas.ga4gh.Analysis\x12\x33\n\nattributes\x18\x05 \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"F\n\x0eHGVSAnnotation\x12\x0f\n\x07genomic\x18\x01 \x01(\t\x12\x12\n\ntranscript\x18\x02 \x01(\t\x12\x0f\n\x07protein\x18\x03 \x01(\t\"\xe7\x03\n\x10TranscriptEffect\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\nfeature_id\x18\x02 \x01(\t\x12\x17\n\x0f\x61lternate_bases\x18\x03 \x01(\t\x12\x32\n\x07\x65\x66\x66\x65\x63ts\x18\x04 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12<\n\x0fhgvs_annotation\x18\x05 \x01(\x0b\x32#.ga4gh.schemas.ga4gh.HGVSAnnotation\x12:\n\rcdna_location\x18\x06 \x01(\x0b\x32#.ga4gh.schemas.ga4gh.AlleleLocation\x12\x39\n\x0c\x63\x64s_location\x18\x07 \x01(\x0b\x32#.ga4gh.schemas.ga4gh.AlleleLocation\x12=\n\x10protein_location\x18\x08 \x01(\x0b\x32#.ga4gh.schemas.ga4gh.AlleleLocation\x12=\n\x10\x61nalysis_results\x18\t \x03(\x0b\x32#.ga4gh.schemas.ga4gh.AnalysisResult\x12\x33\n\nattributes\x18\x0b \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"\xdf\x01\n\x11VariantAnnotation\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\nvariant_id\x18\x02 \x01(\t\x12!\n\x19variant_annotation_set_id\x18\x03 \x01(\t\x12\x0f\n\x07\x63reated\x18\x04 \x01(\t\x12\x41\n\x12transcript_effects\x18\x05 \x03(\x0b\x32%.ga4gh.schemas.ga4gh.TranscriptEffect\x12\x33\n\nattributes\x18\x07 \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributesb\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -405,6 +404,7 @@ DESCRIPTOR.message_types_by_name['VariantAnnotationSet'] = _VARIANTANNOTATIONSET
 DESCRIPTOR.message_types_by_name['HGVSAnnotation'] = _HGVSANNOTATION
 DESCRIPTOR.message_types_by_name['TranscriptEffect'] = _TRANSCRIPTEFFECT
 DESCRIPTOR.message_types_by_name['VariantAnnotation'] = _VARIANTANNOTATION
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 AnalysisResult = _reflection.GeneratedProtocolMessageType('AnalysisResult', (_message.Message,), dict(
   DESCRIPTOR = _ANALYSISRESULT,

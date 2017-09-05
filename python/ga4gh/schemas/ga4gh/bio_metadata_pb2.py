@@ -23,7 +23,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n&ga4gh/schemas/ga4gh/bio_metadata.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"\x8a\x02\n\nIndividual\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x32\n\x07species\x18\x07 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12.\n\x03sex\x18\x08 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x33\n\nattributes\x18\n \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"\xb0\x02\n\tBiosample\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x32\n\x07\x64isease\x18\x05 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x0f\n\x07\x63reated\x18\x06 \x01(\t\x12\x0f\n\x07updated\x18\x07 \x01(\t\x12\x15\n\rindividual_id\x18\x08 \x01(\t\x12\x33\n\nattributes\x18\n \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\x12>\n\x1cindividual_age_at_collection\x18\x0b \x01(\x0b\x32\x18.ga4gh.schemas.ga4gh.Age\"H\n\x03\x41ge\x12\x0b\n\x03\x61ge\x18\x01 \x01(\t\x12\x34\n\tage_class\x18\x02 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTermb\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -256,6 +255,7 @@ _AGE.fields_by_name['age_class'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_
 DESCRIPTOR.message_types_by_name['Individual'] = _INDIVIDUAL
 DESCRIPTOR.message_types_by_name['Biosample'] = _BIOSAMPLE
 DESCRIPTOR.message_types_by_name['Age'] = _AGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Individual = _reflection.GeneratedProtocolMessageType('Individual', (_message.Message,), dict(
   DESCRIPTOR = _INDIVIDUAL,
