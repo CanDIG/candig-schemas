@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n#ga4gh/schemas/google/api/http.proto\x12\x18ga4gh.schemas.google.api\"9\n\x04Http\x12\x31\n\x05rules\x18\x01 \x03(\x0b\x32\".ga4gh.schemas.google.api.HttpRule\"\x86\x02\n\x08HttpRule\x12\x10\n\x08selector\x18\x01 \x01(\t\x12\r\n\x03get\x18\x02 \x01(\tH\x00\x12\r\n\x03put\x18\x03 \x01(\tH\x00\x12\x0e\n\x04post\x18\x04 \x01(\tH\x00\x12\x10\n\x06\x64\x65lete\x18\x05 \x01(\tH\x00\x12\x0f\n\x05patch\x18\x06 \x01(\tH\x00\x12=\n\x06\x63ustom\x18\x08 \x01(\x0b\x32+.ga4gh.schemas.google.api.CustomHttpPatternH\x00\x12\x0c\n\x04\x62ody\x18\x07 \x01(\t\x12?\n\x13\x61\x64\x64itional_bindings\x18\x0b \x03(\x0b\x32\".ga4gh.schemas.google.api.HttpRuleB\t\n\x07pattern\"/\n\x11\x43ustomHttpPattern\x12\x0c\n\x04kind\x18\x01 \x01(\t\x12\x0c\n\x04path\x18\x02 \x01(\tB\'\n\x0e\x63om.google.apiB\tHttpProtoP\x01\xf8\x01\x01\xa2\x02\x04GAPIb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -208,6 +207,7 @@ _HTTPRULE.fields_by_name['custom'].containing_oneof = _HTTPRULE.oneofs_by_name['
 DESCRIPTOR.message_types_by_name['Http'] = _HTTP
 DESCRIPTOR.message_types_by_name['HttpRule'] = _HTTPRULE
 DESCRIPTOR.message_types_by_name['CustomHttpPattern'] = _CUSTOMHTTPPATTERN
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Http = _reflection.GeneratedProtocolMessageType('Http', (_message.Message,), dict(
   DESCRIPTOR = _HTTP,
