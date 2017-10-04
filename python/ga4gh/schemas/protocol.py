@@ -263,6 +263,12 @@ postMethods = \
      ('/datasets/search',
       SearchDatasetsRequest,  # noqa
       SearchDatasetsResponse),  # noqa
+     ('/biosamples/search',
+      SearchBiosamplesRequest,  # noqa
+      SearchBiosamplesResponse),  # noqa
+     ('/experiments/search',
+      SearchExperimentsRequest,  # noqa
+      SearchExperimentsResponse),  # noqa
      ('/callsets/search',
       SearchCallSetsRequest,  # noqa
       SearchCallSetsResponse),  # noqa
