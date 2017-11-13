@@ -21,6 +21,7 @@ from ga4gh.reads_pb2 import *  # noqa
 from ga4gh.reference_service_pb2 import *  # noqa
 from ga4gh.references_pb2 import *  # noqa
 from ga4gh.variant_service_pb2 import *  # noqa
+from ga4gh.genotype_service_pb2 import *  # noqa
 from ga4gh.variants_pb2 import *  # noqa
 from ga4gh.allele_annotations_pb2 import *  # noqa
 from ga4gh.allele_annotation_service_pb2 import *  # noqa
@@ -259,6 +260,9 @@ postMethods = \
      ('/variants/search',
       SearchVariantsRequest,  # noqa
       SearchVariantsResponse),  # noqa
+     ('/genotypes/search',
+      SearchGenotypesRequest,  # noqa
+      SearchGenotypesResponse),  # noqa
      ('/datasets/search',
       SearchDatasetsRequest,  # noqa
       SearchDatasetsResponse),  # noqa
