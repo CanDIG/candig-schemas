@@ -34,10 +34,6 @@
     </developer>
   </developers>
 
-  <prerequisites>
-    <maven>3.0</maven>
-  </prerequisites>
-
   <properties>
     <proto.version>3.0.0-beta-3</proto.version>
     <maven.enforcer.jdk-version>[1.6,)</maven.enforcer.jdk-version>

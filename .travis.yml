@@ -17,17 +17,6 @@ before_install:
     - export PATH=/tmp/proto3.3.2/bin:$PATH
     - pip install -r python/dev-requirements.txt -c python/constraints.txt
 script:
-    - make docs
     - flake8 setup.py python scripts tests
     - python -mnose tests
 
-# deploy to pypi when there is a new tag in master after a successful build
-deploy:
-    provider: pypi
-    user: dannycolligan
-    password:
-        secure: e3eMudmp3P832hXvcOYd6iGvo9b7zOnNxIvMPcor68t7vnLMhP5xXER87a0hR3Y6WJ9vG1LwkBI9ZwrA6Y+p75jEdRhyTwdJwYjYPGdSYCBI8nLMg5JBEMTWig39eAgoZrfmswyKrT7UwHdLQTHlpp9JYFimtdxnT0AohO9pTWs=
-    skip_upload_docs: true
-    on:
-        tags: true
-        repo: ga4gh/ga4gh-schemas
