@@ -25,7 +25,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   serialized_pb=_b('\n*ga4gh/schemas/ga4gh/genotype_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"k\n\x0eGenotypeMatrix\x12\x14\n\x0cnindividuals\x18\x01 \x01(\r\x12\x11\n\tnvariants\x18\x02 \x01(\r\x12\x30\n\tgenotypes\x18\x03 \x03(\x0e\x32\x1d.ga4gh.schemas.ga4gh.Genotype\"\xa1\x01\n\x16SearchGenotypesRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"\xb0\x01\n\x17SearchGenotypesResponse\x12.\n\x08variants\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Variant\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x36\n\tgenotypes\x18\x03 \x01(\x0b\x32#.ga4gh.schemas.ga4gh.GenotypeMatrix\x12\x17\n\x0fnext_page_token\x18\x04 \x01(\t*\x83\x01\n\x08Genotype\x12\x12\n\x0eHOMOZYGOUS_REF\x10\x00\x12\x14\n\x10HETEROZYGOUS_ALT\x10\x01\x12\x12\n\x0eHOMOZYGOUS_ALT\x10\x02\x12\x12\n\x0eHEMIZYGOUS_REF\x10\x03\x12\x12\n\x0eHEMIZYGOUS_ALT\x10\x04\x12\t\n\x05OTHER\x10\x05\x12\x06\n\x02NA\x10\x06\x32\xa9\x01\n\x10GenotypesService\x12\x94\x01\n\x0fSearchGenotypes\x12+.ga4gh.schemas.ga4gh.SearchGenotypesRequest\x1a,.ga4gh.schemas.ga4gh.SearchGenotypesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/genotypes/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _GENOTYPE = _descriptor.EnumDescriptor(
   name='Genotype',
@@ -256,6 +255,7 @@ DESCRIPTOR.message_types_by_name['GenotypeMatrix'] = _GENOTYPEMATRIX
 DESCRIPTOR.message_types_by_name['SearchGenotypesRequest'] = _SEARCHGENOTYPESREQUEST
 DESCRIPTOR.message_types_by_name['SearchGenotypesResponse'] = _SEARCHGENOTYPESRESPONSE
 DESCRIPTOR.enum_types_by_name['Genotype'] = _GENOTYPE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GenotypeMatrix = _reflection.GeneratedProtocolMessageType('GenotypeMatrix', (_message.Message,), dict(
   DESCRIPTOR = _GENOTYPEMATRIX,

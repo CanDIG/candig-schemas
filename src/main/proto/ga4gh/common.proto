@@ -3,8 +3,6 @@
 
 syntax = "proto3";
 
-import "google/protobuf/struct.proto";
-
 package ga4gh;
 
 // When returning an HTTP error response, a server may also return a JSON formatted GAException
