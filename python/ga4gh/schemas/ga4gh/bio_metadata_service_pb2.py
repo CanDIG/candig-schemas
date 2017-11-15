@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/bio_metadata_service.proto',
   package='ga4gh.schemas.ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n.ga4gh/schemas/ga4gh/bio_metadata_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a&ga4gh/schemas/ga4gh/bio_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"c\n\x18SearchIndividualsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"-\n\x14GetIndividualRequest\x12\x15\n\rindividual_id\x18\x01 \x01(\t\"j\n\x19SearchIndividualsResponse\x12\x34\n\x0bindividuals\x18\x01 \x03(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Individual\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"y\n\x17SearchBiosamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x15\n\rindividual_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetBiosampleRequest\x12\x14\n\x0c\x62iosample_id\x18\x01 \x01(\t\"g\n\x18SearchBiosamplesResponse\x12\x32\n\nbiosamples\x18\x01 \x03(\x0b\x32\x1e.ga4gh.schemas.ga4gh.Biosample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"e\n\x18SearchExperimentsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"-\n\x14GetExperimentRequest\x12\x15\n\rexperiment_id\x18\x01 \x01(\t\"j\n\x19SearchExperimentsResponse\x12\x34\n\x0b\x65xperiments\x18\x01 \x03(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Experiment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\x92\x07\n\x12\x42ioMetadataService\x12\x9c\x01\n\x11SearchIndividuals\x12-.ga4gh.schemas.ga4gh.SearchIndividualsRequest\x1a..ga4gh.schemas.ga4gh.SearchIndividualsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/individuals/search:\x01*\x12\x9c\x01\n\x11SearchExperiments\x12-.ga4gh.schemas.ga4gh.SearchExperimentsRequest\x1a..ga4gh.schemas.ga4gh.SearchExperimentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/experiments/search:\x01*\x12\x98\x01\n\x10SearchBiosamples\x12,.ga4gh.schemas.ga4gh.SearchBiosamplesRequest\x1a-.ga4gh.schemas.ga4gh.SearchBiosamplesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/biosamples/search:\x01*\x12\x8b\x01\n\rGetIndividual\x12).ga4gh.schemas.ga4gh.GetIndividualRequest\x1a\x1f.ga4gh.schemas.ga4gh.Individual\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/individuals/{individual_id}\x12\x8b\x01\n\rGetExperiment\x12).ga4gh.schemas.ga4gh.GetExperimentRequest\x1a\x1f.ga4gh.schemas.ga4gh.Experiment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/experiments/{experiment_id}\x12\x86\x01\n\x0cGetBiosample\x12(.ga4gh.schemas.ga4gh.GetBiosampleRequest\x1a\x1e.ga4gh.schemas.ga4gh.Biosample\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/biosamples/{biosample_id}b\x06proto3')
+  serialized_pb=_b('\n.ga4gh/schemas/ga4gh/bio_metadata_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a&ga4gh/schemas/ga4gh/bio_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"c\n\x18SearchIndividualsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"-\n\x14GetIndividualRequest\x12\x15\n\rindividual_id\x18\x01 \x01(\t\"j\n\x19SearchIndividualsResponse\x12\x34\n\x0bindividuals\x18\x01 \x03(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Individual\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"y\n\x17SearchBiosamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x15\n\rindividual_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetBiosampleRequest\x12\x14\n\x0c\x62iosample_id\x18\x01 \x01(\t\"g\n\x18SearchBiosamplesResponse\x12\x32\n\nbiosamples\x18\x01 \x03(\x0b\x32\x1e.ga4gh.schemas.ga4gh.Biosample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"e\n\x18SearchExperimentsRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"-\n\x14GetExperimentRequest\x12\x15\n\rexperiment_id\x18\x01 \x01(\t\"j\n\x19SearchExperimentsResponse\x12\x34\n\x0b\x65xperiments\x18\x01 \x03(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Experiment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"b\n\x15SearchAnalysesRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\")\n\x12GetAnalysisRequest\x12\x13\n\x0b\x61nalysis_id\x18\x01 \x01(\t\"b\n\x16SearchAnalysesResponse\x12/\n\x08\x61nalyses\x18\x01 \x03(\x0b\x32\x1d.ga4gh.schemas.ga4gh.Analysis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xa8\t\n\x12\x42ioMetadataService\x12\x9c\x01\n\x11SearchIndividuals\x12-.ga4gh.schemas.ga4gh.SearchIndividualsRequest\x1a..ga4gh.schemas.ga4gh.SearchIndividualsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/individuals/search:\x01*\x12\x9c\x01\n\x11SearchExperiments\x12-.ga4gh.schemas.ga4gh.SearchExperimentsRequest\x1a..ga4gh.schemas.ga4gh.SearchExperimentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/experiments/search:\x01*\x12\x90\x01\n\x0eSearchAnalyses\x12*.ga4gh.schemas.ga4gh.SearchAnalysesRequest\x1a+.ga4gh.schemas.ga4gh.SearchAnalysesResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/analyses/search:\x01*\x12\x98\x01\n\x10SearchBiosamples\x12,.ga4gh.schemas.ga4gh.SearchBiosamplesRequest\x1a-.ga4gh.schemas.ga4gh.SearchBiosamplesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/biosamples/search:\x01*\x12\x8b\x01\n\rGetIndividual\x12).ga4gh.schemas.ga4gh.GetIndividualRequest\x1a\x1f.ga4gh.schemas.ga4gh.Individual\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/individuals/{individual_id}\x12\x8b\x01\n\rGetExperiment\x12).ga4gh.schemas.ga4gh.GetExperimentRequest\x1a\x1f.ga4gh.schemas.ga4gh.Experiment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/experiments/{experiment_id}\x12\x80\x01\n\x0bGetAnalysis\x12\'.ga4gh.schemas.ga4gh.GetAnalysisRequest\x1a\x1d.ga4gh.schemas.ga4gh.Analysis\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/analyses/{analysis_id}\x12\x86\x01\n\x0cGetBiosample\x12(.ga4gh.schemas.ga4gh.GetBiosampleRequest\x1a\x1e.ga4gh.schemas.ga4gh.Biosample\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/biosamples/{biosample_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_bio__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -398,9 +398,131 @@ _SEARCHEXPERIMENTSRESPONSE = _descriptor.Descriptor(
   serialized_end=974,
 )
 
+
+_SEARCHANALYSESREQUEST = _descriptor.Descriptor(
+  name='SearchAnalysesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchAnalysesRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchAnalysesRequest.name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='biosample_id', full_name='ga4gh.schemas.ga4gh.SearchAnalysesRequest.biosample_id', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchAnalysesRequest.page_size', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchAnalysesRequest.page_token', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=976,
+  serialized_end=1074,
+)
+
+
+_GETANALYSISREQUEST = _descriptor.Descriptor(
+  name='GetAnalysisRequest',
+  full_name='ga4gh.schemas.ga4gh.GetAnalysisRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='analysis_id', full_name='ga4gh.schemas.ga4gh.GetAnalysisRequest.analysis_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1076,
+  serialized_end=1117,
+)
+
+
+_SEARCHANALYSESRESPONSE = _descriptor.Descriptor(
+  name='SearchAnalysesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchAnalysesResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='analyses', full_name='ga4gh.schemas.ga4gh.SearchAnalysesResponse.analyses', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchAnalysesResponse.next_page_token', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1119,
+  serialized_end=1217,
+)
+
 _SEARCHINDIVIDUALSRESPONSE.fields_by_name['individuals'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_bio__metadata__pb2._INDIVIDUAL
 _SEARCHBIOSAMPLESRESPONSE.fields_by_name['biosamples'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_bio__metadata__pb2._BIOSAMPLE
 _SEARCHEXPERIMENTSRESPONSE.fields_by_name['experiments'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._EXPERIMENT
+_SEARCHANALYSESRESPONSE.fields_by_name['analyses'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ANALYSIS
 DESCRIPTOR.message_types_by_name['SearchIndividualsRequest'] = _SEARCHINDIVIDUALSREQUEST
 DESCRIPTOR.message_types_by_name['GetIndividualRequest'] = _GETINDIVIDUALREQUEST
 DESCRIPTOR.message_types_by_name['SearchIndividualsResponse'] = _SEARCHINDIVIDUALSRESPONSE
@@ -410,6 +532,9 @@ DESCRIPTOR.message_types_by_name['SearchBiosamplesResponse'] = _SEARCHBIOSAMPLES
 DESCRIPTOR.message_types_by_name['SearchExperimentsRequest'] = _SEARCHEXPERIMENTSREQUEST
 DESCRIPTOR.message_types_by_name['GetExperimentRequest'] = _GETEXPERIMENTREQUEST
 DESCRIPTOR.message_types_by_name['SearchExperimentsResponse'] = _SEARCHEXPERIMENTSRESPONSE
+DESCRIPTOR.message_types_by_name['SearchAnalysesRequest'] = _SEARCHANALYSESREQUEST
+DESCRIPTOR.message_types_by_name['GetAnalysisRequest'] = _GETANALYSISREQUEST
+DESCRIPTOR.message_types_by_name['SearchAnalysesResponse'] = _SEARCHANALYSESRESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 SearchIndividualsRequest = _reflection.GeneratedProtocolMessageType('SearchIndividualsRequest', (_message.Message,), dict(
@@ -484,16 +609,17 @@ _sym_db.RegisterMessage(SearchAnalysesRequest)
 
 GetAnalysisRequest = _reflection.GeneratedProtocolMessageType('GetAnalysisRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETANALYSISREQUEST,
-  __module__ = 'ga4gh.bio_metadata_service_pb2'
+  __module__ = 'ga4gh.schemas.ga4gh.bio_metadata_service_pb2'
   # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetAnalysisRequest)
   ))
 _sym_db.RegisterMessage(GetAnalysisRequest)
 
 SearchAnalysesResponse = _reflection.GeneratedProtocolMessageType('SearchAnalysesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHANALYSESRESPONSE,
-  __module__ = 'ga4gh.scheas.ga4gh.bio_metadata_service_pb2'
+  __module__ = 'ga4gh.schemas.ga4gh.bio_metadata_service_pb2'
   # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchAnalysesResponse)
   ))
 _sym_db.RegisterMessage(SearchAnalysesResponse)
+
 
 # @@protoc_insertion_point(module_scope)
