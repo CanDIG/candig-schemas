@@ -475,5 +475,25 @@ SearchExperimentsResponse = _reflection.GeneratedProtocolMessageType('SearchExpe
   ))
 _sym_db.RegisterMessage(SearchExperimentsResponse)
 
+SearchAnalysesRequest = _reflection.GeneratedProtocolMessageType('SearchAnalysesRequest', (_message.Message,), dict(
+  DESCRIPTOR = _SEARCHANALYSESREQUEST,
+  __module__ = 'ga4gh.schemas.ga4gh.bio_metadata_service_pb2'
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchAnalysesRequest)
+  ))
+_sym_db.RegisterMessage(SearchAnalysesRequest)
+
+GetAnalysisRequest = _reflection.GeneratedProtocolMessageType('GetAnalysisRequest', (_message.Message,), dict(
+  DESCRIPTOR = _GETANALYSISREQUEST,
+  __module__ = 'ga4gh.bio_metadata_service_pb2'
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetAnalysisRequest)
+  ))
+_sym_db.RegisterMessage(GetAnalysisRequest)
+
+SearchAnalysesResponse = _reflection.GeneratedProtocolMessageType('SearchAnalysesResponse', (_message.Message,), dict(
+  DESCRIPTOR = _SEARCHANALYSESRESPONSE,
+  __module__ = 'ga4gh.scheas.ga4gh.bio_metadata_service_pb2'
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchAnalysesResponse)
+  ))
+_sym_db.RegisterMessage(SearchAnalysesResponse)
 
 # @@protoc_insertion_point(module_scope)
