@@ -272,6 +272,9 @@ postMethods = \
      ('/experiments/search',
       SearchExperimentsRequest,  # noqa
       SearchExperimentsResponse),  # noqa
+     ('/analyses/search',
+      SearchAnalysesRequest,  # noqa
+      SearchAnalysesResponse),  # noqa
      ('/callsets/search',
       SearchCallSetsRequest,  # noqa
       SearchCallSetsResponse),  # noqa
