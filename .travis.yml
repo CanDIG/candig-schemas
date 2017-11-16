@@ -19,7 +19,5 @@ before_install:
     - pip install -r python/dev-requirements.txt -c python/constraints.txt
 script:
     - flake8 setup.py python scripts tests
-    - mkdir /tmp/pb
-    - python scripts/process_schemas.py 0.6.0a10 -s src/main/proto/ -d /tmp/pb
     - python -mnose tests
 
