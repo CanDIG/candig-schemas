@@ -15,6 +15,7 @@ before_install:
     - sudo apt-get install graphviz
     - bash tools/travis-install-protoc.sh 3.3.2
     - export PATH=/tmp/proto3.3.2/bin:$PATH
+    - sudo ln -s /tmp/proto3.3.2/bin/protoc /usr/local/bin/protoc
     - pip install -r python/dev-requirements.txt -c python/constraints.txt
 script:
     - flake8 setup.py python scripts tests
