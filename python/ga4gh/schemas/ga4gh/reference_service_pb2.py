@@ -19,9 +19,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/reference_service.proto',
-  package='ga4gh.schemas.ga4gh',
+  package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/reference_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a$ga4gh/schemas/ga4gh/references.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x80\x01\n\x1aSearchReferenceSetsRequest\x12\x13\n\x0bmd5checksum\x18\x01 \x01(\t\x12\x11\n\taccession\x18\x02 \x01(\t\x12\x13\n\x0b\x61ssembly_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"q\n\x1bSearchReferenceSetsResponse\x12\x39\n\x0ereference_sets\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.ReferenceSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"2\n\x16GetReferenceSetRequest\x12\x18\n\x10reference_set_id\x18\x01 \x01(\t\"\x82\x01\n\x17SearchReferencesRequest\x12\x18\n\x10reference_set_id\x18\x01 \x01(\t\x12\x13\n\x0bmd5checksum\x18\x02 \x01(\t\x12\x11\n\taccession\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"g\n\x18SearchReferencesResponse\x12\x32\n\nreferences\x18\x01 \x03(\x0b\x32\x1e.ga4gh.schemas.ga4gh.Reference\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"+\n\x13GetReferenceRequest\x12\x14\n\x0creference_id\x18\x01 \x01(\t\"a\n\x19ListReferenceBasesRequest\x12\x14\n\x0creference_id\x18\x01 \x01(\t\x12\r\n\x05start\x18\x02 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x03 \x01(\x03\x12\x12\n\npage_token\x18\x04 \x01(\t\"W\n\x1aListReferenceBasesResponse\x12\x0e\n\x06offset\x18\x01 \x01(\x03\x12\x10\n\x08sequence\x18\x02 \x01(\t\x12\x17\n\x0fnext_page_token\x18\x03 \x01(\t2\xa5\x06\n\x10ReferenceService\x12\xa4\x01\n\x13SearchReferenceSets\x12/.ga4gh.schemas.ga4gh.SearchReferenceSetsRequest\x1a\x30.ga4gh.schemas.ga4gh.SearchReferenceSetsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/referencesets/search:\x01*\x12\x96\x01\n\x0fGetReferenceSet\x12+.ga4gh.schemas.ga4gh.GetReferenceSetRequest\x1a!.ga4gh.schemas.ga4gh.ReferenceSet\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/referencesets/{reference_set_id}\x12\x98\x01\n\x10SearchReferences\x12,.ga4gh.schemas.ga4gh.SearchReferencesRequest\x1a-.ga4gh.schemas.ga4gh.SearchReferencesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/references/search:\x01*\x12\x86\x01\n\x0cGetReference\x12(.ga4gh.schemas.ga4gh.GetReferenceRequest\x1a\x1e.ga4gh.schemas.ga4gh.Reference\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/references/{reference_id}\x12\xac\x01\n\x12ListReferenceBases\x12..ga4gh.schemas.ga4gh.ListReferenceBasesRequest\x1a/.ga4gh.schemas.ga4gh.ListReferenceBasesResponse\"5\x82\xd3\xe4\x93\x02/\"*/v0.6.0a10/references/{reference_id}/bases:\x01*b\x06proto3')
+  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/reference_service.proto\x12\x05ga4gh\x1a$ga4gh/schemas/ga4gh/references.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x80\x01\n\x1aSearchReferenceSetsRequest\x12\x13\n\x0bmd5checksum\x18\x01 \x01(\t\x12\x11\n\taccession\x18\x02 \x01(\t\x12\x13\n\x0b\x61ssembly_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"c\n\x1bSearchReferenceSetsResponse\x12+\n\x0ereference_sets\x18\x01 \x03(\x0b\x32\x13.ga4gh.ReferenceSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"2\n\x16GetReferenceSetRequest\x12\x18\n\x10reference_set_id\x18\x01 \x01(\t\"\x82\x01\n\x17SearchReferencesRequest\x12\x18\n\x10reference_set_id\x18\x01 \x01(\t\x12\x13\n\x0bmd5checksum\x18\x02 \x01(\t\x12\x11\n\taccession\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"Y\n\x18SearchReferencesResponse\x12$\n\nreferences\x18\x01 \x03(\x0b\x32\x10.ga4gh.Reference\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"+\n\x13GetReferenceRequest\x12\x14\n\x0creference_id\x18\x01 \x01(\t\"a\n\x19ListReferenceBasesRequest\x12\x14\n\x0creference_id\x18\x01 \x01(\t\x12\r\n\x05start\x18\x02 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x03 \x01(\x03\x12\x12\n\npage_token\x18\x04 \x01(\t\"W\n\x1aListReferenceBasesResponse\x12\x0e\n\x06offset\x18\x01 \x01(\x03\x12\x10\n\x08sequence\x18\x02 \x01(\t\x12\x17\n\x0fnext_page_token\x18\x03 \x01(\t2\x96\x05\n\x10ReferenceService\x12\x88\x01\n\x13SearchReferenceSets\x12!.ga4gh.SearchReferenceSetsRequest\x1a\".ga4gh.SearchReferenceSetsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/referencesets/search:\x01*\x12z\n\x0fGetReferenceSet\x12\x1d.ga4gh.GetReferenceSetRequest\x1a\x13.ga4gh.ReferenceSet\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/referencesets/{reference_set_id}\x12|\n\x10SearchReferences\x12\x1e.ga4gh.SearchReferencesRequest\x1a\x1f.ga4gh.SearchReferencesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/references/search:\x01*\x12j\n\x0cGetReference\x12\x1a.ga4gh.GetReferenceRequest\x1a\x10.ga4gh.Reference\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/references/{reference_id}\x12\x90\x01\n\x12ListReferenceBases\x12 .ga4gh.ListReferenceBasesRequest\x1a!.ga4gh.ListReferenceBasesResponse\"5\x82\xd3\xe4\x93\x02/\"*/v0.6.0a10/references/{reference_id}/bases:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_references__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -30,41 +30,41 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHREFERENCESETSREQUEST = _descriptor.Descriptor(
   name='SearchReferenceSetsRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest',
+  full_name='ga4gh.SearchReferenceSetsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='md5checksum', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest.md5checksum', index=0,
+      name='md5checksum', full_name='ga4gh.SearchReferenceSetsRequest.md5checksum', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='accession', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest.accession', index=1,
+      name='accession', full_name='ga4gh.SearchReferenceSetsRequest.accession', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='assembly_id', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest.assembly_id', index=2,
+      name='assembly_id', full_name='ga4gh.SearchReferenceSetsRequest.assembly_id', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.SearchReferenceSetsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.SearchReferenceSetsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -82,27 +82,27 @@ _SEARCHREFERENCESETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=151,
-  serialized_end=279,
+  serialized_start=137,
+  serialized_end=265,
 )
 
 
 _SEARCHREFERENCESETSRESPONSE = _descriptor.Descriptor(
   name='SearchReferenceSetsResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsResponse',
+  full_name='ga4gh.SearchReferenceSetsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reference_sets', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsResponse.reference_sets', index=0,
+      name='reference_sets', full_name='ga4gh.SearchReferenceSetsResponse.reference_sets', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchReferenceSetsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchReferenceSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -120,20 +120,20 @@ _SEARCHREFERENCESETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=281,
-  serialized_end=394,
+  serialized_start=267,
+  serialized_end=366,
 )
 
 
 _GETREFERENCESETREQUEST = _descriptor.Descriptor(
   name='GetReferenceSetRequest',
-  full_name='ga4gh.schemas.ga4gh.GetReferenceSetRequest',
+  full_name='ga4gh.GetReferenceSetRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reference_set_id', full_name='ga4gh.schemas.ga4gh.GetReferenceSetRequest.reference_set_id', index=0,
+      name='reference_set_id', full_name='ga4gh.GetReferenceSetRequest.reference_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -151,48 +151,48 @@ _GETREFERENCESETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=396,
-  serialized_end=446,
+  serialized_start=368,
+  serialized_end=418,
 )
 
 
 _SEARCHREFERENCESREQUEST = _descriptor.Descriptor(
   name='SearchReferencesRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest',
+  full_name='ga4gh.SearchReferencesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reference_set_id', full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest.reference_set_id', index=0,
+      name='reference_set_id', full_name='ga4gh.SearchReferencesRequest.reference_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='md5checksum', full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest.md5checksum', index=1,
+      name='md5checksum', full_name='ga4gh.SearchReferencesRequest.md5checksum', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='accession', full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest.accession', index=2,
+      name='accession', full_name='ga4gh.SearchReferencesRequest.accession', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.SearchReferencesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchReferencesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.SearchReferencesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -210,27 +210,27 @@ _SEARCHREFERENCESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=449,
-  serialized_end=579,
+  serialized_start=421,
+  serialized_end=551,
 )
 
 
 _SEARCHREFERENCESRESPONSE = _descriptor.Descriptor(
   name='SearchReferencesResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchReferencesResponse',
+  full_name='ga4gh.SearchReferencesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='references', full_name='ga4gh.schemas.ga4gh.SearchReferencesResponse.references', index=0,
+      name='references', full_name='ga4gh.SearchReferencesResponse.references', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchReferencesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchReferencesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -248,20 +248,20 @@ _SEARCHREFERENCESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=581,
-  serialized_end=684,
+  serialized_start=553,
+  serialized_end=642,
 )
 
 
 _GETREFERENCEREQUEST = _descriptor.Descriptor(
   name='GetReferenceRequest',
-  full_name='ga4gh.schemas.ga4gh.GetReferenceRequest',
+  full_name='ga4gh.GetReferenceRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reference_id', full_name='ga4gh.schemas.ga4gh.GetReferenceRequest.reference_id', index=0,
+      name='reference_id', full_name='ga4gh.GetReferenceRequest.reference_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -279,41 +279,41 @@ _GETREFERENCEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=686,
-  serialized_end=729,
+  serialized_start=644,
+  serialized_end=687,
 )
 
 
 _LISTREFERENCEBASESREQUEST = _descriptor.Descriptor(
   name='ListReferenceBasesRequest',
-  full_name='ga4gh.schemas.ga4gh.ListReferenceBasesRequest',
+  full_name='ga4gh.ListReferenceBasesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reference_id', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesRequest.reference_id', index=0,
+      name='reference_id', full_name='ga4gh.ListReferenceBasesRequest.reference_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='start', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesRequest.start', index=1,
+      name='start', full_name='ga4gh.ListReferenceBasesRequest.start', index=1,
       number=2, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='end', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesRequest.end', index=2,
+      name='end', full_name='ga4gh.ListReferenceBasesRequest.end', index=2,
       number=3, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesRequest.page_token', index=3,
+      name='page_token', full_name='ga4gh.ListReferenceBasesRequest.page_token', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -331,34 +331,34 @@ _LISTREFERENCEBASESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=731,
-  serialized_end=828,
+  serialized_start=689,
+  serialized_end=786,
 )
 
 
 _LISTREFERENCEBASESRESPONSE = _descriptor.Descriptor(
   name='ListReferenceBasesResponse',
-  full_name='ga4gh.schemas.ga4gh.ListReferenceBasesResponse',
+  full_name='ga4gh.ListReferenceBasesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='offset', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesResponse.offset', index=0,
+      name='offset', full_name='ga4gh.ListReferenceBasesResponse.offset', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sequence', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesResponse.sequence', index=1,
+      name='sequence', full_name='ga4gh.ListReferenceBasesResponse.sequence', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.ListReferenceBasesResponse.next_page_token', index=2,
+      name='next_page_token', full_name='ga4gh.ListReferenceBasesResponse.next_page_token', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -376,8 +376,8 @@ _LISTREFERENCEBASESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=830,
-  serialized_end=917,
+  serialized_start=788,
+  serialized_end=875,
 )
 
 _SEARCHREFERENCESETSRESPONSE.fields_by_name['reference_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_references__pb2._REFERENCESET
@@ -395,58 +395,118 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchReferenceSetsRequest = _reflection.GeneratedProtocolMessageType('SearchReferenceSetsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREFERENCESETSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReferenceSetsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchReferenceSetsRequest)
   ))
 _sym_db.RegisterMessage(SearchReferenceSetsRequest)
 
 SearchReferenceSetsResponse = _reflection.GeneratedProtocolMessageType('SearchReferenceSetsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREFERENCESETSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReferenceSetsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchReferenceSetsResponse)
   ))
 _sym_db.RegisterMessage(SearchReferenceSetsResponse)
 
 GetReferenceSetRequest = _reflection.GeneratedProtocolMessageType('GetReferenceSetRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETREFERENCESETREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetReferenceSetRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.GetReferenceSetRequest)
   ))
 _sym_db.RegisterMessage(GetReferenceSetRequest)
 
 SearchReferencesRequest = _reflection.GeneratedProtocolMessageType('SearchReferencesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREFERENCESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReferencesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchReferencesRequest)
   ))
 _sym_db.RegisterMessage(SearchReferencesRequest)
 
 SearchReferencesResponse = _reflection.GeneratedProtocolMessageType('SearchReferencesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREFERENCESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReferencesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchReferencesResponse)
   ))
 _sym_db.RegisterMessage(SearchReferencesResponse)
 
 GetReferenceRequest = _reflection.GeneratedProtocolMessageType('GetReferenceRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETREFERENCEREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetReferenceRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.GetReferenceRequest)
   ))
 _sym_db.RegisterMessage(GetReferenceRequest)
 
 ListReferenceBasesRequest = _reflection.GeneratedProtocolMessageType('ListReferenceBasesRequest', (_message.Message,), dict(
   DESCRIPTOR = _LISTREFERENCEBASESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.ListReferenceBasesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.ListReferenceBasesRequest)
   ))
 _sym_db.RegisterMessage(ListReferenceBasesRequest)
 
 ListReferenceBasesResponse = _reflection.GeneratedProtocolMessageType('ListReferenceBasesResponse', (_message.Message,), dict(
   DESCRIPTOR = _LISTREFERENCEBASESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.reference_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.ListReferenceBasesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.ListReferenceBasesResponse)
   ))
 _sym_db.RegisterMessage(ListReferenceBasesResponse)
 
+
+
+_REFERENCESERVICE = _descriptor.ServiceDescriptor(
+  name='ReferenceService',
+  full_name='ga4gh.ReferenceService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=878,
+  serialized_end=1540,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='SearchReferenceSets',
+    full_name='ga4gh.ReferenceService.SearchReferenceSets',
+    index=0,
+    containing_service=None,
+    input_type=_SEARCHREFERENCESETSREQUEST,
+    output_type=_SEARCHREFERENCESETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002$\"\037/v0.6.0a10/referencesets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetReferenceSet',
+    full_name='ga4gh.ReferenceService.GetReferenceSet',
+    index=1,
+    containing_service=None,
+    input_type=_GETREFERENCESETREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_references__pb2._REFERENCESET,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002-\022+/v0.6.0a10/referencesets/{reference_set_id}')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchReferences',
+    full_name='ga4gh.ReferenceService.SearchReferences',
+    index=2,
+    containing_service=None,
+    input_type=_SEARCHREFERENCESREQUEST,
+    output_type=_SEARCHREFERENCESRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002!\"\034/v0.6.0a10/references/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetReference',
+    full_name='ga4gh.ReferenceService.GetReference',
+    index=3,
+    containing_service=None,
+    input_type=_GETREFERENCEREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_references__pb2._REFERENCE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002&\022$/v0.6.0a10/references/{reference_id}')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='ListReferenceBases',
+    full_name='ga4gh.ReferenceService.ListReferenceBases',
+    index=4,
+    containing_service=None,
+    input_type=_LISTREFERENCEBASESREQUEST,
+    output_type=_LISTREFERENCEBASESRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002/\"*/v0.6.0a10/references/{reference_id}/bases:\001*')),
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_REFERENCESERVICE)
+
+DESCRIPTOR.services_by_name['ReferenceService'] = _REFERENCESERVICE
 
 # @@protoc_insertion_point(module_scope)

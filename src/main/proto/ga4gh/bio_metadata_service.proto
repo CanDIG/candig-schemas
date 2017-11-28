@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/bio_metadata.proto";
-import "ga4gh/common.proto";
-import "google/api/annotations.proto";
+import "ga4gh/schemas/ga4gh/bio_metadata.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
+import "ga4gh/schemas/google/api/annotations.proto";
 
 
 service BioMetadataService {
@@ -19,7 +19,7 @@ service BioMetadataService {
         body: "*"
       };
     };
-  
+              
   rpc SearchExperiments(SearchExperimentsRequest)
     returns (SearchExperimentsResponse) {
       option (google.api.http) = {
@@ -27,7 +27,7 @@ service BioMetadataService {
         body: "*"
       };
     };
-
+              
   rpc SearchAnalyses(SearchAnalysesRequest)
     returns (SearchAnalysesResponse) {
       option (google.api.http) = {
@@ -35,7 +35,7 @@ service BioMetadataService {
         body: "*"
       };
     };
-  
+              
   // `POST /biosamples/search` must accept a JSON version of
   // `SearchBiosamplesRequest` as the post body and will return a JSON version
   // of `SearchBiosamplesResponse`.
@@ -96,6 +96,16 @@ message SearchIndividualsRequest {
   // To get the next page of results, set this parameter to the value of
   // `nextPageToken` from the previous response.
   string page_token = 4;
+  
+//### ===================================================================== ###
+//# CANDIG MODIFICATION BEGIN
+//### ===================================================================== ###
+  
+  //
+  string type = 5;
+//### ===================================================================== ###
+//# CANDIG MODIFICATION END
+//### ===================================================================== ###
 }
 
 // This request maps to the URL `GET /individuals/{individual_id}`.
@@ -113,6 +123,14 @@ message SearchIndividualsResponse {
   // Provide this value in a subsequent request to return the next page of
   // results. This field will be empty if there aren't any additional results.
   string next_page_token = 2;
+}
+
+message TempoRequest {
+  string valami = 1;        
+}
+
+message TempoResponse {
+  string valami = 1;        
 }
 
 // *********************  /biosamples ********************************

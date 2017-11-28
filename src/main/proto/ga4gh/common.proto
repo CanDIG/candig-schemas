@@ -3,6 +3,8 @@
 
 syntax = "proto3";
 
+import "google/protobuf/struct.proto";
+
 package ga4gh;
 
 // When returning an HTTP error response, a server may also return a JSON formatted GAException
@@ -115,6 +117,32 @@ message Experiment {
 
   // A map of additional experiment information.
   Attributes attributes = 17;
+  
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION BEGIN
+//### ===================================================================== ###
+
+  // Biosample id on which the experiment was done: string
+  string biosample_id = 18;
+
+  //dna_library_construction_method: string
+  string dna_library_construction_method = 19;
+    
+  //wgs_sequencing_completion_date: date (YYYY-MM-DD)
+  string wgs_sequencing_completion_date = 20;
+    
+  //RNA Library Construction Method
+  string rna_library_construction_method = 21;
+    
+  //wgs_sequencing_completion_date: date (YYYY-MM-DD)
+  string rna_sequencing_completion_date = 22;
+    
+  //panel_completion_date: date (YYYY-MM-DD)
+  string panel_completion_date = 23;
+  
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION END
+//### ===================================================================== ###
 }
 
 // An analysis contains an interpretation of one or several experiments. (e.g.
@@ -143,6 +171,23 @@ message Analysis {
 
   // A map of additional analysis information.
   Attributes attributes = 9;
+
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION BEGIN
+//### ===================================================================== ###
+
+  // Experiment id that is corresponding to the analysis: string
+  string experiment_id = 10;
+
+  //other_analysis_descriptor: string
+  string other_analysis_descriptor = 11;
+    
+  //other_analysis_completition_date: date (YYYY-MM-DD)
+  string other_analysis_completition_date = 12;
+
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION END
+//### ===================================================================== ###
 }
 
 // An ontology term describing an attribute. (e.g. the phenotype attribute

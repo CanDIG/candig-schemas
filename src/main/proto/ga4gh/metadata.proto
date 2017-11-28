@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/common.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
 
 // A Dataset is a collection of related data of multiple types.
 // Data providers decide how to group data into datasets.

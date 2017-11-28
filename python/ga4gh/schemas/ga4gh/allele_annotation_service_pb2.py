@@ -20,9 +20,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/allele_annotation_service.proto',
-  package='ga4gh.schemas.ga4gh',
+  package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/allele_annotation_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a,ga4gh/schemas/ga4gh/allele_annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\xe9\x01\n\x1fSearchVariantAnnotationsRequest\x12!\n\x19variant_annotation_set_id\x18\x01 \x01(\t\x12\x16\n\x0ereference_name\x18\x02 \x01(\t\x12\x14\n\x0creference_id\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x32\n\x07\x65\x66\x66\x65\x63ts\x18\x06 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x11\n\tpage_size\x18\x07 \x01(\x05\x12\x12\n\npage_token\x18\x08 \x01(\t\"\x80\x01\n SearchVariantAnnotationsResponse\x12\x43\n\x13variant_annotations\x18\x01 \x03(\x0b\x32&.ga4gh.schemas.ga4gh.VariantAnnotation\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"c\n\"SearchVariantAnnotationSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"\x8a\x01\n#SearchVariantAnnotationSetsResponse\x12J\n\x17variant_annotation_sets\x18\x01 \x03(\x0b\x32).ga4gh.schemas.ga4gh.VariantAnnotationSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"C\n\x1eGetVariantAnnotationSetRequest\x12!\n\x19variant_annotation_set_id\x18\x01 \x01(\t2\xdd\x04\n\x17\x41lleleAnnotationService\x12\xb8\x01\n\x18SearchVariantAnnotations\x12\x34.ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest\x1a\x35.ga4gh.schemas.ga4gh.SearchVariantAnnotationsResponse\"/\x82\xd3\xe4\x93\x02)\"$/v0.6.0a10/variantannotations/search:\x01*\x12\xc4\x01\n\x1bSearchVariantAnnotationSets\x12\x37.ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest\x1a\x38.ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsResponse\"2\x82\xd3\xe4\x93\x02,\"\'/v0.6.0a10/variantannotationsets/search:\x01*\x12\xbf\x01\n\x17GetVariantAnnotationSet\x12\x33.ga4gh.schemas.ga4gh.GetVariantAnnotationSetRequest\x1a).ga4gh.schemas.ga4gh.VariantAnnotationSet\"D\x82\xd3\xe4\x93\x02>\x12</v0.6.0a10/variantannotationsets/{variant_annotation_set_id}b\x06proto3')
+  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/allele_annotation_service.proto\x12\x05ga4gh\x1a,ga4gh/schemas/ga4gh/allele_annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\xdb\x01\n\x1fSearchVariantAnnotationsRequest\x12!\n\x19variant_annotation_set_id\x18\x01 \x01(\t\x12\x16\n\x0ereference_name\x18\x02 \x01(\t\x12\x14\n\x0creference_id\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12$\n\x07\x65\x66\x66\x65\x63ts\x18\x06 \x03(\x0b\x32\x13.ga4gh.OntologyTerm\x12\x11\n\tpage_size\x18\x07 \x01(\x05\x12\x12\n\npage_token\x18\x08 \x01(\t\"r\n SearchVariantAnnotationsResponse\x12\x35\n\x13variant_annotations\x18\x01 \x03(\x0b\x32\x18.ga4gh.VariantAnnotation\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"c\n\"SearchVariantAnnotationSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"|\n#SearchVariantAnnotationSetsResponse\x12<\n\x17variant_annotation_sets\x18\x01 \x03(\x0b\x32\x1b.ga4gh.VariantAnnotationSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"C\n\x1eGetVariantAnnotationSetRequest\x12!\n\x19variant_annotation_set_id\x18\x01 \x01(\t2\x89\x04\n\x17\x41lleleAnnotationService\x12\x9c\x01\n\x18SearchVariantAnnotations\x12&.ga4gh.SearchVariantAnnotationsRequest\x1a\'.ga4gh.SearchVariantAnnotationsResponse\"/\x82\xd3\xe4\x93\x02)\"$/v0.6.0a10/variantannotations/search:\x01*\x12\xa8\x01\n\x1bSearchVariantAnnotationSets\x12).ga4gh.SearchVariantAnnotationSetsRequest\x1a*.ga4gh.SearchVariantAnnotationSetsResponse\"2\x82\xd3\xe4\x93\x02,\"\'/v0.6.0a10/variantannotationsets/search:\x01*\x12\xa3\x01\n\x17GetVariantAnnotationSet\x12%.ga4gh.GetVariantAnnotationSetRequest\x1a\x1b.ga4gh.VariantAnnotationSet\"D\x82\xd3\xe4\x93\x02>\x12</v0.6.0a10/variantannotationsets/{variant_annotation_set_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_allele__annotations__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -31,62 +31,62 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHVARIANTANNOTATIONSREQUEST = _descriptor.Descriptor(
   name='SearchVariantAnnotationsRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest',
+  full_name='ga4gh.SearchVariantAnnotationsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_annotation_set_id', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.variant_annotation_set_id', index=0,
+      name='variant_annotation_set_id', full_name='ga4gh.SearchVariantAnnotationsRequest.variant_annotation_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='reference_name', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.reference_name', index=1,
+      name='reference_name', full_name='ga4gh.SearchVariantAnnotationsRequest.reference_name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='reference_id', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.reference_id', index=2,
+      name='reference_id', full_name='ga4gh.SearchVariantAnnotationsRequest.reference_id', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='start', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.start', index=3,
+      name='start', full_name='ga4gh.SearchVariantAnnotationsRequest.start', index=3,
       number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='end', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.end', index=4,
+      name='end', full_name='ga4gh.SearchVariantAnnotationsRequest.end', index=4,
       number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='effects', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.effects', index=5,
+      name='effects', full_name='ga4gh.SearchVariantAnnotationsRequest.effects', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.page_size', index=6,
+      name='page_size', full_name='ga4gh.SearchVariantAnnotationsRequest.page_size', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest.page_token', index=7,
+      name='page_token', full_name='ga4gh.SearchVariantAnnotationsRequest.page_token', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -104,27 +104,27 @@ _SEARCHVARIANTANNOTATIONSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=201,
-  serialized_end=434,
+  serialized_start=187,
+  serialized_end=406,
 )
 
 
 _SEARCHVARIANTANNOTATIONSRESPONSE = _descriptor.Descriptor(
   name='SearchVariantAnnotationsResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsResponse',
+  full_name='ga4gh.SearchVariantAnnotationsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_annotations', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsResponse.variant_annotations', index=0,
+      name='variant_annotations', full_name='ga4gh.SearchVariantAnnotationsResponse.variant_annotations', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchVariantAnnotationsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -142,34 +142,34 @@ _SEARCHVARIANTANNOTATIONSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=437,
-  serialized_end=565,
+  serialized_start=408,
+  serialized_end=522,
 )
 
 
 _SEARCHVARIANTANNOTATIONSETSREQUEST = _descriptor.Descriptor(
   name='SearchVariantAnnotationSetsRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest',
+  full_name='ga4gh.SearchVariantAnnotationSetsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_set_id', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest.variant_set_id', index=0,
+      name='variant_set_id', full_name='ga4gh.SearchVariantAnnotationSetsRequest.variant_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest.page_size', index=1,
+      name='page_size', full_name='ga4gh.SearchVariantAnnotationSetsRequest.page_size', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest.page_token', index=2,
+      name='page_token', full_name='ga4gh.SearchVariantAnnotationSetsRequest.page_token', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -187,27 +187,27 @@ _SEARCHVARIANTANNOTATIONSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=567,
-  serialized_end=666,
+  serialized_start=524,
+  serialized_end=623,
 )
 
 
 _SEARCHVARIANTANNOTATIONSETSRESPONSE = _descriptor.Descriptor(
   name='SearchVariantAnnotationSetsResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsResponse',
+  full_name='ga4gh.SearchVariantAnnotationSetsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_annotation_sets', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsResponse.variant_annotation_sets', index=0,
+      name='variant_annotation_sets', full_name='ga4gh.SearchVariantAnnotationSetsResponse.variant_annotation_sets', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchVariantAnnotationSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -225,20 +225,20 @@ _SEARCHVARIANTANNOTATIONSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=669,
-  serialized_end=807,
+  serialized_start=625,
+  serialized_end=749,
 )
 
 
 _GETVARIANTANNOTATIONSETREQUEST = _descriptor.Descriptor(
   name='GetVariantAnnotationSetRequest',
-  full_name='ga4gh.schemas.ga4gh.GetVariantAnnotationSetRequest',
+  full_name='ga4gh.GetVariantAnnotationSetRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_annotation_set_id', full_name='ga4gh.schemas.ga4gh.GetVariantAnnotationSetRequest.variant_annotation_set_id', index=0,
+      name='variant_annotation_set_id', full_name='ga4gh.GetVariantAnnotationSetRequest.variant_annotation_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -256,8 +256,8 @@ _GETVARIANTANNOTATIONSETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=809,
-  serialized_end=876,
+  serialized_start=751,
+  serialized_end=818,
 )
 
 _SEARCHVARIANTANNOTATIONSREQUEST.fields_by_name['effects'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ONTOLOGYTERM
@@ -273,37 +273,79 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchVariantAnnotationsRequest = _reflection.GeneratedProtocolMessageType('SearchVariantAnnotationsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHVARIANTANNOTATIONSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.allele_annotation_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchVariantAnnotationsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantAnnotationsRequest)
   ))
 _sym_db.RegisterMessage(SearchVariantAnnotationsRequest)
 
 SearchVariantAnnotationsResponse = _reflection.GeneratedProtocolMessageType('SearchVariantAnnotationsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHVARIANTANNOTATIONSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.allele_annotation_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchVariantAnnotationsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantAnnotationsResponse)
   ))
 _sym_db.RegisterMessage(SearchVariantAnnotationsResponse)
 
 SearchVariantAnnotationSetsRequest = _reflection.GeneratedProtocolMessageType('SearchVariantAnnotationSetsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHVARIANTANNOTATIONSETSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.allele_annotation_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantAnnotationSetsRequest)
   ))
 _sym_db.RegisterMessage(SearchVariantAnnotationSetsRequest)
 
 SearchVariantAnnotationSetsResponse = _reflection.GeneratedProtocolMessageType('SearchVariantAnnotationSetsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHVARIANTANNOTATIONSETSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.allele_annotation_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchVariantAnnotationSetsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantAnnotationSetsResponse)
   ))
 _sym_db.RegisterMessage(SearchVariantAnnotationSetsResponse)
 
 GetVariantAnnotationSetRequest = _reflection.GeneratedProtocolMessageType('GetVariantAnnotationSetRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETVARIANTANNOTATIONSETREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.allele_annotation_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetVariantAnnotationSetRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.GetVariantAnnotationSetRequest)
   ))
 _sym_db.RegisterMessage(GetVariantAnnotationSetRequest)
 
+
+
+_ALLELEANNOTATIONSERVICE = _descriptor.ServiceDescriptor(
+  name='AlleleAnnotationService',
+  full_name='ga4gh.AlleleAnnotationService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=821,
+  serialized_end=1342,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='SearchVariantAnnotations',
+    full_name='ga4gh.AlleleAnnotationService.SearchVariantAnnotations',
+    index=0,
+    containing_service=None,
+    input_type=_SEARCHVARIANTANNOTATIONSREQUEST,
+    output_type=_SEARCHVARIANTANNOTATIONSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002)\"$/v0.6.0a10/variantannotations/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchVariantAnnotationSets',
+    full_name='ga4gh.AlleleAnnotationService.SearchVariantAnnotationSets',
+    index=1,
+    containing_service=None,
+    input_type=_SEARCHVARIANTANNOTATIONSETSREQUEST,
+    output_type=_SEARCHVARIANTANNOTATIONSETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002,\"\'/v0.6.0a10/variantannotationsets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetVariantAnnotationSet',
+    full_name='ga4gh.AlleleAnnotationService.GetVariantAnnotationSet',
+    index=2,
+    containing_service=None,
+    input_type=_GETVARIANTANNOTATIONSETREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_allele__annotations__pb2._VARIANTANNOTATIONSET,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002>\022</v0.6.0a10/variantannotationsets/{variant_annotation_set_id}')),
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_ALLELEANNOTATIONSERVICE)
+
+DESCRIPTOR.services_by_name['AlleleAnnotationService'] = _ALLELEANNOTATIONSERVICE
 
 # @@protoc_insertion_point(module_scope)

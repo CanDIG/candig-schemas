@@ -19,9 +19,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/metadata_service.proto',
-  package='ga4gh.schemas.ga4gh',
+  package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n*ga4gh/schemas/ga4gh/metadata_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a\"ga4gh/schemas/ga4gh/metadata.proto\x1a*ga4gh/schemas/google/api/annotations.proto\">\n\x15SearchDatasetsRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\"a\n\x16SearchDatasetsResponse\x12.\n\x08\x64\x61tasets\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Dataset\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetDatasetRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t2\xa2\x02\n\x0fMetadataService\x12\x90\x01\n\x0eSearchDatasets\x12*.ga4gh.schemas.ga4gh.SearchDatasetsRequest\x1a+.ga4gh.schemas.ga4gh.SearchDatasetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/datasets/search:\x01*\x12|\n\nGetDataset\x12&.ga4gh.schemas.ga4gh.GetDatasetRequest\x1a\x1c.ga4gh.schemas.ga4gh.Dataset\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/datasets/{dataset_id}b\x06proto3')
+  serialized_pb=_b('\n*ga4gh/schemas/ga4gh/metadata_service.proto\x12\x05ga4gh\x1a\"ga4gh/schemas/ga4gh/metadata.proto\x1a*ga4gh/schemas/google/api/annotations.proto\">\n\x15SearchDatasetsRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\"S\n\x16SearchDatasetsResponse\x12 \n\x08\x64\x61tasets\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Dataset\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetDatasetRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t2\xe9\x01\n\x0fMetadataService\x12t\n\x0eSearchDatasets\x12\x1c.ga4gh.SearchDatasetsRequest\x1a\x1d.ga4gh.SearchDatasetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/datasets/search:\x01*\x12`\n\nGetDataset\x12\x18.ga4gh.GetDatasetRequest\x1a\x0e.ga4gh.Dataset\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/datasets/{dataset_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -30,20 +30,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHDATASETSREQUEST = _descriptor.Descriptor(
   name='SearchDatasetsRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchDatasetsRequest',
+  full_name='ga4gh.SearchDatasetsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchDatasetsRequest.page_size', index=0,
+      name='page_size', full_name='ga4gh.SearchDatasetsRequest.page_size', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchDatasetsRequest.page_token', index=1,
+      name='page_token', full_name='ga4gh.SearchDatasetsRequest.page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -61,27 +61,27 @@ _SEARCHDATASETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=147,
-  serialized_end=209,
+  serialized_start=133,
+  serialized_end=195,
 )
 
 
 _SEARCHDATASETSRESPONSE = _descriptor.Descriptor(
   name='SearchDatasetsResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchDatasetsResponse',
+  full_name='ga4gh.SearchDatasetsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='datasets', full_name='ga4gh.schemas.ga4gh.SearchDatasetsResponse.datasets', index=0,
+      name='datasets', full_name='ga4gh.SearchDatasetsResponse.datasets', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchDatasetsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchDatasetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -99,20 +99,20 @@ _SEARCHDATASETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=211,
-  serialized_end=308,
+  serialized_start=197,
+  serialized_end=280,
 )
 
 
 _GETDATASETREQUEST = _descriptor.Descriptor(
   name='GetDatasetRequest',
-  full_name='ga4gh.schemas.ga4gh.GetDatasetRequest',
+  full_name='ga4gh.GetDatasetRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.schemas.ga4gh.GetDatasetRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.GetDatasetRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -130,8 +130,8 @@ _GETDATASETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=310,
-  serialized_end=349,
+  serialized_start=282,
+  serialized_end=321,
 )
 
 _SEARCHDATASETSRESPONSE.fields_by_name['datasets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_metadata__pb2._DATASET
@@ -143,23 +143,56 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchDatasetsRequest = _reflection.GeneratedProtocolMessageType('SearchDatasetsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHDATASETSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchDatasetsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchDatasetsRequest)
   ))
 _sym_db.RegisterMessage(SearchDatasetsRequest)
 
 SearchDatasetsResponse = _reflection.GeneratedProtocolMessageType('SearchDatasetsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHDATASETSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchDatasetsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchDatasetsResponse)
   ))
 _sym_db.RegisterMessage(SearchDatasetsResponse)
 
 GetDatasetRequest = _reflection.GeneratedProtocolMessageType('GetDatasetRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETDATASETREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetDatasetRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.GetDatasetRequest)
   ))
 _sym_db.RegisterMessage(GetDatasetRequest)
 
+
+
+_METADATASERVICE = _descriptor.ServiceDescriptor(
+  name='MetadataService',
+  full_name='ga4gh.MetadataService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=324,
+  serialized_end=557,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='SearchDatasets',
+    full_name='ga4gh.MetadataService.SearchDatasets',
+    index=0,
+    containing_service=None,
+    input_type=_SEARCHDATASETSREQUEST,
+    output_type=_SEARCHDATASETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\037\"\032/v0.6.0a10/datasets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetDataset',
+    full_name='ga4gh.MetadataService.GetDataset',
+    index=1,
+    containing_service=None,
+    input_type=_GETDATASETREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_metadata__pb2._DATASET,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\"\022 /v0.6.0a10/datasets/{dataset_id}')),
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_METADATASERVICE)
+
+DESCRIPTOR.services_by_name['MetadataService'] = _METADATASERVICE
 
 # @@protoc_insertion_point(module_scope)

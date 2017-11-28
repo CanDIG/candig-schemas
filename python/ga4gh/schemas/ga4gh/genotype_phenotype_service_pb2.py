@@ -20,9 +20,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/genotype_phenotype_service.proto',
-  package='ga4gh.schemas.ga4gh',
+  package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n4ga4gh/schemas/ga4gh/genotype_phenotype_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\x1a,ga4gh/schemas/ga4gh/genotype_phenotype.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"b\n%SearchPhenotypeAssociationSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x03\x12\x12\n\npage_token\x18\x03 \x01(\t\"\x93\x01\n&SearchPhenotypeAssociationSetsResponse\x12P\n\x1aphenotype_association_sets\x18\x01 \x03(\x0b\x32,.ga4gh.schemas.ga4gh.PhenotypeAssociationSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"E\n\x11OntologyTermQuery\x12\x30\n\x05terms\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\"O\n\x17\x45xternalIdentifierQuery\x12\x34\n\x03ids\x18\x01 \x03(\x0b\x32\'.ga4gh.schemas.ga4gh.ExternalIdentifier\"\xa4\x01\n\rEvidenceQuery\x12\x37\n\x0c\x65videnceType\x18\x01 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x45\n\x14\x65xternal_identifiers\x18\x03 \x03(\x0b\x32\'.ga4gh.schemas.ga4gh.ExternalIdentifier\"\xa8\x02\n\x17SearchPhenotypesRequest\x12$\n\x1cphenotype_association_set_id\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12/\n\x04type\x18\x04 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x35\n\nqualifiers\x18\x05 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x37\n\x0c\x61ge_of_onset\x18\x06 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x11\n\tpage_size\x18\x07 \x01(\x03\x12\x12\n\npage_token\x18\x08 \x01(\t\"o\n\x18SearchPhenotypesResponse\x12:\n\nphenotypes\x18\x01 \x03(\x0b\x32&.ga4gh.schemas.ga4gh.PhenotypeInstance\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\xcf\x01\n\x1eSearchGenotypePhenotypeRequest\x12$\n\x1cphenotype_association_set_id\x18\x01 \x01(\t\x12\x13\n\x0b\x66\x65\x61ture_ids\x18\x02 \x03(\t\x12\x15\n\rphenotype_ids\x18\x03 \x03(\t\x12\x34\n\x08\x65vidence\x18\x04 \x03(\x0b\x32\".ga4gh.schemas.ga4gh.EvidenceQuery\x12\x11\n\tpage_size\x18\x05 \x01(\x03\x12\x12\n\npage_token\x18\x06 \x01(\t\"\x82\x01\n\x1fSearchGenotypePhenotypeResponse\x12\x46\n\x0c\x61ssociations\x18\x01 \x03(\x0b\x32\x30.ga4gh.schemas.ga4gh.FeaturePhenotypeAssociation\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xcd\x04\n\x18GenotypePhenotypeService\x12\xd0\x01\n\x1eSearchPhenotypeAssociationSets\x12:.ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest\x1a;.ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsResponse\"5\x82\xd3\xe4\x93\x02/\"*/v0.6.0a10/phenotypeassociationsets/search:\x01*\x12\x97\x01\n\x0fSearchPhenotype\x12,.ga4gh.schemas.ga4gh.SearchPhenotypesRequest\x1a-.ga4gh.schemas.ga4gh.SearchPhenotypesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/phenotypes/search:\x01*\x12\xc3\x01\n\x1bSearchPhenotypeAssociations\x12\x33.ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest\x1a\x34.ga4gh.schemas.ga4gh.SearchGenotypePhenotypeResponse\"9\x82\xd3\xe4\x93\x02\x33\"./v0.6.0a10/featurephenotypeassociations/search:\x01*b\x06proto3')
+  serialized_pb=_b('\n4ga4gh/schemas/ga4gh/genotype_phenotype_service.proto\x12\x05ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\x1a,ga4gh/schemas/ga4gh/genotype_phenotype.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"b\n%SearchPhenotypeAssociationSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x03\x12\x12\n\npage_token\x18\x03 \x01(\t\"\x85\x01\n&SearchPhenotypeAssociationSetsResponse\x12\x42\n\x1aphenotype_association_sets\x18\x01 \x03(\x0b\x32\x1e.ga4gh.PhenotypeAssociationSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"7\n\x11OntologyTermQuery\x12\"\n\x05terms\x18\x01 \x03(\x0b\x32\x13.ga4gh.OntologyTerm\"A\n\x17\x45xternalIdentifierQuery\x12&\n\x03ids\x18\x01 \x03(\x0b\x32\x19.ga4gh.ExternalIdentifier\"\x88\x01\n\rEvidenceQuery\x12)\n\x0c\x65videnceType\x18\x01 \x01(\x0b\x32\x13.ga4gh.OntologyTerm\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x37\n\x14\x65xternal_identifiers\x18\x03 \x03(\x0b\x32\x19.ga4gh.ExternalIdentifier\"\xfe\x01\n\x17SearchPhenotypesRequest\x12$\n\x1cphenotype_association_set_id\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12!\n\x04type\x18\x04 \x01(\x0b\x32\x13.ga4gh.OntologyTerm\x12\'\n\nqualifiers\x18\x05 \x03(\x0b\x32\x13.ga4gh.OntologyTerm\x12)\n\x0c\x61ge_of_onset\x18\x06 \x01(\x0b\x32\x13.ga4gh.OntologyTerm\x12\x11\n\tpage_size\x18\x07 \x01(\x03\x12\x12\n\npage_token\x18\x08 \x01(\t\"a\n\x18SearchPhenotypesResponse\x12,\n\nphenotypes\x18\x01 \x03(\x0b\x32\x18.ga4gh.PhenotypeInstance\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\xc1\x01\n\x1eSearchGenotypePhenotypeRequest\x12$\n\x1cphenotype_association_set_id\x18\x01 \x01(\t\x12\x13\n\x0b\x66\x65\x61ture_ids\x18\x02 \x03(\t\x12\x15\n\rphenotype_ids\x18\x03 \x03(\t\x12&\n\x08\x65vidence\x18\x04 \x03(\x0b\x32\x14.ga4gh.EvidenceQuery\x12\x11\n\tpage_size\x18\x05 \x01(\x03\x12\x12\n\npage_token\x18\x06 \x01(\t\"t\n\x1fSearchGenotypePhenotypeResponse\x12\x38\n\x0c\x61ssociations\x18\x01 \x03(\x0b\x32\".ga4gh.FeaturePhenotypeAssociation\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xf8\x03\n\x18GenotypePhenotypeService\x12\xb4\x01\n\x1eSearchPhenotypeAssociationSets\x12,.ga4gh.SearchPhenotypeAssociationSetsRequest\x1a-.ga4gh.SearchPhenotypeAssociationSetsResponse\"5\x82\xd3\xe4\x93\x02/\"*/v0.6.0a10/phenotypeassociationsets/search:\x01*\x12{\n\x0fSearchPhenotype\x12\x1e.ga4gh.SearchPhenotypesRequest\x1a\x1f.ga4gh.SearchPhenotypesResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/phenotypes/search:\x01*\x12\xa7\x01\n\x1bSearchPhenotypeAssociations\x12%.ga4gh.SearchGenotypePhenotypeRequest\x1a&.ga4gh.SearchGenotypePhenotypeResponse\"9\x82\xd3\xe4\x93\x02\x33\"./v0.6.0a10/featurephenotypeassociations/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_genotype__phenotype__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -31,27 +31,27 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHPHENOTYPEASSOCIATIONSETSREQUEST = _descriptor.Descriptor(
   name='SearchPhenotypeAssociationSetsRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest',
+  full_name='ga4gh.SearchPhenotypeAssociationSetsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.SearchPhenotypeAssociationSetsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest.page_size', index=1,
+      name='page_size', full_name='ga4gh.SearchPhenotypeAssociationSetsRequest.page_size', index=1,
       number=2, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest.page_token', index=2,
+      name='page_token', full_name='ga4gh.SearchPhenotypeAssociationSetsRequest.page_token', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -69,27 +69,27 @@ _SEARCHPHENOTYPEASSOCIATIONSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=201,
-  serialized_end=299,
+  serialized_start=187,
+  serialized_end=285,
 )
 
 
 _SEARCHPHENOTYPEASSOCIATIONSETSRESPONSE = _descriptor.Descriptor(
   name='SearchPhenotypeAssociationSetsResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsResponse',
+  full_name='ga4gh.SearchPhenotypeAssociationSetsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='phenotype_association_sets', full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsResponse.phenotype_association_sets', index=0,
+      name='phenotype_association_sets', full_name='ga4gh.SearchPhenotypeAssociationSetsResponse.phenotype_association_sets', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchPhenotypeAssociationSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -107,20 +107,20 @@ _SEARCHPHENOTYPEASSOCIATIONSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=302,
-  serialized_end=449,
+  serialized_start=288,
+  serialized_end=421,
 )
 
 
 _ONTOLOGYTERMQUERY = _descriptor.Descriptor(
   name='OntologyTermQuery',
-  full_name='ga4gh.schemas.ga4gh.OntologyTermQuery',
+  full_name='ga4gh.OntologyTermQuery',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='terms', full_name='ga4gh.schemas.ga4gh.OntologyTermQuery.terms', index=0,
+      name='terms', full_name='ga4gh.OntologyTermQuery.terms', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -138,20 +138,20 @@ _ONTOLOGYTERMQUERY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=451,
-  serialized_end=520,
+  serialized_start=423,
+  serialized_end=478,
 )
 
 
 _EXTERNALIDENTIFIERQUERY = _descriptor.Descriptor(
   name='ExternalIdentifierQuery',
-  full_name='ga4gh.schemas.ga4gh.ExternalIdentifierQuery',
+  full_name='ga4gh.ExternalIdentifierQuery',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ids', full_name='ga4gh.schemas.ga4gh.ExternalIdentifierQuery.ids', index=0,
+      name='ids', full_name='ga4gh.ExternalIdentifierQuery.ids', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -169,34 +169,34 @@ _EXTERNALIDENTIFIERQUERY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=522,
-  serialized_end=601,
+  serialized_start=480,
+  serialized_end=545,
 )
 
 
 _EVIDENCEQUERY = _descriptor.Descriptor(
   name='EvidenceQuery',
-  full_name='ga4gh.schemas.ga4gh.EvidenceQuery',
+  full_name='ga4gh.EvidenceQuery',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='evidenceType', full_name='ga4gh.schemas.ga4gh.EvidenceQuery.evidenceType', index=0,
+      name='evidenceType', full_name='ga4gh.EvidenceQuery.evidenceType', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='description', full_name='ga4gh.schemas.ga4gh.EvidenceQuery.description', index=1,
+      name='description', full_name='ga4gh.EvidenceQuery.description', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='external_identifiers', full_name='ga4gh.schemas.ga4gh.EvidenceQuery.external_identifiers', index=2,
+      name='external_identifiers', full_name='ga4gh.EvidenceQuery.external_identifiers', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -214,69 +214,69 @@ _EVIDENCEQUERY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=604,
-  serialized_end=768,
+  serialized_start=548,
+  serialized_end=684,
 )
 
 
 _SEARCHPHENOTYPESREQUEST = _descriptor.Descriptor(
   name='SearchPhenotypesRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest',
+  full_name='ga4gh.SearchPhenotypesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='phenotype_association_set_id', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.phenotype_association_set_id', index=0,
+      name='phenotype_association_set_id', full_name='ga4gh.SearchPhenotypesRequest.phenotype_association_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='id', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.id', index=1,
+      name='id', full_name='ga4gh.SearchPhenotypesRequest.id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='description', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.description', index=2,
+      name='description', full_name='ga4gh.SearchPhenotypesRequest.description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='type', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.type', index=3,
+      name='type', full_name='ga4gh.SearchPhenotypesRequest.type', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='qualifiers', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.qualifiers', index=4,
+      name='qualifiers', full_name='ga4gh.SearchPhenotypesRequest.qualifiers', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='age_of_onset', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.age_of_onset', index=5,
+      name='age_of_onset', full_name='ga4gh.SearchPhenotypesRequest.age_of_onset', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.page_size', index=6,
+      name='page_size', full_name='ga4gh.SearchPhenotypesRequest.page_size', index=6,
       number=7, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesRequest.page_token', index=7,
+      name='page_token', full_name='ga4gh.SearchPhenotypesRequest.page_token', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -294,27 +294,27 @@ _SEARCHPHENOTYPESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=771,
-  serialized_end=1067,
+  serialized_start=687,
+  serialized_end=941,
 )
 
 
 _SEARCHPHENOTYPESRESPONSE = _descriptor.Descriptor(
   name='SearchPhenotypesResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchPhenotypesResponse',
+  full_name='ga4gh.SearchPhenotypesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='phenotypes', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesResponse.phenotypes', index=0,
+      name='phenotypes', full_name='ga4gh.SearchPhenotypesResponse.phenotypes', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchPhenotypesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchPhenotypesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -332,55 +332,55 @@ _SEARCHPHENOTYPESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1069,
-  serialized_end=1180,
+  serialized_start=943,
+  serialized_end=1040,
 )
 
 
 _SEARCHGENOTYPEPHENOTYPEREQUEST = _descriptor.Descriptor(
   name='SearchGenotypePhenotypeRequest',
-  full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest',
+  full_name='ga4gh.SearchGenotypePhenotypeRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='phenotype_association_set_id', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.phenotype_association_set_id', index=0,
+      name='phenotype_association_set_id', full_name='ga4gh.SearchGenotypePhenotypeRequest.phenotype_association_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='feature_ids', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.feature_ids', index=1,
+      name='feature_ids', full_name='ga4gh.SearchGenotypePhenotypeRequest.feature_ids', index=1,
       number=2, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='phenotype_ids', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.phenotype_ids', index=2,
+      name='phenotype_ids', full_name='ga4gh.SearchGenotypePhenotypeRequest.phenotype_ids', index=2,
       number=3, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='evidence', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.evidence', index=3,
+      name='evidence', full_name='ga4gh.SearchGenotypePhenotypeRequest.evidence', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.page_size', index=4,
+      name='page_size', full_name='ga4gh.SearchGenotypePhenotypeRequest.page_size', index=4,
       number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest.page_token', index=5,
+      name='page_token', full_name='ga4gh.SearchGenotypePhenotypeRequest.page_token', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -398,27 +398,27 @@ _SEARCHGENOTYPEPHENOTYPEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1183,
-  serialized_end=1390,
+  serialized_start=1043,
+  serialized_end=1236,
 )
 
 
 _SEARCHGENOTYPEPHENOTYPERESPONSE = _descriptor.Descriptor(
   name='SearchGenotypePhenotypeResponse',
-  full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeResponse',
+  full_name='ga4gh.SearchGenotypePhenotypeResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='associations', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeResponse.associations', index=0,
+      name='associations', full_name='ga4gh.SearchGenotypePhenotypeResponse.associations', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchGenotypePhenotypeResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.SearchGenotypePhenotypeResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -436,8 +436,8 @@ _SEARCHGENOTYPEPHENOTYPERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1393,
-  serialized_end=1523,
+  serialized_start=1238,
+  serialized_end=1354,
 )
 
 _SEARCHPHENOTYPEASSOCIATIONSETSRESPONSE.fields_by_name['phenotype_association_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_genotype__phenotype__pb2._PHENOTYPEASSOCIATIONSET
@@ -465,65 +465,107 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchPhenotypeAssociationSetsRequest = _reflection.GeneratedProtocolMessageType('SearchPhenotypeAssociationSetsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPHENOTYPEASSOCIATIONSETSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchPhenotypeAssociationSetsRequest)
   ))
 _sym_db.RegisterMessage(SearchPhenotypeAssociationSetsRequest)
 
 SearchPhenotypeAssociationSetsResponse = _reflection.GeneratedProtocolMessageType('SearchPhenotypeAssociationSetsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPHENOTYPEASSOCIATIONSETSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPhenotypeAssociationSetsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchPhenotypeAssociationSetsResponse)
   ))
 _sym_db.RegisterMessage(SearchPhenotypeAssociationSetsResponse)
 
 OntologyTermQuery = _reflection.GeneratedProtocolMessageType('OntologyTermQuery', (_message.Message,), dict(
   DESCRIPTOR = _ONTOLOGYTERMQUERY,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.OntologyTermQuery)
+  # @@protoc_insertion_point(class_scope:ga4gh.OntologyTermQuery)
   ))
 _sym_db.RegisterMessage(OntologyTermQuery)
 
 ExternalIdentifierQuery = _reflection.GeneratedProtocolMessageType('ExternalIdentifierQuery', (_message.Message,), dict(
   DESCRIPTOR = _EXTERNALIDENTIFIERQUERY,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.ExternalIdentifierQuery)
+  # @@protoc_insertion_point(class_scope:ga4gh.ExternalIdentifierQuery)
   ))
 _sym_db.RegisterMessage(ExternalIdentifierQuery)
 
 EvidenceQuery = _reflection.GeneratedProtocolMessageType('EvidenceQuery', (_message.Message,), dict(
   DESCRIPTOR = _EVIDENCEQUERY,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.EvidenceQuery)
+  # @@protoc_insertion_point(class_scope:ga4gh.EvidenceQuery)
   ))
 _sym_db.RegisterMessage(EvidenceQuery)
 
 SearchPhenotypesRequest = _reflection.GeneratedProtocolMessageType('SearchPhenotypesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPHENOTYPESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPhenotypesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchPhenotypesRequest)
   ))
 _sym_db.RegisterMessage(SearchPhenotypesRequest)
 
 SearchPhenotypesResponse = _reflection.GeneratedProtocolMessageType('SearchPhenotypesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPHENOTYPESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPhenotypesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchPhenotypesResponse)
   ))
 _sym_db.RegisterMessage(SearchPhenotypesResponse)
 
 SearchGenotypePhenotypeRequest = _reflection.GeneratedProtocolMessageType('SearchGenotypePhenotypeRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHGENOTYPEPHENOTYPEREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchGenotypePhenotypeRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchGenotypePhenotypeRequest)
   ))
 _sym_db.RegisterMessage(SearchGenotypePhenotypeRequest)
 
 SearchGenotypePhenotypeResponse = _reflection.GeneratedProtocolMessageType('SearchGenotypePhenotypeResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHGENOTYPEPHENOTYPERESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchGenotypePhenotypeResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchGenotypePhenotypeResponse)
   ))
 _sym_db.RegisterMessage(SearchGenotypePhenotypeResponse)
 
+
+
+_GENOTYPEPHENOTYPESERVICE = _descriptor.ServiceDescriptor(
+  name='GenotypePhenotypeService',
+  full_name='ga4gh.GenotypePhenotypeService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=1357,
+  serialized_end=1861,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='SearchPhenotypeAssociationSets',
+    full_name='ga4gh.GenotypePhenotypeService.SearchPhenotypeAssociationSets',
+    index=0,
+    containing_service=None,
+    input_type=_SEARCHPHENOTYPEASSOCIATIONSETSREQUEST,
+    output_type=_SEARCHPHENOTYPEASSOCIATIONSETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002/\"*/v0.6.0a10/phenotypeassociationsets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchPhenotype',
+    full_name='ga4gh.GenotypePhenotypeService.SearchPhenotype',
+    index=1,
+    containing_service=None,
+    input_type=_SEARCHPHENOTYPESREQUEST,
+    output_type=_SEARCHPHENOTYPESRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002!\"\034/v0.6.0a10/phenotypes/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchPhenotypeAssociations',
+    full_name='ga4gh.GenotypePhenotypeService.SearchPhenotypeAssociations',
+    index=2,
+    containing_service=None,
+    input_type=_SEARCHGENOTYPEPHENOTYPEREQUEST,
+    output_type=_SEARCHGENOTYPEPHENOTYPERESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\0023\"./v0.6.0a10/featurephenotypeassociations/search:\001*')),
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_GENOTYPEPHENOTYPESERVICE)
+
+DESCRIPTOR.services_by_name['GenotypePhenotypeService'] = _GENOTYPEPHENOTYPESERVICE
 
 # @@protoc_insertion_point(module_scope)

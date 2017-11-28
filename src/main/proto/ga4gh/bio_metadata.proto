@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/common.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
 
 
 // An individual (or subject) typically corresponds to an individual
@@ -35,20 +35,52 @@ message Individual {
   // NCBITaxon Ontology
   //   http://www.obofoundry.org/ontology/ncbitaxon.html
   // For example, 'Homo sapiens' has the ID 9606. The NCBITaxon ontology ID for
-  // this is NCBITaxon:9606, and therefore:
-  //   species : { term_id: "NCBITaxon:9606", term : "Homo sapiens" }
+  // this is NCBITaxon:9606, which has the URI
+  // http://purl.obolibrary.org/obo/NCBITaxon_9606
   OntologyTerm species = 7;
 
   // The genetic sex of this individual.
   // Use `null` when unknown or not applicable.
-  // Recommended: PATO http://purl.obolibrary.org/obo/PATO_0020000 ...
-  // Example:
-  //   sex : { term_id: "PATO:0020000", term : "female genetic sex" }
+  // Recommended: PATO http://purl.obolibrary.org/obo/PATO_0020001; PATO_0020002
   OntologyTerm sex = 8;
 
   // A map of additional information regarding the Individual.
   Attributes attributes = 10;
 
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION BEGIN
+//### ===================================================================== ###
+
+  // String format: PRO-ddddda
+  string patient_id = 11;
+
+  // Can be array of strings later
+  string regional_profiling_centre = 12;
+
+  // 
+  OntologyTerm diagnosis = 13;
+    
+  // pathology_type: [metastatic, primary, recurrent, relapse]
+  string pathology_type = 14;
+
+  //enrollment_approval_date: date (YYYY-MM-DD)
+  string enrollment_approval_date = 15;
+
+  //enrollment_approval_initials: string
+  string enrollment_approval_initials = 16;
+
+  //date_of_upload_to_sFTP: date (YYYY-MM-DD)
+  string date_of_upload_to_sFTP = 17;
+    
+  //tumor_board_presentation_date: date (YYYY-MM-DD) andchar [W, R, P]
+  string tumor_board_presentation_date_and_analyses = 18;
+    
+  //comments: string (edited)
+  string comments = 19;
+
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION END
+//### ===================================================================== ###
 }
 
 
@@ -99,6 +131,33 @@ message Biosample {
   // of the age either as ISO8601 duraion or time interval (preferred), or
   // as ontology term object.
   Age individual_age_at_collection = 11;
+
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION BEGIN
+//### ===================================================================== ###
+
+  //estimated_tumor_content: string(%)
+  string estimated_tumor_content = 12;
+    
+  //normal_sample_source: string
+  string normal_sample_source = 13;
+
+  //biopsy_data: date (YYYY-MM-DD)
+  string biopsy_data = 14;
+    
+  //tumor_biopsy_anatomical_site: string
+  string tumor_biopsy_anatomical_site = 15;
+
+  //biopsy_type: string
+  string biopsy_type = 16;
+
+  //sample_shipment_date: date (YYYY-MM-DD)
+  string sample_shipment_date = 17;
+
+//### ===================================================================== ###
+//# PROFYLE MODIFICATION END
+//### ===================================================================== ###
+
 }
 
 
@@ -116,10 +175,7 @@ message Age {
   // TODO: Anonymous reference time attribute/pointer?
   string age = 1;
 
-  // An age class, e.g. corresponding to the use of "age of onset" in HPO.
   // HPO is recommended, for example, subclasses of
-  // http://purl.obolibrary.org/obo/HP_0003674
-  // Example:
-  //  age_class : { term_id : "HP:0003596", term : "Middle age onset" }
+  // http://purl.obolibrary.org/obo/HP_0011007
   OntologyTerm age_class = 2;
 }
