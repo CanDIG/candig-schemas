@@ -121,24 +121,26 @@ message Experiment {
 //### ===================================================================== ###
 //# PROFYLE MODIFICATION BEGIN
 //### ===================================================================== ###
+  // The ID of the dataset this Experiment belongs to.
+  string dataset_id = 18;
 
   // Biosample id on which the experiment was done: string
-  string biosample_id = 18;
+  string biosample_id = 19;
 
   //dna_library_construction_method: string
-  string dna_library_construction_method = 19;
+  string dna_library_construction_method = 20;
     
   //wgs_sequencing_completion_date: date (YYYY-MM-DD)
-  string wgs_sequencing_completion_date = 20;
+  string wgs_sequencing_completion_date = 21;
     
   //RNA Library Construction Method
-  string rna_library_construction_method = 21;
+  string rna_library_construction_method = 22;
     
   //wgs_sequencing_completion_date: date (YYYY-MM-DD)
-  string rna_sequencing_completion_date = 22;
+  string rna_sequencing_completion_date = 23;
     
   //panel_completion_date: date (YYYY-MM-DD)
-  string panel_completion_date = 23;
+  string panel_completion_date = 24;
   
 //### ===================================================================== ###
 //# PROFYLE MODIFICATION END
@@ -175,15 +177,17 @@ message Analysis {
 //### ===================================================================== ###
 //# PROFYLE MODIFICATION BEGIN
 //### ===================================================================== ###
+  // The ID of the dataset this Analysis belongs to.
+  string dataset_id = 10;
 
   // Experiment id that is corresponding to the analysis: string
-  string experiment_id = 10;
+  string experiment_id = 11;
 
   //other_analysis_descriptor: string
-  string other_analysis_descriptor = 11;
+  string other_analysis_descriptor = 12;
     
   //other_analysis_completition_date: date (YYYY-MM-DD)
-  string other_analysis_completition_date = 12;
+  string other_analysis_completition_date = 13;
 
 //### ===================================================================== ###
 //# PROFYLE MODIFICATION END
