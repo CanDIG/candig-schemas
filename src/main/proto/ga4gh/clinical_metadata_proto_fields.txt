@@ -1,0 +1,205 @@
+###Patient
+Patient ID
+Other IDs
+Date of birth
+Gender
+Ethnicity
+Race
+Province of residence
+Date of death
+Cause of death
+Autopsy tissue for research
+Prior malignancy
+Date of prior malignancy
+Family history and risk factors
+Family history of predisposition syndrome
+Details of predisposition syndrome
+Genetic cancer syndrome
+Other genetic condition or significant comorbidity
+Occupational or environmental exposure
+
+
+###Enrollment
+Patient ID
+Enrollment institution
+Enrollment approval date
+Cross enrollment
+Other personalized medicine study name
+Other personalized medicine study ID
+Age at enrollment
+Eligibility category
+Status at Enrollment
+Primary oncologist name
+Primary oncologist contact
+Referring physician name
+Referring physician contact
+Summary of ID request
+Treating centre name
+Treating centre province
+
+
+###Consent
+Patient ID
+Consent ID
+Consent date
+Consent version
+Patient consented to
+Reason for rejection
+Was assent obtained
+Date of assent
+Assent form version
+if assent not obtained why not
+Reconsent date
+Reconsent version
+Consenting coordinator name
+Previously consented
+Name of other biobank
+Has consent been withdrawn
+Date of consent withdrawal
+Type of consent withdrawal
+Reason for consent withdrawal
+Consent form complete
+
+
+###Diagnosis
+Patient ID
+Diagnosis ID
+Diagnosis date
+Age at diagnosis
+Cancer type
+Classification
+Cancer site
+Histology
+Method of Definitive Diagnosis
+Sample type
+Sample site
+Tumor grade
+Grading system used
+Sites of Metastases
+Staging System
+Version or edition of the staging system
+Specific tumor stage at diagnosis
+Prognostic Biomarkers
+Biomarker quantification
+Additional molecular testing
+Additional test type
+Laboratory name
+Laboratory address
+Site of Metastases
+Staging system version
+Specific stage
+Cancer specific biomarkers
+Additional molecular diagnostic testing performed
+Additional test
+
+
+###Sample
+Patient ID
+Sample ID
+Diagnosis ID
+Local biobank ID
+Collection date
+Collection hospital
+Sample type
+Tissue disease state
+Anatomic site the sample obtained from
+Cancer type
+cancer subtype
+Pathology report ID
+Morphological code
+Topological code
+Shipping date
+Received date
+Quality control performed
+Estimated tumor content
+Quantity
+Units
+Associated biobank
+Other biobank
+SOP followed
+If not explain any deviation
+
+
+###Treatment
+Patient ID
+Course number
+Therapeutic modality
+Systematic Therapy Agent Name
+Treatment plan type
+Treatment intent
+Start date
+Stop date
+Reason for ending the treatment
+Protocol number or code
+Surgery details
+Radiotherapy details
+Chemotherapy details
+Hematopoietic cell transplant
+Immunotherapy details
+Response to treatment
+Response criteria used
+Date of recurrence or progression after this treatment
+Unexpected or unusual toxicity during treatment
+Drug list or agent
+Drug ID numbers
+
+
+###Outcome
+Patient ID
+Physical exam ID
+Date of assessment
+Disease response or status
+Other response classification
+Minimal residual disease assessment
+Method of response evaluation
+Response criteria used
+Summary stage
+Sites of any progression or recurrence
+Vital status
+Height
+Weight
+Height units
+Weight units
+Performance status
+
+
+###Complication
+Patient ID
+Date
+Late complication of therapy developed
+Late toxicity detail
+Suspected treatment induced neoplasm developed
+Treatment induced neoplasm details
+
+
+###TumourBoard
+Patient ID
+Date of Molecular tumor board
+Type of sample analyzed
+Type of tumour sample analyzed
+Analyses discussed
+Somatic sample type
+Normal expression comparator
+Disease expression comparator
+Has a germline variant been identified by profiling that may predispose to cancer
+Actionable target found
+Molecular tumor board recommendation
+Germline DNA sample id
+Tumor DNA sample id
+Tumor RNA sample id
+Germline SNV discussed
+Somatic SNV discussed
+CNVs discussed
+Structural variant discussed
+Classification of variants
+Clinical validation progress
+Type of validation
+Agent or Drug class
+Level of evidence for expression target agent match
+Did treatment plan change based on profiling result
+How treatment has altered based on profiling
+Reason treatment plan did not change based on profiling
+Details of treatment plan impact
+Patient or family informed of germline variant
+Patient has been referred to a hereditary cancer program based on this molecular profiling
+Summary report

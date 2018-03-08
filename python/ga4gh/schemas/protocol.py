@@ -34,6 +34,14 @@ from ga4gh.genotype_phenotype_service_pb2 import *  # noqa
 from ga4gh.rna_quantification_pb2 import *  # noqa
 from ga4gh.rna_quantification_service_pb2 import *  # noqa
 from ga4gh.peer_service_pb2 import *  # noqa
+### ======================================================================= ###
+### METADATA
+### ======================================================================= ###
+from ga4gh.clinical_metadata_pb2 import *  # noqa
+from ga4gh.clinical_metadata_service_pb2 import *  # noqa
+### ======================================================================= ###
+### METADATA END
+### ======================================================================= ###
 
 import ga4gh.common_pb2 as common
 

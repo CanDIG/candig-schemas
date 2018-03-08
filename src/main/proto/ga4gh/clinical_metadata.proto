@@ -1,0 +1,905 @@
+// This file defines the metadata objects.
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
+
+package ga4gh;
+
+
+// The "Patient" object refers to
+//
+
+message Patient {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Patient specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string otherIds = 9;
+
+    //
+    string dateOfBirth = 10;
+
+    //
+    string gender = 11;
+
+    //
+    string ethnicity = 12;
+
+    //
+    string race = 13;
+
+    //
+    string provinceOfResidence = 14;
+
+    //
+    string dateOfDeath = 15;
+
+    //
+    string causeOfDeath = 16;
+
+    //
+    string autopsyTissueForResearch = 17;
+
+    //
+    string priorMalignancy = 18;
+
+    //
+    string dateOfPriorMalignancy = 19;
+
+    //
+    string familyHistoryAndRiskFactors = 20;
+
+    //
+    string familyHistoryOfPredispositionSyndrome = 21;
+
+    //
+    string detailsOfPredispositionSyndrome = 22;
+
+    //
+    string geneticCancerSyndrome = 23;
+
+    //
+    string otherGeneticConditionOrSignificantComorbidity = 24;
+
+    //
+    string occupationalOrEnvironmentalExposure = 25;
+
+
+    } // End of the Patient object ============================================
+
+
+
+
+// The "Enrollment" object refers to
+//
+
+message Enrollment {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Enrollment specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string enrollmentInstitution = 9;
+
+    //
+    string enrollmentApprovalDate = 10;
+
+    //
+    string crossEnrollment = 11;
+
+    //
+    string otherPersonalizedMedicineStudyName = 12;
+
+    //
+    string otherPersonalizedMedicineStudyId = 13;
+
+    //
+    string ageAtEnrollment = 14;
+
+    //
+    string eligibilityCategory = 15;
+
+    //
+    string statusAtEnrollment = 16;
+
+    //
+    string primaryOncologistName = 17;
+
+    //
+    string primaryOncologistContact = 18;
+
+    //
+    string referringPhysicianName = 19;
+
+    //
+    string referringPhysicianContact = 20;
+
+    //
+    string summaryOfIdRequest = 21;
+
+    //
+    string treatingCentreName = 22;
+
+    //
+    string treatingCentreProvince = 23;
+
+
+    } // End of the Enrollment object ============================================
+
+
+
+
+// The "Consent" object refers to
+//
+
+message Consent {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Consent specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string consentId = 9;
+
+    //
+    string consentDate = 10;
+
+    //
+    string consentVersion = 11;
+
+    //
+    string patientConsentedTo = 12;
+
+    //
+    string reasonForRejection = 13;
+
+    //
+    string wasAssentObtained = 14;
+
+    //
+    string dateOfAssent = 15;
+
+    //
+    string assentFormVersion = 16;
+
+    //
+    string ifAssentNotObtainedWhyNot = 17;
+
+    //
+    string reconsentDate = 18;
+
+    //
+    string reconsentVersion = 19;
+
+    //
+    string consentingCoordinatorName = 20;
+
+    //
+    string previouslyConsented = 21;
+
+    //
+    string nameOfOtherBiobank = 22;
+
+    //
+    string hasConsentBeenWithdrawn = 23;
+
+    //
+    string dateOfConsentWithdrawal = 24;
+
+    //
+    string typeOfConsentWithdrawal = 25;
+
+    //
+    string reasonForConsentWithdrawal = 26;
+
+    //
+    string consentFormComplete = 27;
+
+
+    } // End of the Consent object ============================================
+
+
+
+
+// The "Diagnosis" object refers to
+//
+
+message Diagnosis {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Diagnosis specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string diagnosisId = 9;
+
+    //
+    string diagnosisDate = 10;
+
+    //
+    string ageAtDiagnosis = 11;
+
+    //
+    string cancerType = 12;
+
+    //
+    string classification = 13;
+
+    //
+    string cancerSite = 14;
+
+    //
+    string histology = 15;
+
+    //
+    string methodOfDefinitiveDiagnosis = 16;
+
+    //
+    string sampleType = 17;
+
+    //
+    string sampleSite = 18;
+
+    //
+    string tumorGrade = 19;
+
+    //
+    string gradingSystemUsed = 20;
+
+    //
+    string sitesOfMetastases = 21;
+
+    //
+    string stagingSystem = 22;
+
+    //
+    string versionOrEditionOfTheStagingSystem = 23;
+
+    //
+    string specificTumorStageAtDiagnosis = 24;
+
+    //
+    string prognosticBiomarkers = 25;
+
+    //
+    string biomarkerQuantification = 26;
+
+    //
+    string additionalMolecularTesting = 27;
+
+    //
+    string additionalTestType = 28;
+
+    //
+    string laboratoryName = 29;
+
+    //
+    string laboratoryAddress = 30;
+
+    //
+    string siteOfMetastases = 31;
+
+    //
+    string stagingSystemVersion = 32;
+
+    //
+    string specificStage = 33;
+
+    //
+    string cancerSpecificBiomarkers = 34;
+
+    //
+    string additionalMolecularDiagnosticTestingPerformed = 35;
+
+    //
+    string additionalTest = 36;
+
+
+    } // End of the Diagnosis object ============================================
+
+
+
+
+// The "Sample" object refers to
+//
+
+message Sample {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Sample specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string sampleId = 9;
+
+    //
+    string diagnosisId = 10;
+
+    //
+    string localBiobankId = 11;
+
+    //
+    string collectionDate = 12;
+
+    //
+    string collectionHospital = 13;
+
+    //
+    string sampleType = 14;
+
+    //
+    string tissueDiseaseState = 15;
+
+    //
+    string anatomicSiteTheSampleObtainedFrom = 16;
+
+    //
+    string cancerType = 17;
+
+    //
+    string cancerSubtype = 18;
+
+    //
+    string pathologyReportId = 19;
+
+    //
+    string morphologicalCode = 20;
+
+    //
+    string topologicalCode = 21;
+
+    //
+    string shippingDate = 22;
+
+    //
+    string receivedDate = 23;
+
+    //
+    string qualityControlPerformed = 24;
+
+    //
+    string estimatedTumorContent = 25;
+
+    //
+    string quantity = 26;
+
+    //
+    string units = 27;
+
+    //
+    string associatedBiobank = 28;
+
+    //
+    string otherBiobank = 29;
+
+    //
+    string sopFollowed = 30;
+
+    //
+    string ifNotExplainAnyDeviation = 31;
+
+
+    } // End of the Sample object ============================================
+
+
+
+
+// The "Treatment" object refers to
+//
+
+message Treatment {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Treatment specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string courseNumber = 9;
+
+    //
+    string therapeuticModality = 10;
+
+    //
+    string systematicTherapyAgentName = 11;
+
+    //
+    string treatmentPlanType = 12;
+
+    //
+    string treatmentIntent = 13;
+
+    //
+    string startDate = 14;
+
+    //
+    string stopDate = 15;
+
+    //
+    string reasonForEndingTheTreatment = 16;
+
+    //
+    string protocolNumberOrCode = 17;
+
+    //
+    string surgeryDetails = 18;
+
+    //
+    string radiotherapyDetails = 19;
+
+    //
+    string chemotherapyDetails = 20;
+
+    //
+    string hematopoieticCellTransplant = 21;
+
+    //
+    string immunotherapyDetails = 22;
+
+    //
+    string responseToTreatment = 23;
+
+    //
+    string responseCriteriaUsed = 24;
+
+    //
+    string dateOfRecurrenceOrProgressionAfterThisTreatment = 25;
+
+    //
+    string unexpectedOrUnusualToxicityDuringTreatment = 26;
+
+    //
+    string drugListOrAgent = 27;
+
+    //
+    string drugIdNumbers = 28;
+
+
+    } // End of the Treatment object ============================================
+
+
+
+
+// The "Outcome" object refers to
+//
+
+message Outcome {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Outcome specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string physicalExamId = 9;
+
+    //
+    string dateOfAssessment = 10;
+
+    //
+    string diseaseResponseOrStatus = 11;
+
+    //
+    string otherResponseClassification = 12;
+
+    //
+    string minimalResidualDiseaseAssessment = 13;
+
+    //
+    string methodOfResponseEvaluation = 14;
+
+    //
+    string responseCriteriaUsed = 15;
+
+    //
+    string summaryStage = 16;
+
+    //
+    string sitesOfAnyProgressionOrRecurrence = 17;
+
+    //
+    string vitalStatus = 18;
+
+    //
+    string height = 19;
+
+    //
+    string weight = 20;
+
+    //
+    string heightUnits = 21;
+
+    //
+    string weightUnits = 22;
+
+    //
+    string performanceStatus = 23;
+
+
+    } // End of the Outcome object ============================================
+
+
+
+
+// The "Complication" object refers to
+//
+
+message Complication {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Complication specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string date = 9;
+
+    //
+    string lateComplicationOfTherapyDeveloped = 10;
+
+    //
+    string lateToxicityDetail = 11;
+
+    //
+    string suspectedTreatmentInducedNeoplasmDeveloped = 12;
+
+    //
+    string treatmentInducedNeoplasmDetails = 13;
+
+
+    } // End of the Complication object ============================================
+
+
+
+
+// The "Tumourboard" object refers to
+//
+
+message Tumourboard {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Tumourboard specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+
+    //
+    string dateOfMolecularTumorBoard = 9;
+
+    //
+    string typeOfSampleAnalyzed = 10;
+
+    //
+    string typeOfTumourSampleAnalyzed = 11;
+
+    //
+    string analysesDiscussed = 12;
+
+    //
+    string somaticSampleType = 13;
+
+    //
+    string normalExpressionComparator = 14;
+
+    //
+    string diseaseExpressionComparator = 15;
+
+    //
+    string hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer = 16;
+
+    //
+    string actionableTargetFound = 17;
+
+    //
+    string molecularTumorBoardRecommendation = 18;
+
+    //
+    string germlineDnaSampleId = 19;
+
+    //
+    string tumorDnaSampleId = 20;
+
+    //
+    string tumorRnaSampleId = 21;
+
+    //
+    string germlineSnvDiscussed = 22;
+
+    //
+    string somaticSnvDiscussed = 23;
+
+    //
+    string cnvsDiscussed = 24;
+
+    //
+    string structuralVariantDiscussed = 25;
+
+    //
+    string classificationOfVariants = 26;
+
+    //
+    string clinicalValidationProgress = 27;
+
+    //
+    string typeOfValidation = 28;
+
+    //
+    string agentOrDrugClass = 29;
+
+    //
+    string levelOfEvidenceForExpressionTargetAgentMatch = 30;
+
+    //
+    string didTreatmentPlanChangeBasedOnProfilingResult = 31;
+
+    //
+    string howTreatmentHasAlteredBasedOnProfiling = 32;
+
+    //
+    string reasonTreatmentPlanDidNotChangeBasedOnProfiling = 33;
+
+    //
+    string detailsOfTreatmentPlanImpact = 34;
+
+    //
+    string patientOrFamilyInformedOfGermlineVariant = 35;
+
+    //
+    string patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling = 36;
+
+    //
+    string summaryReport = 37;
+
+
+    } // End of the Tumourboard object ========================================
