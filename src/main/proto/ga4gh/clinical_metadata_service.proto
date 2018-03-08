@@ -135,6 +135,7 @@ service ClinicalMetadataService {
             };
         };
 
+
     // ======================================================
     // Gets `Patient` by ID.
     // ======================================================
@@ -233,8 +234,8 @@ service ClinicalMetadataService {
                 get: "/v0.6.0a10/tumourboards/{tumourboard_id}"
             };
         };
-}
 
+}
 
 // ======================================================
 // Patient
@@ -285,14 +286,17 @@ message SearchEnrollmentsRequest {
     // Returns Enrollments with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /enrollments/{enrollment_id}`.
@@ -323,14 +327,17 @@ message SearchConsentsRequest {
     // Returns Consents with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /consents/{consent_id}`.
@@ -361,14 +368,17 @@ message SearchDiagnosissRequest {
     // Returns Diagnosiss with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /diagnosiss/{diagnosis_id}`.
@@ -399,14 +409,17 @@ message SearchSamplesRequest {
     // Returns Samples with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /samples/{sample_id}`.
@@ -437,14 +450,17 @@ message SearchTreatmentsRequest {
     // Returns Treatments with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /treatments/{treatment_id}`.
@@ -475,14 +491,17 @@ message SearchOutcomesRequest {
     // Returns Outcomes with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /outcomes/{outcome_id}`.
@@ -513,14 +532,17 @@ message SearchComplicationsRequest {
     // Returns Complications with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /complications/{complication_id}`.
@@ -551,14 +573,17 @@ message SearchTumourboardsRequest {
     // Returns Tumourboards with the given name found by case-sensitive string matching.
     string name = 2;
 
+    // Option to filter for a patient id
+    string patient_id = 3;
+
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
-    int32 page_size = 3;
+    int32 page_size = 4;
 
     // The continuation token, which is used to page through large result sets.
     // To get the next page of results, set this parameter to the value of
     // `nextPageToken` from the previous response.
-    string page_token = 4;
+    string page_token = 5;
     }
 
 // This request maps to the URL `GET /tumourboards/{tumourboard_id}`.
