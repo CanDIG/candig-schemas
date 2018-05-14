@@ -52,15 +52,15 @@ service ClinicalMetadataService {
         };
 
     // ======================================================
-    // Gets a list of Diagnosiss accessible through the API.
+    // Gets a list of Diagnoses accessible through the API.
     // ======================================================
-    // `POST /diagnosiss/search` must accept a JSON version of
-    // `SearchDiagnosissRequest` as the post body and will return a JSON version
-    // of `SearchDiagnosissResponse`.
-    rpc SearchDiagnosiss(SearchDiagnosissRequest)
-        returns (SearchDiagnosissResponse) {
+    // `POST /diagnoses/search` must accept a JSON version of
+    // `SearchDiagnosesRequest` as the post body and will return a JSON version
+    // of `SearchDiagnosesResponse`.
+    rpc SearchDiagnoses(SearchDiagnosesRequest)
+        returns (SearchDiagnosesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/diagnosiss/search"
+                post: "/v0.6.0a10/diagnoses/search"
                 body: "*"
             };
         };
@@ -172,11 +172,11 @@ service ClinicalMetadataService {
     // ======================================================
     // Gets `Diagnosis` by ID.
     // ======================================================
-    // `GET /diagnosiss/{id}` will return a JSON version of `Diagnosis`.
+    // `GET /diagnoses/{id}` will return a JSON version of `Diagnosis`.
     rpc GetDiagnosis(GetDiagnosisRequest)
         returns (Diagnosis) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/diagnosiss/{diagnosis_id}"
+                get: "/v0.6.0a10/diagnoses/{diagnosis_id}"
             };
         };
 
@@ -360,12 +360,12 @@ message SearchConsentsResponse {
 // ======================================================
 // Diagnosis
 // ======================================================
-// This request maps to the body of `POST /diagnosiss/search` as JSON.
-message SearchDiagnosissRequest {
+// This request maps to the body of `POST /diagnoses/search` as JSON.
+message SearchDiagnosesRequest {
     // Optionally specify the dataset to search within.
     string dataset_id = 1;
 
-    // Returns Diagnosiss with the given name found by case-sensitive string matching.
+    // Returns Diagnoses with the given name found by case-sensitive string matching.
     string name = 2;
 
     // Option to filter for a patient id
@@ -381,16 +381,16 @@ message SearchDiagnosissRequest {
     string page_token = 5;
     }
 
-// This request maps to the URL `GET /diagnosiss/{diagnosis_id}`.
+// This request maps to the URL `GET /diagnoses/{diagnosis_id}`.
 message GetDiagnosisRequest {
     // The ID of the diagnosis requested
     string diagnosis_id = 1;
     }
 
-//This is the response from `POST /diagnosiss/search` expressed as JSON.
-message SearchDiagnosissResponse {
-    // The list of diagnosiss.
-    repeated Diagnosis diagnosiss = 1;
+//This is the response from `POST /diagnoses/search` expressed as JSON.
+message SearchDiagnosesResponse {
+    // The list of diagnoses.
+    repeated Diagnosis diagnoses = 1;
 
     // The continuation token, which is used to page through large result sets.
     // Provide this value in a subsequent request to return the next page of
