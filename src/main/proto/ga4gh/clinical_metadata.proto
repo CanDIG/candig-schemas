@@ -43,57 +43,75 @@ message Patient {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string otherIds = 9;
+    string otherIds = 10;
+    int32 otherIdsTier = 11;
 
     //
-    string dateOfBirth = 10;
+    string dateOfBirth = 12;
+    int32 dateOfBirthTier = 13;
 
     //
-    string gender = 11;
+    string gender = 14;
+    int32 genderTier = 15;
 
     //
-    string ethnicity = 12;
+    string ethnicity = 16;
+    int32 ethnicityTier = 17;
 
     //
-    string race = 13;
+    string race = 18;
+    int32 raceTier = 19;
 
     //
-    string provinceOfResidence = 14;
+    string provinceOfResidence = 20;
+    int32 provinceOfResidenceTier = 21;
 
     //
-    string dateOfDeath = 15;
+    string dateOfDeath = 22;
+    int32 dateOfDeathTier = 23;
 
     //
-    string causeOfDeath = 16;
+    string causeOfDeath = 24;
+    int32 causeOfDeathTier = 25;
 
     //
-    string autopsyTissueForResearch = 17;
+    string autopsyTissueForResearch = 26;
+    int32 autopsyTissueForResearchTier = 27;
 
     //
-    string priorMalignancy = 18;
+    string priorMalignancy = 28;
+    int32 priorMalignancyTier = 29;
 
     //
-    string dateOfPriorMalignancy = 19;
+    string dateOfPriorMalignancy = 30;
+    int32 dateOfPriorMalignancyTier = 31;
 
     //
-    string familyHistoryAndRiskFactors = 20;
+    string familyHistoryAndRiskFactors = 32;
+    int32 familyHistoryAndRiskFactorsTier = 33;
 
     //
-    string familyHistoryOfPredispositionSyndrome = 21;
+    string familyHistoryOfPredispositionSyndrome = 34;
+    int32 familyHistoryOfPredispositionSyndromeTier = 35;
 
     //
-    string detailsOfPredispositionSyndrome = 22;
+    string detailsOfPredispositionSyndrome = 36;
+    int32 detailsOfPredispositionSyndromeTier = 37;
 
     //
-    string geneticCancerSyndrome = 23;
+    string geneticCancerSyndrome = 38;
+    int32 geneticCancerSyndromeTier = 39;
 
     //
-    string otherGeneticConditionOrSignificantComorbidity = 24;
+    string otherGeneticConditionOrSignificantComorbidity = 40;
+    int32 otherGeneticConditionOrSignificantComorbidityTier = 41;
 
     //
-    string occupationalOrEnvironmentalExposure = 25;
+    string occupationalOrEnvironmentalExposure = 42;
+    int32 occupationalOrEnvironmentalExposureTier = 43;
 
 
     } // End of the Patient object ============================================
@@ -137,51 +155,67 @@ message Enrollment {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string enrollmentInstitution = 9;
+    string enrollmentInstitution = 10;
+    int32 enrollmentInstitutionTier = 11;
 
     //
-    string enrollmentApprovalDate = 10;
+    string enrollmentApprovalDate = 12;
+    int32 enrollmentApprovalDateTier = 13;
 
     //
-    string crossEnrollment = 11;
+    string crossEnrollment = 14;
+    int32 crossEnrollmentTier = 15;
 
     //
-    string otherPersonalizedMedicineStudyName = 12;
+    string otherPersonalizedMedicineStudyName = 16;
+    int32 otherPersonalizedMedicineStudyNameTier = 17;
 
     //
-    string otherPersonalizedMedicineStudyId = 13;
+    string otherPersonalizedMedicineStudyId = 18;
+    int32 otherPersonalizedMedicineStudyIdTier = 19;
 
     //
-    string ageAtEnrollment = 14;
+    string ageAtEnrollment = 20;
+    int32 ageAtEnrollmentTier = 21;
 
     //
-    string eligibilityCategory = 15;
+    string eligibilityCategory = 22;
+    int32 eligibilityCategoryTier = 23;
 
     //
-    string statusAtEnrollment = 16;
+    string statusAtEnrollment = 24;
+    int32 statusAtEnrollmentTier = 25;
 
     //
-    string primaryOncologistName = 17;
+    string primaryOncologistName = 26;
+    int32 primaryOncologistNameTier = 27;
 
     //
-    string primaryOncologistContact = 18;
+    string primaryOncologistContact = 28;
+    int32 primaryOncologistContactTier = 29;
 
     //
-    string referringPhysicianName = 19;
+    string referringPhysicianName = 30;
+    int32 referringPhysicianNameTier = 31;
 
     //
-    string referringPhysicianContact = 20;
+    string referringPhysicianContact = 32;
+    int32 referringPhysicianContactTier = 33;
 
     //
-    string summaryOfIdRequest = 21;
+    string summaryOfIdRequest = 34;
+    int32 summaryOfIdRequestTier = 35;
 
     //
-    string treatingCentreName = 22;
+    string treatingCentreName = 36;
+    int32 treatingCentreNameTier = 37;
 
     //
-    string treatingCentreProvince = 23;
+    string treatingCentreProvince = 38;
+    int32 treatingCentreProvinceTier = 39;
 
 
     } // End of the Enrollment object ============================================
@@ -225,64 +259,83 @@ message Consent {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string consentId = 9;
+    string consentId = 10;
+    int32 consentIdTier = 11;
 
     //
-    string consentDate = 10;
+    string consentDate = 12;
+    int32 consentDateTier = 13;
 
     //
-    string consentVersion = 11;
+    string consentVersion = 14;
+    int32 consentVersionTier = 15;
 
     //
-    string patientConsentedTo = 12;
+    string patientConsentedTo = 16;
+    int32 patientConsentedToTier = 17;
 
     //
-    string reasonForRejection = 13;
+    string reasonForRejection = 18;
+    int32 reasonForRejectionTier = 19;
 
     //
-    string wasAssentObtained = 14;
+    string wasAssentObtained = 20;
+    int32 wasAssentObtainedTier = 21;
 
     //
-    string dateOfAssent = 15;
+    string dateOfAssent = 22;
+    int32 dateOfAssentTier = 23;
 
     //
-    string assentFormVersion = 16;
+    string assentFormVersion = 24;
+    int32 assentFormVersionTier = 25;
 
     //
-    string ifAssentNotObtainedWhyNot = 17;
+    string ifAssentNotObtainedWhyNot = 26;
+    int32 ifAssentNotObtainedWhyNotTier = 27;
 
     //
-    string reconsentDate = 18;
+    string reconsentDate = 28;
+    int32 reconsentDateTier = 29;
 
     //
-    string reconsentVersion = 19;
+    string reconsentVersion = 30;
+    int32 reconsentVersionTier = 31;
 
     //
-    string consentingCoordinatorName = 20;
+    string consentingCoordinatorName = 32;
+    int32 consentingCoordinatorNameTier = 33;
 
     //
-    string previouslyConsented = 21;
+    string previouslyConsented = 34;
+    int32 previouslyConsentedTier = 35;
 
     //
-    string nameOfOtherBiobank = 22;
+    string nameOfOtherBiobank = 36;
+    int32 nameOfOtherBiobankTier = 37;
 
     //
-    string hasConsentBeenWithdrawn = 23;
+    string hasConsentBeenWithdrawn = 38;
+    int32 hasConsentBeenWithdrawnTier = 39;
 
     //
-    string dateOfConsentWithdrawal = 24;
+    string dateOfConsentWithdrawal = 40;
+    int32 dateOfConsentWithdrawalTier = 41;
 
     //
-    string typeOfConsentWithdrawal = 25;
+    string typeOfConsentWithdrawal = 42;
+    int32 typeOfConsentWithdrawalTier = 43;
 
     //
-    string reasonForConsentWithdrawal = 26;
+    string reasonForConsentWithdrawal = 44;
+    int32 reasonForConsentWithdrawalTier = 45;
 
     //
-    string consentFormComplete = 27;
-
+    string consentFormComplete = 46;
+    int32 consentFormCompleteTier = 47;
 
     } // End of the Consent object ============================================
 
@@ -325,91 +378,119 @@ message Diagnosis {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string diagnosisId = 9;
+    string diagnosisId = 10;
+    int32 diagnosisIdTier = 11;
 
     //
-    string diagnosisDate = 10;
+    string diagnosisDate = 12;
+    int32 diagnosisDateTier = 13;
 
     //
-    string ageAtDiagnosis = 11;
+    string ageAtDiagnosis = 14;
+    int32 ageAtDiagnosisTier = 15;
 
     //
-    string cancerType = 12;
+    string cancerType = 16;
+    int32 cancerTypeTier = 17;
 
     //
-    string classification = 13;
+    string classification = 18;
+    int32 classificationTier = 19;
 
     //
-    string cancerSite = 14;
+    string cancerSite = 20;
+    int32 cancerSiteTier = 21;
 
     //
-    string histology = 15;
+    string histology = 22;
+    int32 histologyTier = 23;
 
     //
-    string methodOfDefinitiveDiagnosis = 16;
+    string methodOfDefinitiveDiagnosis = 24;
+    int32 methodOfDefinitiveDiagnosisTier = 25;
 
     //
-    string sampleType = 17;
+    string sampleType = 26;
+    int32 sampleTypeTier = 27;
 
     //
-    string sampleSite = 18;
+    string sampleSite = 28;
+    int32 sampleSiteTier = 29;
 
     //
-    string tumorGrade = 19;
+    string tumorGrade = 30;
+    int32 tumorGradeTier = 31;
 
     //
-    string gradingSystemUsed = 20;
+    string gradingSystemUsed = 32;
+    int32 gradingSystemUsedTier = 33;
 
     //
-    string sitesOfMetastases = 21;
+    string sitesOfMetastases = 34;
+    int32 sitesOfMetastasesTier = 35;
 
     //
-    string stagingSystem = 22;
+    string stagingSystem = 36;
+    int32 stagingSystemTier = 37;
 
     //
-    string versionOrEditionOfTheStagingSystem = 23;
+    string versionOrEditionOfTheStagingSystem = 38;
+    int32 versionOrEditionOfTheStagingSystemTier = 39;
 
     //
-    string specificTumorStageAtDiagnosis = 24;
+    string specificTumorStageAtDiagnosis = 40;
+    int32 specificTumorStageAtDiagnosisTier = 41;
 
     //
-    string prognosticBiomarkers = 25;
+    string prognosticBiomarkers = 42;
+    int32 prognosticBiomarkersTier = 43;
 
     //
-    string biomarkerQuantification = 26;
+    string biomarkerQuantification = 44;
+    int32 biomarkerQuantificationTier = 45;
 
     //
-    string additionalMolecularTesting = 27;
+    string additionalMolecularTesting = 46;
+    int32 additionalMolecularTestingTier = 47;
 
     //
-    string additionalTestType = 28;
+    string additionalTestType = 48;
+    int32 additionalTestTypeTier = 49;
 
     //
-    string laboratoryName = 29;
+    string laboratoryName = 50;
+    int32 laboratoryNameTier = 51;
 
     //
-    string laboratoryAddress = 30;
+    string laboratoryAddress = 52;
+    int32 laboratoryAddressTier = 53;
 
     //
-    string siteOfMetastases = 31;
+    string siteOfMetastases = 54;
+    int32 siteOfMetastasesTier = 55;
 
     //
-    string stagingSystemVersion = 32;
+    string stagingSystemVersion = 56;
+    int32 stagingSystemVersionTier = 57;
 
     //
-    string specificStage = 33;
+    string specificStage = 58;
+    int32 specificStageTier = 59;
 
     //
-    string cancerSpecificBiomarkers = 34;
+    string cancerSpecificBiomarkers = 60;
+    int32 cancerSpecificBiomarkersTier = 61;
 
     //
-    string additionalMolecularDiagnosticTestingPerformed = 35;
+    string additionalMolecularDiagnosticTestingPerformed = 62;
+    int32 additionalMolecularDiagnosticTestingPerformedTier = 63;
 
     //
-    string additionalTest = 36;
-
+    string additionalTest = 64;
+    int32 additionalTestTier = 65;
 
     } // End of the Diagnosis object ============================================
 
@@ -452,76 +533,99 @@ message Sample {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string sampleId = 9;
+    string sampleId = 10;
+    int32 sampleIdTier = 11;
 
     //
-    string diagnosisId = 10;
+    string diagnosisId = 12;
+    int32 diagnosisIdTier = 13;
 
     //
-    string localBiobankId = 11;
+    string localBiobankId = 14;
+    int32 localBiobankIdTier = 15;
 
     //
-    string collectionDate = 12;
+    string collectionDate = 16;
+    int32 collectionDateTier = 17;
 
     //
-    string collectionHospital = 13;
+    string collectionHospital = 18;
+    int32 collectionHospitalTier = 19;
 
     //
-    string sampleType = 14;
+    string sampleType = 20;
+    int32 sampleTypeTier = 21;
 
     //
-    string tissueDiseaseState = 15;
+    string tissueDiseaseState = 22;
+    int32 tissueDiseaseStateTier = 23;
 
     //
-    string anatomicSiteTheSampleObtainedFrom = 16;
+    string anatomicSiteTheSampleObtainedFrom = 24;
+    int32 anatomicSiteTheSampleObtainedFromTier = 25;
 
     //
-    string cancerType = 17;
+    string cancerType = 26;
+    int32 cancerTypeTier = 27;
 
     //
-    string cancerSubtype = 18;
+    string cancerSubtype = 28;
+    int32 cancerSubtypeTier = 29;
 
     //
-    string pathologyReportId = 19;
+    string pathologyReportId = 30;
+    int32 pathologyReportIdTier = 31;
 
     //
-    string morphologicalCode = 20;
+    string morphologicalCode = 32;
+    int32 morphologicalCodeTier = 33;
 
     //
-    string topologicalCode = 21;
+    string topologicalCode = 34;
+    int32 topologicalCodeTier = 35;
 
     //
-    string shippingDate = 22;
+    string shippingDate = 36;
+    int32 shippingDateTier = 37;
 
     //
-    string receivedDate = 23;
+    string receivedDate = 38;
+    int32 receivedDateTier = 39;
 
     //
-    string qualityControlPerformed = 24;
+    string qualityControlPerformed = 40;
+    int32 qualityControlPerformedTier = 41;
 
     //
-    string estimatedTumorContent = 25;
+    string estimatedTumorContent = 42;
+    int32 estimatedTumorContentTier = 43;
 
     //
-    string quantity = 26;
+    string quantity = 44;
+    int32 quantityTier = 45;
 
     //
-    string units = 27;
+    string units = 46;
+    int32 unitsTier = 47;
 
     //
-    string associatedBiobank = 28;
+    string associatedBiobank = 48;
+    int32 associatedBiobankTier = 49;
 
     //
-    string otherBiobank = 29;
+    string otherBiobank = 50;
+    int32 otherBiobankTier = 51;
 
     //
-    string sopFollowed = 30;
+    string sopFollowed = 52;
+    int32 sopFollowedTier = 53;
 
     //
-    string ifNotExplainAnyDeviation = 31;
-
+    string ifNotExplainAnyDeviation = 54;
+    int32 ifNotExplainAnyDeviationTier = 55;
 
     } // End of the Sample object ============================================
 
@@ -564,66 +668,87 @@ message Treatment {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string courseNumber = 9;
+    string courseNumber = 10;
+    int32 courseNumberTier = 11;
 
     //
-    string therapeuticModality = 10;
+    string therapeuticModality = 12;
+    int32 therapeuticModalityTier = 13;
 
     //
-    string systematicTherapyAgentName = 11;
+    string systematicTherapyAgentName = 14;
+    int32 systematicTherapyAgentNameTier = 15;
 
     //
-    string treatmentPlanType = 12;
+    string treatmentPlanType = 16;
+    int32 treatmentPlanTypeTier = 17;
 
     //
-    string treatmentIntent = 13;
+    string treatmentIntent = 18;
+    int32 treatmentIntentTier = 19;
 
     //
-    string startDate = 14;
+    string startDate = 20;
+    int32 startDateTier = 21;
 
     //
-    string stopDate = 15;
+    string stopDate = 22;
+    int32 stopDateTier = 23;
 
     //
-    string reasonForEndingTheTreatment = 16;
+    string reasonForEndingTheTreatment = 24;
+    int32 reasonForEndingTheTreatmentTier = 25;
 
     //
-    string protocolNumberOrCode = 17;
+    string protocolNumberOrCode = 26;
+    int32 protocolNumberOrCodeTier = 27;
 
     //
-    string surgeryDetails = 18;
+    string surgeryDetails = 28;
+    int32 surgeryDetailsTier = 29;
 
     //
-    string radiotherapyDetails = 19;
+    string radiotherapyDetails = 30;
+    int32 radiotherapyDetailsTier = 31;
 
     //
-    string chemotherapyDetails = 20;
+    string chemotherapyDetails = 32;
+    int32 chemotherapyDetailsTier = 33;
 
     //
-    string hematopoieticCellTransplant = 21;
+    string hematopoieticCellTransplant = 34;
+    int32 hematopoieticCellTransplantTier = 35;
 
     //
-    string immunotherapyDetails = 22;
+    string immunotherapyDetails = 36;
+    int32 immunotherapyDetailsTier = 37;
 
     //
-    string responseToTreatment = 23;
+    string responseToTreatment = 38;
+    int32 responseToTreatmentTier = 39;
 
     //
-    string responseCriteriaUsed = 24;
+    string responseCriteriaUsed = 40;
+    int32 responseCriteriaUsedTier = 41;
 
     //
-    string dateOfRecurrenceOrProgressionAfterThisTreatment = 25;
+    string dateOfRecurrenceOrProgressionAfterThisTreatment = 42;
+    int32 dateOfRecurrenceOrProgressionAfterThisTreatmentTier = 43;
 
     //
-    string unexpectedOrUnusualToxicityDuringTreatment = 26;
+    string unexpectedOrUnusualToxicityDuringTreatment = 44;
+    int32 unexpectedOrUnusualToxicityDuringTreatmentTier = 45;
 
     //
-    string drugListOrAgent = 27;
+    string drugListOrAgent = 46;
+    int32 drugListOrAgentTier = 47;
 
     //
-    string drugIdNumbers = 28;
+    string drugIdNumbers = 48;
+    int32 drugIdNumbersTier = 49;
 
 
     } // End of the Treatment object ============================================
@@ -667,52 +792,67 @@ message Outcome {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string physicalExamId = 9;
+    string physicalExamId = 10;
+    int32 physicalExamIdTier = 11;
 
     //
-    string dateOfAssessment = 10;
+    string dateOfAssessment = 12;
+    int32 dateOfAssessmentTier = 13;
 
     //
-    string diseaseResponseOrStatus = 11;
+    string diseaseResponseOrStatus = 14;
+    int32 diseaseResponseOrStatusTier = 15;
 
     //
-    string otherResponseClassification = 12;
+    string otherResponseClassification = 16;
+    int32 otherResponseClassificationTier = 17;
 
     //
-    string minimalResidualDiseaseAssessment = 13;
+    string minimalResidualDiseaseAssessment = 18;
+    int32 minimalResidualDiseaseAssessmentTier = 19;
 
     //
-    string methodOfResponseEvaluation = 14;
+    string methodOfResponseEvaluation = 20;
+    int32 methodOfResponseEvaluationTier = 21;
 
     //
-    string responseCriteriaUsed = 15;
+    string responseCriteriaUsed = 22;
+    int32 responseCriteriaUsedTier = 23;
 
     //
-    string summaryStage = 16;
+    string summaryStage = 24;
+    int32 summaryStageTier = 25;
 
     //
-    string sitesOfAnyProgressionOrRecurrence = 17;
+    string sitesOfAnyProgressionOrRecurrence = 26;
+    int32 sitesOfAnyProgressionOrRecurrenceTier = 27;
 
     //
-    string vitalStatus = 18;
+    string vitalStatus = 28;
+    int32 vitalStatusTier = 29;
 
     //
-    string height = 19;
+    string height = 30;
+    int32 heightTier = 31;
 
     //
-    string weight = 20;
+    string weight = 32;
+    int32 weightTier = 33;
 
     //
-    string heightUnits = 21;
+    string heightUnits = 34;
+    int32 heightUnitsTier = 35;
 
     //
-    string weightUnits = 22;
+    string weightUnits = 36;
+    int32 weightUnitsTier = 37;
 
     //
-    string performanceStatus = 23;
-
+    string performanceStatus = 38;
+    int32 performanceStatusTier = 39;
 
     } // End of the Outcome object ============================================
 
@@ -755,22 +895,27 @@ message Complication {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string date = 9;
+    string date = 10;
+    int32 dateTier = 11;
 
     //
-    string lateComplicationOfTherapyDeveloped = 10;
+    string lateComplicationOfTherapyDeveloped = 12;
+    int32 lateComplicationOfTherapyDevelopedTier = 13;
 
     //
-    string lateToxicityDetail = 11;
+    string lateToxicityDetail = 14;
+    int32 lateToxicityDetailTier = 15;
 
     //
-    string suspectedTreatmentInducedNeoplasmDeveloped = 12;
+    string suspectedTreatmentInducedNeoplasmDeveloped = 16;
+    int32 suspectedTreatmentInducedNeoplasmDevelopedTier = 17;
 
     //
-    string treatmentInducedNeoplasmDetails = 13;
-
+    string treatmentInducedNeoplasmDetails = 18;
+    int32 treatmentInducedNeoplasmDetailsTier = 19;
 
     } // End of the Complication object ============================================
 
@@ -813,93 +958,123 @@ message Tumourboard {
 
     //
     string patientId = 8;
+    int32 patientIdTier = 9;
 
     //
-    string dateOfMolecularTumorBoard = 9;
+    string dateOfMolecularTumorBoard = 10;
+    int32 dateOfMolecularTumorBoardTier = 11;
 
     //
-    string typeOfSampleAnalyzed = 10;
+    string typeOfSampleAnalyzed = 12;
+    int32 typeOfSampleAnalyzedTier = 13;
 
     //
-    string typeOfTumourSampleAnalyzed = 11;
+    string typeOfTumourSampleAnalyzed = 14;
+    int32 typeOfTumourSampleAnalyzedTier = 15;
 
     //
-    string analysesDiscussed = 12;
+    string analysesDiscussed = 16;
+    int32 analysesDiscussedTier = 17;
 
     //
-    string somaticSampleType = 13;
+    string somaticSampleType = 18;
+    int32 somaticSampleTypeTier = 19;
 
     //
-    string normalExpressionComparator = 14;
+    string normalExpressionComparator = 20;
+    int32 normalExpressionComparatorTier = 21;
 
     //
-    string diseaseExpressionComparator = 15;
+    string diseaseExpressionComparator = 22;
+    int32 diseaseExpressionComparatorTier = 23;
 
     //
-    string hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer = 16;
+    string hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer = 24;
+    int32 hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancerTier = 25;
 
     //
-    string actionableTargetFound = 17;
+    string actionableTargetFound = 26;
+    int32 actionableTargetFoundTier = 27;
 
     //
-    string molecularTumorBoardRecommendation = 18;
+    string molecularTumorBoardRecommendation = 28;
+    int32 molecularTumorBoardRecommendationTier = 29;
 
     //
-    string germlineDnaSampleId = 19;
+    string germlineDnaSampleId = 30;
+    int32 germlineDnaSampleIdTier = 31;
 
     //
-    string tumorDnaSampleId = 20;
+    string tumorDnaSampleId = 32;
+    int32 tumorDnaSampleIdTier = 33;
 
     //
-    string tumorRnaSampleId = 21;
+    string tumorRnaSampleId = 34;
+    int32 tumorRnaSampleIdTier = 35;
 
     //
-    string germlineSnvDiscussed = 22;
+    string germlineSnvDiscussed = 36;
+    int32 germlineSnvDiscussedTier = 37;
 
     //
-    string somaticSnvDiscussed = 23;
+    string somaticSnvDiscussed = 38;
+    int32 somaticSnvDiscussedTier = 39;
 
     //
-    string cnvsDiscussed = 24;
+    string cnvsDiscussed = 40;
+    int32 cnvsDiscussedTier = 41;
 
     //
-    string structuralVariantDiscussed = 25;
+    string structuralVariantDiscussed = 42;
+    int32 structuralVariantDiscussedTier = 43;
 
     //
-    string classificationOfVariants = 26;
+    string classificationOfVariants = 44;
+    int32 classificationOfVariantsTier = 45;
 
     //
-    string clinicalValidationProgress = 27;
+    string clinicalValidationProgress = 46;
+    int32 clinicalValidationProgressTier = 47;
 
     //
-    string typeOfValidation = 28;
+    string typeOfValidation = 48;
+    int32 typeOfValidationTier = 49;
 
     //
-    string agentOrDrugClass = 29;
+    string agentOrDrugClass = 50;
+    int32 agentOrDrugClassTier = 51;
 
     //
-    string levelOfEvidenceForExpressionTargetAgentMatch = 30;
+    string levelOfEvidenceForExpressionTargetAgentMatch = 52;
+    int32 levelOfEvidenceForExpressionTargetAgentMatchTier = 53;
 
     //
-    string didTreatmentPlanChangeBasedOnProfilingResult = 31;
+    string didTreatmentPlanChangeBasedOnProfilingResult = 54;
+    int32 didTreatmentPlanChangeBasedOnProfilingResultTier = 55;
 
     //
-    string howTreatmentHasAlteredBasedOnProfiling = 32;
+    string howTreatmentHasAlteredBasedOnProfiling = 56;
+    int32 howTreatmentHasAlteredBasedOnProfilingTier = 57;
 
     //
-    string reasonTreatmentPlanDidNotChangeBasedOnProfiling = 33;
+    string reasonTreatmentPlanDidNotChangeBasedOnProfiling = 58;
+    int32 reasonTreatmentPlanDidNotChangeBasedOnProfilingTier = 59;
 
     //
-    string detailsOfTreatmentPlanImpact = 34;
+    string detailsOfTreatmentPlanImpact = 60;
+    int32 detailsOfTreatmentPlanImpactTier = 61;
 
     //
-    string patientOrFamilyInformedOfGermlineVariant = 35;
+    string patientOrFamilyInformedOfGermlineVariant = 62;
+    int32 patientOrFamilyInformedOfGermlineVariantTier = 63;
 
     //
-    string patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling = 36;
+    string patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling = 64;
+    int32 patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfilingTier = 65;
 
     //
-    string summaryReport = 37;
+    string summaryReport = 66;
+    int32 summaryReportTier = 67;
 
 
     } // End of the Tumourboard object ========================================
