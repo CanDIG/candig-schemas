@@ -113,6 +113,9 @@ message Sequencing {
     string rnaReadLength = 20;
     int32 rnaReadLengthTier = 21;
 
+    string pcrCycles = 22;
+    int32 pcrCyclesTier = 23;
+
     }
 
 
