@@ -1,0 +1,141 @@
+// This file defines types used for reach queries and responses.
+
+syntax = "proto3";
+
+import "ga4gh/schemas/google/api/annotations.proto";
+import "ga4gh/schemas/ga4gh/clinical_metadata.proto";
+import "ga4gh/schemas/ga4gh/variants.proto";
+
+package ga4gh;
+
+
+service SearchService {
+    rpc GetItem (SearchQueryRequest) 
+        returns (SearchQueryResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/search"
+                body: "*"
+            };
+    };
+};
+
+
+// Excusively contains a single statement about any field of any of tables
+message Filter {
+
+    // Name one of the table field on which the filter should be applied
+    string field = 1;
+
+    // Relationship between field and value
+    string operator = 2;
+
+    // A level of the field content
+    string value = 3;
+}
+
+
+// Contains statements exclusively on a single table
+message Component {
+
+    // A unique identifier of the current component
+    string component_id = 1;
+
+    // Specifies the table on which the filters should be applied
+    string table = 2;
+
+    // List of filter statement for this table
+    repeated Filter filters = 3;
+}
+
+
+// An operand is either a component or a nested logical statement, like:
+// AND("A", OR("B","C")) in which "A" is a component_id, while OR("B","C") is
+// the nested logic
+message Operand {
+
+    //Either a logical statement or a single component
+    oneof component {
+
+        // A valid compoent_id is defined in a message Component
+        string component_id = 1;
+
+        // A nested logical statement between two or more other components
+        Logic nested = 2;
+    }
+}
+
+
+// High level logical statement between components
+message Logic {
+
+        // List of component_ids connected by AND logical statement
+        repeated Operand and = 1;
+
+        // List of component_ids connected by OR logical statement
+        repeated Operand or = 2;
+}
+
+
+// Definition of which table and which fields should be returned
+message Result {
+
+    // Name of a single table from which fields are requested
+    string table = 1;
+
+    // List of fields of the requested table
+    repeated string field = 2;
+}
+
+
+//Request object for the search function
+message SearchQueryRequest {
+
+    // Definition of the high order logical operations on components
+    Logic logic = 1;
+
+    // Array of single table queries
+    repeated Component components = 2;
+
+    // Definition of the requested tables and fields
+    repeated Result results = 3;
+
+    // Limit of the maximum number of records
+    int32 limit = 4;
+}
+
+
+//Response object for the search function
+message SearchQueryResponse {
+
+    // Objects from clinical metadata
+    
+    // List of patients
+    repeated Patient patients = 1;
+    // List of enrollments
+    repeated Enrollment enrollments = 2;
+    // List of consents
+    repeated Consent consents = 3;
+    // List of diagnoses
+    repeated Diagnosis diagnoses = 4;
+    // List of samples
+    repeated Sample samples = 5;
+    // List of treatments
+    repeated Treatment treatments = 6;
+    // List of outcomes
+    repeated Outcome outcomes = 7;
+    // List of complications
+    repeated Complication complications = 8;
+    // List of tumourboard results
+    repeated Tumourboard tumourboards = 9;
+
+    //Objects from variants
+
+    // List of variants
+  	repeated Variant variants = 10;
+    
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 11;
+    }
+
