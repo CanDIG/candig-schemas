@@ -53,26 +53,35 @@ message Component {
 // the nested logic
 message Operand {
 
-    //Either a logical statement or a single component
     oneof component {
-
-        // A valid compoent_id is defined in a message Component
+        // A valid component_id is defined in a message Component
         string component_id = 1;
-
+    
         // A nested logical statement between two or more other components
         Logic nested = 2;
     }
 }
 
 
+message Operands {
+
+    // Array of operands connected by AND or OR statement
+    repeated Operand operand = 1;
+}
+
+
 // High level logical statement between components
 message Logic {
 
-        // List of component_ids connected by AND logical statement
-        repeated Operand and = 1;
+    // The outermost logical operation is either an AND or an OR
+    oneof Andor {
 
-        // List of component_ids connected by OR logical statement
-        repeated Operand or = 2;
+        // Component_ids connected by AND logical statement
+        Operands and = 1;
+
+        // Component_ids connected by OR logical statement
+        Operands or = 2;
+    }
 }
 
 
