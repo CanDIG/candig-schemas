@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/variant_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n)ga4gh/schemas/ga4gh/variant_service.proto\x12\x05ga4gh\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"]\n\x19SearchVariantSetsResponse\x12\'\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32\x11.ga4gh.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xa0\x01\n\x15SearchVariantsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"S\n\x16SearchVariantsResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"T\n\x16SearchCallSetsResponse\x12!\n\tcall_sets\x18\x01 \x03(\x0b\x32\x0e.ga4gh.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t\"j\n\x1fSearchVariantsByGeneNameRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"]\n SearchVariantsByGeneNameResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd0\x06\n\x0eVariantService\x12\x80\x01\n\x11SearchVariantSets\x12\x1f.ga4gh.SearchVariantSetsRequest\x1a .ga4gh.SearchVariantSetsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/variantsets/search:\x01*\x12\x97\x01\n\x18SearchVariantsByGeneName\x12&.ga4gh.SearchVariantsByGeneNameRequest\x1a\'.ga4gh.SearchVariantsByGeneNameResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/variantsbygenesearch:\x01*\x12p\n\rGetVariantSet\x12\x1b.ga4gh.GetVariantSetRequest\x1a\x11.ga4gh.VariantSet\"/\x82\xd3\xe4\x93\x02)\x12\'/v0.6.0a10/variantsets/{variant_set_id}\x12t\n\x0eSearchVariants\x12\x1c.ga4gh.SearchVariantsRequest\x1a\x1d.ga4gh.SearchVariantsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/variants/search:\x01*\x12`\n\nGetVariant\x12\x18.ga4gh.GetVariantRequest\x1a\x0e.ga4gh.Variant\"(\x82\xd3\xe4\x93\x02\"\" /v0.6.0a10/variants/{variant_id}\x12t\n\x0eSearchCallSets\x12\x1c.ga4gh.SearchCallSetsRequest\x1a\x1d.ga4gh.SearchCallSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/callsets/search:\x01*\x12\x61\n\nGetCallSet\x12\x18.ga4gh.GetCallSetRequest\x1a\x0e.ga4gh.CallSet\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/callsets/{call_set_id}b\x06proto3')
+  serialized_pb=_b('\n)ga4gh/schemas/ga4gh/variant_service.proto\x12\x05ga4gh\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"]\n\x19SearchVariantSetsResponse\x12\'\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32\x11.ga4gh.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xa0\x01\n\x15SearchVariantsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"f\n\x1bSearchVariantsByGeneRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\"S\n\x16SearchVariantsResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"T\n\x16SearchCallSetsResponse\x12!\n\tcall_sets\x18\x01 \x03(\x0b\x32\x0e.ga4gh.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t2\xbe\x06\n\x0eVariantService\x12\x80\x01\n\x11SearchVariantSets\x12\x1f.ga4gh.SearchVariantSetsRequest\x1a .ga4gh.SearchVariantSetsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/variantsets/search:\x01*\x12p\n\rGetVariantSet\x12\x1b.ga4gh.GetVariantSetRequest\x1a\x11.ga4gh.VariantSet\"/\x82\xd3\xe4\x93\x02)\x12\'/v0.6.0a10/variantsets/{variant_set_id}\x12t\n\x0eSearchVariants\x12\x1c.ga4gh.SearchVariantsRequest\x1a\x1d.ga4gh.SearchVariantsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/variants/search:\x01*\x12\x85\x01\n\x14SearchVariantsByGene\x12\".ga4gh.SearchVariantsByGeneRequest\x1a\x1d.ga4gh.SearchVariantsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/variantsbygenesearch:\x01*\x12`\n\nGetVariant\x12\x18.ga4gh.GetVariantRequest\x1a\x0e.ga4gh.Variant\"(\x82\xd3\xe4\x93\x02\"\" /v0.6.0a10/variants/{variant_id}\x12t\n\x0eSearchCallSets\x12\x1c.ga4gh.SearchCallSetsRequest\x1a\x1d.ga4gh.SearchCallSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/callsets/search:\x01*\x12\x61\n\nGetCallSet\x12\x18.ga4gh.GetCallSetRequest\x1a\x0e.ga4gh.CallSet\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/callsets/{call_set_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -41,21 +41,21 @@ _SEARCHVARIANTSETSREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_size', full_name='ga4gh.SearchVariantSetsRequest.page_size', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_token', full_name='ga4gh.SearchVariantSetsRequest.page_token', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -86,14 +86,14 @@ _SEARCHVARIANTSETSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='next_page_token', full_name='ga4gh.SearchVariantSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -124,7 +124,7 @@ _GETVARIANTSETREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -155,49 +155,49 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='call_set_ids', full_name='ga4gh.SearchVariantsRequest.call_set_ids', index=1,
       number=2, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='reference_name', full_name='ga4gh.SearchVariantsRequest.reference_name', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='start', full_name='ga4gh.SearchVariantsRequest.start', index=3,
       number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='end', full_name='ga4gh.SearchVariantsRequest.end', index=4,
       number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_size', full_name='ga4gh.SearchVariantsRequest.page_size', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_token', full_name='ga4gh.SearchVariantsRequest.page_token', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -215,27 +215,41 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
 )
 
 
-_SEARCHVARIANTSRESPONSE = _descriptor.Descriptor(
-  name='SearchVariantsResponse',
-  full_name='ga4gh.SearchVariantsResponse',
+_SEARCHVARIANTSBYGENEREQUEST = _descriptor.Descriptor(
+  name='SearchVariantsByGeneRequest',
+  full_name='ga4gh.SearchVariantsByGeneRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variants', full_name='ga4gh.SearchVariantsResponse.variants', index=0,
-      number=1, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
+      name='dataset_id', full_name='ga4gh.SearchVariantsByGeneRequest.dataset_id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchVariantsResponse.next_page_token', index=1,
+      name='gene', full_name='ga4gh.SearchVariantsByGeneRequest.gene', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='page_size', full_name='ga4gh.SearchVariantsByGeneRequest.page_size', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='page_token', full_name='ga4gh.SearchVariantsByGeneRequest.page_token', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -249,7 +263,45 @@ _SEARCHVARIANTSRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=525,
-  serialized_end=608,
+  serialized_end=627,
+)
+
+
+_SEARCHVARIANTSRESPONSE = _descriptor.Descriptor(
+  name='SearchVariantsResponse',
+  full_name='ga4gh.SearchVariantsResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='variants', full_name='ga4gh.SearchVariantsResponse.variants', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='next_page_token', full_name='ga4gh.SearchVariantsResponse.next_page_token', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=629,
+  serialized_end=712,
 )
 
 
@@ -266,7 +318,7 @@ _GETVARIANTREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -279,8 +331,8 @@ _GETVARIANTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=610,
-  serialized_end=649,
+  serialized_start=714,
+  serialized_end=753,
 )
 
 
@@ -297,35 +349,35 @@ _SEARCHCALLSETSREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='name', full_name='ga4gh.SearchCallSetsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='biosample_id', full_name='ga4gh.SearchCallSetsRequest.biosample_id', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_size', full_name='ga4gh.SearchCallSetsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='page_token', full_name='ga4gh.SearchCallSetsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -338,8 +390,8 @@ _SEARCHCALLSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=651,
-  serialized_end=773,
+  serialized_start=755,
+  serialized_end=877,
 )
 
 
@@ -356,14 +408,14 @@ _SEARCHCALLSETSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='next_page_token', full_name='ga4gh.SearchCallSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -376,8 +428,8 @@ _SEARCHCALLSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=775,
-  serialized_end=859,
+  serialized_start=879,
+  serialized_end=963,
 )
 
 
@@ -394,7 +446,7 @@ _GETCALLSETREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -407,115 +459,23 @@ _GETCALLSETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=861,
-  serialized_end=901,
-)
-
-
-_SEARCHVARIANTSBYGENENAMEREQUEST = _descriptor.Descriptor(
-  name='SearchVariantsByGeneNameRequest',
-  full_name='ga4gh.SearchVariantsByGeneNameRequest',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchVariantsByGeneNameRequest.dataset_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='gene', full_name='ga4gh.SearchVariantsByGeneNameRequest.gene', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchVariantsByGeneNameRequest.page_size', index=2,
-      number=3, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchVariantsByGeneNameRequest.page_token', index=3,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=903,
-  serialized_end=1009,
-)
-
-
-_SEARCHVARIANTSBYGENENAMERESPONSE = _descriptor.Descriptor(
-  name='SearchVariantsByGeneNameResponse',
-  full_name='ga4gh.SearchVariantsByGeneNameResponse',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='variants', full_name='ga4gh.SearchVariantsByGeneNameResponse.variants', index=0,
-      number=1, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchVariantsByGeneNameResponse.next_page_token', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1011,
-  serialized_end=1104,
+  serialized_start=965,
+  serialized_end=1005,
 )
 
 _SEARCHVARIANTSETSRESPONSE.fields_by_name['variant_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANTSET
 _SEARCHVARIANTSRESPONSE.fields_by_name['variants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANT
 _SEARCHCALLSETSRESPONSE.fields_by_name['call_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._CALLSET
-_SEARCHVARIANTSBYGENENAMERESPONSE.fields_by_name['variants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANT
 DESCRIPTOR.message_types_by_name['SearchVariantSetsRequest'] = _SEARCHVARIANTSETSREQUEST
 DESCRIPTOR.message_types_by_name['SearchVariantSetsResponse'] = _SEARCHVARIANTSETSRESPONSE
 DESCRIPTOR.message_types_by_name['GetVariantSetRequest'] = _GETVARIANTSETREQUEST
 DESCRIPTOR.message_types_by_name['SearchVariantsRequest'] = _SEARCHVARIANTSREQUEST
+DESCRIPTOR.message_types_by_name['SearchVariantsByGeneRequest'] = _SEARCHVARIANTSBYGENEREQUEST
 DESCRIPTOR.message_types_by_name['SearchVariantsResponse'] = _SEARCHVARIANTSRESPONSE
 DESCRIPTOR.message_types_by_name['GetVariantRequest'] = _GETVARIANTREQUEST
 DESCRIPTOR.message_types_by_name['SearchCallSetsRequest'] = _SEARCHCALLSETSREQUEST
 DESCRIPTOR.message_types_by_name['SearchCallSetsResponse'] = _SEARCHCALLSETSRESPONSE
 DESCRIPTOR.message_types_by_name['GetCallSetRequest'] = _GETCALLSETREQUEST
-DESCRIPTOR.message_types_by_name['SearchVariantsByGeneNameRequest'] = _SEARCHVARIANTSBYGENENAMEREQUEST
-DESCRIPTOR.message_types_by_name['SearchVariantsByGeneNameResponse'] = _SEARCHVARIANTSBYGENENAMERESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 SearchVariantSetsRequest = _reflection.GeneratedProtocolMessageType('SearchVariantSetsRequest', (_message.Message,), dict(
@@ -545,6 +505,13 @@ SearchVariantsRequest = _reflection.GeneratedProtocolMessageType('SearchVariants
   # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantsRequest)
   ))
 _sym_db.RegisterMessage(SearchVariantsRequest)
+
+SearchVariantsByGeneRequest = _reflection.GeneratedProtocolMessageType('SearchVariantsByGeneRequest', (_message.Message,), dict(
+  DESCRIPTOR = _SEARCHVARIANTSBYGENEREQUEST,
+  __module__ = 'ga4gh.schemas.ga4gh.variant_service_pb2'
+  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantsByGeneRequest)
+  ))
+_sym_db.RegisterMessage(SearchVariantsByGeneRequest)
 
 SearchVariantsResponse = _reflection.GeneratedProtocolMessageType('SearchVariantsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHVARIANTSRESPONSE,
@@ -581,19 +548,83 @@ GetCallSetRequest = _reflection.GeneratedProtocolMessageType('GetCallSetRequest'
   ))
 _sym_db.RegisterMessage(GetCallSetRequest)
 
-SearchVariantsByGeneNameRequest = _reflection.GeneratedProtocolMessageType('SearchVariantsByGeneNameRequest', (_message.Message,), dict(
-  DESCRIPTOR = _SEARCHVARIANTSBYGENENAMEREQUEST,
-  __module__ = 'ga4gh.schemas.ga4gh.variant_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantsByGeneNameRequest)
-  ))
-_sym_db.RegisterMessage(SearchVariantsByGeneNameRequest)
 
-SearchVariantsByGeneNameResponse = _reflection.GeneratedProtocolMessageType('SearchVariantsByGeneNameResponse', (_message.Message,), dict(
-  DESCRIPTOR = _SEARCHVARIANTSBYGENENAMERESPONSE,
-  __module__ = 'ga4gh.schemas.ga4gh.variant_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchVariantsByGeneNameResponse)
-  ))
-_sym_db.RegisterMessage(SearchVariantsByGeneNameResponse)
 
+_VARIANTSERVICE = _descriptor.ServiceDescriptor(
+  name='VariantService',
+  full_name='ga4gh.VariantService',
+  file=DESCRIPTOR,
+  index=0,
+  options=None,
+  serialized_start=1008,
+  serialized_end=1838,
+  methods=[
+  _descriptor.MethodDescriptor(
+    name='SearchVariantSets',
+    full_name='ga4gh.VariantService.SearchVariantSets',
+    index=0,
+    containing_service=None,
+    input_type=_SEARCHVARIANTSETSREQUEST,
+    output_type=_SEARCHVARIANTSETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\"\"\035/v0.6.0a10/variantsets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetVariantSet',
+    full_name='ga4gh.VariantService.GetVariantSet',
+    index=1,
+    containing_service=None,
+    input_type=_GETVARIANTSETREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANTSET,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002)\022\'/v0.6.0a10/variantsets/{variant_set_id}')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchVariants',
+    full_name='ga4gh.VariantService.SearchVariants',
+    index=2,
+    containing_service=None,
+    input_type=_SEARCHVARIANTSREQUEST,
+    output_type=_SEARCHVARIANTSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\037\"\032/v0.6.0a10/variants/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchVariantsByGene',
+    full_name='ga4gh.VariantService.SearchVariantsByGene',
+    index=3,
+    containing_service=None,
+    input_type=_SEARCHVARIANTSBYGENEREQUEST,
+    output_type=_SEARCHVARIANTSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002$\"\037/v0.6.0a10/variantsbygenesearch:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetVariant',
+    full_name='ga4gh.VariantService.GetVariant',
+    index=4,
+    containing_service=None,
+    input_type=_GETVARIANTREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANT,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\"\" /v0.6.0a10/variants/{variant_id}')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='SearchCallSets',
+    full_name='ga4gh.VariantService.SearchCallSets',
+    index=5,
+    containing_service=None,
+    input_type=_SEARCHCALLSETSREQUEST,
+    output_type=_SEARCHCALLSETSRESPONSE,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\037\"\032/v0.6.0a10/callsets/search:\001*')),
+  ),
+  _descriptor.MethodDescriptor(
+    name='GetCallSet',
+    full_name='ga4gh.VariantService.GetCallSet',
+    index=6,
+    containing_service=None,
+    input_type=_GETCALLSETREQUEST,
+    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._CALLSET,
+    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002#\022!/v0.6.0a10/callsets/{call_set_id}')),
+  ),
+])
+_sym_db.RegisterServiceDescriptor(_VARIANTSERVICE)
+
+DESCRIPTOR.services_by_name['VariantService'] = _VARIANTSERVICE
 
 # @@protoc_insertion_point(module_scope)
