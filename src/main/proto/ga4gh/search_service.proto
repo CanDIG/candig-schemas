@@ -3,6 +3,7 @@
 syntax = "proto3";
 
 import "ga4gh/schemas/google/api/annotations.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
 import "ga4gh/schemas/ga4gh/clinical_metadata.proto";
 import "ga4gh/schemas/ga4gh/variants.proto";
 
@@ -20,20 +21,6 @@ service SearchService {
 };
 
 
-// Excusively contains a single statement about any field of any of tables
-message Filter {
-
-    // Name one of the table field on which the filter should be applied
-    string field = 1;
-
-    // Relationship between field and value
-    string operator = 2;
-
-    // A level of the field content
-    string value = 3;
-}
-
-
 // Contains statements exclusively on a single table
 message Component {
 
@@ -48,41 +35,35 @@ message Component {
 }
 
 
-// An operand is either a component or a nested logical statement, like:
-// AND("A", OR("B","C")) in which "A" is a component_id, while OR("B","C") is
-// the nested logic
-message Operand {
+message Or_type {
 
-    oneof component {
-        // A valid component_id is defined in a message Component
-        string component_id = 1;
+    string id = 1;
     
-        // A nested logical statement between two or more other components
-        Logic nested = 2;
-    }
+    repeated And_type and = 2;
+    
+    repeated Or_type or = 3;
+
 }
 
 
-message Operands {
+message And_type {
 
-    // Array of operands connected by AND or OR statement
-    repeated Operand operand = 1;
+    string id = 1;
+    
+    repeated And_type and = 2;
+    
+    repeated Or_type or = 3;
+
 }
 
 
-// High level logical statement between components
 message Logic {
 
-    // The outermost logical operation is either an AND or an OR
-    oneof Andor {
-
-        // Component_ids connected by AND logical statement
-        Operands and = 1;
-
-        // Component_ids connected by OR logical statement
-        Operands or = 2;
-    }
+    repeated And_type and = 1;
+    
+    repeated Or_type or = 2;
 }
+
 
 
 // Definition of which table and which fields should be returned

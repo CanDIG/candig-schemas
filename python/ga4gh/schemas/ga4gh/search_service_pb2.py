@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/search_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\"P\n\tComponent\x12\x14\n\x0c\x63omponent_id\x18\x01 \x01(\t\x12\r\n\x05table\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\"N\n\x07Operand\x12\x16\n\x0c\x63omponent_id\x18\x01 \x01(\tH\x00\x12\x1e\n\x06nested\x18\x02 \x01(\x0b\x32\x0c.ga4gh.LogicH\x00\x42\x0b\n\tcomponent\"+\n\x08Operands\x12\x1f\n\x07operand\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Operand\"O\n\x05Logic\x12\x1e\n\x03\x61nd\x18\x01 \x01(\x0b\x32\x0f.ga4gh.OperandsH\x00\x12\x1d\n\x02or\x18\x02 \x01(\x0b\x32\x0f.ga4gh.OperandsH\x00\x42\x07\n\x05\x41ndor\"&\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\"\xad\x01\n\x12SearchQueryRequest\x12\x1b\n\x05logic\x18\x01 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x02 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x03 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x04 \x01(\x05\x12\x11\n\tpage_size\x18\x05 \x01(\x05\x12\x12\n\npage_token\x18\x06 \x01(\t\"\x9f\x03\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x0b \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
+  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\"P\n\tComponent\x12\x14\n\x0c\x63omponent_id\x18\x01 \x01(\t\x12\r\n\x05table\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\"O\n\x07Or_type\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1c\n\x03\x61nd\x18\x02 \x03(\x0b\x32\x0f.ga4gh.And_type\x12\x1a\n\x02or\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Or_type\"P\n\x08\x41nd_type\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1c\n\x03\x61nd\x18\x02 \x03(\x0b\x32\x0f.ga4gh.And_type\x12\x1a\n\x02or\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Or_type\"A\n\x05Logic\x12\x1c\n\x03\x61nd\x18\x01 \x03(\x0b\x32\x0f.ga4gh.And_type\x12\x1a\n\x02or\x18\x02 \x03(\x0b\x32\x0e.ga4gh.Or_type\"&\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\"\xad\x01\n\x12SearchQueryRequest\x12\x1b\n\x05logic\x18\x01 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x02 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x03 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x04 \x01(\x05\x12\x11\n\tpage_size\x18\x05 \x01(\x05\x12\x12\n\npage_token\x18\x06 \x01(\t\"\x9f\x03\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x0b \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,])
 
@@ -75,57 +75,30 @@ _COMPONENT = _descriptor.Descriptor(
 )
 
 
-_OPERAND = _descriptor.Descriptor(
-  name='Operand',
-  full_name='ga4gh.Operand',
+_OR_TYPE = _descriptor.Descriptor(
+  name='Or_type',
+  full_name='ga4gh.Or_type',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='component_id', full_name='ga4gh.Operand.component_id', index=0,
+      name='id', full_name='ga4gh.Or_type.id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='nested', full_name='ga4gh.Operand.nested', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='and', full_name='ga4gh.Or_type.and', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-    _descriptor.OneofDescriptor(
-      name='component', full_name='ga4gh.Operand.component',
-      index=0, containing_type=None, fields=[]),
-  ],
-  serialized_start=292,
-  serialized_end=370,
-)
-
-
-_OPERANDS = _descriptor.Descriptor(
-  name='Operands',
-  full_name='ga4gh.Operands',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
     _descriptor.FieldDescriptor(
-      name='operand', full_name='ga4gh.Operands.operand', index=0,
-      number=1, type=11, cpp_type=10, label=3,
+      name='or', full_name='ga4gh.Or_type.or', index=2,
+      number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -142,29 +115,36 @@ _OPERANDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=372,
-  serialized_end=415,
+  serialized_start=292,
+  serialized_end=371,
 )
 
 
-_LOGIC = _descriptor.Descriptor(
-  name='Logic',
-  full_name='ga4gh.Logic',
+_AND_TYPE = _descriptor.Descriptor(
+  name='And_type',
+  full_name='ga4gh.And_type',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='and', full_name='ga4gh.Logic.and', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='id', full_name='ga4gh.And_type.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='or', full_name='ga4gh.Logic.or', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='and', full_name='ga4gh.And_type.and', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='or', full_name='ga4gh.And_type.or', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -179,12 +159,47 @@ _LOGIC = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
-    _descriptor.OneofDescriptor(
-      name='Andor', full_name='ga4gh.Logic.Andor',
-      index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=417,
-  serialized_end=496,
+  serialized_start=373,
+  serialized_end=453,
+)
+
+
+_LOGIC = _descriptor.Descriptor(
+  name='Logic',
+  full_name='ga4gh.Logic',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='and', full_name='ga4gh.Logic.and', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='or', full_name='ga4gh.Logic.or', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=455,
+  serialized_end=520,
 )
 
 
@@ -221,8 +236,8 @@ _RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=498,
-  serialized_end=536,
+  serialized_start=522,
+  serialized_end=560,
 )
 
 
@@ -287,8 +302,8 @@ _SEARCHQUERYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=539,
-  serialized_end=712,
+  serialized_start=563,
+  serialized_end=736,
 )
 
 
@@ -388,27 +403,17 @@ _SEARCHQUERYRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=715,
-  serialized_end=1130,
+  serialized_start=739,
+  serialized_end=1154,
 )
 
 _COMPONENT.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
-_OPERAND.fields_by_name['nested'].message_type = _LOGIC
-_OPERAND.oneofs_by_name['component'].fields.append(
-  _OPERAND.fields_by_name['component_id'])
-_OPERAND.fields_by_name['component_id'].containing_oneof = _OPERAND.oneofs_by_name['component']
-_OPERAND.oneofs_by_name['component'].fields.append(
-  _OPERAND.fields_by_name['nested'])
-_OPERAND.fields_by_name['nested'].containing_oneof = _OPERAND.oneofs_by_name['component']
-_OPERANDS.fields_by_name['operand'].message_type = _OPERAND
-_LOGIC.fields_by_name['and'].message_type = _OPERANDS
-_LOGIC.fields_by_name['or'].message_type = _OPERANDS
-_LOGIC.oneofs_by_name['Andor'].fields.append(
-  _LOGIC.fields_by_name['and'])
-_LOGIC.fields_by_name['and'].containing_oneof = _LOGIC.oneofs_by_name['Andor']
-_LOGIC.oneofs_by_name['Andor'].fields.append(
-  _LOGIC.fields_by_name['or'])
-_LOGIC.fields_by_name['or'].containing_oneof = _LOGIC.oneofs_by_name['Andor']
+_OR_TYPE.fields_by_name['and'].message_type = _AND_TYPE
+_OR_TYPE.fields_by_name['or'].message_type = _OR_TYPE
+_AND_TYPE.fields_by_name['and'].message_type = _AND_TYPE
+_AND_TYPE.fields_by_name['or'].message_type = _OR_TYPE
+_LOGIC.fields_by_name['and'].message_type = _AND_TYPE
+_LOGIC.fields_by_name['or'].message_type = _OR_TYPE
 _SEARCHQUERYREQUEST.fields_by_name['logic'].message_type = _LOGIC
 _SEARCHQUERYREQUEST.fields_by_name['components'].message_type = _COMPONENT
 _SEARCHQUERYREQUEST.fields_by_name['results'].message_type = _RESULT
@@ -423,8 +428,8 @@ _SEARCHQUERYRESPONSE.fields_by_name['complications'].message_type = ga4gh_dot_sc
 _SEARCHQUERYRESPONSE.fields_by_name['tumourboards'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._TUMOURBOARD
 _SEARCHQUERYRESPONSE.fields_by_name['variants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANT
 DESCRIPTOR.message_types_by_name['Component'] = _COMPONENT
-DESCRIPTOR.message_types_by_name['Operand'] = _OPERAND
-DESCRIPTOR.message_types_by_name['Operands'] = _OPERANDS
+DESCRIPTOR.message_types_by_name['Or_type'] = _OR_TYPE
+DESCRIPTOR.message_types_by_name['And_type'] = _AND_TYPE
 DESCRIPTOR.message_types_by_name['Logic'] = _LOGIC
 DESCRIPTOR.message_types_by_name['Result'] = _RESULT
 DESCRIPTOR.message_types_by_name['SearchQueryRequest'] = _SEARCHQUERYREQUEST
@@ -438,19 +443,19 @@ Component = _reflection.GeneratedProtocolMessageType('Component', (_message.Mess
   ))
 _sym_db.RegisterMessage(Component)
 
-Operand = _reflection.GeneratedProtocolMessageType('Operand', (_message.Message,), dict(
-  DESCRIPTOR = _OPERAND,
+Or_type = _reflection.GeneratedProtocolMessageType('Or_type', (_message.Message,), dict(
+  DESCRIPTOR = _OR_TYPE,
   __module__ = 'ga4gh.schemas.ga4gh.search_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.Operand)
+  # @@protoc_insertion_point(class_scope:ga4gh.Or_type)
   ))
-_sym_db.RegisterMessage(Operand)
+_sym_db.RegisterMessage(Or_type)
 
-Operands = _reflection.GeneratedProtocolMessageType('Operands', (_message.Message,), dict(
-  DESCRIPTOR = _OPERANDS,
+And_type = _reflection.GeneratedProtocolMessageType('And_type', (_message.Message,), dict(
+  DESCRIPTOR = _AND_TYPE,
   __module__ = 'ga4gh.schemas.ga4gh.search_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.Operands)
+  # @@protoc_insertion_point(class_scope:ga4gh.And_type)
   ))
-_sym_db.RegisterMessage(Operands)
+_sym_db.RegisterMessage(And_type)
 
 Logic = _reflection.GeneratedProtocolMessageType('Logic', (_message.Message,), dict(
   DESCRIPTOR = _LOGIC,
@@ -488,8 +493,8 @@ _SEARCHSERVICE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=1132,
-  serialized_end=1243,
+  serialized_start=1156,
+  serialized_end=1267,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetItem',
