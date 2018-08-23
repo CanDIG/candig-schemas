@@ -92,9 +92,15 @@ message ReadGroupSet {
 
   // NB: we require that all readgroups in the set are mapped to the same
   // referenceSet.
+
+  // For read group data identification and search join purposes
+  string patient_id = 6;
+
+  // For read group data identification and search join purposes
+  string sample_id = 7;
   
   // A map of additional information about the Read Group Set.
-  Attributes attributes = 6;
+  Attributes attributes = 8;
 }
 
 // A linear alignment describes the alignment of a read to a Reference, using a
