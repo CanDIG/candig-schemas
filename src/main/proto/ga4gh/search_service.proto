@@ -31,25 +31,25 @@ message Component {
 
     oneof endpoint {
     
-        SearchPatientsRequest patient = 2;
+        SearchPatientsRequest patients = 2;
         
-        SearchEnrollmentsRequest enrollment = 3;
+        SearchEnrollmentsRequest enrollments = 3;
         
-        SearchConsentsRequest consent = 4;
+        SearchConsentsRequest consents = 4;
     
-        SearchDiagnosesRequest diagnosis = 5;
+        SearchDiagnosesRequest diagnoses = 5;
         
-        SearchSamplesRequest sample = 6;
+        SearchSamplesRequest samples = 6;
     
-        SearchTreatmentsRequest treatment = 7;
+        SearchTreatmentsRequest treatments = 7;
         
-        SearchOutcomesRequest outcome = 8;
+        SearchOutcomesRequest outcomes = 8;
         
-        SearchComplicationsRequest complication = 9;
+        SearchComplicationsRequest complications = 9;
         
-        SearchTumourboardsRequest tumourboard = 10;
+        SearchTumourboardsRequest tumourboards = 10;
         
-        SearchVariantsRequest variant = 11;
+        SearchVariantsRequest variants = 11;
     }
 }
 
