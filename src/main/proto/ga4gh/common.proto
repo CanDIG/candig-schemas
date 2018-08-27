@@ -29,6 +29,9 @@ message Filter {
 
     // A level of the field content
     string value = 3;
+    
+    // List of values to be able to provide multiple possibilities
+    repeated string values = 4;
 }
 
 
