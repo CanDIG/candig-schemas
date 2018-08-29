@@ -235,4 +235,8 @@ message Variant {
   // Zero or more filters that failed for this variant. VCF column 7 "FILTER"
   // shared across all alleles in the same VCF record.
   repeated string filters_failed = 16;
+
+  // Patient_Id, this field is not populated in the database, but generated on-the-fly
+  // when variants are being returned.
+  string patientId = 21;
 }
