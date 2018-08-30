@@ -50,6 +50,8 @@ message Component {
         SearchTumourboardsRequest tumourboards = 10;
         
         SearchVariantsRequest variants = 11;
+
+        SearchVariantsByGeneNameRequest variantsByGene = 12;
     }
 }
 
