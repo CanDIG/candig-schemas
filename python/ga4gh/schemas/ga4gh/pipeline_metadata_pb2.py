@@ -13,7 +13,7 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-from ga4gh.schemas.google.protobuf import struct_pb2 as ga4gh_dot_schemas_dot_google_dot_protobuf_dot_struct__pb2
+from google.protobuf import struct_pb2 as google_dot_protobuf_dot_struct__pb2
 from ga4gh.schemas.ga4gh import common_pb2 as ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2
 
 
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/pipeline_metadata.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/protobuf/struct.proto\x1a ga4gh/schemas/ga4gh/common.proto\"\xe4\x02\n\nExtraction\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x10\n\x08rnaBlood\x18\n \x01(\t\x12\x14\n\x0crnaBloodTier\x18\x0b \x01(\x05\x12\x10\n\x08\x64naBlood\x18\x0c \x01(\t\x12\x14\n\x0c\x64naBloodTier\x18\r \x01(\x05\x12\x11\n\trnaTissue\x18\x0e \x01(\t\x12\x15\n\rrnaTissueTier\x18\x0f \x01(\x05\x12\x11\n\tdnaTissue\x18\x10 \x01(\t\x12\x15\n\rdnaTissueTier\x18\x11 \x01(\x05\"\xf0\x03\n\nSequencing\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x15\n\rdnaLibraryKit\x18\n \x01(\t\x12\x19\n\x11\x64naLibraryKitTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x64naSeqPlatform\x18\x0c \x01(\t\x12\x1a\n\x12\x64naSeqPlatformTier\x18\r \x01(\x05\x12\x15\n\rdnaReadLength\x18\x0e \x01(\t\x12\x19\n\x11\x64naReadLengthTier\x18\x0f \x01(\x05\x12\x15\n\rrnaLibraryKit\x18\x10 \x01(\t\x12\x19\n\x11rnaLibraryKitTier\x18\x11 \x01(\x05\x12\x16\n\x0ernaSeqPlatform\x18\x12 \x01(\t\x12\x1a\n\x12rnaSeqPlatformTier\x18\x13 \x01(\x05\x12\x15\n\rrnaReadLength\x18\x14 \x01(\t\x12\x19\n\x11rnaReadLengthTier\x18\x15 \x01(\x05\"\xc3\x06\n\tAlignment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x11\n\talignment\x18\x0c \x01(\t\x12\x15\n\ralignmentTier\x18\r \x01(\x05\x12\r\n\x05merge\x18\x0e \x01(\t\x12\x11\n\tmergeTier\x18\x0f \x01(\x05\x12\x16\n\x0emarkDuplicates\x18\x10 \x01(\t\x12\x1a\n\x12markDuplicatesTier\x18\x11 \x01(\x05\x12\x17\n\x0frealignerTarget\x18\x12 \x01(\t\x12\x1b\n\x13realignerTargetTier\x18\x13 \x01(\x05\x12\x16\n\x0eindelRealigner\x18\x14 \x01(\t\x12\x1a\n\x12indelRealignerTier\x18\x15 \x01(\x05\x12\x18\n\x10\x62\x61seRecalibrator\x18\x16 \x01(\t\x12\x1c\n\x14\x62\x61seRecalibratorTier\x18\x17 \x01(\x05\x12\x12\n\nprintReads\x18\x18 \x01(\t\x12\x16\n\x0eprintReadsTier\x18\x19 \x01(\x05\x12\x10\n\x08idxStats\x18\x1a \x01(\t\x12\x14\n\x0cidxStatsTier\x18\x1b \x01(\x05\x12\x10\n\x08\x66lagStat\x18\x1c \x01(\t\x12\x14\n\x0c\x66lagStatTier\x18\x1d \x01(\x05\x12\x10\n\x08\x63overage\x18\x1e \x01(\t\x12\x14\n\x0c\x63overageTier\x18\x1f \x01(\x05\x12\x19\n\x11insertSizeMetrics\x18  \x01(\t\x12\x1d\n\x15insertSizeMetricsTier\x18! \x01(\x05\x12\x0e\n\x06\x66\x61stqc\x18\" \x01(\t\x12\x12\n\nfastqcTier\x18# \x01(\x05\x12\x11\n\treference\x18$ \x01(\t\x12\x15\n\rreferenceTier\x18% \x01(\x05\"\x8a\x05\n\x0eVariantCalling\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\rvariantCaller\x18\x0c \x01(\t\x12\x19\n\x11variantCallerTier\x18\r \x01(\x05\x12\x10\n\x08tabulate\x18\x0e \x01(\t\x12\x14\n\x0ctabulateTier\x18\x0f \x01(\x05\x12\x12\n\nannotation\x18\x10 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x11 \x01(\x05\x12\r\n\x05merge\x18\x12 \x01(\t\x12\x11\n\tmergeTier\x18\x13 \x01(\x05\x12\x10\n\x08rdaToTab\x18\x14 \x01(\t\x12\x14\n\x0crdaToTabTier\x18\x15 \x01(\x05\x12\r\n\x05\x64\x65lly\x18\x16 \x01(\t\x12\x11\n\tdellyTier\x18\x17 \x01(\x05\x12\x12\n\npostFilter\x18\x18 \x01(\t\x12\x16\n\x0epostFilterTier\x18\x19 \x01(\x05\x12\x12\n\nclipFilter\x18\x1a \x01(\t\x12\x16\n\x0e\x63lipFilterTier\x18\x1b \x01(\x05\x12\x0e\n\x06\x63osmic\x18\x1c \x01(\t\x12\x12\n\ncosmicTier\x18\x1d \x01(\x05\x12\r\n\x05\x64\x62Snp\x18\x1e \x01(\t\x12\x11\n\tdbSnpTier\x18\x1f \x01(\x05\"\x9d\x04\n\x11\x46usionSVDetection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x13\n\x0bsvDetection\x18\x0c \x01(\t\x12\x17\n\x0fsvDetectionTier\x18\r \x01(\x05\x12\x17\n\x0f\x66usionDetection\x18\x0e \x01(\t\x12\x1b\n\x13\x66usionDetectionTier\x18\x0f \x01(\x05\x12\x13\n\x0brealignment\x18\x10 \x01(\t\x12\x17\n\x0frealignmentTier\x18\x11 \x01(\x05\x12\x12\n\nannotation\x18\x12 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x13 \x01(\x05\x12\x17\n\x0fgenomeReference\x18\x14 \x01(\t\x12\x1b\n\x13genomeReferenceTier\x18\x15 \x01(\x05\x12\x12\n\ngeneModels\x18\x16 \x01(\t\x12\x16\n\x0egeneModelsTier\x18\x17 \x01(\x05\"\xb6\x03\n\x12\x45xpressionAnalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x12\n\nreadLength\x18\n \x01(\t\x12\x16\n\x0ereadLengthTier\x18\x0b \x01(\x05\x12\x11\n\treference\x18\x0c \x01(\t\x12\x15\n\rreferenceTier\x18\r \x01(\x05\x12\x11\n\talignment\x18\x0e \x01(\t\x12\x15\n\ralignmentTier\x18\x0f \x01(\x05\x12\x13\n\x0b\x62\x61mHandling\x18\x10 \x01(\t\x12\x17\n\x0f\x62\x61mHandlingTier\x18\x11 \x01(\x05\x12\x1c\n\x14\x65xpressionEstimation\x18\x12 \x01(\t\x12 \n\x18\x65xpressionEstimationTier\x18\x13 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x12\x05ga4gh\x1a\x1cgoogle/protobuf/struct.proto\x1a ga4gh/schemas/ga4gh/common.proto\"\x94\x03\n\nExtraction\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x10\n\x08rnaBlood\x18\n \x01(\t\x12\x14\n\x0crnaBloodTier\x18\x0b \x01(\x05\x12\x10\n\x08\x64naBlood\x18\x0c \x01(\t\x12\x14\n\x0c\x64naBloodTier\x18\r \x01(\x05\x12\x11\n\trnaTissue\x18\x0e \x01(\t\x12\x15\n\rrnaTissueTier\x18\x0f \x01(\x05\x12\x11\n\tdnaTissue\x18\x10 \x01(\t\x12\x15\n\rdnaTissueTier\x18\x11 \x01(\x05\x12\x14\n\x0c\x65xtractionId\x18\x12 \x01(\t\x12\x18\n\x10\x65xtractionIdTier\x18\x13 \x01(\x05\"\xca\x04\n\nSequencing\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x15\n\rdnaLibraryKit\x18\n \x01(\t\x12\x19\n\x11\x64naLibraryKitTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x64naSeqPlatform\x18\x0c \x01(\t\x12\x1a\n\x12\x64naSeqPlatformTier\x18\r \x01(\x05\x12\x15\n\rdnaReadLength\x18\x0e \x01(\t\x12\x19\n\x11\x64naReadLengthTier\x18\x0f \x01(\x05\x12\x15\n\rrnaLibraryKit\x18\x10 \x01(\t\x12\x19\n\x11rnaLibraryKitTier\x18\x11 \x01(\x05\x12\x16\n\x0ernaSeqPlatform\x18\x12 \x01(\t\x12\x1a\n\x12rnaSeqPlatformTier\x18\x13 \x01(\x05\x12\x15\n\rrnaReadLength\x18\x14 \x01(\t\x12\x19\n\x11rnaReadLengthTier\x18\x15 \x01(\x05\x12\x11\n\tpcrCycles\x18\x16 \x01(\t\x12\x15\n\rpcrCyclesTier\x18\x17 \x01(\x05\x12\x14\n\x0csequencingId\x18\x18 \x01(\t\x12\x18\n\x10sequencingIdTier\x18\x19 \x01(\x05\"\x81\x07\n\tAlignment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\ralignmentTool\x18\x0c \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\r \x01(\x05\x12\x11\n\tmergeTool\x18\x0e \x01(\t\x12\x15\n\rmergeToolTier\x18\x0f \x01(\x05\x12\x16\n\x0emarkDuplicates\x18\x10 \x01(\t\x12\x1a\n\x12markDuplicatesTier\x18\x11 \x01(\x05\x12\x17\n\x0frealignerTarget\x18\x12 \x01(\t\x12\x1b\n\x13realignerTargetTier\x18\x13 \x01(\x05\x12\x16\n\x0eindelRealigner\x18\x14 \x01(\t\x12\x1a\n\x12indelRealignerTier\x18\x15 \x01(\x05\x12\x18\n\x10\x62\x61seRecalibrator\x18\x16 \x01(\t\x12\x1c\n\x14\x62\x61seRecalibratorTier\x18\x17 \x01(\x05\x12\x12\n\nprintReads\x18\x18 \x01(\t\x12\x16\n\x0eprintReadsTier\x18\x19 \x01(\x05\x12\x10\n\x08idxStats\x18\x1a \x01(\t\x12\x14\n\x0cidxStatsTier\x18\x1b \x01(\x05\x12\x10\n\x08\x66lagStat\x18\x1c \x01(\t\x12\x14\n\x0c\x66lagStatTier\x18\x1d \x01(\x05\x12\x10\n\x08\x63overage\x18\x1e \x01(\t\x12\x14\n\x0c\x63overageTier\x18\x1f \x01(\x05\x12\x19\n\x11insertSizeMetrics\x18  \x01(\t\x12\x1d\n\x15insertSizeMetricsTier\x18! \x01(\x05\x12\x0e\n\x06\x66\x61stqc\x18\" \x01(\t\x12\x12\n\nfastqcTier\x18# \x01(\x05\x12\x11\n\treference\x18$ \x01(\t\x12\x15\n\rreferenceTier\x18% \x01(\x05\x12\x13\n\x0b\x61lignmentId\x18& \x01(\t\x12\x17\n\x0f\x61lignmentIdTier\x18\' \x01(\x05\"\xca\x05\n\x0eVariantCalling\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\rvariantCaller\x18\x0c \x01(\t\x12\x19\n\x11variantCallerTier\x18\r \x01(\x05\x12\x10\n\x08tabulate\x18\x0e \x01(\t\x12\x14\n\x0ctabulateTier\x18\x0f \x01(\x05\x12\x12\n\nannotation\x18\x10 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x11 \x01(\x05\x12\x11\n\tmergeTool\x18\x12 \x01(\t\x12\x15\n\rmergeToolTier\x18\x13 \x01(\x05\x12\x10\n\x08rdaToTab\x18\x14 \x01(\t\x12\x14\n\x0crdaToTabTier\x18\x15 \x01(\x05\x12\r\n\x05\x64\x65lly\x18\x16 \x01(\t\x12\x11\n\tdellyTier\x18\x17 \x01(\x05\x12\x12\n\npostFilter\x18\x18 \x01(\t\x12\x16\n\x0epostFilterTier\x18\x19 \x01(\x05\x12\x12\n\nclipFilter\x18\x1a \x01(\t\x12\x16\n\x0e\x63lipFilterTier\x18\x1b \x01(\x05\x12\x0e\n\x06\x63osmic\x18\x1c \x01(\t\x12\x12\n\ncosmicTier\x18\x1d \x01(\x05\x12\r\n\x05\x64\x62Snp\x18\x1e \x01(\t\x12\x11\n\tdbSnpTier\x18\x1f \x01(\x05\x12\x18\n\x10variantCallingId\x18  \x01(\t\x12\x1c\n\x14variantCallingIdTier\x18! \x01(\x05\"\xd5\x04\n\x0f\x46usionDetection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x13\n\x0bsvDetection\x18\x0c \x01(\t\x12\x17\n\x0fsvDetectionTier\x18\r \x01(\x05\x12\x17\n\x0f\x66usionDetection\x18\x0e \x01(\t\x12\x1b\n\x13\x66usionDetectionTier\x18\x0f \x01(\x05\x12\x13\n\x0brealignment\x18\x10 \x01(\t\x12\x17\n\x0frealignmentTier\x18\x11 \x01(\x05\x12\x12\n\nannotation\x18\x12 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x13 \x01(\x05\x12\x17\n\x0fgenomeReference\x18\x14 \x01(\t\x12\x1b\n\x13genomeReferenceTier\x18\x15 \x01(\x05\x12\x12\n\ngeneModels\x18\x16 \x01(\t\x12\x16\n\x0egeneModelsTier\x18\x17 \x01(\x05\x12\x19\n\x11\x66usionDetectionId\x18\x18 \x01(\t\x12\x1d\n\x15\x66usionDetectionIdTier\x18\x19 \x01(\x05\"\xfe\x03\n\x12\x45xpressionAnalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x12\n\nreadLength\x18\n \x01(\t\x12\x16\n\x0ereadLengthTier\x18\x0b \x01(\x05\x12\x11\n\treference\x18\x0c \x01(\t\x12\x15\n\rreferenceTier\x18\r \x01(\x05\x12\x15\n\ralignmentTool\x18\x0e \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\x0f \x01(\x05\x12\x13\n\x0b\x62\x61mHandling\x18\x10 \x01(\t\x12\x17\n\x0f\x62\x61mHandlingTier\x18\x11 \x01(\x05\x12\x1c\n\x14\x65xpressionEstimation\x18\x12 \x01(\t\x12 \n\x18\x65xpressionEstimationTier\x18\x13 \x01(\x05\x12\x1c\n\x14\x65xpressionAnalysisId\x18\x14 \x01(\t\x12 \n\x18\x65xpressionAnalysisIdTier\x18\x15 \x01(\x05\x62\x06proto3')
   ,
-  dependencies=[ga4gh_dot_schemas_dot_google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
 
 
 
@@ -154,6 +154,20 @@ _EXTRACTION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='extractionId', full_name='ga4gh.Extraction.extractionId', index=17,
+      number=18, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='extractionIdTier', full_name='ga4gh.Extraction.extractionIdTier', index=18,
+      number=19, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -166,8 +180,8 @@ _EXTRACTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=133,
-  serialized_end=489,
+  serialized_start=119,
+  serialized_end=523,
 )
 
 
@@ -325,6 +339,34 @@ _SEQUENCING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='pcrCycles', full_name='ga4gh.Sequencing.pcrCycles', index=21,
+      number=22, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pcrCyclesTier', full_name='ga4gh.Sequencing.pcrCyclesTier', index=22,
+      number=23, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingId', full_name='ga4gh.Sequencing.sequencingId', index=23,
+      number=24, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingIdTier', full_name='ga4gh.Sequencing.sequencingIdTier', index=24,
+      number=25, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -337,8 +379,8 @@ _SEQUENCING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=492,
-  serialized_end=988,
+  serialized_start=526,
+  serialized_end=1112,
 )
 
 
@@ -427,28 +469,28 @@ _ALIGNMENT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='alignment', full_name='ga4gh.Alignment.alignment', index=11,
+      name='alignmentTool', full_name='ga4gh.Alignment.alignmentTool', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='alignmentTier', full_name='ga4gh.Alignment.alignmentTier', index=12,
+      name='alignmentToolTier', full_name='ga4gh.Alignment.alignmentToolTier', index=12,
       number=13, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='merge', full_name='ga4gh.Alignment.merge', index=13,
+      name='mergeTool', full_name='ga4gh.Alignment.mergeTool', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='mergeTier', full_name='ga4gh.Alignment.mergeTier', index=14,
+      name='mergeToolTier', full_name='ga4gh.Alignment.mergeToolTier', index=14,
       number=15, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -608,6 +650,20 @@ _ALIGNMENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentId', full_name='ga4gh.Alignment.alignmentId', index=37,
+      number=38, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentIdTier', full_name='ga4gh.Alignment.alignmentIdTier', index=38,
+      number=39, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -620,8 +676,8 @@ _ALIGNMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=991,
-  serialized_end=1826,
+  serialized_start=1115,
+  serialized_end=2012,
 )
 
 
@@ -752,14 +808,14 @@ _VARIANTCALLING = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='merge', full_name='ga4gh.VariantCalling.merge', index=17,
+      name='mergeTool', full_name='ga4gh.VariantCalling.mergeTool', index=17,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='mergeTier', full_name='ga4gh.VariantCalling.mergeTier', index=18,
+      name='mergeToolTier', full_name='ga4gh.VariantCalling.mergeToolTier', index=18,
       number=19, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -849,6 +905,20 @@ _VARIANTCALLING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='variantCallingId', full_name='ga4gh.VariantCalling.variantCallingId', index=31,
+      number=32, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='variantCallingIdTier', full_name='ga4gh.VariantCalling.variantCallingIdTier', index=32,
+      number=33, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -861,175 +931,189 @@ _VARIANTCALLING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1829,
-  serialized_end=2479,
+  serialized_start=2015,
+  serialized_end=2729,
 )
 
 
-_FUSIONSVDETECTION = _descriptor.Descriptor(
-  name='FusionSVDetection',
-  full_name='ga4gh.FusionSVDetection',
+_FUSIONDETECTION = _descriptor.Descriptor(
+  name='FusionDetection',
+  full_name='ga4gh.FusionDetection',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='ga4gh.FusionSVDetection.id', index=0,
+      name='id', full_name='ga4gh.FusionDetection.id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.FusionSVDetection.dataset_id', index=1,
+      name='dataset_id', full_name='ga4gh.FusionDetection.dataset_id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.FusionSVDetection.name', index=2,
+      name='name', full_name='ga4gh.FusionDetection.name', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='description', full_name='ga4gh.FusionSVDetection.description', index=3,
+      name='description', full_name='ga4gh.FusionDetection.description', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='created', full_name='ga4gh.FusionSVDetection.created', index=4,
+      name='created', full_name='ga4gh.FusionDetection.created', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='updated', full_name='ga4gh.FusionSVDetection.updated', index=5,
+      name='updated', full_name='ga4gh.FusionDetection.updated', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.FusionSVDetection.attributes', index=6,
+      name='attributes', full_name='ga4gh.FusionDetection.attributes', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sampleId', full_name='ga4gh.FusionSVDetection.sampleId', index=7,
+      name='sampleId', full_name='ga4gh.FusionDetection.sampleId', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sampleIdTier', full_name='ga4gh.FusionSVDetection.sampleIdTier', index=8,
+      name='sampleIdTier', full_name='ga4gh.FusionDetection.sampleIdTier', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='inHousePipeline', full_name='ga4gh.FusionSVDetection.inHousePipeline', index=9,
+      name='inHousePipeline', full_name='ga4gh.FusionDetection.inHousePipeline', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='inHousePipelineTier', full_name='ga4gh.FusionSVDetection.inHousePipelineTier', index=10,
+      name='inHousePipelineTier', full_name='ga4gh.FusionDetection.inHousePipelineTier', index=10,
       number=11, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='svDetection', full_name='ga4gh.FusionSVDetection.svDetection', index=11,
+      name='svDetection', full_name='ga4gh.FusionDetection.svDetection', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='svDetectionTier', full_name='ga4gh.FusionSVDetection.svDetectionTier', index=12,
+      name='svDetectionTier', full_name='ga4gh.FusionDetection.svDetectionTier', index=12,
       number=13, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='fusionDetection', full_name='ga4gh.FusionSVDetection.fusionDetection', index=13,
+      name='fusionDetection', full_name='ga4gh.FusionDetection.fusionDetection', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='fusionDetectionTier', full_name='ga4gh.FusionSVDetection.fusionDetectionTier', index=14,
+      name='fusionDetectionTier', full_name='ga4gh.FusionDetection.fusionDetectionTier', index=14,
       number=15, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='realignment', full_name='ga4gh.FusionSVDetection.realignment', index=15,
+      name='realignment', full_name='ga4gh.FusionDetection.realignment', index=15,
       number=16, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='realignmentTier', full_name='ga4gh.FusionSVDetection.realignmentTier', index=16,
+      name='realignmentTier', full_name='ga4gh.FusionDetection.realignmentTier', index=16,
       number=17, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='annotation', full_name='ga4gh.FusionSVDetection.annotation', index=17,
+      name='annotation', full_name='ga4gh.FusionDetection.annotation', index=17,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='annotationTier', full_name='ga4gh.FusionSVDetection.annotationTier', index=18,
+      name='annotationTier', full_name='ga4gh.FusionDetection.annotationTier', index=18,
       number=19, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='genomeReference', full_name='ga4gh.FusionSVDetection.genomeReference', index=19,
+      name='genomeReference', full_name='ga4gh.FusionDetection.genomeReference', index=19,
       number=20, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='genomeReferenceTier', full_name='ga4gh.FusionSVDetection.genomeReferenceTier', index=20,
+      name='genomeReferenceTier', full_name='ga4gh.FusionDetection.genomeReferenceTier', index=20,
       number=21, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='geneModels', full_name='ga4gh.FusionSVDetection.geneModels', index=21,
+      name='geneModels', full_name='ga4gh.FusionDetection.geneModels', index=21,
       number=22, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='geneModelsTier', full_name='ga4gh.FusionSVDetection.geneModelsTier', index=22,
+      name='geneModelsTier', full_name='ga4gh.FusionDetection.geneModelsTier', index=22,
       number=23, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fusionDetectionId', full_name='ga4gh.FusionDetection.fusionDetectionId', index=23,
+      number=24, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fusionDetectionIdTier', full_name='ga4gh.FusionDetection.fusionDetectionIdTier', index=24,
+      number=25, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -1046,8 +1130,8 @@ _FUSIONSVDETECTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2482,
-  serialized_end=3023,
+  serialized_start=2732,
+  serialized_end=3329,
 )
 
 
@@ -1150,14 +1234,14 @@ _EXPRESSIONANALYSIS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='alignment', full_name='ga4gh.ExpressionAnalysis.alignment', index=13,
+      name='alignmentTool', full_name='ga4gh.ExpressionAnalysis.alignmentTool', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='alignmentTier', full_name='ga4gh.ExpressionAnalysis.alignmentTier', index=14,
+      name='alignmentToolTier', full_name='ga4gh.ExpressionAnalysis.alignmentToolTier', index=14,
       number=15, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1191,6 +1275,20 @@ _EXPRESSIONANALYSIS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionAnalysisId', full_name='ga4gh.ExpressionAnalysis.expressionAnalysisId', index=19,
+      number=20, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionAnalysisIdTier', full_name='ga4gh.ExpressionAnalysis.expressionAnalysisIdTier', index=20,
+      number=21, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -1203,21 +1301,21 @@ _EXPRESSIONANALYSIS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3026,
-  serialized_end=3464,
+  serialized_start=3332,
+  serialized_end=3842,
 )
 
 _EXTRACTION.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 _SEQUENCING.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 _ALIGNMENT.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 _VARIANTCALLING.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
-_FUSIONSVDETECTION.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
+_FUSIONDETECTION.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 _EXPRESSIONANALYSIS.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
 DESCRIPTOR.message_types_by_name['Extraction'] = _EXTRACTION
 DESCRIPTOR.message_types_by_name['Sequencing'] = _SEQUENCING
 DESCRIPTOR.message_types_by_name['Alignment'] = _ALIGNMENT
 DESCRIPTOR.message_types_by_name['VariantCalling'] = _VARIANTCALLING
-DESCRIPTOR.message_types_by_name['FusionSVDetection'] = _FUSIONSVDETECTION
+DESCRIPTOR.message_types_by_name['FusionDetection'] = _FUSIONDETECTION
 DESCRIPTOR.message_types_by_name['ExpressionAnalysis'] = _EXPRESSIONANALYSIS
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -1249,12 +1347,12 @@ VariantCalling = _reflection.GeneratedProtocolMessageType('VariantCalling', (_me
   ))
 _sym_db.RegisterMessage(VariantCalling)
 
-FusionSVDetection = _reflection.GeneratedProtocolMessageType('FusionSVDetection', (_message.Message,), dict(
-  DESCRIPTOR = _FUSIONSVDETECTION,
+FusionDetection = _reflection.GeneratedProtocolMessageType('FusionDetection', (_message.Message,), dict(
+  DESCRIPTOR = _FUSIONDETECTION,
   __module__ = 'ga4gh.schemas.ga4gh.pipeline_metadata_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.FusionSVDetection)
+  # @@protoc_insertion_point(class_scope:ga4gh.FusionDetection)
   ))
-_sym_db.RegisterMessage(FusionSVDetection)
+_sym_db.RegisterMessage(FusionDetection)
 
 ExpressionAnalysis = _reflection.GeneratedProtocolMessageType('ExpressionAnalysis', (_message.Message,), dict(
   DESCRIPTOR = _EXPRESSIONANALYSIS,
