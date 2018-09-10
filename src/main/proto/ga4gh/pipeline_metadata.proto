@@ -2,7 +2,7 @@
 syntax = "proto3";
 
 import "google/protobuf/struct.proto";
-import "ga4gh/common.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
 
 package ga4gh;
 
@@ -55,6 +55,9 @@ message Extraction {
 
     string dnaTissue = 16;
     int32 dnaTissueTier = 17;
+
+    string extractionId = 18;
+    int32 extractionIdTier = 19;
 
     }
 
@@ -116,6 +119,9 @@ message Sequencing {
     string pcrCycles = 22;
     int32 pcrCyclesTier = 23;
 
+    string sequencingId = 24;
+    int32 sequencingIdTier = 25;
+
     }
 
 
@@ -159,11 +165,11 @@ message Alignment {
     string inHousePipeline = 10;
     int32 inHousePipelineTier = 11;
 
-    string alignment = 12;
-    int32 alignmentTier = 13;
+    string alignmentTool = 12;
+    int32 alignmentToolTier = 13;
 
-    string merge = 14;
-    int32 mergeTier = 15;
+    string mergeTool = 14;
+    int32 mergeToolTier = 15;
 
     string markDuplicates = 16;
     int32 markDuplicatesTier = 17;
@@ -197,6 +203,9 @@ message Alignment {
 
     string reference = 36;
     int32 referenceTier = 37;
+
+    string alignmentId = 38;
+    int32 alignmentIdTier = 39;
 
     }
 
@@ -250,8 +259,8 @@ message VariantCalling {
     string annotation = 16;
     int32 annotationTier = 17;
 
-    string merge = 18;
-    int32 mergeTier = 19;
+    string mergeTool = 18;
+    int32 mergeToolTier = 19;
 
     string rdaToTab = 20;
     int32 rdaToTabTier = 21;
@@ -271,12 +280,15 @@ message VariantCalling {
     string dbSnp = 30;
     int32 dbSnpTier = 31;
 
+    string variantCallingId = 32;
+    int32 variantCallingIdTier = 33;
+
     }
 
 // The "FusionDetection" object refers to fusion and SV detection metadata
 //
 
-message FusionSVDetection {
+message FusionDetection {
 
     // ========================================================================
     // Common fields
@@ -304,7 +316,7 @@ message FusionSVDetection {
     Attributes attributes = 7;
 
     // ========================================================================
-    // FusionSVDetection specific fields
+    // FusionDetection specific fields
     // ========================================================================
 
     string sampleId = 8;
@@ -330,6 +342,9 @@ message FusionSVDetection {
 
     string geneModels = 22;
     int32 geneModelsTier = 23;
+
+    string fusionDetectionId = 24;
+    int32 fusionDetectionIdTier = 25;
 
     }
 
@@ -376,8 +391,8 @@ message ExpressionAnalysis {
     string reference = 12;
     int32 referenceTier = 13;
 
-    string alignment = 14;
-    int32 alignmentTier = 15;
+    string alignmentTool = 14;
+    int32 alignmentToolTier = 15;
 
     string bamHandling = 16;
     int32 bamHandlingTier = 17;
@@ -385,4 +400,6 @@ message ExpressionAnalysis {
     string expressionEstimation = 18;
     int32 expressionEstimationTier = 19;
 
+    string expressionAnalysisId = 20;
+    int32 expressionAnalysisIdTier = 21;
     }
