@@ -19,6 +19,19 @@ service VariantService {
       };
     };
 
+  // Gets a list of `Variants` matching the search criteria.
+  //
+  // `POST /variantsetsByGeneName/search` must accept a JSON version of
+  // `SearchVariantsByGeneNameRequest` as the post body and will return a JSON version
+  // of `SearchVariantsByGeneNameResponse`.
+  rpc SearchVariantsByGeneName(SearchVariantsByGeneNameRequest)
+    returns (SearchVariantsByGeneNameResponse) {
+      option (google.api.http) = {
+        post: "/v0.6.0a10/variantsbygenesearch"
+        body: "*"
+      };
+    };
+
   // Gets a `VariantSet` by ID.
   //
   // `GET /variantsets/{variant_set_id}` will return a JSON version of
@@ -39,15 +52,6 @@ service VariantService {
     returns (SearchVariantsResponse) {
       option (google.api.http) = {
         post: "/v0.6.0a10/variants/search"
-        body: "*"
-      };
-    };
-
-
-  rpc SearchVariantsByGene(SearchVariantsByGeneRequest)
-    returns (SearchVariantsResponse) {
-      option (google.api.http) = {
-        post: "/v0.6.0a10/variantsbygenesearch"
         body: "*"
       };
     };
@@ -152,29 +156,10 @@ message SearchVariantsRequest {
   // To get the next page of results, set this parameter to the value of
   // `next_page_token` from the previous response.
   string page_token = 7;
+
+  // a list of variant sets to search from
+  repeated string variant_set_ids = 9;
 }
-
-
-message SearchVariantsByGeneRequest {
-
-  string dataset_id = 1;
-
-  // Gene name
-  string gene = 2;
-
-  // Specifies the maximum number of results to return in a single page.
-  // If unspecified, a system default will be used.
-  int32 page_size = 3;
-
-  // The continuation token, which is used to page through large result sets. To
-  // get the next page of results, set this parameter to the value of
-  // `next_page_token` from the previous response.
-  string page_token = 4;
-
-}
-
-
-
 
 // This is the response from `POST /variants/search` expressed as JSON.
 message SearchVariantsResponse {
@@ -235,4 +220,56 @@ message SearchCallSetsResponse {
 message GetCallSetRequest {
   // The ID of the `CallSet` to be retrieved.
   string call_set_id = 1;
+}
+
+
+// ******************  /variants  *********************
+// This request maps to the body of `POST /variantsnamebygenesearch` as JSON.
+message SearchVariantsByGeneNameRequest {
+  // The `VariantSet` to search.
+  string dataset_id = 1;
+
+  // The gene name to search
+  string gene = 2;
+
+  // Specifies the maximum number of results to return in a single page.
+  // If unspecified, a system default will be used.
+  int32 page_size = 3;
+
+  // The continuation token, which is used to page through large result sets.
+  // To get the next page of results, set this parameter to the value of
+  // `next_page_token` from the previous response.
+  string page_token = 4;
+
+  // List of patient ID's used in advanced searches
+  repeated string patient_list = 5;
+
+  // Start bp. Used in advanced searched if the user is requesting variants endpoint
+  int64 start = 6;
+
+  // End bp. Used in advanced searched if the user is requesting variants endpoint
+  int64 end = 7;
+
+  // Reference genome. Used in advanced searchesif the user is requesting variants endpoint.
+  string reference_name = 8;
+
+  // Only return variant calls which belong to call sets with these IDs.
+  // If unspecified, return all variants and no variant call objects.
+  repeated string call_set_ids = 9;
+}
+
+// This is the response from `POST /variantsbygenename` expressed as JSON.
+message SearchVariantsByGeneNameResponse {
+  // The list of matching variants.
+  // If the `callSetId` field on the returned calls is not present,
+  // the ordering of the call sets from a `SearchCallSetsRequest`
+  // over the parent `VariantSet` is guaranteed to match the ordering
+  // of the calls on each `Variant`. The number of results will also be
+  // the same.
+  repeated Variant variants = 1;
+
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 2;
 }

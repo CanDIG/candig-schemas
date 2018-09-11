@@ -34,16 +34,15 @@ from ga4gh.genotype_phenotype_service_pb2 import *  # noqa
 from ga4gh.rna_quantification_pb2 import *  # noqa
 from ga4gh.rna_quantification_service_pb2 import *  # noqa
 from ga4gh.peer_service_pb2 import *  # noqa
-### ======================================================================= ###
-### METADATA
-### ======================================================================= ###
+
+# METADATA
 from ga4gh.clinical_metadata_pb2 import *  # noqa
 from ga4gh.clinical_metadata_service_pb2 import *  # noqa
 from ga4gh.pipeline_metadata_pb2 import * # noqa
 from ga4gh.pipeline_metadata_service_pb2 import * # noqa
-### ======================================================================= ###
-### METADATA END
-### ======================================================================= ###
+
+# SEARCH
+from ga4gh.search_service_pb2 import * # noqa
 
 import ga4gh.common_pb2 as common
 
@@ -252,73 +251,77 @@ def getProtocolClasses(superclass=message.Message):
     return subclasses
 
 
-postMethods = \
-    [('/callsets/search',
-      SearchCallSetsRequest,  # noqa
-      SearchCallSetsResponse),  # noqa
-     ('/datasets/search',
-      SearchDatasetsRequest,  # noqa
-      SearchDatasetsResponse),  # noqa
-     ('/readgroupsets/search',
-      SearchReadGroupSetsRequest,  # noqa
-      SearchReadGroupSetsResponse),  # noqa
-     ('/reads/search',
-      SearchReadsRequest,  # noqa
-      SearchReadsResponse),  # noqa
-     ('/references/search',
-      SearchReferencesRequest,  # noqa
-      SearchReferencesResponse),  # noqa
-     ('/referencesets/search',
-      SearchReferenceSetsRequest,  # noqa
-      SearchReferenceSetsResponse),  # noqa
-     ('/variants/search',
-      SearchVariantsRequest,  # noqa
-      SearchVariantsResponse),  # noqa
-     ('/genotypes/search',
-      SearchGenotypesRequest,  # noqa
-      SearchGenotypesResponse),  # noqa
-     ('/datasets/search',
-      SearchDatasetsRequest,  # noqa
-      SearchDatasetsResponse),  # noqa
-     ('/biosamples/search',
-      SearchBiosamplesRequest,  # noqa
-      SearchBiosamplesResponse),  # noqa
-     ('/experiments/search',
-      SearchExperimentsRequest,  # noqa
-      SearchExperimentsResponse),  # noqa
-     ('/analyses/search',
-      SearchAnalysesRequest,  # noqa
-      SearchAnalysesResponse),  # noqa
-     ('/callsets/search',
-      SearchCallSetsRequest,  # noqa
-      SearchCallSetsResponse),  # noqa
-     ('/featuresets/search',
-      SearchFeatureSetsRequest,  # noqa
-      SearchFeatureSetsResponse),  # noqa
-     ('/features/search',
-      SearchFeaturesRequest,  # noqa
-      SearchFeaturesResponse),  # noqa
-     ('/continuoussets/search',
-      SearchContinuousSetsRequest,  # noqa
-      SearchContinuousSetsResponse),  # noqa
-     ('/continuous/search',
-      SearchContinuousRequest,  # noqa
-      SearchContinuousResponse),  # noqa
-     ('/variantsets/search',
-      SearchVariantSetsRequest,  # noqa
-      SearchVariantSetsResponse),  # noqa
-     ('/variantannotations/search',
-      SearchVariantAnnotationsRequest,  # noqa
-      SearchVariantAnnotationSetsResponse),  # noqa
-     ('/variantannotationsets/search',
-      SearchVariantAnnotationSetsRequest,  # noqa
-      SearchVariantAnnotationSetsResponse),  # noqa
-     ('/rnaquantificationsets/search',
-      SearchRnaQuantificationSetsRequest,  # noqa
-      SearchRnaQuantificationSetsResponse),  # noqa
-     ('/rnaquantifications/search',
-      SearchRnaQuantificationsRequest,  # noqa
-      SearchRnaQuantificationsResponse),  # noqa
-     ('/expressionlevels/search',
-      SearchExpressionLevelsRequest,  # noqa
-      SearchExpressionLevelsResponse)]  # noqa
+postMethods = [
+    ('/callsets/search',
+     SearchCallSetsRequest,  # noqa
+     SearchCallSetsResponse),  # noqa
+    ('/datasets/search',
+     SearchDatasetsRequest,  # noqa
+     SearchDatasetsResponse),  # noqa
+    ('/readgroupsets/search',
+     SearchReadGroupSetsRequest,  # noqa
+     SearchReadGroupSetsResponse),  # noqa
+    ('/reads/search',
+     SearchReadsRequest,  # noqa
+     SearchReadsResponse),  # noqa
+    ('/references/search',
+     SearchReferencesRequest,  # noqa
+     SearchReferencesResponse),  # noqa
+    ('/referencesets/search',
+     SearchReferenceSetsRequest,  # noqa
+     SearchReferenceSetsResponse),  # noqa
+    ('/variants/search',
+     SearchVariantsRequest,  # noqa
+     SearchVariantsResponse),  # noqa
+    ('/genotypes/search',
+     SearchGenotypesRequest,  # noqa
+     SearchGenotypesResponse),  # noqa
+    ('/datasets/search',
+     SearchDatasetsRequest,  # noqa
+     SearchDatasetsResponse),  # noqa
+    ('/biosamples/search',
+     SearchBiosamplesRequest,  # noqa
+     SearchBiosamplesResponse),  # noqa
+    ('/experiments/search',
+     SearchExperimentsRequest,  # noqa
+     SearchExperimentsResponse),  # noqa
+    ('/analyses/search',
+     SearchAnalysesRequest,  # noqa
+     SearchAnalysesResponse),  # noqa
+    ('/callsets/search',
+     SearchCallSetsRequest,  # noqa
+     SearchCallSetsResponse),  # noqa
+    ('/featuresets/search',
+     SearchFeatureSetsRequest,  # noqa
+     SearchFeatureSetsResponse),  # noqa
+    ('/features/search',
+     SearchFeaturesRequest,  # noqa
+     SearchFeaturesResponse),  # noqa
+    ('/continuoussets/search',
+     SearchContinuousSetsRequest,  # noqa
+     SearchContinuousSetsResponse),  # noqa
+    ('/continuous/search',
+     SearchContinuousRequest,  # noqa
+     SearchContinuousResponse),  # noqa
+    ('/variantsets/search',
+     SearchVariantSetsRequest,  # noqa
+     SearchVariantSetsResponse),  # noqa
+    ('/variantannotations/search',
+     SearchVariantAnnotationsRequest,  # noqa
+     SearchVariantAnnotationSetsResponse),  # noqa
+    ('/variantannotationsets/search',
+     SearchVariantAnnotationSetsRequest,  # noqa
+     SearchVariantAnnotationSetsResponse),  # noqa
+    ('/rnaquantificationsets/search',
+     SearchRnaQuantificationSetsRequest,  # noqa
+     SearchRnaQuantificationSetsResponse),  # noqa
+    ('/rnaquantifications/search',
+     SearchRnaQuantificationsRequest,  # noqa
+     SearchRnaQuantificationsResponse),  # noqa
+    ('/expressionlevels/search',
+     SearchExpressionLevelsRequest,  # noqa
+     SearchExpressionLevelsResponse), # noqa
+    ('/search',
+     SearchQueryRequest,  # noqa
+     SearchQueryResponse),  # noqa
+    ]

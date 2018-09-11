@@ -17,6 +17,24 @@ message GAException {
   string message = 2;
 }
 
+
+// Contains a single statement about any field of any of tables
+message Filter {
+
+    // Name one of the table field on which the filter should be applied
+    string field = 1;
+
+    // Relationship between field and value
+    string operator = 2;
+
+    // A level of the field content
+    string value = 3;
+    
+    // List of values to be able to provide multiple possibilities
+    repeated string values = 4;
+}
+
+
 // Indicates the associated DNA strand for some data item.
 enum Strand {
   // If no strand data is available.

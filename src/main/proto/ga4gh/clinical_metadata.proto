@@ -113,7 +113,6 @@ message Patient {
     string occupationalOrEnvironmentalExposure = 42;
     int32 occupationalOrEnvironmentalExposureTier = 43;
 
-
     } // End of the Patient object ============================================
 
 
@@ -216,7 +215,6 @@ message Enrollment {
     //
     string treatingCentreProvince = 38;
     int32 treatingCentreProvinceTier = 39;
-
 
     } // End of the Enrollment object ============================================
 
@@ -750,7 +748,6 @@ message Treatment {
     string drugIdNumbers = 48;
     int32 drugIdNumbersTier = 49;
 
-
     } // End of the Treatment object ============================================
 
 
@@ -1075,6 +1072,5 @@ message Tumourboard {
     //
     string summaryReport = 66;
     int32 summaryReportTier = 67;
-
 
     } // End of the Tumourboard object ========================================
