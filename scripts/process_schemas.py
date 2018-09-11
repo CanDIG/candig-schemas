@@ -163,12 +163,13 @@ class ProtobufGenerator(object):
     def _version_compare(self, version1, version2):
         def normalize(v):
             return [int(x) for x in re.sub(r'(\.0+)*$', '', v).split(".")]
-        return cmp(normalize(version1), normalize(version2))
-
+        return ((normalize(version1) > normalize(version2)) - 
+                (normalize(version1) < normalize(version2)))
+        
     def _getProtoc(self, destination_path):
         protocs = [os.path.realpath(x) for x in
-                   "{}/protobuf/src/protoc".format(destination_path),
-                   self._find_in_path("protoc")
+                   ("{}/protobuf/src/protoc".format(destination_path),
+                   self._find_in_path("protoc"))
                    if x is not None]
         protoc = None
         for c in protocs:
