@@ -38,6 +38,9 @@ from ga4gh.peer_service_pb2 import *  # noqa
 # METADATA
 from ga4gh.clinical_metadata_pb2 import *  # noqa
 from ga4gh.clinical_metadata_service_pb2 import *  # noqa
+from ga4gh.pipeline_metadata_pb2 import * # noqa
+from ga4gh.pipeline_metadata_service_pb2 import * # noqa
+
 # SEARCH
 from ga4gh.search_service_pb2 import * # noqa
 
