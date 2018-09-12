@@ -59,6 +59,9 @@ message Extraction {
     string extractionId = 18;
     int32 extractionIdTier = 19;
 
+    string site = 20;
+    int32 siteTier = 21;
+
     }
 
 // The "Sequencing" object refers to library prep and sequencing metadata
@@ -121,6 +124,12 @@ message Sequencing {
 
     string sequencingId = 24;
     int32 sequencingIdTier = 25;
+
+    string extractionId = 26;
+    int32 extractionIdTier = 27;
+
+    string site = 28;
+    int32 siteTier = 29;
 
     }
 
@@ -207,6 +216,12 @@ message Alignment {
     string alignmentId = 38;
     int32 alignmentIdTier = 39;
 
+    string sequencingId = 40;
+    int32 sequencingIdTier = 41;
+
+    string site = 42;
+    int32 siteTier = 43;
+
     }
 
 
@@ -283,6 +298,12 @@ message VariantCalling {
     string variantCallingId = 32;
     int32 variantCallingIdTier = 33;
 
+    string alignmentId = 34;
+    int32 alignmentIdTier = 35;
+
+    string site = 36;
+    int32 siteTier = 37;
+
     }
 
 // The "FusionDetection" object refers to fusion and SV detection metadata
@@ -346,6 +367,12 @@ message FusionDetection {
     string fusionDetectionId = 24;
     int32 fusionDetectionIdTier = 25;
 
+    string alignmentId = 26;
+    int32 alignmentIdTier = 27;
+
+    string site = 28;
+    int32 siteTier = 29;
+
     }
 
 // The "ExpressionAnalysis" object refers to expression analysis metadata
@@ -402,4 +429,10 @@ message ExpressionAnalysis {
 
     string expressionAnalysisId = 20;
     int32 expressionAnalysisIdTier = 21;
+
+    string sequencingId = 22;
+    int32 sequencingIdTier = 23;
+
+    string site = 24;
+    string siteTier = 25;
     }

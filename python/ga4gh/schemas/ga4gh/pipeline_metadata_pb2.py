@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/pipeline_metadata.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x12\x05ga4gh\x1a\x1cgoogle/protobuf/struct.proto\x1a ga4gh/schemas/ga4gh/common.proto\"\x94\x03\n\nExtraction\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x10\n\x08rnaBlood\x18\n \x01(\t\x12\x14\n\x0crnaBloodTier\x18\x0b \x01(\x05\x12\x10\n\x08\x64naBlood\x18\x0c \x01(\t\x12\x14\n\x0c\x64naBloodTier\x18\r \x01(\x05\x12\x11\n\trnaTissue\x18\x0e \x01(\t\x12\x15\n\rrnaTissueTier\x18\x0f \x01(\x05\x12\x11\n\tdnaTissue\x18\x10 \x01(\t\x12\x15\n\rdnaTissueTier\x18\x11 \x01(\x05\x12\x14\n\x0c\x65xtractionId\x18\x12 \x01(\t\x12\x18\n\x10\x65xtractionIdTier\x18\x13 \x01(\x05\"\xca\x04\n\nSequencing\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x15\n\rdnaLibraryKit\x18\n \x01(\t\x12\x19\n\x11\x64naLibraryKitTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x64naSeqPlatform\x18\x0c \x01(\t\x12\x1a\n\x12\x64naSeqPlatformTier\x18\r \x01(\x05\x12\x15\n\rdnaReadLength\x18\x0e \x01(\t\x12\x19\n\x11\x64naReadLengthTier\x18\x0f \x01(\x05\x12\x15\n\rrnaLibraryKit\x18\x10 \x01(\t\x12\x19\n\x11rnaLibraryKitTier\x18\x11 \x01(\x05\x12\x16\n\x0ernaSeqPlatform\x18\x12 \x01(\t\x12\x1a\n\x12rnaSeqPlatformTier\x18\x13 \x01(\x05\x12\x15\n\rrnaReadLength\x18\x14 \x01(\t\x12\x19\n\x11rnaReadLengthTier\x18\x15 \x01(\x05\x12\x11\n\tpcrCycles\x18\x16 \x01(\t\x12\x15\n\rpcrCyclesTier\x18\x17 \x01(\x05\x12\x14\n\x0csequencingId\x18\x18 \x01(\t\x12\x18\n\x10sequencingIdTier\x18\x19 \x01(\x05\"\x81\x07\n\tAlignment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\ralignmentTool\x18\x0c \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\r \x01(\x05\x12\x11\n\tmergeTool\x18\x0e \x01(\t\x12\x15\n\rmergeToolTier\x18\x0f \x01(\x05\x12\x16\n\x0emarkDuplicates\x18\x10 \x01(\t\x12\x1a\n\x12markDuplicatesTier\x18\x11 \x01(\x05\x12\x17\n\x0frealignerTarget\x18\x12 \x01(\t\x12\x1b\n\x13realignerTargetTier\x18\x13 \x01(\x05\x12\x16\n\x0eindelRealigner\x18\x14 \x01(\t\x12\x1a\n\x12indelRealignerTier\x18\x15 \x01(\x05\x12\x18\n\x10\x62\x61seRecalibrator\x18\x16 \x01(\t\x12\x1c\n\x14\x62\x61seRecalibratorTier\x18\x17 \x01(\x05\x12\x12\n\nprintReads\x18\x18 \x01(\t\x12\x16\n\x0eprintReadsTier\x18\x19 \x01(\x05\x12\x10\n\x08idxStats\x18\x1a \x01(\t\x12\x14\n\x0cidxStatsTier\x18\x1b \x01(\x05\x12\x10\n\x08\x66lagStat\x18\x1c \x01(\t\x12\x14\n\x0c\x66lagStatTier\x18\x1d \x01(\x05\x12\x10\n\x08\x63overage\x18\x1e \x01(\t\x12\x14\n\x0c\x63overageTier\x18\x1f \x01(\x05\x12\x19\n\x11insertSizeMetrics\x18  \x01(\t\x12\x1d\n\x15insertSizeMetricsTier\x18! \x01(\x05\x12\x0e\n\x06\x66\x61stqc\x18\" \x01(\t\x12\x12\n\nfastqcTier\x18# \x01(\x05\x12\x11\n\treference\x18$ \x01(\t\x12\x15\n\rreferenceTier\x18% \x01(\x05\x12\x13\n\x0b\x61lignmentId\x18& \x01(\t\x12\x17\n\x0f\x61lignmentIdTier\x18\' \x01(\x05\"\xca\x05\n\x0eVariantCalling\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\rvariantCaller\x18\x0c \x01(\t\x12\x19\n\x11variantCallerTier\x18\r \x01(\x05\x12\x10\n\x08tabulate\x18\x0e \x01(\t\x12\x14\n\x0ctabulateTier\x18\x0f \x01(\x05\x12\x12\n\nannotation\x18\x10 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x11 \x01(\x05\x12\x11\n\tmergeTool\x18\x12 \x01(\t\x12\x15\n\rmergeToolTier\x18\x13 \x01(\x05\x12\x10\n\x08rdaToTab\x18\x14 \x01(\t\x12\x14\n\x0crdaToTabTier\x18\x15 \x01(\x05\x12\r\n\x05\x64\x65lly\x18\x16 \x01(\t\x12\x11\n\tdellyTier\x18\x17 \x01(\x05\x12\x12\n\npostFilter\x18\x18 \x01(\t\x12\x16\n\x0epostFilterTier\x18\x19 \x01(\x05\x12\x12\n\nclipFilter\x18\x1a \x01(\t\x12\x16\n\x0e\x63lipFilterTier\x18\x1b \x01(\x05\x12\x0e\n\x06\x63osmic\x18\x1c \x01(\t\x12\x12\n\ncosmicTier\x18\x1d \x01(\x05\x12\r\n\x05\x64\x62Snp\x18\x1e \x01(\t\x12\x11\n\tdbSnpTier\x18\x1f \x01(\x05\x12\x18\n\x10variantCallingId\x18  \x01(\t\x12\x1c\n\x14variantCallingIdTier\x18! \x01(\x05\"\xd5\x04\n\x0f\x46usionDetection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x13\n\x0bsvDetection\x18\x0c \x01(\t\x12\x17\n\x0fsvDetectionTier\x18\r \x01(\x05\x12\x17\n\x0f\x66usionDetection\x18\x0e \x01(\t\x12\x1b\n\x13\x66usionDetectionTier\x18\x0f \x01(\x05\x12\x13\n\x0brealignment\x18\x10 \x01(\t\x12\x17\n\x0frealignmentTier\x18\x11 \x01(\x05\x12\x12\n\nannotation\x18\x12 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x13 \x01(\x05\x12\x17\n\x0fgenomeReference\x18\x14 \x01(\t\x12\x1b\n\x13genomeReferenceTier\x18\x15 \x01(\x05\x12\x12\n\ngeneModels\x18\x16 \x01(\t\x12\x16\n\x0egeneModelsTier\x18\x17 \x01(\x05\x12\x19\n\x11\x66usionDetectionId\x18\x18 \x01(\t\x12\x1d\n\x15\x66usionDetectionIdTier\x18\x19 \x01(\x05\"\xfe\x03\n\x12\x45xpressionAnalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x12\n\nreadLength\x18\n \x01(\t\x12\x16\n\x0ereadLengthTier\x18\x0b \x01(\x05\x12\x11\n\treference\x18\x0c \x01(\t\x12\x15\n\rreferenceTier\x18\r \x01(\x05\x12\x15\n\ralignmentTool\x18\x0e \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\x0f \x01(\x05\x12\x13\n\x0b\x62\x61mHandling\x18\x10 \x01(\t\x12\x17\n\x0f\x62\x61mHandlingTier\x18\x11 \x01(\x05\x12\x1c\n\x14\x65xpressionEstimation\x18\x12 \x01(\t\x12 \n\x18\x65xpressionEstimationTier\x18\x13 \x01(\x05\x12\x1c\n\x14\x65xpressionAnalysisId\x18\x14 \x01(\t\x12 \n\x18\x65xpressionAnalysisIdTier\x18\x15 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x12\x05ga4gh\x1a\x1cgoogle/protobuf/struct.proto\x1a ga4gh/schemas/ga4gh/common.proto\"\xb4\x03\n\nExtraction\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x10\n\x08rnaBlood\x18\n \x01(\t\x12\x14\n\x0crnaBloodTier\x18\x0b \x01(\x05\x12\x10\n\x08\x64naBlood\x18\x0c \x01(\t\x12\x14\n\x0c\x64naBloodTier\x18\r \x01(\x05\x12\x11\n\trnaTissue\x18\x0e \x01(\t\x12\x15\n\rrnaTissueTier\x18\x0f \x01(\x05\x12\x11\n\tdnaTissue\x18\x10 \x01(\t\x12\x15\n\rdnaTissueTier\x18\x11 \x01(\x05\x12\x14\n\x0c\x65xtractionId\x18\x12 \x01(\t\x12\x18\n\x10\x65xtractionIdTier\x18\x13 \x01(\x05\x12\x0c\n\x04site\x18\x14 \x01(\t\x12\x10\n\x08siteTier\x18\x15 \x01(\x05\"\x9a\x05\n\nSequencing\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x15\n\rdnaLibraryKit\x18\n \x01(\t\x12\x19\n\x11\x64naLibraryKitTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x64naSeqPlatform\x18\x0c \x01(\t\x12\x1a\n\x12\x64naSeqPlatformTier\x18\r \x01(\x05\x12\x15\n\rdnaReadLength\x18\x0e \x01(\t\x12\x19\n\x11\x64naReadLengthTier\x18\x0f \x01(\x05\x12\x15\n\rrnaLibraryKit\x18\x10 \x01(\t\x12\x19\n\x11rnaLibraryKitTier\x18\x11 \x01(\x05\x12\x16\n\x0ernaSeqPlatform\x18\x12 \x01(\t\x12\x1a\n\x12rnaSeqPlatformTier\x18\x13 \x01(\x05\x12\x15\n\rrnaReadLength\x18\x14 \x01(\t\x12\x19\n\x11rnaReadLengthTier\x18\x15 \x01(\x05\x12\x11\n\tpcrCycles\x18\x16 \x01(\t\x12\x15\n\rpcrCyclesTier\x18\x17 \x01(\x05\x12\x14\n\x0csequencingId\x18\x18 \x01(\t\x12\x18\n\x10sequencingIdTier\x18\x19 \x01(\x05\x12\x14\n\x0c\x65xtractionId\x18\x1a \x01(\t\x12\x18\n\x10\x65xtractionIdTier\x18\x1b \x01(\x05\x12\x0c\n\x04site\x18\x1c \x01(\t\x12\x10\n\x08siteTier\x18\x1d \x01(\x05\"\xd1\x07\n\tAlignment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\ralignmentTool\x18\x0c \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\r \x01(\x05\x12\x11\n\tmergeTool\x18\x0e \x01(\t\x12\x15\n\rmergeToolTier\x18\x0f \x01(\x05\x12\x16\n\x0emarkDuplicates\x18\x10 \x01(\t\x12\x1a\n\x12markDuplicatesTier\x18\x11 \x01(\x05\x12\x17\n\x0frealignerTarget\x18\x12 \x01(\t\x12\x1b\n\x13realignerTargetTier\x18\x13 \x01(\x05\x12\x16\n\x0eindelRealigner\x18\x14 \x01(\t\x12\x1a\n\x12indelRealignerTier\x18\x15 \x01(\x05\x12\x18\n\x10\x62\x61seRecalibrator\x18\x16 \x01(\t\x12\x1c\n\x14\x62\x61seRecalibratorTier\x18\x17 \x01(\x05\x12\x12\n\nprintReads\x18\x18 \x01(\t\x12\x16\n\x0eprintReadsTier\x18\x19 \x01(\x05\x12\x10\n\x08idxStats\x18\x1a \x01(\t\x12\x14\n\x0cidxStatsTier\x18\x1b \x01(\x05\x12\x10\n\x08\x66lagStat\x18\x1c \x01(\t\x12\x14\n\x0c\x66lagStatTier\x18\x1d \x01(\x05\x12\x10\n\x08\x63overage\x18\x1e \x01(\t\x12\x14\n\x0c\x63overageTier\x18\x1f \x01(\x05\x12\x19\n\x11insertSizeMetrics\x18  \x01(\t\x12\x1d\n\x15insertSizeMetricsTier\x18! \x01(\x05\x12\x0e\n\x06\x66\x61stqc\x18\" \x01(\t\x12\x12\n\nfastqcTier\x18# \x01(\x05\x12\x11\n\treference\x18$ \x01(\t\x12\x15\n\rreferenceTier\x18% \x01(\x05\x12\x13\n\x0b\x61lignmentId\x18& \x01(\t\x12\x17\n\x0f\x61lignmentIdTier\x18\' \x01(\x05\x12\x14\n\x0csequencingId\x18( \x01(\t\x12\x18\n\x10sequencingIdTier\x18) \x01(\x05\x12\x0c\n\x04site\x18* \x01(\t\x12\x10\n\x08siteTier\x18+ \x01(\x05\"\x98\x06\n\x0eVariantCalling\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x15\n\rvariantCaller\x18\x0c \x01(\t\x12\x19\n\x11variantCallerTier\x18\r \x01(\x05\x12\x10\n\x08tabulate\x18\x0e \x01(\t\x12\x14\n\x0ctabulateTier\x18\x0f \x01(\x05\x12\x12\n\nannotation\x18\x10 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x11 \x01(\x05\x12\x11\n\tmergeTool\x18\x12 \x01(\t\x12\x15\n\rmergeToolTier\x18\x13 \x01(\x05\x12\x10\n\x08rdaToTab\x18\x14 \x01(\t\x12\x14\n\x0crdaToTabTier\x18\x15 \x01(\x05\x12\r\n\x05\x64\x65lly\x18\x16 \x01(\t\x12\x11\n\tdellyTier\x18\x17 \x01(\x05\x12\x12\n\npostFilter\x18\x18 \x01(\t\x12\x16\n\x0epostFilterTier\x18\x19 \x01(\x05\x12\x12\n\nclipFilter\x18\x1a \x01(\t\x12\x16\n\x0e\x63lipFilterTier\x18\x1b \x01(\x05\x12\x0e\n\x06\x63osmic\x18\x1c \x01(\t\x12\x12\n\ncosmicTier\x18\x1d \x01(\x05\x12\r\n\x05\x64\x62Snp\x18\x1e \x01(\t\x12\x11\n\tdbSnpTier\x18\x1f \x01(\x05\x12\x18\n\x10variantCallingId\x18  \x01(\t\x12\x1c\n\x14variantCallingIdTier\x18! \x01(\x05\x12\x13\n\x0b\x61lignmentId\x18\" \x01(\t\x12\x17\n\x0f\x61lignmentIdTier\x18# \x01(\x05\x12\x0c\n\x04site\x18$ \x01(\t\x12\x10\n\x08siteTier\x18% \x01(\x05\"\xa3\x05\n\x0f\x46usionDetection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x17\n\x0finHousePipeline\x18\n \x01(\t\x12\x1b\n\x13inHousePipelineTier\x18\x0b \x01(\x05\x12\x13\n\x0bsvDetection\x18\x0c \x01(\t\x12\x17\n\x0fsvDetectionTier\x18\r \x01(\x05\x12\x17\n\x0f\x66usionDetection\x18\x0e \x01(\t\x12\x1b\n\x13\x66usionDetectionTier\x18\x0f \x01(\x05\x12\x13\n\x0brealignment\x18\x10 \x01(\t\x12\x17\n\x0frealignmentTier\x18\x11 \x01(\x05\x12\x12\n\nannotation\x18\x12 \x01(\t\x12\x16\n\x0e\x61nnotationTier\x18\x13 \x01(\x05\x12\x17\n\x0fgenomeReference\x18\x14 \x01(\t\x12\x1b\n\x13genomeReferenceTier\x18\x15 \x01(\x05\x12\x12\n\ngeneModels\x18\x16 \x01(\t\x12\x16\n\x0egeneModelsTier\x18\x17 \x01(\x05\x12\x19\n\x11\x66usionDetectionId\x18\x18 \x01(\t\x12\x1d\n\x15\x66usionDetectionIdTier\x18\x19 \x01(\x05\x12\x13\n\x0b\x61lignmentId\x18\x1a \x01(\t\x12\x17\n\x0f\x61lignmentIdTier\x18\x1b \x01(\x05\x12\x0c\n\x04site\x18\x1c \x01(\t\x12\x10\n\x08siteTier\x18\x1d \x01(\x05\"\xce\x04\n\x12\x45xpressionAnalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12%\n\nattributes\x18\x07 \x01(\x0b\x32\x11.ga4gh.Attributes\x12\x10\n\x08sampleId\x18\x08 \x01(\t\x12\x14\n\x0csampleIdTier\x18\t \x01(\x05\x12\x12\n\nreadLength\x18\n \x01(\t\x12\x16\n\x0ereadLengthTier\x18\x0b \x01(\x05\x12\x11\n\treference\x18\x0c \x01(\t\x12\x15\n\rreferenceTier\x18\r \x01(\x05\x12\x15\n\ralignmentTool\x18\x0e \x01(\t\x12\x19\n\x11\x61lignmentToolTier\x18\x0f \x01(\x05\x12\x13\n\x0b\x62\x61mHandling\x18\x10 \x01(\t\x12\x17\n\x0f\x62\x61mHandlingTier\x18\x11 \x01(\x05\x12\x1c\n\x14\x65xpressionEstimation\x18\x12 \x01(\t\x12 \n\x18\x65xpressionEstimationTier\x18\x13 \x01(\x05\x12\x1c\n\x14\x65xpressionAnalysisId\x18\x14 \x01(\t\x12 \n\x18\x65xpressionAnalysisIdTier\x18\x15 \x01(\x05\x12\x14\n\x0csequencingId\x18\x16 \x01(\t\x12\x18\n\x10sequencingIdTier\x18\x17 \x01(\x05\x12\x0c\n\x04site\x18\x18 \x01(\t\x12\x10\n\x08siteTier\x18\x19 \x01(\tb\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
 
@@ -168,6 +168,20 @@ _EXTRACTION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.Extraction.site', index=19,
+      number=20, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.Extraction.siteTier', index=20,
+      number=21, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -181,7 +195,7 @@ _EXTRACTION = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=119,
-  serialized_end=523,
+  serialized_end=555,
 )
 
 
@@ -367,6 +381,34 @@ _SEQUENCING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='extractionId', full_name='ga4gh.Sequencing.extractionId', index=25,
+      number=26, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='extractionIdTier', full_name='ga4gh.Sequencing.extractionIdTier', index=26,
+      number=27, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.Sequencing.site', index=27,
+      number=28, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.Sequencing.siteTier', index=28,
+      number=29, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -379,8 +421,8 @@ _SEQUENCING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=526,
-  serialized_end=1112,
+  serialized_start=558,
+  serialized_end=1224,
 )
 
 
@@ -664,6 +706,34 @@ _ALIGNMENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingId', full_name='ga4gh.Alignment.sequencingId', index=39,
+      number=40, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingIdTier', full_name='ga4gh.Alignment.sequencingIdTier', index=40,
+      number=41, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.Alignment.site', index=41,
+      number=42, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.Alignment.siteTier', index=42,
+      number=43, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -676,8 +746,8 @@ _ALIGNMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1115,
-  serialized_end=2012,
+  serialized_start=1227,
+  serialized_end=2204,
 )
 
 
@@ -919,6 +989,34 @@ _VARIANTCALLING = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentId', full_name='ga4gh.VariantCalling.alignmentId', index=33,
+      number=34, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentIdTier', full_name='ga4gh.VariantCalling.alignmentIdTier', index=34,
+      number=35, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.VariantCalling.site', index=35,
+      number=36, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.VariantCalling.siteTier', index=36,
+      number=37, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -931,8 +1029,8 @@ _VARIANTCALLING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2015,
-  serialized_end=2729,
+  serialized_start=2207,
+  serialized_end=2999,
 )
 
 
@@ -1118,6 +1216,34 @@ _FUSIONDETECTION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentId', full_name='ga4gh.FusionDetection.alignmentId', index=25,
+      number=26, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='alignmentIdTier', full_name='ga4gh.FusionDetection.alignmentIdTier', index=26,
+      number=27, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.FusionDetection.site', index=27,
+      number=28, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.FusionDetection.siteTier', index=28,
+      number=29, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -1130,8 +1256,8 @@ _FUSIONDETECTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2732,
-  serialized_end=3329,
+  serialized_start=3002,
+  serialized_end=3677,
 )
 
 
@@ -1289,6 +1415,34 @@ _EXPRESSIONANALYSIS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingId', full_name='ga4gh.ExpressionAnalysis.sequencingId', index=21,
+      number=22, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='sequencingIdTier', full_name='ga4gh.ExpressionAnalysis.sequencingIdTier', index=22,
+      number=23, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='site', full_name='ga4gh.ExpressionAnalysis.site', index=23,
+      number=24, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteTier', full_name='ga4gh.ExpressionAnalysis.siteTier', index=24,
+      number=25, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -1301,8 +1455,8 @@ _EXPRESSIONANALYSIS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3332,
-  serialized_end=3842,
+  serialized_start=3680,
+  serialized_end=4270,
 )
 
 _EXTRACTION.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
