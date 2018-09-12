@@ -12,41 +12,41 @@ import sys
 import array
 import base64
 
-from _protocol_version import version  # noqa
-from ga4gh.common_pb2 import *  # noqa
-from ga4gh.metadata_pb2 import *  # noqa
-from ga4gh.metadata_service_pb2 import *  # noqa
-from ga4gh.read_service_pb2 import *  # noqa
-from ga4gh.reads_pb2 import *  # noqa
-from ga4gh.reference_service_pb2 import *  # noqa
-from ga4gh.references_pb2 import *  # noqa
-from ga4gh.variant_service_pb2 import *  # noqa
-from ga4gh.genotype_service_pb2 import *  # noqa
-from ga4gh.variants_pb2 import *  # noqa
-from ga4gh.allele_annotations_pb2 import *  # noqa
-from ga4gh.allele_annotation_service_pb2 import *  # noqa
-from ga4gh.sequence_annotations_pb2 import *  # noqa
-from ga4gh.sequence_annotation_service_pb2 import *  # noqa
-from ga4gh.bio_metadata_pb2 import *  # noqa
-from ga4gh.bio_metadata_service_pb2 import *  # noqa
-from ga4gh.genotype_phenotype_pb2 import *  # noqa
-from ga4gh.genotype_phenotype_service_pb2 import *  # noqa
-from ga4gh.rna_quantification_pb2 import *  # noqa
-from ga4gh.rna_quantification_service_pb2 import *  # noqa
-from ga4gh.peer_service_pb2 import *  # noqa
+from ga4gh.schemas._protocol_version import version  # noqa
+from ga4gh.schemas.ga4gh.common_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.metadata_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.metadata_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.read_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.reads_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.reference_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.references_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.variant_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.genotype_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.variants_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.allele_annotations_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.allele_annotation_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.sequence_annotations_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.sequence_annotation_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.bio_metadata_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.bio_metadata_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.genotype_phenotype_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.rna_quantification_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.rna_quantification_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.peer_service_pb2 import *  # noqa
 
 # METADATA
-from ga4gh.clinical_metadata_pb2 import *  # noqa
-from ga4gh.clinical_metadata_service_pb2 import *  # noqa
-from ga4gh.pipeline_metadata_pb2 import * # noqa
-from ga4gh.pipeline_metadata_service_pb2 import * # noqa
+from ga4gh.schemas.ga4gh.clinical_metadata_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.clinical_metadata_service_pb2 import *  # noqa
+from ga4gh.schemas.ga4gh.pipeline_metadata_pb2 import * # noqa
+from ga4gh.schemas.ga4gh.pipeline_metadata_service_pb2 import * # noqa
 
 # SEARCH
-from ga4gh.search_service_pb2 import * # noqa
+from ga4gh.schemas.ga4gh.search_service_pb2 import * # noqa
 
-import ga4gh.common_pb2 as common
+import ga4gh.schemas.ga4gh.common_pb2 as common
 
-import hacks.googhack as googhack
+import ga4gh.schemas.hacks.googhack as googhack
 
 MIMETYPES = [
     "application/json",
