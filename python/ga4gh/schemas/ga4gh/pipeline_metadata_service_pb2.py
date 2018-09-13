@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/pipeline_metadata_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/pipeline_metadata_service.proto\x12\x05ga4gh\x1a+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"v\n\x18SearchExtractionsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x11\n\tsample_id\x18\x05 \x01(\t\"-\n\x14GetExtractionRequest\x12\x15\n\rextraction_id\x18\x01 \x01(\t\"\\\n\x19SearchExtractionsResponse\x12&\n\x0b\x65xtractions\x18\x01 \x03(\x0b\x32\x11.ga4gh.Extraction\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"u\n\x17SearchSequencingRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"-\n\x14GetSequencingRequest\x12\x15\n\rsequencing_id\x18\x01 \x01(\t\"Z\n\x18SearchSequencingResponse\x12%\n\nsequencing\x18\x01 \x03(\x0b\x32\x11.ga4gh.Sequencing\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"u\n\x17SearchAlignmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetAlignmentRequest\x12\x14\n\x0c\x61lignment_id\x18\x01 \x01(\t\"Y\n\x18SearchAlignmentsResponse\x12$\n\nalignments\x18\x01 \x03(\x0b\x32\x10.ga4gh.Alignment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"y\n\x1bSearchVariantCallingRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"5\n\x18GetVariantCallingRequest\x12\x19\n\x11variantcalling_id\x18\x01 \x01(\t\"f\n\x1cSearchVariantCallingResponse\x12-\n\x0evariantcalling\x18\x01 \x03(\x0b\x32\x15.ga4gh.VariantCalling\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"z\n\x1cSearchFusionDetectionRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"7\n\x19GetFusionDetectionRequest\x12\x1a\n\x12\x66usiondetection_id\x18\x01 \x01(\t\"i\n\x1dSearchFusionDetectionResponse\x12/\n\x0f\x66usiondetection\x18\x01 \x03(\x0b\x32\x16.ga4gh.FusionDetection\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"}\n\x1fSearchExpressionAnalysisRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"=\n\x1cGetExpressionAnalysisRequest\x12\x1d\n\x15\x65xpressionanalysis_id\x18\x01 \x01(\t\"r\n SearchExpressionAnalysisResponse\x12\x35\n\x12\x65xpressionanalysis\x18\x01 \x03(\x0b\x32\x19.ga4gh.ExpressionAnalysis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd0\x0c\n\x17PipelineMetadataService\x12\x80\x01\n\x11SearchExtractions\x12\x1f.ga4gh.SearchExtractionsRequest\x1a .ga4gh.SearchExtractionsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/extractions/search:\x01*\x12|\n\x10SearchSequencing\x12\x1e.ga4gh.SearchSequencingRequest\x1a\x1f.ga4gh.SearchSequencingResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/sequencing/search:\x01*\x12|\n\x10SearchAlignments\x12\x1e.ga4gh.SearchAlignmentsRequest\x1a\x1f.ga4gh.SearchAlignmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/alignments/search:\x01*\x12\x8c\x01\n\x14SearchVariantCalling\x12\".ga4gh.SearchVariantCallingRequest\x1a#.ga4gh.SearchVariantCallingResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/variantcalling/search:\x01*\x12\x92\x01\n\x16SearchFusionDetections\x12#.ga4gh.SearchFusionDetectionRequest\x1a$.ga4gh.SearchFusionDetectionResponse\"-\x82\xd3\xe4\x93\x02\'\"\"/v0.6.0a10/fusiondetections/search:\x01*\x12\x9c\x01\n\x18SearchExpressionAnalysis\x12&.ga4gh.SearchExpressionAnalysisRequest\x1a\'.ga4gh.SearchExpressionAnalysisResponse\"/\x82\xd3\xe4\x93\x02)\"$/v0.6.0a10/expressionanalysis/search:\x01*\x12o\n\rGetExtraction\x12\x1b.ga4gh.GetExtractionRequest\x1a\x11.ga4gh.Extraction\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/extractions/{extraction_id}\x12n\n\rGetSequencing\x12\x1b.ga4gh.GetSequencingRequest\x1a\x11.ga4gh.Sequencing\"-\x82\xd3\xe4\x93\x02\'\x12%/v0.6.0a10/sequencing/{sequencing_id}\x12j\n\x0cGetAlignment\x12\x1a.ga4gh.GetAlignmentRequest\x1a\x10.ga4gh.Alignment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/alignments/{alignment_id}\x12\x82\x01\n\x11GetVariantCalling\x12\x1f.ga4gh.GetVariantCallingRequest\x1a\x15.ga4gh.VariantCalling\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/variantcalling/{variantcalling_id}\x12\x87\x01\n\x12GetFusionDetection\x12 .ga4gh.GetFusionDetectionRequest\x1a\x16.ga4gh.FusionDetection\"7\x82\xd3\xe4\x93\x02\x31\x12//v0.6.0a10/fusiondetection/{fusiondetection_id}\x12\x96\x01\n\x15GetExpressionAnalysis\x12#.ga4gh.GetExpressionAnalysisRequest\x1a\x19.ga4gh.ExpressionAnalysis\"=\x82\xd3\xe4\x93\x02\x37\x12\x35/v0.6.0a10/expressionanalysis/{expressionanalysis_id}b\x06proto3')
+  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/pipeline_metadata_service.proto\x12\x05ga4gh\x1a+ga4gh/schemas/ga4gh/pipeline_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x96\x01\n\x18SearchExtractionsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x11\n\tsample_id\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"-\n\x14GetExtractionRequest\x12\x15\n\rextraction_id\x18\x01 \x01(\t\"\\\n\x19SearchExtractionsResponse\x12&\n\x0b\x65xtractions\x18\x01 \x03(\x0b\x32\x11.ga4gh.Extraction\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x95\x01\n\x17SearchSequencingRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"-\n\x14GetSequencingRequest\x12\x15\n\rsequencing_id\x18\x01 \x01(\t\"Z\n\x18SearchSequencingResponse\x12%\n\nsequencing\x18\x01 \x03(\x0b\x32\x11.ga4gh.Sequencing\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x95\x01\n\x17SearchAlignmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"+\n\x13GetAlignmentRequest\x12\x14\n\x0c\x61lignment_id\x18\x01 \x01(\t\"Y\n\x18SearchAlignmentsResponse\x12$\n\nalignments\x18\x01 \x03(\x0b\x32\x10.ga4gh.Alignment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x99\x01\n\x1bSearchVariantCallingRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"5\n\x18GetVariantCallingRequest\x12\x19\n\x11variantcalling_id\x18\x01 \x01(\t\"f\n\x1cSearchVariantCallingResponse\x12-\n\x0evariantcalling\x18\x01 \x03(\x0b\x32\x15.ga4gh.VariantCalling\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x9a\x01\n\x1cSearchFusionDetectionRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"7\n\x19GetFusionDetectionRequest\x12\x1a\n\x12\x66usiondetection_id\x18\x01 \x01(\t\"i\n\x1dSearchFusionDetectionResponse\x12/\n\x0f\x66usiondetection\x18\x01 \x03(\x0b\x32\x16.ga4gh.FusionDetection\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x9d\x01\n\x1fSearchExpressionAnalysisRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tsample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x06 \x03(\x0b\x32\r.ga4gh.Filter\"=\n\x1cGetExpressionAnalysisRequest\x12\x1d\n\x15\x65xpressionanalysis_id\x18\x01 \x01(\t\"r\n SearchExpressionAnalysisResponse\x12\x35\n\x12\x65xpressionanalysis\x18\x01 \x03(\x0b\x32\x19.ga4gh.ExpressionAnalysis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd0\x0c\n\x17PipelineMetadataService\x12\x80\x01\n\x11SearchExtractions\x12\x1f.ga4gh.SearchExtractionsRequest\x1a .ga4gh.SearchExtractionsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/extractions/search:\x01*\x12|\n\x10SearchSequencing\x12\x1e.ga4gh.SearchSequencingRequest\x1a\x1f.ga4gh.SearchSequencingResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/sequencing/search:\x01*\x12|\n\x10SearchAlignments\x12\x1e.ga4gh.SearchAlignmentsRequest\x1a\x1f.ga4gh.SearchAlignmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/alignments/search:\x01*\x12\x8c\x01\n\x14SearchVariantCalling\x12\".ga4gh.SearchVariantCallingRequest\x1a#.ga4gh.SearchVariantCallingResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/variantcalling/search:\x01*\x12\x92\x01\n\x16SearchFusionDetections\x12#.ga4gh.SearchFusionDetectionRequest\x1a$.ga4gh.SearchFusionDetectionResponse\"-\x82\xd3\xe4\x93\x02\'\"\"/v0.6.0a10/fusiondetections/search:\x01*\x12\x9c\x01\n\x18SearchExpressionAnalysis\x12&.ga4gh.SearchExpressionAnalysisRequest\x1a\'.ga4gh.SearchExpressionAnalysisResponse\"/\x82\xd3\xe4\x93\x02)\"$/v0.6.0a10/expressionanalysis/search:\x01*\x12o\n\rGetExtraction\x12\x1b.ga4gh.GetExtractionRequest\x1a\x11.ga4gh.Extraction\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/extractions/{extraction_id}\x12n\n\rGetSequencing\x12\x1b.ga4gh.GetSequencingRequest\x1a\x11.ga4gh.Sequencing\"-\x82\xd3\xe4\x93\x02\'\x12%/v0.6.0a10/sequencing/{sequencing_id}\x12j\n\x0cGetAlignment\x12\x1a.ga4gh.GetAlignmentRequest\x1a\x10.ga4gh.Alignment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/alignments/{alignment_id}\x12\x82\x01\n\x11GetVariantCalling\x12\x1f.ga4gh.GetVariantCallingRequest\x1a\x15.ga4gh.VariantCalling\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/variantcalling/{variantcalling_id}\x12\x87\x01\n\x12GetFusionDetection\x12 .ga4gh.GetFusionDetectionRequest\x1a\x16.ga4gh.FusionDetection\"7\x82\xd3\xe4\x93\x02\x31\x12//v0.6.0a10/fusiondetection/{fusiondetection_id}\x12\x96\x01\n\x15GetExpressionAnalysis\x12#.ga4gh.GetExpressionAnalysisRequest\x1a\x19.ga4gh.ExpressionAnalysis\"=\x82\xd3\xe4\x93\x02\x37\x12\x35/v0.6.0a10/expressionanalysis/{expressionanalysis_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -71,6 +71,13 @@ _SEARCHEXTRACTIONSREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchExtractionsRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -83,8 +90,8 @@ _SEARCHEXTRACTIONSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=185,
-  serialized_end=303,
+  serialized_start=186,
+  serialized_end=336,
 )
 
 
@@ -114,8 +121,8 @@ _GETEXTRACTIONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=305,
-  serialized_end=350,
+  serialized_start=338,
+  serialized_end=383,
 )
 
 
@@ -152,8 +159,8 @@ _SEARCHEXTRACTIONSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=352,
-  serialized_end=444,
+  serialized_start=385,
+  serialized_end=477,
 )
 
 
@@ -199,6 +206,13 @@ _SEARCHSEQUENCINGREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchSequencingRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -211,8 +225,8 @@ _SEARCHSEQUENCINGREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=446,
-  serialized_end=563,
+  serialized_start=480,
+  serialized_end=629,
 )
 
 
@@ -242,8 +256,8 @@ _GETSEQUENCINGREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=565,
-  serialized_end=610,
+  serialized_start=631,
+  serialized_end=676,
 )
 
 
@@ -280,8 +294,8 @@ _SEARCHSEQUENCINGRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=612,
-  serialized_end=702,
+  serialized_start=678,
+  serialized_end=768,
 )
 
 
@@ -327,6 +341,13 @@ _SEARCHALIGNMENTSREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchAlignmentsRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -339,8 +360,8 @@ _SEARCHALIGNMENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=704,
-  serialized_end=821,
+  serialized_start=771,
+  serialized_end=920,
 )
 
 
@@ -370,8 +391,8 @@ _GETALIGNMENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=823,
-  serialized_end=866,
+  serialized_start=922,
+  serialized_end=965,
 )
 
 
@@ -408,8 +429,8 @@ _SEARCHALIGNMENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=868,
-  serialized_end=957,
+  serialized_start=967,
+  serialized_end=1056,
 )
 
 
@@ -455,6 +476,13 @@ _SEARCHVARIANTCALLINGREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchVariantCallingRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -467,8 +495,8 @@ _SEARCHVARIANTCALLINGREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=959,
-  serialized_end=1080,
+  serialized_start=1059,
+  serialized_end=1212,
 )
 
 
@@ -498,8 +526,8 @@ _GETVARIANTCALLINGREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1082,
-  serialized_end=1135,
+  serialized_start=1214,
+  serialized_end=1267,
 )
 
 
@@ -536,8 +564,8 @@ _SEARCHVARIANTCALLINGRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1137,
-  serialized_end=1239,
+  serialized_start=1269,
+  serialized_end=1371,
 )
 
 
@@ -583,6 +611,13 @@ _SEARCHFUSIONDETECTIONREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchFusionDetectionRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -595,8 +630,8 @@ _SEARCHFUSIONDETECTIONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1241,
-  serialized_end=1363,
+  serialized_start=1374,
+  serialized_end=1528,
 )
 
 
@@ -626,8 +661,8 @@ _GETFUSIONDETECTIONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1365,
-  serialized_end=1420,
+  serialized_start=1530,
+  serialized_end=1585,
 )
 
 
@@ -664,8 +699,8 @@ _SEARCHFUSIONDETECTIONRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1422,
-  serialized_end=1527,
+  serialized_start=1587,
+  serialized_end=1692,
 )
 
 
@@ -711,6 +746,13 @@ _SEARCHEXPRESSIONANALYSISREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='filters', full_name='ga4gh.SearchExpressionAnalysisRequest.filters', index=5,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -723,8 +765,8 @@ _SEARCHEXPRESSIONANALYSISREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1529,
-  serialized_end=1654,
+  serialized_start=1695,
+  serialized_end=1852,
 )
 
 
@@ -754,8 +796,8 @@ _GETEXPRESSIONANALYSISREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1656,
-  serialized_end=1717,
+  serialized_start=1854,
+  serialized_end=1915,
 )
 
 
@@ -792,15 +834,21 @@ _SEARCHEXPRESSIONANALYSISRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1719,
-  serialized_end=1833,
+  serialized_start=1917,
+  serialized_end=2031,
 )
 
+_SEARCHEXTRACTIONSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHEXTRACTIONSRESPONSE.fields_by_name['extractions'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._EXTRACTION
+_SEARCHSEQUENCINGREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHSEQUENCINGRESPONSE.fields_by_name['sequencing'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._SEQUENCING
+_SEARCHALIGNMENTSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHALIGNMENTSRESPONSE.fields_by_name['alignments'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._ALIGNMENT
+_SEARCHVARIANTCALLINGREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHVARIANTCALLINGRESPONSE.fields_by_name['variantcalling'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._VARIANTCALLING
+_SEARCHFUSIONDETECTIONREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHFUSIONDETECTIONRESPONSE.fields_by_name['fusiondetection'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._FUSIONDETECTION
+_SEARCHEXPRESSIONANALYSISREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHEXPRESSIONANALYSISRESPONSE.fields_by_name['expressionanalysis'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_pipeline__metadata__pb2._EXPRESSIONANALYSIS
 DESCRIPTOR.message_types_by_name['SearchExtractionsRequest'] = _SEARCHEXTRACTIONSREQUEST
 DESCRIPTOR.message_types_by_name['GetExtractionRequest'] = _GETEXTRACTIONREQUEST
