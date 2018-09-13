@@ -434,5 +434,5 @@ message ExpressionAnalysis {
     int32 sequencingIdTier = 23;
 
     string site = 24;
-    string siteTier = 25;
+    int32 siteTier = 25;
     }
