@@ -71,7 +71,7 @@ def setAttribute(values, value):
         values.add().int32_value = value
     elif isinstance(value, float):
         values.add().double_value = value
-    elif isinstance(value, long):
+    elif isinstance(value, int):
         values.add().int64_value = value
     elif isinstance(value, str):
         values.add().string_value = value
