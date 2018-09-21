@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/search_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\x33ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a)ga4gh/schemas/ga4gh/variant_service.proto\"\xf5\x04\n\tComponent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x30\n\x08patients\x18\x02 \x01(\x0b\x32\x1c.ga4gh.SearchPatientsRequestH\x00\x12\x36\n\x0b\x65nrollments\x18\x03 \x01(\x0b\x32\x1f.ga4gh.SearchEnrollmentsRequestH\x00\x12\x30\n\x08\x63onsents\x18\x04 \x01(\x0b\x32\x1c.ga4gh.SearchConsentsRequestH\x00\x12\x32\n\tdiagnoses\x18\x05 \x01(\x0b\x32\x1d.ga4gh.SearchDiagnosesRequestH\x00\x12.\n\x07samples\x18\x06 \x01(\x0b\x32\x1b.ga4gh.SearchSamplesRequestH\x00\x12\x34\n\ntreatments\x18\x07 \x01(\x0b\x32\x1e.ga4gh.SearchTreatmentsRequestH\x00\x12\x30\n\x08outcomes\x18\x08 \x01(\x0b\x32\x1c.ga4gh.SearchOutcomesRequestH\x00\x12:\n\rcomplications\x18\t \x01(\x0b\x32!.ga4gh.SearchComplicationsRequestH\x00\x12\x38\n\x0ctumourboards\x18\n \x01(\x0b\x32 .ga4gh.SearchTumourboardsRequestH\x00\x12\x30\n\x08variants\x18\x0b \x01(\x0b\x32\x1c.ga4gh.SearchVariantsRequestH\x00\x12@\n\x0evariantsByGene\x18\x0c \x01(\x0b\x32&.ga4gh.SearchVariantsByGeneNameRequestH\x00\x42\n\n\x08\x65ndpoint\"W\n\nAndor_type\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1e\n\x03\x61nd\x18\x02 \x03(\x0b\x32\x11.ga4gh.Andor_type\x12\x1d\n\x02or\x18\x03 \x03(\x0b\x32\x11.ga4gh.Andor_type\"F\n\x05Logic\x12\x1e\n\x03\x61nd\x18\x01 \x03(\x0b\x32\x11.ga4gh.Andor_type\x12\x1d\n\x02or\x18\x02 \x03(\x0b\x32\x11.ga4gh.Andor_type\"&\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\"\xc1\x01\n\x12SearchQueryRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x1b\n\x05logic\x18\x02 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x03 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x04 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x05 \x01(\x05\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"\x9f\x03\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x0b \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
+  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\x33ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a)ga4gh/schemas/ga4gh/variant_service.proto\"\xf5\x04\n\tComponent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x30\n\x08patients\x18\x02 \x01(\x0b\x32\x1c.ga4gh.SearchPatientsRequestH\x00\x12\x36\n\x0b\x65nrollments\x18\x03 \x01(\x0b\x32\x1f.ga4gh.SearchEnrollmentsRequestH\x00\x12\x30\n\x08\x63onsents\x18\x04 \x01(\x0b\x32\x1c.ga4gh.SearchConsentsRequestH\x00\x12\x32\n\tdiagnoses\x18\x05 \x01(\x0b\x32\x1d.ga4gh.SearchDiagnosesRequestH\x00\x12.\n\x07samples\x18\x06 \x01(\x0b\x32\x1b.ga4gh.SearchSamplesRequestH\x00\x12\x34\n\ntreatments\x18\x07 \x01(\x0b\x32\x1e.ga4gh.SearchTreatmentsRequestH\x00\x12\x30\n\x08outcomes\x18\x08 \x01(\x0b\x32\x1c.ga4gh.SearchOutcomesRequestH\x00\x12:\n\rcomplications\x18\t \x01(\x0b\x32!.ga4gh.SearchComplicationsRequestH\x00\x12\x38\n\x0ctumourboards\x18\n \x01(\x0b\x32 .ga4gh.SearchTumourboardsRequestH\x00\x12\x30\n\x08variants\x18\x0b \x01(\x0b\x32\x1c.ga4gh.SearchVariantsRequestH\x00\x12@\n\x0evariantsByGene\x18\x0c \x01(\x0b\x32&.ga4gh.SearchVariantsByGeneNameRequestH\x00\x42\n\n\x08\x65ndpoint\"W\n\nAndor_type\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1e\n\x03\x61nd\x18\x02 \x03(\x0b\x32\x11.ga4gh.Andor_type\x12\x1d\n\x02or\x18\x03 \x03(\x0b\x32\x11.ga4gh.Andor_type\"F\n\x05Logic\x12\x1e\n\x03\x61nd\x18\x01 \x03(\x0b\x32\x11.ga4gh.Andor_type\x12\x1d\n\x02or\x18\x02 \x03(\x0b\x32\x11.ga4gh.Andor_type\"g\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\x12\r\n\x05start\x18\x03 \x01(\t\x12\x0b\n\x03\x65nd\x18\x04 \x01(\t\x12\x15\n\rreferenceName\x18\x05 \x01(\t\x12\x0c\n\x04gene\x18\x06 \x01(\t\"\xc1\x01\n\x12SearchQueryRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x1b\n\x05logic\x18\x02 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x03 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x04 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x05 \x01(\x05\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"\x9f\x03\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x0b \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_variant__service__pb2.DESCRIPTOR,])
 
@@ -247,6 +247,34 @@ _RESULT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='start', full_name='ga4gh.Result.start', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='end', full_name='ga4gh.Result.end', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='referenceName', full_name='ga4gh.Result.referenceName', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='gene', full_name='ga4gh.Result.gene', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -260,7 +288,7 @@ _RESULT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1099,
-  serialized_end=1137,
+  serialized_end=1202,
 )
 
 
@@ -332,8 +360,8 @@ _SEARCHQUERYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1140,
-  serialized_end=1333,
+  serialized_start=1205,
+  serialized_end=1398,
 )
 
 
@@ -433,8 +461,8 @@ _SEARCHQUERYRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1336,
-  serialized_end=1751,
+  serialized_start=1401,
+  serialized_end=1816,
 )
 
 _COMPONENT.fields_by_name['patients'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHPATIENTSREQUEST
