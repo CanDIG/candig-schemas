@@ -20,6 +20,7 @@ enum ExpressionUnit {
   EXPRESSION_UNIT_UNSPECIFIED = 0;
   FPKM = 1;
   TPM = 2;
+  RPKM = 3;
 }
 
 // A collection of associated RNAQuantifications.  Typically this will be all

@@ -8,7 +8,7 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-#from google.protobuf import descriptor_pb2
+from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/rna_quantification.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n,ga4gh/schemas/ga4gh/rna_quantification.proto\x12\x05ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"k\n\x14RnaQuantificationSet\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12%\n\nattributes\x18\x04 \x01(\x0b\x32\x11.ga4gh.Attributes\"\xf5\x01\n\x11RnaQuantification\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x08 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x16\n\x0eread_group_ids\x18\x04 \x03(\t\x12 \n\x08programs\x18\x05 \x03(\x0b\x32\x0e.ga4gh.Program\x12\x17\n\x0f\x66\x65\x61ture_set_ids\x18\x06 \x03(\t\x12!\n\x19rna_quantification_set_id\x18\x07 \x01(\t\x12%\n\nattributes\x18\t \x01(\x0b\x32\x11.ga4gh.Attributes\"\xa0\x02\n\x0f\x45xpressionLevel\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1d\n\x15rna_quantification_id\x18\x04 \x01(\t\x12\x16\n\x0eraw_read_count\x18\x05 \x01(\x02\x12\x12\n\nexpression\x18\x06 \x01(\x02\x12\x15\n\ris_normalized\x18\x07 \x01(\x08\x12$\n\x05units\x18\x08 \x01(\x0e\x32\x15.ga4gh.ExpressionUnit\x12\r\n\x05score\x18\t \x01(\x02\x12\x19\n\x11\x63onf_interval_low\x18\n \x01(\x02\x12\x1a\n\x12\x63onf_interval_high\x18\x0b \x01(\x02\x12%\n\nattributes\x18\x0c \x01(\x0b\x32\x11.ga4gh.Attributes*D\n\x0e\x45xpressionUnit\x12\x1f\n\x1b\x45XPRESSION_UNIT_UNSPECIFIED\x10\x00\x12\x08\n\x04\x46PKM\x10\x01\x12\x07\n\x03TPM\x10\x02\x62\x06proto3')
+  serialized_pb=_b('\n,ga4gh/schemas/ga4gh/rna_quantification.proto\x12\x05ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"k\n\x14RnaQuantificationSet\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12%\n\nattributes\x18\x04 \x01(\x0b\x32\x11.ga4gh.Attributes\"\xf5\x01\n\x11RnaQuantification\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x08 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x16\n\x0eread_group_ids\x18\x04 \x03(\t\x12 \n\x08programs\x18\x05 \x03(\x0b\x32\x0e.ga4gh.Program\x12\x17\n\x0f\x66\x65\x61ture_set_ids\x18\x06 \x03(\t\x12!\n\x19rna_quantification_set_id\x18\x07 \x01(\t\x12%\n\nattributes\x18\t \x01(\x0b\x32\x11.ga4gh.Attributes\"\xa0\x02\n\x0f\x45xpressionLevel\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1d\n\x15rna_quantification_id\x18\x04 \x01(\t\x12\x16\n\x0eraw_read_count\x18\x05 \x01(\x02\x12\x12\n\nexpression\x18\x06 \x01(\x02\x12\x15\n\ris_normalized\x18\x07 \x01(\x08\x12$\n\x05units\x18\x08 \x01(\x0e\x32\x15.ga4gh.ExpressionUnit\x12\r\n\x05score\x18\t \x01(\x02\x12\x19\n\x11\x63onf_interval_low\x18\n \x01(\x02\x12\x1a\n\x12\x63onf_interval_high\x18\x0b \x01(\x02\x12%\n\nattributes\x18\x0c \x01(\x0b\x32\x11.ga4gh.Attributes*N\n\x0e\x45xpressionUnit\x12\x1f\n\x1b\x45XPRESSION_UNIT_UNSPECIFIED\x10\x00\x12\x08\n\x04\x46PKM\x10\x01\x12\x07\n\x03TPM\x10\x02\x12\x08\n\x04RPKM\x10\x03\x62\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
 
@@ -43,11 +43,15 @@ _EXPRESSIONUNIT = _descriptor.EnumDescriptor(
       name='TPM', index=2, number=2,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='RPKM', index=3, number=3,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=737,
-  serialized_end=805,
+  serialized_end=815,
 )
 _sym_db.RegisterEnumDescriptor(_EXPRESSIONUNIT)
 
@@ -55,6 +59,7 @@ ExpressionUnit = enum_type_wrapper.EnumTypeWrapper(_EXPRESSIONUNIT)
 EXPRESSION_UNIT_UNSPECIFIED = 0
 FPKM = 1
 TPM = 2
+RPKM = 3
 
 
 
