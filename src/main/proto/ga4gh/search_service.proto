@@ -56,21 +56,15 @@ message Component {
 }
 
 
-message Andor_type {
-
-    string id = 1;
-    
-    repeated Andor_type and = 2;
-    
-    repeated Andor_type or = 3;
-}
-
-
 message Logic {
 
-    repeated Andor_type and = 1;
+    repeated Logic and = 1;
     
-    repeated Andor_type or = 2;
+    repeated Logic or = 2;
+
+    string id = 3;
+
+    bool negate = 4;
 }
 
 
@@ -95,6 +89,9 @@ message Result {
 
     // Gene name. Used if the user is requesting variantsByGene endpoint.
     string gene = 6;
+
+    // List of fields to aggregate by and return counts. Overrides response format if included.
+    repeated string count = 7;
 }
 
 
