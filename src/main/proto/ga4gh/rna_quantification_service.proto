@@ -3,6 +3,7 @@ syntax = "proto3";
 package ga4gh;
 
 import "ga4gh/schemas/ga4gh/rna_quantification.proto";
+import "ga4gh/schemas/ga4gh/common.proto";
 import "ga4gh/schemas/google/api/annotations.proto";
 
 service RnaQuantificationService {
@@ -132,6 +133,12 @@ message SearchRnaQuantificationsRequest {
   // To get the next page of results, set this parameter to the value of
   // 'nextPageToken' from the previous response.
   string page_token = 3;
+
+  // Return only RNA quantifications related to the specified sampleId.
+  string sampleId = 5;
+
+  // Return only RNA quantifications related to the specified patientId.
+  string patientId = 6;
 }
 
 // This is the response from 'POST /rnaquantifications/search' expressed as JSON.

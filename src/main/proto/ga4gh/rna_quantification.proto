@@ -71,6 +71,12 @@ message RnaQuantification {
   
   // A map of additional information about the Quantification.
   Attributes attributes = 9;
+
+  // sampleId
+  string sampleId = 10;
+
+  // patientId
+  string patientId = 11;
 }
 
 // The actual numerical quantification for each feature.
