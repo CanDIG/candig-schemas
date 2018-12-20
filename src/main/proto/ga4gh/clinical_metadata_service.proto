@@ -235,6 +235,208 @@ service ClinicalMetadataService {
             };
         };
 
+     // ======================================================
+    // Gets a list of Chemotherapies accessible through the API.
+    // ======================================================
+    // `POST /chemotherapies/search` must accept a JSON version of
+    // `SearchChemotherapiesRequest` as the post body and will return a JSON version
+    // of `SearchChemotherapiesResponse`.
+    rpc SearchChemotherapies(SearchChemotherapiesRequest)
+        returns (SearchChemotherapiesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/chemotherapies/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Radiotherapies accessible through the API.
+    // ======================================================
+    // `POST /radiotherapies/search` must accept a JSON version of
+    // `SearchRadiotherapiesRequest` as the post body and will return a JSON version
+    // of `SearchRadiotherapiesResponse`.
+    rpc SearchRadiotherapies(SearchRadiotherapiesRequest)
+        returns (SearchRadiotherapiesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/radiotherapies/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Surgeries accessible through the API.
+    // ======================================================
+    // `POST /surgeries/search` must accept a JSON version of
+    // `SearchSurgeriesRequest` as the post body and will return a JSON version
+    // of `SearchSurgeriesResponse`.
+    rpc SearchSurgeries(SearchSurgeriesRequest)
+        returns (SearchSurgeriesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/surgeries/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Immunotherapies accessible through the API.
+    // ======================================================
+    // `POST /immunotherapies/search` must accept a JSON version of
+    // `SearchImmunotherapiesRequest` as the post body and will return a JSON version
+    // of `SearchImmunotherapiesResponse`.
+    rpc SearchImmunotherapies(SearchImmunotherapiesRequest)
+        returns (SearchImmunotherapiesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/immunotherapies/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Celltransplants accessible through the API.
+    // ======================================================
+    // `POST /celltransplants/search` must accept a JSON version of
+    // `SearchCelltransplantsRequest` as the post body and will return a JSON version
+    // of `SearchCelltransplantsResponse`.
+    rpc SearchCelltransplants(SearchCelltransplantsRequest)
+        returns (SearchCelltransplantsResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/celltransplants/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Slides accessible through the API.
+    // ======================================================
+    // `POST /slides/search` must accept a JSON version of
+    // `SearchSlidesRequest` as the post body and will return a JSON version
+    // of `SearchSlidesResponse`.
+    rpc SearchSlides(SearchSlidesRequest)
+        returns (SearchSlidesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/slides/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Studies accessible through the API.
+    // ======================================================
+    // `POST /studies/search` must accept a JSON version of
+    // `SearchStudiesRequest` as the post body and will return a JSON version
+    // of `SearchStudiesResponse`.
+    rpc SearchStudies(SearchStudiesRequest)
+        returns (SearchStudiesResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/studies/search"
+                body: "*"
+            };
+        };
+
+    // ======================================================
+    // Gets a list of Labtests accessible through the API.
+    // ======================================================
+    // `POST /labtests/search` must accept a JSON version of
+    // `SearchLabtestsRequest` as the post body and will return a JSON version
+    // of `SearchLabtestsResponse`.
+    rpc SearchLabtests(SearchLabtestsRequest)
+        returns (SearchLabtestsResponse) {
+            option (google.api.http) = {
+                post: "/v0.6.0a10/labtests/search"
+                body: "*"
+            };
+        };
+
+
+    // ======================================================
+    // Gets `Chemotherapy` by ID.
+    // ======================================================
+    // `GET /chemotherapies/{id}` will return a JSON version of `Chemotherapy`.
+    rpc GetChemotherapy(GetChemotherapyRequest)
+        returns (Chemotherapy) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/chemotherapies/{chemotherapy_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Radiotherapy` by ID.
+    // ======================================================
+    // `GET /radiotherapies/{id}` will return a JSON version of `Radiotherapy`.
+    rpc GetRadiotherapy(GetRadiotherapyRequest)
+        returns (Radiotherapy) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/radiotherapies/{radiotherapy_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Surgery` by ID.
+    // ======================================================
+    // `GET /surgeries/{id}` will return a JSON version of `Surgery`.
+    rpc GetSurgery(GetSurgeryRequest)
+        returns (Surgery) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/surgeries/{surgery_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Immunotherapy` by ID.
+    // ======================================================
+    // `GET /immunotherapies/{id}` will return a JSON version of `Immunotherapy`.
+    rpc GetImmunotherapy(GetImmunotherapyRequest)
+        returns (Immunotherapy) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/immunotherapies/{immunotherapy_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Celltransplant` by ID.
+    // ======================================================
+    // `GET /celltransplants/{id}` will return a JSON version of `Celltransplant`.
+    rpc GetCelltransplant(GetCelltransplantRequest)
+        returns (Celltransplant) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/celltransplants/{celltransplant_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Slide` by ID.
+    // ======================================================
+    // `GET /slides/{id}` will return a JSON version of `Slide`.
+    rpc GetSlide(GetSlideRequest)
+        returns (Slide) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/slides/{slide_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Study` by ID.
+    // ======================================================
+    // `GET /studies/{id}` will return a JSON version of `Study`.
+    rpc GetStudy(GetStudyRequest)
+        returns (Study) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/studies/{study_id}"
+            };
+        };
+
+    // ======================================================
+    // Gets `Labtest` by ID.
+    // ======================================================
+    // `GET /labtests/{id}` will return a JSON version of `Labtest`.
+    rpc GetLabtest(GetLabtestRequest)
+        returns (Labtest) {
+            option (google.api.http) = {
+                get: "/v0.6.0a10/labtests/{labtest_id}"
+            };
+        };
+
+
 }
 
 // ======================================================
@@ -599,6 +801,335 @@ message GetTumourboardRequest {
 message SearchTumourboardsResponse {
     // The list of tumourboards.
     repeated Tumourboard tumourboards = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+
+// ======================================================
+// Chemotherapy
+// ======================================================
+// This request maps to the body of `POST /chemotherapies/search` as JSON.
+message SearchChemotherapiesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Chemotherapies with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /chemotherapies/{chemotherapy_id}`.
+message GetChemotherapyRequest {
+    // The ID of the chemotherapy requested
+    string chemotherapy_id = 1;
+    }
+
+//This is the response from `POST /chemotherapies/search` expressed as JSON.
+message SearchChemotherapiesResponse {
+    // The list of chemotherapies.
+    repeated Chemotherapy chemotherapies = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Radiotherapy
+// ======================================================
+// This request maps to the body of `POST /radiotherapies/search` as JSON.
+message SearchRadiotherapiesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Radiotherapies with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /radiotherapies/{radiotherapy_id}`.
+message GetRadiotherapyRequest {
+    // The ID of the radiotherapy requested
+    string radiotherapy_id = 1;
+    }
+
+//This is the response from `POST /radiotherapies/search` expressed as JSON.
+message SearchRadiotherapiesResponse {
+    // The list of radiotherapies.
+    repeated Radiotherapy radiotherapies = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Surgery
+// ======================================================
+// This request maps to the body of `POST /surgeries/search` as JSON.
+message SearchSurgeriesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Surgeries with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /surgeries/{surgery_id}`.
+message GetSurgeryRequest {
+    // The ID of the surgery requested
+    string surgery_id = 1;
+    }
+
+//This is the response from `POST /surgeries/search` expressed as JSON.
+message SearchSurgeriesResponse {
+    // The list of surgeries.
+    repeated Surgery surgeries = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Immunotherapy
+// ======================================================
+// This request maps to the body of `POST /immunotherapies/search` as JSON.
+message SearchImmunotherapiesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Immunotherapies with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /immunotherapies/{immunotherapy_id}`.
+message GetImmunotherapyRequest {
+    // The ID of the immunotherapy requested
+    string immunotherapy_id = 1;
+    }
+
+//This is the response from `POST /immunotherapies/search` expressed as JSON.
+message SearchImmunotherapiesResponse {
+    // The list of immunotherapies.
+    repeated Immunotherapy immunotherapies = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Celltransplant
+// ======================================================
+// This request maps to the body of `POST /celltransplants/search` as JSON.
+message SearchCelltransplantsRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Celltransplants with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /celltransplants/{celltransplant_id}`.
+message GetCelltransplantRequest {
+    // The ID of the celltransplant requested
+    string celltransplant_id = 1;
+    }
+
+//This is the response from `POST /celltransplants/search` expressed as JSON.
+message SearchCelltransplantsResponse {
+    // The list of celltransplants.
+    repeated Celltransplant celltransplants = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Slide
+// ======================================================
+// This request maps to the body of `POST /slides/search` as JSON.
+message SearchSlidesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Slides with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /slides/{slide_id}`.
+message GetSlideRequest {
+    // The ID of the slide requested
+    string slide_id = 1;
+    }
+
+//This is the response from `POST /slides/search` expressed as JSON.
+message SearchSlidesResponse {
+    // The list of slides.
+    repeated Slide slides = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Study
+// ======================================================
+// This request maps to the body of `POST /studies/search` as JSON.
+message SearchStudiesRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Studies with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /studies/{study_id}`.
+message GetStudyRequest {
+    // The ID of the study requested
+    string study_id = 1;
+    }
+
+//This is the response from `POST /studies/search` expressed as JSON.
+message SearchStudiesResponse {
+    // The list of studies.
+    repeated Study studies = 1;
+
+    // The continuation token, which is used to page through large result sets.
+    // Provide this value in a subsequent request to return the next page of
+    // results. This field will be empty if there aren't any additional results.
+    string next_page_token = 2;
+    }
+
+// ======================================================
+// Labtest
+// ======================================================
+// This request maps to the body of `POST /labtests/search` as JSON.
+message SearchLabtestsRequest {
+    // Optionally specify the dataset to search within.
+    string dataset_id = 1;
+
+    // Returns Labtests with the given name found by case-sensitive string matching.
+    string name = 2;
+
+    // Option to filter for a patient id
+    string patient_id = 3;
+
+    // Specifies the maximum number of results to return in a single page.
+    // If unspecified, a system default will be used.
+    int32 page_size = 4;
+
+    // The continuation token, which is used to page through large result sets.
+    // To get the next page of results, set this parameter to the value of
+    // `nextPageToken` from the previous response.
+    string page_token = 5;
+    }
+
+// This request maps to the URL `GET /labtests/{labtest_id}`.
+message GetLabtestRequest {
+    // The ID of the labtest requested
+    string labtest_id = 1;
+    }
+
+//This is the response from `POST /labtests/search` expressed as JSON.
+message SearchLabtestsResponse {
+    // The list of labtests.
+    repeated Labtest labtests = 1;
 
     // The continuation token, which is used to page through large result sets.
     // Provide this value in a subsequent request to return the next page of
