@@ -625,6 +625,14 @@ message Sample {
     string ifNotExplainAnyDeviation = 54;
     int32 ifNotExplainAnyDeviationTier = 55;
 
+    //
+    string recordingDate = 56;
+    int32 recordingDateTier = 57;
+
+    //
+    string startInterval = 58;
+    int32 startIntervalTier = 59;
+
     } // End of the Sample object ============================================
 
 
@@ -713,6 +721,10 @@ message Treatment {
     //
     string diagnosisId = 32;
     int32 diagnosisIdTier = 33;
+
+    //
+    string treatmentPlanId = 34;
+    int32 treatmentPlanIdTier = 35;
 
     } // End of the Treatment object ============================================
 
