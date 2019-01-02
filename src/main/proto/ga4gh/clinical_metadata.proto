@@ -1243,6 +1243,21 @@ message Radiotherapy {
     string treatmentPlanId = 48;
     int32 treatmentPlanIdTier = 49;
 
+    string radiationType = 50;
+    int32 radiationTypeTier = 51;
+
+    string radiationSite = 52;
+    int32 radiationSiteTier = 53;
+
+    string totalDose = 54;
+    int32 totalDoseTier = 55;
+
+    string boostSite = 56;
+    int32 boostSiteTier = 57;
+
+    string boostDose = 58;
+    int32 boostDoseTier = 59;
+
     } // End of the Radiotherapy object ========================================
 
 
@@ -1295,6 +1310,9 @@ message Immunotherapy {
 
     string treatmentPlanId = 18;
     int32 treatmentPlanIdTier = 19;
+
+    string courseNumber = 20;
+    int32 courseNumberTier = 21;
 
     } // End of the Immunotherapy object ========================================
 
@@ -1361,6 +1379,9 @@ message Surgery {
     string treatmentPlanId = 26;
     int32 treatmentPlanIdTier = 27;
 
+    string courseNumber = 28;
+    int32 courseNumberTier = 29;
+
     } // End of the Surgery object ========================================
 
 
@@ -1410,6 +1431,9 @@ message Celltransplant {
 
     string treatmentPlanId = 16;
     int32 treatmentPlanIdTier = 17;
+
+    string courseNumber = 18;
+    int32 courseNumberTier = 19;
 
     } // End of the CellTransplant object ========================================
 
