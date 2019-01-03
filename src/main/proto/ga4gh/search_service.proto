@@ -52,6 +52,22 @@ message Component {
         SearchVariantsRequest variants = 11;
 
         SearchVariantsByGeneNameRequest variantsByGene = 12;
+
+        SearchSlidesRequest slides = 13;
+
+        SearchStudiesRequest studies = 14;
+
+        SearchLabtestsRequest labtests = 15;
+
+        SearchChemotherapiesRequest chemotherapies = 16;
+
+        SearchRadiotherapiesRequest radiotherapies = 17;
+
+        SearchImmunotherapiesRequest immunotherapies = 18;
+
+        SearchSurgeriesRequest surgeries = 19;
+
+        SearchCelltransplantsRequest celltransplants = 20;
     }
 }
 
@@ -152,9 +168,18 @@ message SearchQueryResponse {
 
     // List of variants
     repeated Variant variants = 10;
+
+    repeated Slide slides = 11;
+    repeated Study studies = 12;
+    repeated Labtest labtests = 13;
+    repeated Surgery surgeries = 14;
+    repeated Chemotherapy chemotherapies = 15;
+    repeated Immunotherapy immunotherapies = 16;
+    repeated Radiotherapy radiotherapies = 17;
+    repeated Celltransplant celltransplants = 18;
     
     // The continuation token, which is used to page through large result sets.
     // Provide this value in a subsequent request to return the next page of
     // results. This field will be empty if there aren't any additional results.
-    string next_page_token = 11;
+    string next_page_token = 19;
     }

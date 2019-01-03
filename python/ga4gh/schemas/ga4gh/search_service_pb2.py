@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/search_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\x33ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a)ga4gh/schemas/ga4gh/variant_service.proto\"\xf5\x04\n\tComponent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x30\n\x08patients\x18\x02 \x01(\x0b\x32\x1c.ga4gh.SearchPatientsRequestH\x00\x12\x36\n\x0b\x65nrollments\x18\x03 \x01(\x0b\x32\x1f.ga4gh.SearchEnrollmentsRequestH\x00\x12\x30\n\x08\x63onsents\x18\x04 \x01(\x0b\x32\x1c.ga4gh.SearchConsentsRequestH\x00\x12\x32\n\tdiagnoses\x18\x05 \x01(\x0b\x32\x1d.ga4gh.SearchDiagnosesRequestH\x00\x12.\n\x07samples\x18\x06 \x01(\x0b\x32\x1b.ga4gh.SearchSamplesRequestH\x00\x12\x34\n\ntreatments\x18\x07 \x01(\x0b\x32\x1e.ga4gh.SearchTreatmentsRequestH\x00\x12\x30\n\x08outcomes\x18\x08 \x01(\x0b\x32\x1c.ga4gh.SearchOutcomesRequestH\x00\x12:\n\rcomplications\x18\t \x01(\x0b\x32!.ga4gh.SearchComplicationsRequestH\x00\x12\x38\n\x0ctumourboards\x18\n \x01(\x0b\x32 .ga4gh.SearchTumourboardsRequestH\x00\x12\x30\n\x08variants\x18\x0b \x01(\x0b\x32\x1c.ga4gh.SearchVariantsRequestH\x00\x12@\n\x0evariantsByGene\x18\x0c \x01(\x0b\x32&.ga4gh.SearchVariantsByGeneNameRequestH\x00\x42\n\n\x08\x65ndpoint\"X\n\x05Logic\x12\x19\n\x03\x61nd\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Logic\x12\x18\n\x02or\x18\x02 \x03(\x0b\x32\x0c.ga4gh.Logic\x12\n\n\x02id\x18\x03 \x01(\t\x12\x0e\n\x06negate\x18\x04 \x01(\x08\"v\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\x12\r\n\x05start\x18\x03 \x01(\t\x12\x0b\n\x03\x65nd\x18\x04 \x01(\t\x12\x15\n\rreferenceName\x18\x05 \x01(\t\x12\x0c\n\x04gene\x18\x06 \x01(\t\x12\r\n\x05\x63ount\x18\x07 \x03(\t\"\xc1\x01\n\x12SearchQueryRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x1b\n\x05logic\x18\x02 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x03 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x04 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x05 \x01(\x05\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"\x9f\x03\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x0b \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
+  serialized_pb=_b('\n(ga4gh/schemas/ga4gh/search_service.proto\x12\x05ga4gh\x1a*ga4gh/schemas/google/api/annotations.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a\x33ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a)ga4gh/schemas/ga4gh/variant_service.proto\"\xb5\x08\n\tComponent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x30\n\x08patients\x18\x02 \x01(\x0b\x32\x1c.ga4gh.SearchPatientsRequestH\x00\x12\x36\n\x0b\x65nrollments\x18\x03 \x01(\x0b\x32\x1f.ga4gh.SearchEnrollmentsRequestH\x00\x12\x30\n\x08\x63onsents\x18\x04 \x01(\x0b\x32\x1c.ga4gh.SearchConsentsRequestH\x00\x12\x32\n\tdiagnoses\x18\x05 \x01(\x0b\x32\x1d.ga4gh.SearchDiagnosesRequestH\x00\x12.\n\x07samples\x18\x06 \x01(\x0b\x32\x1b.ga4gh.SearchSamplesRequestH\x00\x12\x34\n\ntreatments\x18\x07 \x01(\x0b\x32\x1e.ga4gh.SearchTreatmentsRequestH\x00\x12\x30\n\x08outcomes\x18\x08 \x01(\x0b\x32\x1c.ga4gh.SearchOutcomesRequestH\x00\x12:\n\rcomplications\x18\t \x01(\x0b\x32!.ga4gh.SearchComplicationsRequestH\x00\x12\x38\n\x0ctumourboards\x18\n \x01(\x0b\x32 .ga4gh.SearchTumourboardsRequestH\x00\x12\x30\n\x08variants\x18\x0b \x01(\x0b\x32\x1c.ga4gh.SearchVariantsRequestH\x00\x12@\n\x0evariantsByGene\x18\x0c \x01(\x0b\x32&.ga4gh.SearchVariantsByGeneNameRequestH\x00\x12,\n\x06slides\x18\r \x01(\x0b\x32\x1a.ga4gh.SearchSlidesRequestH\x00\x12.\n\x07studies\x18\x0e \x01(\x0b\x32\x1b.ga4gh.SearchStudiesRequestH\x00\x12\x30\n\x08labtests\x18\x0f \x01(\x0b\x32\x1c.ga4gh.SearchLabtestsRequestH\x00\x12<\n\x0e\x63hemotherapies\x18\x10 \x01(\x0b\x32\".ga4gh.SearchChemotherapiesRequestH\x00\x12<\n\x0eradiotherapies\x18\x11 \x01(\x0b\x32\".ga4gh.SearchRadiotherapiesRequestH\x00\x12>\n\x0fimmunotherapies\x18\x12 \x01(\x0b\x32#.ga4gh.SearchImmunotherapiesRequestH\x00\x12\x32\n\tsurgeries\x18\x13 \x01(\x0b\x32\x1d.ga4gh.SearchSurgeriesRequestH\x00\x12>\n\x0f\x63\x65lltransplants\x18\x14 \x01(\x0b\x32#.ga4gh.SearchCelltransplantsRequestH\x00\x42\n\n\x08\x65ndpoint\"X\n\x05Logic\x12\x19\n\x03\x61nd\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Logic\x12\x18\n\x02or\x18\x02 \x03(\x0b\x32\x0c.ga4gh.Logic\x12\n\n\x02id\x18\x03 \x01(\t\x12\x0e\n\x06negate\x18\x04 \x01(\x08\"v\n\x06Result\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05\x66ield\x18\x02 \x03(\t\x12\r\n\x05start\x18\x03 \x01(\t\x12\x0b\n\x03\x65nd\x18\x04 \x01(\t\x12\x15\n\rreferenceName\x18\x05 \x01(\t\x12\x0c\n\x04gene\x18\x06 \x01(\t\x12\r\n\x05\x63ount\x18\x07 \x03(\t\"\xc1\x01\n\x12SearchQueryRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x1b\n\x05logic\x18\x02 \x01(\x0b\x32\x0c.ga4gh.Logic\x12$\n\ncomponents\x18\x03 \x03(\x0b\x32\x10.ga4gh.Component\x12\x1e\n\x07results\x18\x04 \x03(\x0b\x32\r.ga4gh.Result\x12\r\n\x05limit\x18\x05 \x01(\x05\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\"\xda\x05\n\x13SearchQueryResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12&\n\x0b\x65nrollments\x18\x02 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12 \n\x08\x63onsents\x18\x03 \x03(\x0b\x32\x0e.ga4gh.Consent\x12#\n\tdiagnoses\x18\x04 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x1e\n\x07samples\x18\x05 \x03(\x0b\x32\r.ga4gh.Sample\x12$\n\ntreatments\x18\x06 \x03(\x0b\x32\x10.ga4gh.Treatment\x12 \n\x08outcomes\x18\x07 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12*\n\rcomplications\x18\x08 \x03(\x0b\x32\x13.ga4gh.Complication\x12(\n\x0ctumourboards\x18\t \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12 \n\x08variants\x18\n \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x1c\n\x06slides\x18\x0b \x03(\x0b\x32\x0c.ga4gh.Slide\x12\x1d\n\x07studies\x18\x0c \x03(\x0b\x32\x0c.ga4gh.Study\x12 \n\x08labtests\x18\r \x03(\x0b\x32\x0e.ga4gh.Labtest\x12!\n\tsurgeries\x18\x0e \x03(\x0b\x32\x0e.ga4gh.Surgery\x12+\n\x0e\x63hemotherapies\x18\x0f \x03(\x0b\x32\x13.ga4gh.Chemotherapy\x12-\n\x0fimmunotherapies\x18\x10 \x03(\x0b\x32\x14.ga4gh.Immunotherapy\x12+\n\x0eradiotherapies\x18\x11 \x03(\x0b\x32\x13.ga4gh.Radiotherapy\x12.\n\x0f\x63\x65lltransplants\x18\x12 \x03(\x0b\x32\x15.ga4gh.Celltransplant\x12\x17\n\x0fnext_page_token\x18\x13 \x01(\t2o\n\rSearchService\x12^\n\x07GetItem\x12\x19.ga4gh.SearchQueryRequest\x1a\x1a.ga4gh.SearchQueryResponse\"\x1c\x82\xd3\xe4\x93\x02\x16\"\x11/v0.6.0a10/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_variant__service__pb2.DESCRIPTOR,])
 
@@ -123,6 +123,62 @@ _COMPONENT = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='slides', full_name='ga4gh.Component.slides', index=12,
+      number=13, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='studies', full_name='ga4gh.Component.studies', index=13,
+      number=14, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='labtests', full_name='ga4gh.Component.labtests', index=14,
+      number=15, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='chemotherapies', full_name='ga4gh.Component.chemotherapies', index=15,
+      number=16, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='radiotherapies', full_name='ga4gh.Component.radiotherapies', index=16,
+      number=17, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='immunotherapies', full_name='ga4gh.Component.immunotherapies', index=17,
+      number=18, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='surgeries', full_name='ga4gh.Component.surgeries', index=18,
+      number=19, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='celltransplants', full_name='ga4gh.Component.celltransplants', index=19,
+      number=20, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -139,7 +195,7 @@ _COMPONENT = _descriptor.Descriptor(
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=307,
-  serialized_end=936,
+  serialized_end=1384,
 )
 
 
@@ -190,8 +246,8 @@ _LOGIC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=938,
-  serialized_end=1026,
+  serialized_start=1386,
+  serialized_end=1474,
 )
 
 
@@ -263,8 +319,8 @@ _RESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1028,
-  serialized_end=1146,
+  serialized_start=1476,
+  serialized_end=1594,
 )
 
 
@@ -336,8 +392,8 @@ _SEARCHQUERYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1149,
-  serialized_end=1342,
+  serialized_start=1597,
+  serialized_end=1790,
 )
 
 
@@ -419,8 +475,64 @@ _SEARCHQUERYRESPONSE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchQueryResponse.next_page_token', index=10,
-      number=11, type=9, cpp_type=9, label=1,
+      name='slides', full_name='ga4gh.SearchQueryResponse.slides', index=10,
+      number=11, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='studies', full_name='ga4gh.SearchQueryResponse.studies', index=11,
+      number=12, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='labtests', full_name='ga4gh.SearchQueryResponse.labtests', index=12,
+      number=13, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='surgeries', full_name='ga4gh.SearchQueryResponse.surgeries', index=13,
+      number=14, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='chemotherapies', full_name='ga4gh.SearchQueryResponse.chemotherapies', index=14,
+      number=15, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='immunotherapies', full_name='ga4gh.SearchQueryResponse.immunotherapies', index=15,
+      number=16, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='radiotherapies', full_name='ga4gh.SearchQueryResponse.radiotherapies', index=16,
+      number=17, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='celltransplants', full_name='ga4gh.SearchQueryResponse.celltransplants', index=17,
+      number=18, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='next_page_token', full_name='ga4gh.SearchQueryResponse.next_page_token', index=18,
+      number=19, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -437,8 +549,8 @@ _SEARCHQUERYRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1345,
-  serialized_end=1760,
+  serialized_start=1793,
+  serialized_end=2523,
 )
 
 _COMPONENT.fields_by_name['patients'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHPATIENTSREQUEST
@@ -452,6 +564,14 @@ _COMPONENT.fields_by_name['complications'].message_type = ga4gh_dot_schemas_dot_
 _COMPONENT.fields_by_name['tumourboards'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHTUMOURBOARDSREQUEST
 _COMPONENT.fields_by_name['variants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variant__service__pb2._SEARCHVARIANTSREQUEST
 _COMPONENT.fields_by_name['variantsByGene'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variant__service__pb2._SEARCHVARIANTSBYGENENAMEREQUEST
+_COMPONENT.fields_by_name['slides'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHSLIDESREQUEST
+_COMPONENT.fields_by_name['studies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHSTUDIESREQUEST
+_COMPONENT.fields_by_name['labtests'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHLABTESTSREQUEST
+_COMPONENT.fields_by_name['chemotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHCHEMOTHERAPIESREQUEST
+_COMPONENT.fields_by_name['radiotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHRADIOTHERAPIESREQUEST
+_COMPONENT.fields_by_name['immunotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHIMMUNOTHERAPIESREQUEST
+_COMPONENT.fields_by_name['surgeries'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHSURGERIESREQUEST
+_COMPONENT.fields_by_name['celltransplants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__service__pb2._SEARCHCELLTRANSPLANTSREQUEST
 _COMPONENT.oneofs_by_name['endpoint'].fields.append(
   _COMPONENT.fields_by_name['patients'])
 _COMPONENT.fields_by_name['patients'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
@@ -485,6 +605,30 @@ _COMPONENT.fields_by_name['variants'].containing_oneof = _COMPONENT.oneofs_by_na
 _COMPONENT.oneofs_by_name['endpoint'].fields.append(
   _COMPONENT.fields_by_name['variantsByGene'])
 _COMPONENT.fields_by_name['variantsByGene'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['slides'])
+_COMPONENT.fields_by_name['slides'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['studies'])
+_COMPONENT.fields_by_name['studies'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['labtests'])
+_COMPONENT.fields_by_name['labtests'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['chemotherapies'])
+_COMPONENT.fields_by_name['chemotherapies'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['radiotherapies'])
+_COMPONENT.fields_by_name['radiotherapies'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['immunotherapies'])
+_COMPONENT.fields_by_name['immunotherapies'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['surgeries'])
+_COMPONENT.fields_by_name['surgeries'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
+_COMPONENT.oneofs_by_name['endpoint'].fields.append(
+  _COMPONENT.fields_by_name['celltransplants'])
+_COMPONENT.fields_by_name['celltransplants'].containing_oneof = _COMPONENT.oneofs_by_name['endpoint']
 _LOGIC.fields_by_name['and'].message_type = _LOGIC
 _LOGIC.fields_by_name['or'].message_type = _LOGIC
 _SEARCHQUERYREQUEST.fields_by_name['logic'].message_type = _LOGIC
@@ -500,6 +644,14 @@ _SEARCHQUERYRESPONSE.fields_by_name['outcomes'].message_type = ga4gh_dot_schemas
 _SEARCHQUERYRESPONSE.fields_by_name['complications'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._COMPLICATION
 _SEARCHQUERYRESPONSE.fields_by_name['tumourboards'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._TUMOURBOARD
 _SEARCHQUERYRESPONSE.fields_by_name['variants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANT
+_SEARCHQUERYRESPONSE.fields_by_name['slides'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._SLIDE
+_SEARCHQUERYRESPONSE.fields_by_name['studies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._STUDY
+_SEARCHQUERYRESPONSE.fields_by_name['labtests'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._LABTEST
+_SEARCHQUERYRESPONSE.fields_by_name['surgeries'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._SURGERY
+_SEARCHQUERYRESPONSE.fields_by_name['chemotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._CHEMOTHERAPY
+_SEARCHQUERYRESPONSE.fields_by_name['immunotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._IMMUNOTHERAPY
+_SEARCHQUERYRESPONSE.fields_by_name['radiotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._RADIOTHERAPY
+_SEARCHQUERYRESPONSE.fields_by_name['celltransplants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._CELLTRANSPLANT
 DESCRIPTOR.message_types_by_name['Component'] = _COMPONENT
 DESCRIPTOR.message_types_by_name['Logic'] = _LOGIC
 DESCRIPTOR.message_types_by_name['Result'] = _RESULT
