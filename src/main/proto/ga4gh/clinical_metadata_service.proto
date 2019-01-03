@@ -820,8 +820,8 @@ message SearchChemotherapiesRequest {
     // Returns Chemotherapies with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -861,8 +861,8 @@ message SearchRadiotherapiesRequest {
     // Returns Radiotherapies with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -902,8 +902,8 @@ message SearchSurgeriesRequest {
     // Returns Surgeries with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -943,8 +943,8 @@ message SearchImmunotherapiesRequest {
     // Returns Immunotherapies with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -984,8 +984,8 @@ message SearchCelltransplantsRequest {
     // Returns Celltransplants with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -1025,8 +1025,8 @@ message SearchSlidesRequest {
     // Returns Slides with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -1066,8 +1066,8 @@ message SearchStudiesRequest {
     // Returns Studies with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.
@@ -1107,8 +1107,8 @@ message SearchLabtestsRequest {
     // Returns Labtests with the given name found by case-sensitive string matching.
     string name = 2;
 
-    // Option to filter for a patient id
-    string patient_id = 3;
+    // Filter on any of the fields
+    repeated Filter filters = 3;
 
     // Specifies the maximum number of results to return in a single page.
     // If unspecified, a system default will be used.

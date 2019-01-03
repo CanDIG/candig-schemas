@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/clinical_metadata_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x12\x05ga4gh\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x80\x01\n\x15SearchPatientsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetPatientRequest\x12\x12\n\npatient_id\x18\x01 \x01(\t\"S\n\x16SearchPatientsResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x83\x01\n\x18SearchEnrollmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"-\n\x14GetEnrollmentRequest\x12\x15\n\renrollment_id\x18\x01 \x01(\t\"\\\n\x19SearchEnrollmentsResponse\x12&\n\x0b\x65nrollments\x18\x01 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchConsentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetConsentRequest\x12\x12\n\nconsent_id\x18\x01 \x01(\t\"S\n\x16SearchConsentsResponse\x12 \n\x08\x63onsents\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Consent\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x81\x01\n\x16SearchDiagnosesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetDiagnosisRequest\x12\x14\n\x0c\x64iagnosis_id\x18\x01 \x01(\t\"W\n\x17SearchDiagnosesResponse\x12#\n\tdiagnoses\x18\x01 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x7f\n\x14SearchSamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"%\n\x10GetSampleRequest\x12\x11\n\tsample_id\x18\x01 \x01(\t\"P\n\x15SearchSamplesResponse\x12\x1e\n\x07samples\x18\x01 \x03(\x0b\x32\r.ga4gh.Sample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x82\x01\n\x17SearchTreatmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetTreatmentRequest\x12\x14\n\x0ctreatment_id\x18\x01 \x01(\t\"Y\n\x18SearchTreatmentsResponse\x12$\n\ntreatments\x18\x01 \x03(\x0b\x32\x10.ga4gh.Treatment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchOutcomesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetOutcomeRequest\x12\x12\n\noutcome_id\x18\x01 \x01(\t\"S\n\x16SearchOutcomesResponse\x12 \n\x08outcomes\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x85\x01\n\x1aSearchComplicationsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetComplicationRequest\x12\x17\n\x0f\x63omplication_id\x18\x01 \x01(\t\"b\n\x1bSearchComplicationsResponse\x12*\n\rcomplications\x18\x01 \x03(\x0b\x32\x13.ga4gh.Complication\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x84\x01\n\x19SearchTumourboardsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"/\n\x15GetTumourboardRequest\x12\x16\n\x0etumourboard_id\x18\x01 \x01(\t\"_\n\x1aSearchTumourboardsResponse\x12(\n\x0ctumourboards\x18\x01 \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"z\n\x1bSearchChemotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetChemotherapyRequest\x12\x17\n\x0f\x63hemotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchChemotherapiesResponse\x12+\n\x0e\x63hemotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Chemotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"z\n\x1bSearchRadiotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetRadiotherapyRequest\x12\x17\n\x0fradiotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchRadiotherapiesResponse\x12+\n\x0eradiotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Radiotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"u\n\x16SearchSurgeriesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetSurgeryRequest\x12\x12\n\nsurgery_id\x18\x01 \x01(\t\"U\n\x17SearchSurgeriesResponse\x12!\n\tsurgeries\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Surgery\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"{\n\x1cSearchImmunotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"3\n\x17GetImmunotherapyRequest\x12\x18\n\x10immunotherapy_id\x18\x01 \x01(\t\"g\n\x1dSearchImmunotherapiesResponse\x12-\n\x0fimmunotherapies\x18\x01 \x03(\x0b\x32\x14.ga4gh.Immunotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"{\n\x1cSearchCelltransplantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"5\n\x18GetCelltransplantRequest\x12\x19\n\x11\x63\x65lltransplant_id\x18\x01 \x01(\t\"h\n\x1dSearchCelltransplantsResponse\x12.\n\x0f\x63\x65lltransplants\x18\x01 \x03(\x0b\x32\x15.ga4gh.Celltransplant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"r\n\x13SearchSlidesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetSlideRequest\x12\x10\n\x08slide_id\x18\x01 \x01(\t\"M\n\x14SearchSlidesResponse\x12\x1c\n\x06slides\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Slide\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"s\n\x14SearchStudiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetStudyRequest\x12\x10\n\x08study_id\x18\x01 \x01(\t\"O\n\x15SearchStudiesResponse\x12\x1d\n\x07studies\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Study\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"t\n\x15SearchLabtestsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x12\n\npatient_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetLabtestRequest\x12\x12\n\nlabtest_id\x18\x01 \x01(\t\"S\n\x16SearchLabtestsResponse\x12 \n\x08labtests\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Labtest\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xbf\x1f\n\x17\x43linicalMetadataService\x12t\n\x0eSearchPatients\x12\x1c.ga4gh.SearchPatientsRequest\x1a\x1d.ga4gh.SearchPatientsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/patients/search:\x01*\x12\x80\x01\n\x11SearchEnrollments\x12\x1f.ga4gh.SearchEnrollmentsRequest\x1a .ga4gh.SearchEnrollmentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/enrollments/search:\x01*\x12t\n\x0eSearchConsents\x12\x1c.ga4gh.SearchConsentsRequest\x1a\x1d.ga4gh.SearchConsentsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/consents/search:\x01*\x12x\n\x0fSearchDiagnoses\x12\x1d.ga4gh.SearchDiagnosesRequest\x1a\x1e.ga4gh.SearchDiagnosesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/diagnoses/search:\x01*\x12p\n\rSearchSamples\x12\x1b.ga4gh.SearchSamplesRequest\x1a\x1c.ga4gh.SearchSamplesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/samples/search:\x01*\x12|\n\x10SearchTreatments\x12\x1e.ga4gh.SearchTreatmentsRequest\x1a\x1f.ga4gh.SearchTreatmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/treatments/search:\x01*\x12t\n\x0eSearchOutcomes\x12\x1c.ga4gh.SearchOutcomesRequest\x1a\x1d.ga4gh.SearchOutcomesResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/outcomes/search:\x01*\x12\x88\x01\n\x13SearchComplications\x12!.ga4gh.SearchComplicationsRequest\x1a\".ga4gh.SearchComplicationsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/complications/search:\x01*\x12\x84\x01\n\x12SearchTumourboards\x12 .ga4gh.SearchTumourboardsRequest\x1a!.ga4gh.SearchTumourboardsResponse\")\x82\xd3\xe4\x93\x02#\"\x1e/v0.6.0a10/tumourboards/search:\x01*\x12`\n\nGetPatient\x12\x18.ga4gh.GetPatientRequest\x1a\x0e.ga4gh.Patient\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/patients/{patient_id}\x12o\n\rGetEnrollment\x12\x1b.ga4gh.GetEnrollmentRequest\x1a\x11.ga4gh.Enrollment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/enrollments/{enrollment_id}\x12`\n\nGetConsent\x12\x18.ga4gh.GetConsentRequest\x1a\x0e.ga4gh.Consent\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/consents/{consent_id}\x12i\n\x0cGetDiagnosis\x12\x1a.ga4gh.GetDiagnosisRequest\x1a\x10.ga4gh.Diagnosis\"+\x82\xd3\xe4\x93\x02%\x12#/v0.6.0a10/diagnoses/{diagnosis_id}\x12[\n\tGetSample\x12\x17.ga4gh.GetSampleRequest\x1a\r.ga4gh.Sample\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.6.0a10/samples/{sample_id}\x12j\n\x0cGetTreatment\x12\x1a.ga4gh.GetTreatmentRequest\x1a\x10.ga4gh.Treatment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/treatments/{treatment_id}\x12`\n\nGetOutcome\x12\x18.ga4gh.GetOutcomeRequest\x1a\x0e.ga4gh.Outcome\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/outcomes/{outcome_id}\x12y\n\x0fGetComplication\x12\x1d.ga4gh.GetComplicationRequest\x1a\x13.ga4gh.Complication\"2\x82\xd3\xe4\x93\x02,\x12*/v0.6.0a10/complications/{complication_id}\x12t\n\x0eGetTumourboard\x12\x1c.ga4gh.GetTumourboardRequest\x1a\x12.ga4gh.Tumourboard\"0\x82\xd3\xe4\x93\x02*\x12(/v0.6.0a10/tumourboards/{tumourboard_id}\x12\x8c\x01\n\x14SearchChemotherapies\x12\".ga4gh.SearchChemotherapiesRequest\x1a#.ga4gh.SearchChemotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/chemotherapies/search:\x01*\x12\x8c\x01\n\x14SearchRadiotherapies\x12\".ga4gh.SearchRadiotherapiesRequest\x1a#.ga4gh.SearchRadiotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/radiotherapies/search:\x01*\x12x\n\x0fSearchSurgeries\x12\x1d.ga4gh.SearchSurgeriesRequest\x1a\x1e.ga4gh.SearchSurgeriesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/surgeries/search:\x01*\x12\x90\x01\n\x15SearchImmunotherapies\x12#.ga4gh.SearchImmunotherapiesRequest\x1a$.ga4gh.SearchImmunotherapiesResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/immunotherapies/search:\x01*\x12\x90\x01\n\x15SearchCelltransplants\x12#.ga4gh.SearchCelltransplantsRequest\x1a$.ga4gh.SearchCelltransplantsResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/celltransplants/search:\x01*\x12l\n\x0cSearchSlides\x12\x1a.ga4gh.SearchSlidesRequest\x1a\x1b.ga4gh.SearchSlidesResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v0.6.0a10/slides/search:\x01*\x12p\n\rSearchStudies\x12\x1b.ga4gh.SearchStudiesRequest\x1a\x1c.ga4gh.SearchStudiesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/studies/search:\x01*\x12t\n\x0eSearchLabtests\x12\x1c.ga4gh.SearchLabtestsRequest\x1a\x1d.ga4gh.SearchLabtestsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/labtests/search:\x01*\x12z\n\x0fGetChemotherapy\x12\x1d.ga4gh.GetChemotherapyRequest\x1a\x13.ga4gh.Chemotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/chemotherapies/{chemotherapy_id}\x12z\n\x0fGetRadiotherapy\x12\x1d.ga4gh.GetRadiotherapyRequest\x1a\x13.ga4gh.Radiotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/radiotherapies/{radiotherapy_id}\x12\x61\n\nGetSurgery\x12\x18.ga4gh.GetSurgeryRequest\x1a\x0e.ga4gh.Surgery\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/surgeries/{surgery_id}\x12\x7f\n\x10GetImmunotherapy\x12\x1e.ga4gh.GetImmunotherapyRequest\x1a\x14.ga4gh.Immunotherapy\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/immunotherapies/{immunotherapy_id}\x12\x83\x01\n\x11GetCelltransplant\x12\x1f.ga4gh.GetCelltransplantRequest\x1a\x15.ga4gh.Celltransplant\"6\x82\xd3\xe4\x93\x02\x30\x12./v0.6.0a10/celltransplants/{celltransplant_id}\x12V\n\x08GetSlide\x12\x16.ga4gh.GetSlideRequest\x1a\x0c.ga4gh.Slide\"$\x82\xd3\xe4\x93\x02\x1e\x12\x1c/v0.6.0a10/slides/{slide_id}\x12W\n\x08GetStudy\x12\x16.ga4gh.GetStudyRequest\x1a\x0c.ga4gh.Study\"%\x82\xd3\xe4\x93\x02\x1f\x12\x1d/v0.6.0a10/studies/{study_id}\x12`\n\nGetLabtest\x12\x18.ga4gh.GetLabtestRequest\x1a\x0e.ga4gh.Labtest\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/labtests/{labtest_id}b\x06proto3')
+  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x12\x05ga4gh\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x80\x01\n\x15SearchPatientsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetPatientRequest\x12\x12\n\npatient_id\x18\x01 \x01(\t\"S\n\x16SearchPatientsResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x83\x01\n\x18SearchEnrollmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"-\n\x14GetEnrollmentRequest\x12\x15\n\renrollment_id\x18\x01 \x01(\t\"\\\n\x19SearchEnrollmentsResponse\x12&\n\x0b\x65nrollments\x18\x01 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchConsentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetConsentRequest\x12\x12\n\nconsent_id\x18\x01 \x01(\t\"S\n\x16SearchConsentsResponse\x12 \n\x08\x63onsents\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Consent\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x81\x01\n\x16SearchDiagnosesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetDiagnosisRequest\x12\x14\n\x0c\x64iagnosis_id\x18\x01 \x01(\t\"W\n\x17SearchDiagnosesResponse\x12#\n\tdiagnoses\x18\x01 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x7f\n\x14SearchSamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"%\n\x10GetSampleRequest\x12\x11\n\tsample_id\x18\x01 \x01(\t\"P\n\x15SearchSamplesResponse\x12\x1e\n\x07samples\x18\x01 \x03(\x0b\x32\r.ga4gh.Sample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x82\x01\n\x17SearchTreatmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetTreatmentRequest\x12\x14\n\x0ctreatment_id\x18\x01 \x01(\t\"Y\n\x18SearchTreatmentsResponse\x12$\n\ntreatments\x18\x01 \x03(\x0b\x32\x10.ga4gh.Treatment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchOutcomesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetOutcomeRequest\x12\x12\n\noutcome_id\x18\x01 \x01(\t\"S\n\x16SearchOutcomesResponse\x12 \n\x08outcomes\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x85\x01\n\x1aSearchComplicationsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetComplicationRequest\x12\x17\n\x0f\x63omplication_id\x18\x01 \x01(\t\"b\n\x1bSearchComplicationsResponse\x12*\n\rcomplications\x18\x01 \x03(\x0b\x32\x13.ga4gh.Complication\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x84\x01\n\x19SearchTumourboardsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"/\n\x15GetTumourboardRequest\x12\x16\n\x0etumourboard_id\x18\x01 \x01(\t\"_\n\x1aSearchTumourboardsResponse\x12(\n\x0ctumourboards\x18\x01 \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x86\x01\n\x1bSearchChemotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetChemotherapyRequest\x12\x17\n\x0f\x63hemotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchChemotherapiesResponse\x12+\n\x0e\x63hemotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Chemotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x86\x01\n\x1bSearchRadiotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetRadiotherapyRequest\x12\x17\n\x0fradiotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchRadiotherapiesResponse\x12+\n\x0eradiotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Radiotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x81\x01\n\x16SearchSurgeriesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetSurgeryRequest\x12\x12\n\nsurgery_id\x18\x01 \x01(\t\"U\n\x17SearchSurgeriesResponse\x12!\n\tsurgeries\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Surgery\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x87\x01\n\x1cSearchImmunotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"3\n\x17GetImmunotherapyRequest\x12\x18\n\x10immunotherapy_id\x18\x01 \x01(\t\"g\n\x1dSearchImmunotherapiesResponse\x12-\n\x0fimmunotherapies\x18\x01 \x03(\x0b\x32\x14.ga4gh.Immunotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x87\x01\n\x1cSearchCelltransplantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"5\n\x18GetCelltransplantRequest\x12\x19\n\x11\x63\x65lltransplant_id\x18\x01 \x01(\t\"h\n\x1dSearchCelltransplantsResponse\x12.\n\x0f\x63\x65lltransplants\x18\x01 \x03(\x0b\x32\x15.ga4gh.Celltransplant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"~\n\x13SearchSlidesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetSlideRequest\x12\x10\n\x08slide_id\x18\x01 \x01(\t\"M\n\x14SearchSlidesResponse\x12\x1c\n\x06slides\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Slide\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x7f\n\x14SearchStudiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetStudyRequest\x12\x10\n\x08study_id\x18\x01 \x01(\t\"O\n\x15SearchStudiesResponse\x12\x1d\n\x07studies\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Study\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchLabtestsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetLabtestRequest\x12\x12\n\nlabtest_id\x18\x01 \x01(\t\"S\n\x16SearchLabtestsResponse\x12 \n\x08labtests\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Labtest\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xbf\x1f\n\x17\x43linicalMetadataService\x12t\n\x0eSearchPatients\x12\x1c.ga4gh.SearchPatientsRequest\x1a\x1d.ga4gh.SearchPatientsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/patients/search:\x01*\x12\x80\x01\n\x11SearchEnrollments\x12\x1f.ga4gh.SearchEnrollmentsRequest\x1a .ga4gh.SearchEnrollmentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/enrollments/search:\x01*\x12t\n\x0eSearchConsents\x12\x1c.ga4gh.SearchConsentsRequest\x1a\x1d.ga4gh.SearchConsentsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/consents/search:\x01*\x12x\n\x0fSearchDiagnoses\x12\x1d.ga4gh.SearchDiagnosesRequest\x1a\x1e.ga4gh.SearchDiagnosesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/diagnoses/search:\x01*\x12p\n\rSearchSamples\x12\x1b.ga4gh.SearchSamplesRequest\x1a\x1c.ga4gh.SearchSamplesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/samples/search:\x01*\x12|\n\x10SearchTreatments\x12\x1e.ga4gh.SearchTreatmentsRequest\x1a\x1f.ga4gh.SearchTreatmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/treatments/search:\x01*\x12t\n\x0eSearchOutcomes\x12\x1c.ga4gh.SearchOutcomesRequest\x1a\x1d.ga4gh.SearchOutcomesResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/outcomes/search:\x01*\x12\x88\x01\n\x13SearchComplications\x12!.ga4gh.SearchComplicationsRequest\x1a\".ga4gh.SearchComplicationsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/complications/search:\x01*\x12\x84\x01\n\x12SearchTumourboards\x12 .ga4gh.SearchTumourboardsRequest\x1a!.ga4gh.SearchTumourboardsResponse\")\x82\xd3\xe4\x93\x02#\"\x1e/v0.6.0a10/tumourboards/search:\x01*\x12`\n\nGetPatient\x12\x18.ga4gh.GetPatientRequest\x1a\x0e.ga4gh.Patient\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/patients/{patient_id}\x12o\n\rGetEnrollment\x12\x1b.ga4gh.GetEnrollmentRequest\x1a\x11.ga4gh.Enrollment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/enrollments/{enrollment_id}\x12`\n\nGetConsent\x12\x18.ga4gh.GetConsentRequest\x1a\x0e.ga4gh.Consent\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/consents/{consent_id}\x12i\n\x0cGetDiagnosis\x12\x1a.ga4gh.GetDiagnosisRequest\x1a\x10.ga4gh.Diagnosis\"+\x82\xd3\xe4\x93\x02%\x12#/v0.6.0a10/diagnoses/{diagnosis_id}\x12[\n\tGetSample\x12\x17.ga4gh.GetSampleRequest\x1a\r.ga4gh.Sample\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.6.0a10/samples/{sample_id}\x12j\n\x0cGetTreatment\x12\x1a.ga4gh.GetTreatmentRequest\x1a\x10.ga4gh.Treatment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/treatments/{treatment_id}\x12`\n\nGetOutcome\x12\x18.ga4gh.GetOutcomeRequest\x1a\x0e.ga4gh.Outcome\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/outcomes/{outcome_id}\x12y\n\x0fGetComplication\x12\x1d.ga4gh.GetComplicationRequest\x1a\x13.ga4gh.Complication\"2\x82\xd3\xe4\x93\x02,\x12*/v0.6.0a10/complications/{complication_id}\x12t\n\x0eGetTumourboard\x12\x1c.ga4gh.GetTumourboardRequest\x1a\x12.ga4gh.Tumourboard\"0\x82\xd3\xe4\x93\x02*\x12(/v0.6.0a10/tumourboards/{tumourboard_id}\x12\x8c\x01\n\x14SearchChemotherapies\x12\".ga4gh.SearchChemotherapiesRequest\x1a#.ga4gh.SearchChemotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/chemotherapies/search:\x01*\x12\x8c\x01\n\x14SearchRadiotherapies\x12\".ga4gh.SearchRadiotherapiesRequest\x1a#.ga4gh.SearchRadiotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/radiotherapies/search:\x01*\x12x\n\x0fSearchSurgeries\x12\x1d.ga4gh.SearchSurgeriesRequest\x1a\x1e.ga4gh.SearchSurgeriesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/surgeries/search:\x01*\x12\x90\x01\n\x15SearchImmunotherapies\x12#.ga4gh.SearchImmunotherapiesRequest\x1a$.ga4gh.SearchImmunotherapiesResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/immunotherapies/search:\x01*\x12\x90\x01\n\x15SearchCelltransplants\x12#.ga4gh.SearchCelltransplantsRequest\x1a$.ga4gh.SearchCelltransplantsResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/celltransplants/search:\x01*\x12l\n\x0cSearchSlides\x12\x1a.ga4gh.SearchSlidesRequest\x1a\x1b.ga4gh.SearchSlidesResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v0.6.0a10/slides/search:\x01*\x12p\n\rSearchStudies\x12\x1b.ga4gh.SearchStudiesRequest\x1a\x1c.ga4gh.SearchStudiesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/studies/search:\x01*\x12t\n\x0eSearchLabtests\x12\x1c.ga4gh.SearchLabtestsRequest\x1a\x1d.ga4gh.SearchLabtestsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/labtests/search:\x01*\x12z\n\x0fGetChemotherapy\x12\x1d.ga4gh.GetChemotherapyRequest\x1a\x13.ga4gh.Chemotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/chemotherapies/{chemotherapy_id}\x12z\n\x0fGetRadiotherapy\x12\x1d.ga4gh.GetRadiotherapyRequest\x1a\x13.ga4gh.Radiotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/radiotherapies/{radiotherapy_id}\x12\x61\n\nGetSurgery\x12\x18.ga4gh.GetSurgeryRequest\x1a\x0e.ga4gh.Surgery\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/surgeries/{surgery_id}\x12\x7f\n\x10GetImmunotherapy\x12\x1e.ga4gh.GetImmunotherapyRequest\x1a\x14.ga4gh.Immunotherapy\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/immunotherapies/{immunotherapy_id}\x12\x83\x01\n\x11GetCelltransplant\x12\x1f.ga4gh.GetCelltransplantRequest\x1a\x15.ga4gh.Celltransplant\"6\x82\xd3\xe4\x93\x02\x30\x12./v0.6.0a10/celltransplants/{celltransplant_id}\x12V\n\x08GetSlide\x12\x16.ga4gh.GetSlideRequest\x1a\x0c.ga4gh.Slide\"$\x82\xd3\xe4\x93\x02\x1e\x12\x1c/v0.6.0a10/slides/{slide_id}\x12W\n\x08GetStudy\x12\x16.ga4gh.GetStudyRequest\x1a\x0c.ga4gh.Study\"%\x82\xd3\xe4\x93\x02\x1f\x12\x1d/v0.6.0a10/studies/{study_id}\x12`\n\nGetLabtest\x12\x18.ga4gh.GetLabtestRequest\x1a\x0e.ga4gh.Labtest\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/labtests/{labtest_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -1203,9 +1203,9 @@ _SEARCHCHEMOTHERAPIESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchChemotherapiesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchChemotherapiesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1235,8 +1235,8 @@ _SEARCHCHEMOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2584,
-  serialized_end=2706,
+  serialized_start=2585,
+  serialized_end=2719,
 )
 
 
@@ -1266,8 +1266,8 @@ _GETCHEMOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2708,
-  serialized_end=2757,
+  serialized_start=2721,
+  serialized_end=2770,
 )
 
 
@@ -1304,8 +1304,8 @@ _SEARCHCHEMOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2759,
-  serialized_end=2859,
+  serialized_start=2772,
+  serialized_end=2872,
 )
 
 
@@ -1331,9 +1331,9 @@ _SEARCHRADIOTHERAPIESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchRadiotherapiesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchRadiotherapiesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1363,8 +1363,8 @@ _SEARCHRADIOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2861,
-  serialized_end=2983,
+  serialized_start=2875,
+  serialized_end=3009,
 )
 
 
@@ -1394,8 +1394,8 @@ _GETRADIOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2985,
-  serialized_end=3034,
+  serialized_start=3011,
+  serialized_end=3060,
 )
 
 
@@ -1432,8 +1432,8 @@ _SEARCHRADIOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3036,
-  serialized_end=3136,
+  serialized_start=3062,
+  serialized_end=3162,
 )
 
 
@@ -1459,9 +1459,9 @@ _SEARCHSURGERIESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchSurgeriesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchSurgeriesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1491,8 +1491,8 @@ _SEARCHSURGERIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3138,
-  serialized_end=3255,
+  serialized_start=3165,
+  serialized_end=3294,
 )
 
 
@@ -1522,8 +1522,8 @@ _GETSURGERYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3257,
-  serialized_end=3296,
+  serialized_start=3296,
+  serialized_end=3335,
 )
 
 
@@ -1560,8 +1560,8 @@ _SEARCHSURGERIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3298,
-  serialized_end=3383,
+  serialized_start=3337,
+  serialized_end=3422,
 )
 
 
@@ -1587,9 +1587,9 @@ _SEARCHIMMUNOTHERAPIESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchImmunotherapiesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchImmunotherapiesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1619,8 +1619,8 @@ _SEARCHIMMUNOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3385,
-  serialized_end=3508,
+  serialized_start=3425,
+  serialized_end=3560,
 )
 
 
@@ -1650,8 +1650,8 @@ _GETIMMUNOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3510,
-  serialized_end=3561,
+  serialized_start=3562,
+  serialized_end=3613,
 )
 
 
@@ -1688,8 +1688,8 @@ _SEARCHIMMUNOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3563,
-  serialized_end=3666,
+  serialized_start=3615,
+  serialized_end=3718,
 )
 
 
@@ -1715,9 +1715,9 @@ _SEARCHCELLTRANSPLANTSREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchCelltransplantsRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchCelltransplantsRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1747,8 +1747,8 @@ _SEARCHCELLTRANSPLANTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3668,
-  serialized_end=3791,
+  serialized_start=3721,
+  serialized_end=3856,
 )
 
 
@@ -1778,8 +1778,8 @@ _GETCELLTRANSPLANTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3793,
-  serialized_end=3846,
+  serialized_start=3858,
+  serialized_end=3911,
 )
 
 
@@ -1816,8 +1816,8 @@ _SEARCHCELLTRANSPLANTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3848,
-  serialized_end=3952,
+  serialized_start=3913,
+  serialized_end=4017,
 )
 
 
@@ -1843,9 +1843,9 @@ _SEARCHSLIDESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchSlidesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchSlidesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1875,8 +1875,8 @@ _SEARCHSLIDESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3954,
-  serialized_end=4068,
+  serialized_start=4019,
+  serialized_end=4145,
 )
 
 
@@ -1906,8 +1906,8 @@ _GETSLIDEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4070,
-  serialized_end=4105,
+  serialized_start=4147,
+  serialized_end=4182,
 )
 
 
@@ -1944,8 +1944,8 @@ _SEARCHSLIDESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4107,
-  serialized_end=4184,
+  serialized_start=4184,
+  serialized_end=4261,
 )
 
 
@@ -1971,9 +1971,9 @@ _SEARCHSTUDIESREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchStudiesRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchStudiesRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2003,8 +2003,8 @@ _SEARCHSTUDIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4186,
-  serialized_end=4301,
+  serialized_start=4263,
+  serialized_end=4390,
 )
 
 
@@ -2034,8 +2034,8 @@ _GETSTUDYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4303,
-  serialized_end=4338,
+  serialized_start=4392,
+  serialized_end=4427,
 )
 
 
@@ -2072,8 +2072,8 @@ _SEARCHSTUDIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4340,
-  serialized_end=4419,
+  serialized_start=4429,
+  serialized_end=4508,
 )
 
 
@@ -2099,9 +2099,9 @@ _SEARCHLABTESTSREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.SearchLabtestsRequest.patient_id', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='filters', full_name='ga4gh.SearchLabtestsRequest.filters', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2131,8 +2131,8 @@ _SEARCHLABTESTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4421,
-  serialized_end=4537,
+  serialized_start=4511,
+  serialized_end=4639,
 )
 
 
@@ -2162,8 +2162,8 @@ _GETLABTESTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4539,
-  serialized_end=4578,
+  serialized_start=4641,
+  serialized_end=4680,
 )
 
 
@@ -2200,8 +2200,8 @@ _SEARCHLABTESTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4580,
-  serialized_end=4663,
+  serialized_start=4682,
+  serialized_end=4765,
 )
 
 _SEARCHPATIENTSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
@@ -2222,13 +2222,21 @@ _SEARCHCOMPLICATIONSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_s
 _SEARCHCOMPLICATIONSRESPONSE.fields_by_name['complications'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._COMPLICATION
 _SEARCHTUMOURBOARDSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHTUMOURBOARDSRESPONSE.fields_by_name['tumourboards'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._TUMOURBOARD
+_SEARCHCHEMOTHERAPIESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHCHEMOTHERAPIESRESPONSE.fields_by_name['chemotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._CHEMOTHERAPY
+_SEARCHRADIOTHERAPIESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHRADIOTHERAPIESRESPONSE.fields_by_name['radiotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._RADIOTHERAPY
+_SEARCHSURGERIESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHSURGERIESRESPONSE.fields_by_name['surgeries'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._SURGERY
+_SEARCHIMMUNOTHERAPIESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHIMMUNOTHERAPIESRESPONSE.fields_by_name['immunotherapies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._IMMUNOTHERAPY
+_SEARCHCELLTRANSPLANTSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHCELLTRANSPLANTSRESPONSE.fields_by_name['celltransplants'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._CELLTRANSPLANT
+_SEARCHSLIDESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHSLIDESRESPONSE.fields_by_name['slides'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._SLIDE
+_SEARCHSTUDIESREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHSTUDIESRESPONSE.fields_by_name['studies'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._STUDY
+_SEARCHLABTESTSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
 _SEARCHLABTESTSRESPONSE.fields_by_name['labtests'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2._LABTEST
 DESCRIPTOR.message_types_by_name['SearchPatientsRequest'] = _SEARCHPATIENTSREQUEST
 DESCRIPTOR.message_types_by_name['GetPatientRequest'] = _GETPATIENTREQUEST
