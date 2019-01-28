@@ -41,75 +41,78 @@ message Patient {
     // Patient specific fields
     // ========================================================================
 
-    //
+    // Project or study identifier of the patient.
     string patientId = 8;
     int32 patientIdTier = 9;
 
-    //
+    // Alternative identifiers of the patient.
     string otherIds = 10;
     int32 otherIdsTier = 11;
 
-    //
+    // Date of birth information
     string dateOfBirth = 12;
     int32 dateOfBirthTier = 13;
 
-    //
+    // Gender
     string gender = 14;
     int32 genderTier = 15;
 
-    //
+    // Ethnicity
     string ethnicity = 16;
     int32 ethnicityTier = 17;
 
-    //
+    // Race
     string race = 18;
     int32 raceTier = 19;
 
-    //
+    // Province or teritory information of the residence status.
     string provinceOfResidence = 20;
     int32 provinceOfResidenceTier = 21;
 
-    //
+    // Date of death
     string dateOfDeath = 22;
     int32 dateOfDeathTier = 23;
 
-    //
+    // Reason of death
     string causeOfDeath = 24;
     int32 causeOfDeathTier = 25;
 
-    //
+    // Indication whether autopsy tissue obtained from the patient can be used
+    // for research purposes.
     string autopsyTissueForResearch = 26;
     int32 autopsyTissueForResearchTier = 27;
 
-    //
+    // Information on any previous malignant disease.
     string priorMalignancy = 28;
     int32 priorMalignancyTier = 29;
 
-    //
+    // Date information of any previous malignant event.
     string dateOfPriorMalignancy = 30;
     int32 dateOfPriorMalignancyTier = 31;
 
-    //
+    // Any known risk factor of the family.
     string familyHistoryAndRiskFactors = 32;
     int32 familyHistoryAndRiskFactorsTier = 33;
 
-    //
+    // Any known genetic mutation known in the family that is inherited and 
+    // increases the chances of developing cancer.
     string familyHistoryOfPredispositionSyndrome = 34;
     int32 familyHistoryOfPredispositionSyndromeTier = 35;
 
-    //
+    // Detailed description of any predispodition.
     string detailsOfPredispositionSyndrome = 36;
     int32 detailsOfPredispositionSyndromeTier = 37;
 
-    //
+    // Any known cancer causing mutation of the patient.
     string geneticCancerSyndrome = 38;
     int32 geneticCancerSyndromeTier = 39;
 
-    //
+    // Information on any other known genetic mutation of the patient.
     string otherGeneticConditionOrSignificantComorbidity = 40;
     int32 otherGeneticConditionOrSignificantComorbidityTier = 41;
 
-    //
+    // Information whether the patient is/was exposed to any carcinogen due to
+    // occupational or environmental reasons.
     string occupationalOrEnvironmentalExposure = 42;
     int32 occupationalOrEnvironmentalExposureTier = 43;
 
@@ -152,67 +155,69 @@ message Enrollment {
     // Enrollment specific fields
     // ========================================================================
 
-    //
+    // Project or study identifier of the patient.
     string patientId = 8;
     int32 patientIdTier = 9;
 
-    //
+    // Name of hospital, clinic or institute which recruited the patient.
     string enrollmentInstitution = 10;
     int32 enrollmentInstitutionTier = 11;
 
-    //
+    // Date information when the patient enrollemnt was approved.
     string enrollmentApprovalDate = 12;
     int32 enrollmentApprovalDateTier = 13;
 
-    //
+    // Information whether the patient was enrolled in any other study.
     string crossEnrollment = 14;
     int32 crossEnrollmentTier = 15;
 
-    //
+    // Name of any other drug test study - if any
     string otherPersonalizedMedicineStudyName = 16;
     int32 otherPersonalizedMedicineStudyNameTier = 17;
 
-    //
+    // Project or study ID of the patient in other drug test study.
     string otherPersonalizedMedicineStudyId = 18;
     int32 otherPersonalizedMedicineStudyIdTier = 19;
 
-    //
+    // Patient age in years when the enrollment happened.
     string ageAtEnrollment = 20;
     int32 ageAtEnrollmentTier = 21;
 
-    //
+    // Category inforamtion for the bases of the eligibility.
     string eligibilityCategory = 22;
     int32 eligibilityCategoryTier = 23;
 
-    //
+    // Disease status at the date of enrollment.
     string statusAtEnrollment = 24;
     int32 statusAtEnrollmentTier = 25;
 
-    //
+    // Full name of the patient's oncologist
     string primaryOncologistName = 26;
     int32 primaryOncologistNameTier = 27;
 
-    //
+    // Contact information of the oncologist
     string primaryOncologistContact = 28;
     int32 primaryOncologistContactTier = 29;
 
-    //
+    // Full name of the patient's physician
     string referringPhysicianName = 30;
     int32 referringPhysicianNameTier = 31;
 
-    //
+    // Contact information of the physician
     string referringPhysicianContact = 32;
     int32 referringPhysicianContactTier = 33;
 
-    //
+    // Short summary of the Enrollment Id request
     string summaryOfIdRequest = 34;
     int32 summaryOfIdRequestTier = 35;
 
-    //
+    // Name of the institution, hospital or clinic, where the patient is
+    // treated.
     string treatingCentreName = 36;
     int32 treatingCentreNameTier = 37;
 
-    //
+    // Name of the province or territory where the treating centre (hospital,
+    // clinic) is located.
     string treatingCentreProvince = 38;
     int32 treatingCentreProvinceTier = 39;
 
@@ -255,83 +260,92 @@ message Consent {
     // Consent specific fields
     // ========================================================================
 
-    //
+    // Project or study identifier of the patient.
     string patientId = 8;
     int32 patientIdTier = 9;
 
-    //
+    // Identifier associated with this patient consent form.
     string consentId = 10;
     int32 consentIdTier = 11;
 
-    //
+    // Date patient provided consent to the study.
     string consentDate = 12;
     int32 consentDateTier = 13;
 
-    //
+    // Consent form version.
     string consentVersion = 14;
     int32 consentVersionTier = 15;
 
-    //
+    // Phrases, conditions to which the patient consented to.
+    // 1. Sample collection and molecular profiling
+    // 2. Biobanking for future research
+    // 3. Re-contact
+    // 4. Collection of tissues/fluids after death
+    // 5. other
     string patientConsentedTo = 16;
     int32 patientConsentedToTier = 17;
 
-    //
+    // Reason for the consent was rejected.
     string reasonForRejection = 18;
     int32 reasonForRejectionTier = 19;
 
-    //
+    // Indication that assent was collected.
     string wasAssentObtained = 20;
     int32 wasAssentObtainedTier = 21;
 
-    //
+    // Date when assent was collected.
     string dateOfAssent = 22;
     int32 dateOfAssentTier = 23;
 
-    //
+    // Assent form version.
     string assentFormVersion = 24;
     int32 assentFormVersionTier = 25;
 
-    //
+    // In case assent is mandatory, but was not obtained, this field contains
+    // the reason.
+    // 1. Too young to give assent
+    // 2. Incapable due to medical / cognitive / developmental issues
     string ifAssentNotObtainedWhyNot = 26;
     int32 ifAssentNotObtainedWhyNotTier = 27;
 
-    //
+    // Date of the patient was reconsented.
     string reconsentDate = 28;
     int32 reconsentDateTier = 29;
 
-    //
+    // Reconsent form version.
     string reconsentVersion = 30;
     int32 reconsentVersionTier = 31;
 
-    //
+    // Name of person who coordinates the consent forms.
     string consentingCoordinatorName = 32;
     int32 consentingCoordinatorNameTier = 33;
 
-    //
+    // Indication that the person perviously consented to this or other studies.
     string previouslyConsented = 34;
     int32 previouslyConsentedTier = 35;
 
-    //
+    // Name of the corresponding biobank, that store patient sample.
     string nameOfOtherBiobank = 36;
     int32 nameOfOtherBiobankTier = 37;
 
-    //
+    // Indication whether the consent is no longer in place.
     string hasConsentBeenWithdrawn = 38;
     int32 hasConsentBeenWithdrawnTier = 39;
 
-    //
+    // Date when the consent has been withdrawn.
     string dateOfConsentWithdrawal = 40;
     int32 dateOfConsentWithdrawalTier = 41;
 
-    //
+    // Type of consent withdrawal
     string typeOfConsentWithdrawal = 42;
     int32 typeOfConsentWithdrawalTier = 43;
 
-    //
+    // Reason or list of reasons, why patient withreawn the consent from the
+    // study.
     string reasonForConsentWithdrawal = 44;
     int32 reasonForConsentWithdrawalTier = 45;
 
-    //
+    // Indication whether the consent form was completed properly.
     string consentFormComplete = 46;
     int32 consentFormCompleteTier = 47;
 
@@ -374,119 +388,121 @@ message Diagnosis {
     // Diagnosis specific fields
     // ========================================================================
 
-    //
+    // Project or study identifier of the patient.
     string patientId = 8;
     int32 patientIdTier = 9;
 
-    //
+    // Any identifier related to this diagnosis event.
     string diagnosisId = 10;
     int32 diagnosisIdTier = 11;
 
-    //
+    // Date when the diagnosis was given.
     string diagnosisDate = 12;
     int32 diagnosisDateTier = 13;
 
-    //
+    // Patient age in years when diagnosis was given.
     string ageAtDiagnosis = 14;
     int32 ageAtDiagnosisTier = 15;
 
-    //
+    // Cancer category information - broad cancer type.
     string cancerType = 16;
     int32 cancerTypeTier = 17;
 
-    //
+    // Ontology classification - exact subtype information.
     string classification = 18;
     int32 classificationTier = 19;
 
-    //
+    // Anatomical site of origin (or organ system) of the tumour.
     string cancerSite = 20;
     int32 cancerSiteTier = 21;
 
-    //
+    // Cell type of the tumour, together with the behaviour (malignant or 
+    // benign).
     string histology = 22;
     int32 histologyTier = 23;
 
-    //
+    // Information on the diagnosis method used.
     string methodOfDefinitiveDiagnosis = 24;
     int32 methodOfDefinitiveDiagnosisTier = 25;
 
-    //
+    // Sample type, like liquid biopsy or somatic tissue.
     string sampleType = 26;
     int32 sampleTypeTier = 27;
 
-    //
+    // Anatomical site the sample was obtained from.
     string sampleSite = 28;
     int32 sampleSiteTier = 29;
 
-    //
+    // Grade level of the tumour developmental stage.
     string tumorGrade = 30;
     int32 tumorGradeTier = 31;
 
-    //
+    // Grading system used to classify the tumour grade.
     string gradingSystemUsed = 32;
     int32 gradingSystemUsedTier = 33;
 
-    //
+    // List of anatomoical sites where metastases confirmed.
     string sitesOfMetastases = 34;
     int32 sitesOfMetastasesTier = 35;
 
-    //
+    // Staging system used.
     string stagingSystem = 36;
     int32 stagingSystemTier = 37;
 
-    //
+    // Version of the staging system used.
     string versionOrEditionOfTheStagingSystem = 38;
     int32 versionOrEditionOfTheStagingSystemTier = 39;
 
-    //
+    // Tumour stage at the diagnosis.
     string specificTumorStageAtDiagnosis = 40;
     int32 specificTumorStageAtDiagnosisTier = 41;
 
-    //
+    // List of any cancer specific biomarker used / can be used for prognosis
+    // purpose.
     string prognosticBiomarkers = 42;
     int32 prognosticBiomarkersTier = 43;
 
-    //
+    // Quantity information of listed biomarkers.
     string biomarkerQuantification = 44;
     int32 biomarkerQuantificationTier = 45;
 
-    //
+    // Indication whether any additional testing was performed.
     string additionalMolecularTesting = 46;
     int32 additionalMolecularTestingTier = 47;
 
-    //
+    // Type of the additional molecular testing - if any.
     string additionalTestType = 48;
     int32 additionalTestTypeTier = 49;
 
-    //
+    // Name of the laboratory where the testing was done.
     string laboratoryName = 50;
     int32 laboratoryNameTier = 51;
 
-    //
+    // Address information of the laboratory where the testing was executed.
     string laboratoryAddress = 52;
     int32 laboratoryAddressTier = 53;
 
-    //
+    // ** field duplication - will be removed in the future.
     string siteOfMetastases = 54;
     int32 siteOfMetastasesTier = 55;
 
-    //
+    // ** field duplication - will be removed in the future.
     string stagingSystemVersion = 56;
     int32 stagingSystemVersionTier = 57;
 
-    //
+    // ** field duplication - will be removed in the future.
     string specificStage = 58;
     int32 specificStageTier = 59;
 
-    //
+    // ** field duplication - will be removed in the future.
     string cancerSpecificBiomarkers = 60;
     int32 cancerSpecificBiomarkersTier = 61;
 
-    //
+    // ** field duplication - will be removed in the future.
     string additionalMolecularDiagnosticTestingPerformed = 62;
     int32 additionalMolecularDiagnosticTestingPerformedTier = 63;
 
-    //
+    // ** field duplication - will be removed in the future.
     string additionalTest = 64;
     int32 additionalTestTier = 65;
 
