@@ -127,8 +127,8 @@ message GetVariantSetRequest {
 // ******************  /variants  *********************
 // This request maps to the body of `POST /variants/search` as JSON.
 message SearchVariantsRequest {
-  // The `VariantSet` to search.
-  string variant_set_id = 1;
+  // The dataset_id to search.
+  string dataset_id = 1;
 
   // Only return variant calls which belong to call sets with these IDs.
   // If unspecified, return all variants and no variant call objects.

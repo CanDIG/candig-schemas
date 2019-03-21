@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/variant_service.proto',
   package='ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n)ga4gh/schemas/ga4gh/variant_service.proto\x12\x05ga4gh\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"]\n\x19SearchVariantSetsResponse\x12\'\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32\x11.ga4gh.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xb9\x01\n\x15SearchVariantsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\x12\x17\n\x0fvariant_set_ids\x18\t \x03(\t\"S\n\x16SearchVariantsResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"T\n\x16SearchCallSetsResponse\x12!\n\tcall_sets\x18\x01 \x03(\x0b\x32\x0e.ga4gh.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t\"\xca\x01\n\x1fSearchVariantsByGeneNameRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x14\n\x0cpatient_list\x18\x05 \x03(\t\x12\r\n\x05start\x18\x06 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x07 \x01(\x03\x12\x16\n\x0ereference_name\x18\x08 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\t \x03(\t\"]\n SearchVariantsByGeneNameResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd0\x06\n\x0eVariantService\x12\x80\x01\n\x11SearchVariantSets\x12\x1f.ga4gh.SearchVariantSetsRequest\x1a .ga4gh.SearchVariantSetsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/variantsets/search:\x01*\x12\x97\x01\n\x18SearchVariantsByGeneName\x12&.ga4gh.SearchVariantsByGeneNameRequest\x1a\'.ga4gh.SearchVariantsByGeneNameResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/variantsbygenesearch:\x01*\x12p\n\rGetVariantSet\x12\x1b.ga4gh.GetVariantSetRequest\x1a\x11.ga4gh.VariantSet\"/\x82\xd3\xe4\x93\x02)\x12\'/v0.6.0a10/variantsets/{variant_set_id}\x12t\n\x0eSearchVariants\x12\x1c.ga4gh.SearchVariantsRequest\x1a\x1d.ga4gh.SearchVariantsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/variants/search:\x01*\x12`\n\nGetVariant\x12\x18.ga4gh.GetVariantRequest\x1a\x0e.ga4gh.Variant\"(\x82\xd3\xe4\x93\x02\"\" /v0.6.0a10/variants/{variant_id}\x12t\n\x0eSearchCallSets\x12\x1c.ga4gh.SearchCallSetsRequest\x1a\x1d.ga4gh.SearchCallSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/callsets/search:\x01*\x12\x61\n\nGetCallSet\x12\x18.ga4gh.GetCallSetRequest\x1a\x0e.ga4gh.CallSet\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/callsets/{call_set_id}b\x06proto3')
+  serialized_pb=_b('\n)ga4gh/schemas/ga4gh/variant_service.proto\x12\x05ga4gh\x1a\"ga4gh/schemas/ga4gh/variants.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"]\n\x19SearchVariantSetsResponse\x12\'\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32\x11.ga4gh.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xb5\x01\n\x15SearchVariantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\x12\x17\n\x0fvariant_set_ids\x18\t \x03(\t\"S\n\x16SearchVariantsResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"T\n\x16SearchCallSetsResponse\x12!\n\tcall_sets\x18\x01 \x03(\x0b\x32\x0e.ga4gh.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t\"\xca\x01\n\x1fSearchVariantsByGeneNameRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x14\n\x0cpatient_list\x18\x05 \x03(\t\x12\r\n\x05start\x18\x06 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x07 \x01(\x03\x12\x16\n\x0ereference_name\x18\x08 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\t \x03(\t\"]\n SearchVariantsByGeneNameResponse\x12 \n\x08variants\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd0\x06\n\x0eVariantService\x12\x80\x01\n\x11SearchVariantSets\x12\x1f.ga4gh.SearchVariantSetsRequest\x1a .ga4gh.SearchVariantSetsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/variantsets/search:\x01*\x12\x97\x01\n\x18SearchVariantsByGeneName\x12&.ga4gh.SearchVariantsByGeneNameRequest\x1a\'.ga4gh.SearchVariantsByGeneNameResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/variantsbygenesearch:\x01*\x12p\n\rGetVariantSet\x12\x1b.ga4gh.GetVariantSetRequest\x1a\x11.ga4gh.VariantSet\"/\x82\xd3\xe4\x93\x02)\x12\'/v0.6.0a10/variantsets/{variant_set_id}\x12t\n\x0eSearchVariants\x12\x1c.ga4gh.SearchVariantsRequest\x1a\x1d.ga4gh.SearchVariantsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/variants/search:\x01*\x12`\n\nGetVariant\x12\x18.ga4gh.GetVariantRequest\x1a\x0e.ga4gh.Variant\"(\x82\xd3\xe4\x93\x02\"\" /v0.6.0a10/variants/{variant_id}\x12t\n\x0eSearchCallSets\x12\x1c.ga4gh.SearchCallSetsRequest\x1a\x1d.ga4gh.SearchCallSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/callsets/search:\x01*\x12\x61\n\nGetCallSet\x12\x18.ga4gh.GetCallSetRequest\x1a\x0e.ga4gh.CallSet\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/callsets/{call_set_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -150,7 +150,7 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='variant_set_id', full_name='ga4gh.SearchVariantsRequest.variant_set_id', index=0,
+      name='dataset_id', full_name='ga4gh.SearchVariantsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -218,7 +218,7 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=363,
-  serialized_end=548,
+  serialized_end=544,
 )
 
 
@@ -255,8 +255,8 @@ _SEARCHVARIANTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=550,
-  serialized_end=633,
+  serialized_start=546,
+  serialized_end=629,
 )
 
 
@@ -286,8 +286,8 @@ _GETVARIANTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=635,
-  serialized_end=674,
+  serialized_start=631,
+  serialized_end=670,
 )
 
 
@@ -345,8 +345,8 @@ _SEARCHCALLSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=676,
-  serialized_end=798,
+  serialized_start=672,
+  serialized_end=794,
 )
 
 
@@ -383,8 +383,8 @@ _SEARCHCALLSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=800,
-  serialized_end=884,
+  serialized_start=796,
+  serialized_end=880,
 )
 
 
@@ -414,8 +414,8 @@ _GETCALLSETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=886,
-  serialized_end=926,
+  serialized_start=882,
+  serialized_end=922,
 )
 
 
@@ -501,8 +501,8 @@ _SEARCHVARIANTSBYGENENAMEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=929,
-  serialized_end=1131,
+  serialized_start=925,
+  serialized_end=1127,
 )
 
 
@@ -539,8 +539,8 @@ _SEARCHVARIANTSBYGENENAMERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1133,
-  serialized_end=1226,
+  serialized_start=1129,
+  serialized_end=1222,
 )
 
 _SEARCHVARIANTSETSRESPONSE.fields_by_name['variant_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_variants__pb2._VARIANTSET

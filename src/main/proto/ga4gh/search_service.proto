@@ -92,7 +92,7 @@ message Result {
     string table = 1;
 
     // List of fields of the requested table
-    repeated string field = 2;
+    repeated string fields = 2;
 
     // Start bp. Used if the user is requesting variants endpoint
     string start = 3;
@@ -114,7 +114,7 @@ message Result {
 //Request object for the search function
 message SearchQueryRequest {
 
-    //
+    // The datasetId to query from
     string dataset_id = 1;
 
     // Definition of the high order logical operations on components
