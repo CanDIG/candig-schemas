@@ -8,35 +8,35 @@ from __future__ import unicode_literals
 import unittest
 
 # similar to dev_glue.py
-import ga4gh
+import candig
 
-ga4gh.__path__.insert(0, 'python/ga4gh')
+candig.__path__.insert(0, 'python/candig')
 
-import ga4gh.schemas._protocol_version as version  # NOQA
+import candig.schemas._protocol_version as version  # NOQA
 
-import ga4gh.schemas.ga4gh.common_pb2 as common_pb2  # NOQA
-import ga4gh.schemas.ga4gh.metadata_pb2 as metadata_pb2  # NOQA
-import ga4gh.schemas.ga4gh.metadata_service_pb2 as metadata_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.read_service_pb2 as read_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.reads_pb2 as reads_pb2  # NOQA
-import ga4gh.schemas.ga4gh.reference_service_pb2 as reference_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.references_pb2 as references_pb2  # NOQA
-import ga4gh.schemas.ga4gh.variant_service_pb2 as variant_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.variants_pb2 as variants_pb2  # NOQA
-import ga4gh.schemas.ga4gh.allele_annotations_pb2 as allele_annotations_pb2  # NOQA
-import ga4gh.schemas.ga4gh.allele_annotation_service_pb2 as allele_annotation_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.sequence_annotations_pb2 as sequence_annotations_pb2  # NOQA
-import ga4gh.schemas.ga4gh.sequence_annotation_service_pb2 as sequence_annotation_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.bio_metadata_pb2 as bio_metadata_pb2  # NOQA
-import ga4gh.schemas.ga4gh.bio_metadata_service_pb2 as bio_metadata_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.genotype_phenotype_pb2 as genotype_phenotype_pb2  # NOQA
-import ga4gh.schemas.ga4gh.genotype_phenotype_service_pb2 as genotype_phenotype_service_pb2  # NOQA
-import ga4gh.schemas.ga4gh.rna_quantification_pb2 as rna_quantification_pb2  # NOQA
-import ga4gh.schemas.ga4gh.rna_quantification_service_pb2 as rna_quantification_service_pb2  # NOQA
+import candig.schemas.candig.common_pb2 as common_pb2  # NOQA
+import candig.schemas.candig.metadata_pb2 as metadata_pb2  # NOQA
+import candig.schemas.candig.metadata_service_pb2 as metadata_service_pb2  # NOQA
+import candig.schemas.candig.read_service_pb2 as read_service_pb2  # NOQA
+import candig.schemas.candig.reads_pb2 as reads_pb2  # NOQA
+import candig.schemas.candig.reference_service_pb2 as reference_service_pb2  # NOQA
+import candig.schemas.candig.references_pb2 as references_pb2  # NOQA
+import candig.schemas.candig.variant_service_pb2 as variant_service_pb2  # NOQA
+import candig.schemas.candig.variants_pb2 as variants_pb2  # NOQA
+import candig.schemas.candig.allele_annotations_pb2 as allele_annotations_pb2  # NOQA
+import candig.schemas.candig.allele_annotation_service_pb2 as allele_annotation_service_pb2  # NOQA
+import candig.schemas.candig.sequence_annotations_pb2 as sequence_annotations_pb2  # NOQA
+import candig.schemas.candig.sequence_annotation_service_pb2 as sequence_annotation_service_pb2  # NOQA
+import candig.schemas.candig.bio_metadata_pb2 as bio_metadata_pb2  # NOQA
+import candig.schemas.candig.bio_metadata_service_pb2 as bio_metadata_service_pb2  # NOQA
+import candig.schemas.candig.genotype_phenotype_pb2 as genotype_phenotype_pb2  # NOQA
+import candig.schemas.candig.genotype_phenotype_service_pb2 as genotype_phenotype_service_pb2  # NOQA
+import candig.schemas.candig.rna_quantification_pb2 as rna_quantification_pb2  # NOQA
+import candig.schemas.candig.rna_quantification_service_pb2 as rna_quantification_service_pb2  # NOQA
 
-import ga4gh.schemas.google.api.annotations_pb2 as annotations_pb2  # NOQA
-import ga4gh.schemas.google.api.http_pb2 as http_pb2  # NOQA
-import ga4gh.schemas.pb as pb  # NOQA
+import candig.schemas.google.api.annotations_pb2 as annotations_pb2  # NOQA
+import candig.schemas.google.api.http_pb2 as http_pb2  # NOQA
+import candig.schemas.pb as pb  # NOQA
 
 
 class TestPb(unittest.TestCase):
@@ -54,7 +54,7 @@ class TestSchemas(unittest.TestCase):
         version.version.split('.')
         self.assertIsNotNone(version.version)
 
-    def testGa4ghImports(self):
+    def testcandigImports(self):
         self.assertIsNotNone(common_pb2.DESCRIPTOR)
         self.assertIsNotNone(metadata_pb2.DESCRIPTOR)
         self.assertIsNotNone(metadata_service_pb2.DESCRIPTOR)

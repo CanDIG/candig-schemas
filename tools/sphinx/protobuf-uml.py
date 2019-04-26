@@ -3,7 +3,7 @@
 """
 Authors: Malisa Smith, Adam Novak, David Steinberg
 
-Plugin for generating a UML diagram of the GA4GH schema.
+Plugin for generating a UML diagram of the candig schema.
 The resulting png file is then used in RST files to create Sphinx documentation.
 
 Usage:
@@ -41,7 +41,7 @@ def parse_message(cluster, fields, containments, nests, id_targets, id_reference
         # containment can be determined by looking at field.type_name.
         # Maps will also come up as type 11 and will have a
         # field.type_name of something like
-        # .ga4gh.Feature.AttributesEntry, where the actual field name
+        # .candig.Feature.AttributesEntry, where the actual field name
         # is attributes
         if field.type == 11 or field.type == 14:
             # We are likely adding containments of trivial maps,
@@ -126,7 +126,7 @@ def write_graph(fields, containments, nests, matched_references, clusters):
 
     # Add a title
     graph += "labelloc=\"t\";\n"
-    graph += "label=<<FONT POINT-SIZE=\"45\">GA4GH Schema Diagram</FONT>>;\n"
+    graph += "label=<<FONT POINT-SIZE=\"45\">candig Schema Diagram</FONT>>;\n"
 
     # Define node properties: shaped like UML items.
     graph += "node [\n"

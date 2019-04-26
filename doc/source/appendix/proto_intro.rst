@@ -5,26 +5,26 @@ Google Protocol Buffers
 ***********************
 
 -------------------------------------------------------
-What does the GA4GH web API take from Protocol Buffers?
+What does the candig web API take from Protocol Buffers?
 -------------------------------------------------------
 
-The GA4GH web API uses the Google Protocol Buffers language and JSON serialization libraries.
+The candig web API uses the Google Protocol Buffers language and JSON serialization libraries.
 
-The GA4GH web API presents a simple HTTP(S) and JSON interface to clients. It does **not** use Protocol Buffers's binary serialization format.
+The candig web API presents a simple HTTP(S) and JSON interface to clients. It does **not** use Protocol Buffers's binary serialization format.
 
 -------------------------------------------------------
-How does the GA4GH web API use Protocol Buffer schemas?
+How does the candig web API use Protocol Buffer schemas?
 -------------------------------------------------------
 
-GA4GH web API objects, including both the data objects actually exchanged and the control messages requesting and returning those objects, are defined in Protocol Buffers.
+candig web API objects, including both the data objects actually exchanged and the control messages requesting and returning those objects, are defined in Protocol Buffers.
 
 The full documentation for the Protocol buffers language can be found `here <https://developers.google.com/protocol-buffers/docs/proto3>`_.
 
 ------------------------------------------------
-How does the GA4GH Web API use Protocol Buffers?
+How does the candig Web API use Protocol Buffers?
 ------------------------------------------------
 
-The GA4GH web API schemas are broken up into multiple proto files, which reference each other. Each file defines a number of message types, grouped into a "protocol" that defines a facet of the API. Mostly, the files come in pairs: a normal proto file defining the types representing actual data, and a "methods" proto file defining the control messages to be sent back and forth to query and exchange the representational types, and the URLs associated with various operations.
+The candig web API schemas are broken up into multiple proto files, which reference each other. Each file defines a number of message types, grouped into a "protocol" that defines a facet of the API. Mostly, the files come in pairs: a normal proto file defining the types representing actual data, and a "methods" proto file defining the control messages to be sent back and forth to query and exchange the representational types, and the URLs associated with various operations.
 
 Each type has a leading comment documenting its purpose, and each field in the type has a description. These are included in the automatically generated API documentation.
 

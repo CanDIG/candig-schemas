@@ -3,9 +3,9 @@
 Generating API Definitions
 @@@@@@@@@@@@@@@@@@@@@@@@@@
 
-There has been an effort to standardize the methods for generating HTTP API descriptions that allow developers to rapidly develop gateways into their data. Since the GA4GH schemas are defined using Google Protocol Buffers IDL, it is possible to use this definition to generate documentation and code.
+There has been an effort to standardize the methods for generating HTTP API descriptions that allow developers to rapidly develop gateways into their data. Since the candig schemas are defined using Google Protocol Buffers IDL, it is possible to use this definition to generate documentation and code.
 
-In this document we will generate swagger definitions for the GA4GH API using a plugin for the `protoc` compiler. For more on installing the protocol buffers compiler see INSTALL.rst.
+In this document we will generate swagger definitions for the candig API using a plugin for the `protoc` compiler. For more on installing the protocol buffers compiler see INSTALL.rst.
 
 Installing Prerequisites
 ------------------------
@@ -47,9 +47,9 @@ The first argument tells the compiler to include any `proto` definitions in the 
   $ mkdir -p target/swagger
   $ protoc -Isrc/main/proto \
   --swagger_out=logtostderr=true:target/swagger \
-  src/main/proto/ga4gh/*service.proto
+  src/main/proto/candig/*service.proto
 
-This will create a directory (target/swagger/ga4gh) of JSON files describing
+This will create a directory (target/swagger/candig) of JSON files describing
 the API that can be used with Open API Specification tools like `swagger-codegen <https://github.com/swagger-api/swagger-codegen>`_.
 
 
@@ -64,6 +64,6 @@ Using the online interface it is possible to export both client and server stubs
 
 ::
 
-  $ swagger-codegen generate -i target/swagger/ga4gh/read_service.swagger.json -l python -o ga4gh-reads-client
+  $ swagger-codegen generate -i target/swagger/candig/read_service.swagger.json -l python -o candig-reads-client
 
-This will create a directory `ga4gh-reads-client` that includes most of the boilerplate, including README, `.gitignore`, etc., required to create a GA4GH client. This client can then be customized, modified, and imported into other projects for use.
+This will create a directory `candig-reads-client` that includes most of the boilerplate, including README, `.gitignore`, etc., required to create a candig client. This client can then be customized, modified, and imported into other projects for use.

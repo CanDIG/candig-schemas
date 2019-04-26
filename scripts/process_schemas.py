@@ -1,5 +1,5 @@
 """
-A script to generate the schemas for the GA4GH protocol. These are generated
+A script to generate the schemas for the candig protocol. These are generated
 from a copy of the Protocol Buffers schema and use it to generate
 the Python class definitions. These are also stored in revision
 control to aid Travis building.
@@ -18,14 +18,14 @@ import shlex
 
 
 # IMPORTANT!
-# Do not import any ga4gh or otherwise non-standard packages in this file.
-# process_schemas is included in ga4gh-schema's install path in setup.py.
-# Importing, for instance, ga4gh-common here will break an install if
+# Do not import any candig or otherwise non-standard packages in this file.
+# process_schemas is included in candig-schema's install path in setup.py.
+# Importing, for instance, candig-common here will break an install if
 # the environment does not have that package installed previously.
 # We really want to avoid this scenario!
 # (This does result in some code duplication in this file.)
 
-# Below code duplicated from ga4gh-common
+# Below code duplicated from candig-common
 
 def runCommandSplits(splits, silent=False, shell=False):
     """
@@ -53,7 +53,7 @@ def runCommand(command, silent=False, shell=False):
     splits = shlex.split(command)
     runCommandSplits(splits, silent=silent, shell=shell)
 
-# Above code duplicated from ga4gh-common
+# Above code duplicated from candig-common
 
 
 class ProtobufGenerator(object):
@@ -67,29 +67,29 @@ class ProtobufGenerator(object):
         from the schemasPath hierarchy
         """
         # Create the target directory hierarchy, if neccessary
-        ga4ghPath = os.path.join(destPath, 'ga4gh')
-        if not os.path.exists(ga4ghPath):
-            os.mkdir(ga4ghPath)
-        ga4ghSchemasPath = os.path.join(ga4ghPath, 'schemas')
-        if not os.path.exists(ga4ghSchemasPath):
-            os.mkdir(ga4ghSchemasPath)
-        ga4ghSchemasGa4ghPath = os.path.join(ga4ghSchemasPath, 'ga4gh')
-        if not os.path.exists(ga4ghSchemasGa4ghPath):
-            os.mkdir(ga4ghSchemasGa4ghPath)
-        ga4ghSchemasGooglePath = os.path.join(ga4ghSchemasPath, 'google')
-        if not os.path.exists(ga4ghSchemasGooglePath):
-            os.mkdir(ga4ghSchemasGooglePath)
-        ga4ghSchemasGoogleApiPath = os.path.join(
-            ga4ghSchemasGooglePath, 'api')
-        if not os.path.exists(ga4ghSchemasGoogleApiPath):
-            os.mkdir(ga4ghSchemasGoogleApiPath)
+        candigPath = os.path.join(destPath, 'candig')
+        if not os.path.exists(candigPath):
+            os.mkdir(candigPath)
+        candigSchemasPath = os.path.join(candigPath, 'schemas')
+        if not os.path.exists(candigSchemasPath):
+            os.mkdir(candigSchemasPath)
+        candigSchemascandigPath = os.path.join(candigSchemasPath, 'candig')
+        if not os.path.exists(candigSchemascandigPath):
+            os.mkdir(candigSchemascandigPath)
+        candigSchemasGooglePath = os.path.join(candigSchemasPath, 'google')
+        if not os.path.exists(candigSchemasGooglePath):
+            os.mkdir(candigSchemasGooglePath)
+        candigSchemasGoogleApiPath = os.path.join(
+            candigSchemasGooglePath, 'api')
+        if not os.path.exists(candigSchemasGoogleApiPath):
+            os.mkdir(candigSchemasGoogleApiPath)
 
         # rewrite the proto files to the destination
         for root, dirs, files in os.walk(schemasPath):
             for protoFilePath in fnmatch.filter(files, '*.proto'):
                 src = os.path.join(root, protoFilePath)
                 dst = os.path.join(
-                    ga4ghSchemasPath,
+                    candigSchemasPath,
                     os.path.relpath(root, schemasPath), protoFilePath)
                 self._copySchemaFile(src, dst)
 
@@ -98,33 +98,33 @@ class ProtobufGenerator(object):
         Given a line of a proto file, replace the line with one that is
         appropriate for the hierarchy that we want to compile
         """
-        # ga4gh packages
-        packageString = 'package ga4gh;'
+        # candig packages
+        packageString = 'package candig;'
         if packageString in line:
             return line.replace(
                 packageString,
-                'package ga4gh.schemas.ga4gh;')
-        importString = 'import "ga4gh/'
+                'package candig.schemas.candig;')
+        importString = 'import "candig/'
         if importString in line:
             return line.replace(
                 importString,
-                'import "ga4gh/schemas/ga4gh/')
+                'import "candig/schemas/candig/')
         # google packages
         googlePackageString = 'package google.api;'
         if googlePackageString in line:
             return line.replace(
                 googlePackageString,
-                'package ga4gh.schemas.google.api;')
+                'package candig.schemas.google.api;')
         googleImportString = 'import "google/api/'
         if googleImportString in line:
             return line.replace(
                 googleImportString,
-                'import "ga4gh/schemas/google/api/')
+                'import "candig/schemas/google/api/')
         optionString = 'option (google.api.http)'
         if optionString in line:
             return line.replace(
                 optionString,
-                'option (.ga4gh.schemas.google.api.http)')
+                'option (.candig.schemas.google.api.http)')
         return line
 
     def _copySchemaFile(self, src, dst):
@@ -216,7 +216,7 @@ class ProtobufGenerator(object):
         print("{} pb2 files written".format(len(protos)))
 
     def _writeVersionFile(self):
-        versionFilePath = "python/ga4gh/schemas/_protocol_version.py"
+        versionFilePath = "../python/candig/schemas/_protocol_version.py"
         with open(versionFilePath, "w") as version_file:
             version_file.write(
                 "# File generated by scripts/process_schemas.py; "
@@ -241,7 +241,7 @@ def main(args=None):
     defaultDestPath = "../python/"
     defaultSchemasPath = '../src/main/proto/'
     parser = argparse.ArgumentParser(
-        description="Script to process GA4GH Protocol buffer schemas")
+        description="Script to process candig Protocol buffer schemas")
     parser.add_argument(
         "version", help="Version number of the schema we're compiling")
     parser.add_argument(

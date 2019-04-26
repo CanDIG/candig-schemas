@@ -1,13 +1,13 @@
-How to contribute to the GA4GH Schemas
+How to contribute to the candig Schemas
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Thank you for taking the time to contribute. We appreciate it!
 
-The GA4GH schemas define an API for sharing genomic and phenotypic
+The candig schemas define an API for sharing genomic and phenotypic
 data.  Supporting the schemas is a `reference server
-<https://github.com/ga4gh/ga4gh-server>`__, which acts as a useful, complete
+<https://github.com/candig/candig-server>`__, which acts as a useful, complete
 implementation of the API, and a `compliance suite
-<https://github.com/ga4gh/compliance>`__, which provides data and
+<https://github.com/candig/compliance>`__, which provides data and
 functions to test an API implementation. Development of these three
 aspects of the project are coordinated, so that changes to the schemas
 are reflected in the creation of a working prototype within the
@@ -23,7 +23,7 @@ Issues
 @@@@@@
 
 The project's `Issues Page
-<https://github.com/ga4gh/ga4gh-schemas/issues>`__ is a forum to discuss
+<https://github.com/candig/candig-schemas/issues>`__ is a forum to discuss
 both major and minor issues related to developing the standards,
 formats, and APIs. It also serves as the means for collaborating with
 the group and discussing contributions that will ultimately lead to
@@ -128,12 +128,12 @@ The current code conventions for the source files are as follows:
 Documentation
 @@@@@@@@@@@@@
 
-The goal of GA4GH is to define an interoperable API specification.  To achieve
+The goal of candig is to define an interoperable API specification.  To achieve
 this, the intent, rationale, and semantics of all data objects and operations
 need to be clearly and precisely defined. Decisions that are not captured in
 documentation are lost.
 
-All schemas defined in GA4GH must include normative documentation.  This
+All schemas defined in candig must include normative documentation.  This
 should consist of overview and design documentation as well as documentation
 in the schemas.  This documentation should explain the goals, overall design,
 and rationale for decisions that were made.  It must be addressed to both
@@ -152,7 +152,7 @@ developing and implementing schemas.
 Topic Branches
 @@@@@@@@@@@@@@
 
-If you wish to collaborate on a new feature with other GA4GH members you
+If you wish to collaborate on a new feature with other candig members you
 can ask that a topic branch set be created. This will generally involve
 the creation of identically named topic branches for each of the schema,
 compliance and server repositories. Since Github does not allow pull
@@ -182,7 +182,7 @@ Task Team Topic Branch Sets
 ###########################
 
 Frequently topic branch sets are developed by members working within a
-task team of the `Data Working Group <http://ga4gh.org>`__. Topic
+task team of the `Data Working Group <http://candig.org>`__. Topic
 branch sets developed by a task team should be prefixed with the task
 team's name followed by a dash, e.g. reads-foo, refVar-bar. To enable
 speedy development, task-teams may set their own rules for
@@ -205,12 +205,12 @@ Retired Task Teams
 @@@@@@@@@@@@@@@@@@
 
 As projects mature, the need to have a standing `Data Working
-Group <http://ga4gh.org>`__ task team with regular teleconferences and
+Group <http://candig.org>`__ task team with regular teleconferences and
 meetings will decline. Mature task teams will enter a \*maintenance mode
 which will entail the following:
 
 - A task team chair will be appointed to regularly review the
-  ``ga4gh#schemas`` Github Issues for issue that would effect the
+  ``candig#schemas`` Github Issues for issue that would effect the
   outcomes of the retired task team.
 - The task team chair will tag those issues with the retired group's
   label.

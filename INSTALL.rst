@@ -1,8 +1,8 @@
-Installing the GA4GH Schemas
+Installing the candig Schemas
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 The schemas are documents (text files) that formally describe the
-messages that pass between GA4GH servers and clients, which we
+messages that pass between candig servers and clients, which we
 also refer to collectively as "the API." The schemas are written in a
 language called `Protocol Buffers 3 <https://developers.google.com/protocol-buffers/>`__.
 
@@ -20,7 +20,7 @@ Generating Source Code
 
 ::
 
-$ cd src/main/proto && protoc --python_out=. ga4gh/*
+$ cd src/main/proto && protoc --python_out=. candig/*
 
 Installing the Documentation Tools and Generating Documentation
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
