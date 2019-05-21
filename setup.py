@@ -48,7 +48,7 @@ except Exception:
 
 setup(
     name="candig_schemas",
-    description="GA4GH API Schemas",
+    description="CanDIG API Schemas",
     packages=[
         "ga4gh",
         "ga4gh.schemas",
