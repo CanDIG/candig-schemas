@@ -19,9 +19,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/read_service.proto',
-  package='ga4gh',
+  package='ga4gh.schemas.ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/read_service.proto\x12\x05ga4gh\x1a\x1fga4gh/schemas/ga4gh/reads.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"{\n\x1aSearchReadGroupSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"d\n\x1bSearchReadGroupSetsResponse\x12,\n\x0fread_group_sets\x18\x01 \x03(\x0b\x32\x13.ga4gh.ReadGroupSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"3\n\x16GetReadGroupSetRequest\x12\x19\n\x11read_group_set_id\x18\x01 \x01(\t\"\x85\x01\n\x12SearchReadsRequest\x12\x16\n\x0eread_group_ids\x18\x01 \x03(\t\x12\x14\n\x0creference_id\x18\x02 \x01(\t\x12\r\n\x05start\x18\x03 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x04 \x01(\x03\x12\x11\n\tpage_size\x18\x05 \x01(\x05\x12\x12\n\npage_token\x18\x06 \x01(\t\"X\n\x13SearchReadsResponse\x12(\n\nalignments\x18\x01 \x03(\x0b\x32\x14.ga4gh.ReadAlignment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xff\x02\n\x0bReadService\x12\x88\x01\n\x13SearchReadGroupSets\x12!.ga4gh.SearchReadGroupSetsRequest\x1a\".ga4gh.SearchReadGroupSetsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/readgroupsets/search:\x01*\x12{\n\x0fGetReadGroupSet\x12\x1d.ga4gh.GetReadGroupSetRequest\x1a\x13.ga4gh.ReadGroupSet\"4\x82\xd3\xe4\x93\x02.\x12,/v0.6.0a10/readgroupsets/{read_group_set_id}\x12h\n\x0bSearchReads\x12\x19.ga4gh.SearchReadsRequest\x1a\x1a.ga4gh.SearchReadsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.6.0a10/reads/search:\x01*b\x06proto3')
+  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/read_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a\x1fga4gh/schemas/ga4gh/reads.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"{\n\x1aSearchReadGroupSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"r\n\x1bSearchReadGroupSetsResponse\x12:\n\x0fread_group_sets\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.ReadGroupSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"3\n\x16GetReadGroupSetRequest\x12\x19\n\x11read_group_set_id\x18\x01 \x01(\t\"\x85\x01\n\x12SearchReadsRequest\x12\x16\n\x0eread_group_ids\x18\x01 \x03(\t\x12\x14\n\x0creference_id\x18\x02 \x01(\t\x12\r\n\x05start\x18\x03 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x04 \x01(\x03\x12\x11\n\tpage_size\x18\x05 \x01(\x05\x12\x12\n\npage_token\x18\x06 \x01(\t\"f\n\x13SearchReadsResponse\x12\x36\n\nalignments\x18\x01 \x03(\x0b\x32\".ga4gh.schemas.ga4gh.ReadAlignment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xd5\x03\n\x0bReadService\x12\xa4\x01\n\x13SearchReadGroupSets\x12/.ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest\x1a\x30.ga4gh.schemas.ga4gh.SearchReadGroupSetsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/readgroupsets/search:\x01*\x12\x97\x01\n\x0fGetReadGroupSet\x12+.ga4gh.schemas.ga4gh.GetReadGroupSetRequest\x1a!.ga4gh.schemas.ga4gh.ReadGroupSet\"4\x82\xd3\xe4\x93\x02.\x12,/v0.6.0a10/readgroupsets/{read_group_set_id}\x12\x84\x01\n\x0bSearchReads\x12\'.ga4gh.schemas.ga4gh.SearchReadsRequest\x1a(.ga4gh.schemas.ga4gh.SearchReadsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.6.0a10/reads/search:\x01*b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_reads__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -30,41 +30,41 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHREADGROUPSETSREQUEST = _descriptor.Descriptor(
   name='SearchReadGroupSetsRequest',
-  full_name='ga4gh.SearchReadGroupSetsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchReadGroupSetsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchReadGroupSetsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='biosample_id', full_name='ga4gh.SearchReadGroupSetsRequest.biosample_id', index=2,
+      name='biosample_id', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest.biosample_id', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchReadGroupSetsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchReadGroupSetsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -82,27 +82,27 @@ _SEARCHREADGROUPSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=126,
-  serialized_end=249,
+  serialized_start=140,
+  serialized_end=263,
 )
 
 
 _SEARCHREADGROUPSETSRESPONSE = _descriptor.Descriptor(
   name='SearchReadGroupSetsResponse',
-  full_name='ga4gh.SearchReadGroupSetsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='read_group_sets', full_name='ga4gh.SearchReadGroupSetsResponse.read_group_sets', index=0,
+      name='read_group_sets', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsResponse.read_group_sets', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchReadGroupSetsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchReadGroupSetsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -120,20 +120,20 @@ _SEARCHREADGROUPSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=251,
-  serialized_end=351,
+  serialized_start=265,
+  serialized_end=379,
 )
 
 
 _GETREADGROUPSETREQUEST = _descriptor.Descriptor(
   name='GetReadGroupSetRequest',
-  full_name='ga4gh.GetReadGroupSetRequest',
+  full_name='ga4gh.schemas.ga4gh.GetReadGroupSetRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='read_group_set_id', full_name='ga4gh.GetReadGroupSetRequest.read_group_set_id', index=0,
+      name='read_group_set_id', full_name='ga4gh.schemas.ga4gh.GetReadGroupSetRequest.read_group_set_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -151,55 +151,55 @@ _GETREADGROUPSETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=353,
-  serialized_end=404,
+  serialized_start=381,
+  serialized_end=432,
 )
 
 
 _SEARCHREADSREQUEST = _descriptor.Descriptor(
   name='SearchReadsRequest',
-  full_name='ga4gh.SearchReadsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchReadsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='read_group_ids', full_name='ga4gh.SearchReadsRequest.read_group_ids', index=0,
+      name='read_group_ids', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.read_group_ids', index=0,
       number=1, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='reference_id', full_name='ga4gh.SearchReadsRequest.reference_id', index=1,
+      name='reference_id', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.reference_id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='start', full_name='ga4gh.SearchReadsRequest.start', index=2,
+      name='start', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.start', index=2,
       number=3, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='end', full_name='ga4gh.SearchReadsRequest.end', index=3,
+      name='end', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.end', index=3,
       number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchReadsRequest.page_size', index=4,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.page_size', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchReadsRequest.page_token', index=5,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchReadsRequest.page_token', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -217,27 +217,27 @@ _SEARCHREADSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=407,
-  serialized_end=540,
+  serialized_start=435,
+  serialized_end=568,
 )
 
 
 _SEARCHREADSRESPONSE = _descriptor.Descriptor(
   name='SearchReadsResponse',
-  full_name='ga4gh.SearchReadsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchReadsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='alignments', full_name='ga4gh.SearchReadsResponse.alignments', index=0,
+      name='alignments', full_name='ga4gh.schemas.ga4gh.SearchReadsResponse.alignments', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchReadsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchReadsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -255,8 +255,8 @@ _SEARCHREADSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=542,
-  serialized_end=630,
+  serialized_start=570,
+  serialized_end=672,
 )
 
 _SEARCHREADGROUPSETSRESPONSE.fields_by_name['read_group_sets'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_reads__pb2._READGROUPSET
@@ -271,79 +271,37 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchReadGroupSetsRequest = _reflection.GeneratedProtocolMessageType('SearchReadGroupSetsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREADGROUPSETSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.read_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchReadGroupSetsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReadGroupSetsRequest)
   ))
 _sym_db.RegisterMessage(SearchReadGroupSetsRequest)
 
 SearchReadGroupSetsResponse = _reflection.GeneratedProtocolMessageType('SearchReadGroupSetsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREADGROUPSETSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.read_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchReadGroupSetsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReadGroupSetsResponse)
   ))
 _sym_db.RegisterMessage(SearchReadGroupSetsResponse)
 
 GetReadGroupSetRequest = _reflection.GeneratedProtocolMessageType('GetReadGroupSetRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETREADGROUPSETREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.read_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetReadGroupSetRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetReadGroupSetRequest)
   ))
 _sym_db.RegisterMessage(GetReadGroupSetRequest)
 
 SearchReadsRequest = _reflection.GeneratedProtocolMessageType('SearchReadsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREADSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.read_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchReadsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReadsRequest)
   ))
 _sym_db.RegisterMessage(SearchReadsRequest)
 
 SearchReadsResponse = _reflection.GeneratedProtocolMessageType('SearchReadsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHREADSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.read_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchReadsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchReadsResponse)
   ))
 _sym_db.RegisterMessage(SearchReadsResponse)
 
-
-
-_READSERVICE = _descriptor.ServiceDescriptor(
-  name='ReadService',
-  full_name='ga4gh.ReadService',
-  file=DESCRIPTOR,
-  index=0,
-  options=None,
-  serialized_start=633,
-  serialized_end=1016,
-  methods=[
-  _descriptor.MethodDescriptor(
-    name='SearchReadGroupSets',
-    full_name='ga4gh.ReadService.SearchReadGroupSets',
-    index=0,
-    containing_service=None,
-    input_type=_SEARCHREADGROUPSETSREQUEST,
-    output_type=_SEARCHREADGROUPSETSRESPONSE,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002$\"\037/v0.6.0a10/readgroupsets/search:\001*')),
-  ),
-  _descriptor.MethodDescriptor(
-    name='GetReadGroupSet',
-    full_name='ga4gh.ReadService.GetReadGroupSet',
-    index=1,
-    containing_service=None,
-    input_type=_GETREADGROUPSETREQUEST,
-    output_type=ga4gh_dot_schemas_dot_ga4gh_dot_reads__pb2._READGROUPSET,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002.\022,/v0.6.0a10/readgroupsets/{read_group_set_id}')),
-  ),
-  _descriptor.MethodDescriptor(
-    name='SearchReads',
-    full_name='ga4gh.ReadService.SearchReads',
-    index=2,
-    containing_service=None,
-    input_type=_SEARCHREADSREQUEST,
-    output_type=_SEARCHREADSRESPONSE,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\034\"\027/v0.6.0a10/reads/search:\001*')),
-  ),
-])
-_sym_db.RegisterServiceDescriptor(_READSERVICE)
-
-DESCRIPTOR.services_by_name['ReadService'] = _READSERVICE
 
 # @@protoc_insertion_point(module_scope)

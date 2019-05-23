@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/schemas/ga4gh/metadata.proto";
-import "ga4gh/schemas/google/api/annotations.proto";
+import "ga4gh/metadata.proto";
+import "google/api/annotations.proto";
 
 service MetadataService {
   // Gets a list of `Dataset` matching the search criteria.

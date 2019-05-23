@@ -20,9 +20,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/clinical_metadata_service.proto',
-  package='ga4gh',
+  package='ga4gh.schemas.ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x12\x05ga4gh\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x80\x01\n\x15SearchPatientsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetPatientRequest\x12\x12\n\npatient_id\x18\x01 \x01(\t\"S\n\x16SearchPatientsResponse\x12 \n\x08patients\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Patient\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x83\x01\n\x18SearchEnrollmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"-\n\x14GetEnrollmentRequest\x12\x15\n\renrollment_id\x18\x01 \x01(\t\"\\\n\x19SearchEnrollmentsResponse\x12&\n\x0b\x65nrollments\x18\x01 \x03(\x0b\x32\x11.ga4gh.Enrollment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchConsentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetConsentRequest\x12\x12\n\nconsent_id\x18\x01 \x01(\t\"S\n\x16SearchConsentsResponse\x12 \n\x08\x63onsents\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Consent\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x81\x01\n\x16SearchDiagnosesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetDiagnosisRequest\x12\x14\n\x0c\x64iagnosis_id\x18\x01 \x01(\t\"W\n\x17SearchDiagnosesResponse\x12#\n\tdiagnoses\x18\x01 \x03(\x0b\x32\x10.ga4gh.Diagnosis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x7f\n\x14SearchSamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"%\n\x10GetSampleRequest\x12\x11\n\tsample_id\x18\x01 \x01(\t\"P\n\x15SearchSamplesResponse\x12\x1e\n\x07samples\x18\x01 \x03(\x0b\x32\r.ga4gh.Sample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x82\x01\n\x17SearchTreatmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetTreatmentRequest\x12\x14\n\x0ctreatment_id\x18\x01 \x01(\t\"Y\n\x18SearchTreatmentsResponse\x12$\n\ntreatments\x18\x01 \x03(\x0b\x32\x10.ga4gh.Treatment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchOutcomesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetOutcomeRequest\x12\x12\n\noutcome_id\x18\x01 \x01(\t\"S\n\x16SearchOutcomesResponse\x12 \n\x08outcomes\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Outcome\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x85\x01\n\x1aSearchComplicationsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetComplicationRequest\x12\x17\n\x0f\x63omplication_id\x18\x01 \x01(\t\"b\n\x1bSearchComplicationsResponse\x12*\n\rcomplications\x18\x01 \x03(\x0b\x32\x13.ga4gh.Complication\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x84\x01\n\x19SearchTumourboardsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"/\n\x15GetTumourboardRequest\x12\x16\n\x0etumourboard_id\x18\x01 \x01(\t\"_\n\x1aSearchTumourboardsResponse\x12(\n\x0ctumourboards\x18\x01 \x03(\x0b\x32\x12.ga4gh.Tumourboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x86\x01\n\x1bSearchChemotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetChemotherapyRequest\x12\x17\n\x0f\x63hemotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchChemotherapiesResponse\x12+\n\x0e\x63hemotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Chemotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x86\x01\n\x1bSearchRadiotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetRadiotherapyRequest\x12\x17\n\x0fradiotherapy_id\x18\x01 \x01(\t\"d\n\x1cSearchRadiotherapiesResponse\x12+\n\x0eradiotherapies\x18\x01 \x03(\x0b\x32\x13.ga4gh.Radiotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x81\x01\n\x16SearchSurgeriesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetSurgeryRequest\x12\x12\n\nsurgery_id\x18\x01 \x01(\t\"U\n\x17SearchSurgeriesResponse\x12!\n\tsurgeries\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Surgery\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x87\x01\n\x1cSearchImmunotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"3\n\x17GetImmunotherapyRequest\x12\x18\n\x10immunotherapy_id\x18\x01 \x01(\t\"g\n\x1dSearchImmunotherapiesResponse\x12-\n\x0fimmunotherapies\x18\x01 \x03(\x0b\x32\x14.ga4gh.Immunotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x87\x01\n\x1cSearchCelltransplantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"5\n\x18GetCelltransplantRequest\x12\x19\n\x11\x63\x65lltransplant_id\x18\x01 \x01(\t\"h\n\x1dSearchCelltransplantsResponse\x12.\n\x0f\x63\x65lltransplants\x18\x01 \x03(\x0b\x32\x15.ga4gh.Celltransplant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"~\n\x13SearchSlidesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetSlideRequest\x12\x10\n\x08slide_id\x18\x01 \x01(\t\"M\n\x14SearchSlidesResponse\x12\x1c\n\x06slides\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Slide\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x7f\n\x14SearchStudiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetStudyRequest\x12\x10\n\x08study_id\x18\x01 \x01(\t\"O\n\x15SearchStudiesResponse\x12\x1d\n\x07studies\x18\x01 \x03(\x0b\x32\x0c.ga4gh.Study\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x80\x01\n\x15SearchLabtestsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x1e\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\r.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetLabtestRequest\x12\x12\n\nlabtest_id\x18\x01 \x01(\t\"S\n\x16SearchLabtestsResponse\x12 \n\x08labtests\x18\x01 \x03(\x0b\x32\x0e.ga4gh.Labtest\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\xbf\x1f\n\x17\x43linicalMetadataService\x12t\n\x0eSearchPatients\x12\x1c.ga4gh.SearchPatientsRequest\x1a\x1d.ga4gh.SearchPatientsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/patients/search:\x01*\x12\x80\x01\n\x11SearchEnrollments\x12\x1f.ga4gh.SearchEnrollmentsRequest\x1a .ga4gh.SearchEnrollmentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/enrollments/search:\x01*\x12t\n\x0eSearchConsents\x12\x1c.ga4gh.SearchConsentsRequest\x1a\x1d.ga4gh.SearchConsentsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/consents/search:\x01*\x12x\n\x0fSearchDiagnoses\x12\x1d.ga4gh.SearchDiagnosesRequest\x1a\x1e.ga4gh.SearchDiagnosesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/diagnoses/search:\x01*\x12p\n\rSearchSamples\x12\x1b.ga4gh.SearchSamplesRequest\x1a\x1c.ga4gh.SearchSamplesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/samples/search:\x01*\x12|\n\x10SearchTreatments\x12\x1e.ga4gh.SearchTreatmentsRequest\x1a\x1f.ga4gh.SearchTreatmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/treatments/search:\x01*\x12t\n\x0eSearchOutcomes\x12\x1c.ga4gh.SearchOutcomesRequest\x1a\x1d.ga4gh.SearchOutcomesResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/outcomes/search:\x01*\x12\x88\x01\n\x13SearchComplications\x12!.ga4gh.SearchComplicationsRequest\x1a\".ga4gh.SearchComplicationsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/complications/search:\x01*\x12\x84\x01\n\x12SearchTumourboards\x12 .ga4gh.SearchTumourboardsRequest\x1a!.ga4gh.SearchTumourboardsResponse\")\x82\xd3\xe4\x93\x02#\"\x1e/v0.6.0a10/tumourboards/search:\x01*\x12`\n\nGetPatient\x12\x18.ga4gh.GetPatientRequest\x1a\x0e.ga4gh.Patient\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/patients/{patient_id}\x12o\n\rGetEnrollment\x12\x1b.ga4gh.GetEnrollmentRequest\x1a\x11.ga4gh.Enrollment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/enrollments/{enrollment_id}\x12`\n\nGetConsent\x12\x18.ga4gh.GetConsentRequest\x1a\x0e.ga4gh.Consent\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/consents/{consent_id}\x12i\n\x0cGetDiagnosis\x12\x1a.ga4gh.GetDiagnosisRequest\x1a\x10.ga4gh.Diagnosis\"+\x82\xd3\xe4\x93\x02%\x12#/v0.6.0a10/diagnoses/{diagnosis_id}\x12[\n\tGetSample\x12\x17.ga4gh.GetSampleRequest\x1a\r.ga4gh.Sample\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.6.0a10/samples/{sample_id}\x12j\n\x0cGetTreatment\x12\x1a.ga4gh.GetTreatmentRequest\x1a\x10.ga4gh.Treatment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/treatments/{treatment_id}\x12`\n\nGetOutcome\x12\x18.ga4gh.GetOutcomeRequest\x1a\x0e.ga4gh.Outcome\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/outcomes/{outcome_id}\x12y\n\x0fGetComplication\x12\x1d.ga4gh.GetComplicationRequest\x1a\x13.ga4gh.Complication\"2\x82\xd3\xe4\x93\x02,\x12*/v0.6.0a10/complications/{complication_id}\x12t\n\x0eGetTumourboard\x12\x1c.ga4gh.GetTumourboardRequest\x1a\x12.ga4gh.Tumourboard\"0\x82\xd3\xe4\x93\x02*\x12(/v0.6.0a10/tumourboards/{tumourboard_id}\x12\x8c\x01\n\x14SearchChemotherapies\x12\".ga4gh.SearchChemotherapiesRequest\x1a#.ga4gh.SearchChemotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/chemotherapies/search:\x01*\x12\x8c\x01\n\x14SearchRadiotherapies\x12\".ga4gh.SearchRadiotherapiesRequest\x1a#.ga4gh.SearchRadiotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/radiotherapies/search:\x01*\x12x\n\x0fSearchSurgeries\x12\x1d.ga4gh.SearchSurgeriesRequest\x1a\x1e.ga4gh.SearchSurgeriesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/surgeries/search:\x01*\x12\x90\x01\n\x15SearchImmunotherapies\x12#.ga4gh.SearchImmunotherapiesRequest\x1a$.ga4gh.SearchImmunotherapiesResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/immunotherapies/search:\x01*\x12\x90\x01\n\x15SearchCelltransplants\x12#.ga4gh.SearchCelltransplantsRequest\x1a$.ga4gh.SearchCelltransplantsResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/celltransplants/search:\x01*\x12l\n\x0cSearchSlides\x12\x1a.ga4gh.SearchSlidesRequest\x1a\x1b.ga4gh.SearchSlidesResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v0.6.0a10/slides/search:\x01*\x12p\n\rSearchStudies\x12\x1b.ga4gh.SearchStudiesRequest\x1a\x1c.ga4gh.SearchStudiesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/studies/search:\x01*\x12t\n\x0eSearchLabtests\x12\x1c.ga4gh.SearchLabtestsRequest\x1a\x1d.ga4gh.SearchLabtestsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/labtests/search:\x01*\x12z\n\x0fGetChemotherapy\x12\x1d.ga4gh.GetChemotherapyRequest\x1a\x13.ga4gh.Chemotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/chemotherapies/{chemotherapy_id}\x12z\n\x0fGetRadiotherapy\x12\x1d.ga4gh.GetRadiotherapyRequest\x1a\x13.ga4gh.Radiotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/radiotherapies/{radiotherapy_id}\x12\x61\n\nGetSurgery\x12\x18.ga4gh.GetSurgeryRequest\x1a\x0e.ga4gh.Surgery\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/surgeries/{surgery_id}\x12\x7f\n\x10GetImmunotherapy\x12\x1e.ga4gh.GetImmunotherapyRequest\x1a\x14.ga4gh.Immunotherapy\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/immunotherapies/{immunotherapy_id}\x12\x83\x01\n\x11GetCelltransplant\x12\x1f.ga4gh.GetCelltransplantRequest\x1a\x15.ga4gh.Celltransplant\"6\x82\xd3\xe4\x93\x02\x30\x12./v0.6.0a10/celltransplants/{celltransplant_id}\x12V\n\x08GetSlide\x12\x16.ga4gh.GetSlideRequest\x1a\x0c.ga4gh.Slide\"$\x82\xd3\xe4\x93\x02\x1e\x12\x1c/v0.6.0a10/slides/{slide_id}\x12W\n\x08GetStudy\x12\x16.ga4gh.GetStudyRequest\x1a\x0c.ga4gh.Study\"%\x82\xd3\xe4\x93\x02\x1f\x12\x1d/v0.6.0a10/studies/{study_id}\x12`\n\nGetLabtest\x12\x18.ga4gh.GetLabtestRequest\x1a\x0e.ga4gh.Labtest\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/labtests/{labtest_id}b\x06proto3')
+  serialized_pb=_b('\n3ga4gh/schemas/ga4gh/clinical_metadata_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a+ga4gh/schemas/ga4gh/clinical_metadata.proto\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"\x8e\x01\n\x15SearchPatientsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetPatientRequest\x12\x12\n\npatient_id\x18\x01 \x01(\t\"a\n\x16SearchPatientsResponse\x12.\n\x08patients\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Patient\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x91\x01\n\x18SearchEnrollmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"-\n\x14GetEnrollmentRequest\x12\x15\n\renrollment_id\x18\x01 \x01(\t\"j\n\x19SearchEnrollmentsResponse\x12\x34\n\x0b\x65nrollments\x18\x01 \x03(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Enrollment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8e\x01\n\x15SearchConsentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetConsentRequest\x12\x12\n\nconsent_id\x18\x01 \x01(\t\"a\n\x16SearchConsentsResponse\x12.\n\x08\x63onsents\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Consent\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8f\x01\n\x16SearchDiagnosesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetDiagnosisRequest\x12\x14\n\x0c\x64iagnosis_id\x18\x01 \x01(\t\"e\n\x17SearchDiagnosesResponse\x12\x31\n\tdiagnoses\x18\x01 \x03(\x0b\x32\x1e.ga4gh.schemas.ga4gh.Diagnosis\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8d\x01\n\x14SearchSamplesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"%\n\x10GetSampleRequest\x12\x11\n\tsample_id\x18\x01 \x01(\t\"^\n\x15SearchSamplesResponse\x12,\n\x07samples\x18\x01 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Sample\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x90\x01\n\x17SearchTreatmentsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"+\n\x13GetTreatmentRequest\x12\x14\n\x0ctreatment_id\x18\x01 \x01(\t\"g\n\x18SearchTreatmentsResponse\x12\x32\n\ntreatments\x18\x01 \x03(\x0b\x32\x1e.ga4gh.schemas.ga4gh.Treatment\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8e\x01\n\x15SearchOutcomesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetOutcomeRequest\x12\x12\n\noutcome_id\x18\x01 \x01(\t\"a\n\x16SearchOutcomesResponse\x12.\n\x08outcomes\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Outcome\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x93\x01\n\x1aSearchComplicationsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetComplicationRequest\x12\x17\n\x0f\x63omplication_id\x18\x01 \x01(\t\"p\n\x1bSearchComplicationsResponse\x12\x38\n\rcomplications\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.Complication\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x92\x01\n\x19SearchTumourboardsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"/\n\x15GetTumourboardRequest\x12\x16\n\x0etumourboard_id\x18\x01 \x01(\t\"m\n\x1aSearchTumourboardsResponse\x12\x36\n\x0ctumourboards\x18\x01 \x03(\x0b\x32 .ga4gh.schemas.ga4gh.Tumourboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x94\x01\n\x1bSearchChemotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetChemotherapyRequest\x12\x17\n\x0f\x63hemotherapy_id\x18\x01 \x01(\t\"r\n\x1cSearchChemotherapiesResponse\x12\x39\n\x0e\x63hemotherapies\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.Chemotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x94\x01\n\x1bSearchRadiotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"1\n\x16GetRadiotherapyRequest\x12\x17\n\x0fradiotherapy_id\x18\x01 \x01(\t\"r\n\x1cSearchRadiotherapiesResponse\x12\x39\n\x0eradiotherapies\x18\x01 \x03(\x0b\x32!.ga4gh.schemas.ga4gh.Radiotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8f\x01\n\x16SearchSurgeriesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetSurgeryRequest\x12\x12\n\nsurgery_id\x18\x01 \x01(\t\"c\n\x17SearchSurgeriesResponse\x12/\n\tsurgeries\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Surgery\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x95\x01\n\x1cSearchImmunotherapiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"3\n\x17GetImmunotherapyRequest\x12\x18\n\x10immunotherapy_id\x18\x01 \x01(\t\"u\n\x1dSearchImmunotherapiesResponse\x12;\n\x0fimmunotherapies\x18\x01 \x03(\x0b\x32\".ga4gh.schemas.ga4gh.Immunotherapy\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x95\x01\n\x1cSearchCelltransplantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"5\n\x18GetCelltransplantRequest\x12\x19\n\x11\x63\x65lltransplant_id\x18\x01 \x01(\t\"v\n\x1dSearchCelltransplantsResponse\x12<\n\x0f\x63\x65lltransplants\x18\x01 \x03(\x0b\x32#.ga4gh.schemas.ga4gh.Celltransplant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8c\x01\n\x13SearchSlidesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetSlideRequest\x12\x10\n\x08slide_id\x18\x01 \x01(\t\"[\n\x14SearchSlidesResponse\x12*\n\x06slides\x18\x01 \x03(\x0b\x32\x1a.ga4gh.schemas.ga4gh.Slide\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8d\x01\n\x14SearchStudiesRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"#\n\x0fGetStudyRequest\x12\x10\n\x08study_id\x18\x01 \x01(\t\"]\n\x15SearchStudiesResponse\x12+\n\x07studies\x18\x01 \x03(\x0b\x32\x1a.ga4gh.schemas.ga4gh.Study\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\x8e\x01\n\x15SearchLabtestsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12,\n\x07\x66ilters\x18\x03 \x03(\x0b\x32\x1b.ga4gh.schemas.ga4gh.Filter\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"\'\n\x11GetLabtestRequest\x12\x12\n\nlabtest_id\x18\x01 \x01(\t\"a\n\x16SearchLabtestsResponse\x12.\n\x08labtests\x18\x01 \x03(\x0b\x32\x1c.ga4gh.schemas.ga4gh.Labtest\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\x89\'\n\x17\x43linicalMetadataService\x12\x90\x01\n\x0eSearchPatients\x12*.ga4gh.schemas.ga4gh.SearchPatientsRequest\x1a+.ga4gh.schemas.ga4gh.SearchPatientsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/patients/search:\x01*\x12\x9c\x01\n\x11SearchEnrollments\x12-.ga4gh.schemas.ga4gh.SearchEnrollmentsRequest\x1a..ga4gh.schemas.ga4gh.SearchEnrollmentsResponse\"(\x82\xd3\xe4\x93\x02\"\"\x1d/v0.6.0a10/enrollments/search:\x01*\x12\x90\x01\n\x0eSearchConsents\x12*.ga4gh.schemas.ga4gh.SearchConsentsRequest\x1a+.ga4gh.schemas.ga4gh.SearchConsentsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/consents/search:\x01*\x12\x94\x01\n\x0fSearchDiagnoses\x12+.ga4gh.schemas.ga4gh.SearchDiagnosesRequest\x1a,.ga4gh.schemas.ga4gh.SearchDiagnosesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/diagnoses/search:\x01*\x12\x8c\x01\n\rSearchSamples\x12).ga4gh.schemas.ga4gh.SearchSamplesRequest\x1a*.ga4gh.schemas.ga4gh.SearchSamplesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/samples/search:\x01*\x12\x98\x01\n\x10SearchTreatments\x12,.ga4gh.schemas.ga4gh.SearchTreatmentsRequest\x1a-.ga4gh.schemas.ga4gh.SearchTreatmentsResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.6.0a10/treatments/search:\x01*\x12\x90\x01\n\x0eSearchOutcomes\x12*.ga4gh.schemas.ga4gh.SearchOutcomesRequest\x1a+.ga4gh.schemas.ga4gh.SearchOutcomesResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/outcomes/search:\x01*\x12\xa4\x01\n\x13SearchComplications\x12/.ga4gh.schemas.ga4gh.SearchComplicationsRequest\x1a\x30.ga4gh.schemas.ga4gh.SearchComplicationsResponse\"*\x82\xd3\xe4\x93\x02$\"\x1f/v0.6.0a10/complications/search:\x01*\x12\xa0\x01\n\x12SearchTumourboards\x12..ga4gh.schemas.ga4gh.SearchTumourboardsRequest\x1a/.ga4gh.schemas.ga4gh.SearchTumourboardsResponse\")\x82\xd3\xe4\x93\x02#\"\x1e/v0.6.0a10/tumourboards/search:\x01*\x12|\n\nGetPatient\x12&.ga4gh.schemas.ga4gh.GetPatientRequest\x1a\x1c.ga4gh.schemas.ga4gh.Patient\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/patients/{patient_id}\x12\x8b\x01\n\rGetEnrollment\x12).ga4gh.schemas.ga4gh.GetEnrollmentRequest\x1a\x1f.ga4gh.schemas.ga4gh.Enrollment\".\x82\xd3\xe4\x93\x02(\x12&/v0.6.0a10/enrollments/{enrollment_id}\x12|\n\nGetConsent\x12&.ga4gh.schemas.ga4gh.GetConsentRequest\x1a\x1c.ga4gh.schemas.ga4gh.Consent\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/consents/{consent_id}\x12\x85\x01\n\x0cGetDiagnosis\x12(.ga4gh.schemas.ga4gh.GetDiagnosisRequest\x1a\x1e.ga4gh.schemas.ga4gh.Diagnosis\"+\x82\xd3\xe4\x93\x02%\x12#/v0.6.0a10/diagnoses/{diagnosis_id}\x12w\n\tGetSample\x12%.ga4gh.schemas.ga4gh.GetSampleRequest\x1a\x1b.ga4gh.schemas.ga4gh.Sample\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.6.0a10/samples/{sample_id}\x12\x86\x01\n\x0cGetTreatment\x12(.ga4gh.schemas.ga4gh.GetTreatmentRequest\x1a\x1e.ga4gh.schemas.ga4gh.Treatment\",\x82\xd3\xe4\x93\x02&\x12$/v0.6.0a10/treatments/{treatment_id}\x12|\n\nGetOutcome\x12&.ga4gh.schemas.ga4gh.GetOutcomeRequest\x1a\x1c.ga4gh.schemas.ga4gh.Outcome\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/outcomes/{outcome_id}\x12\x95\x01\n\x0fGetComplication\x12+.ga4gh.schemas.ga4gh.GetComplicationRequest\x1a!.ga4gh.schemas.ga4gh.Complication\"2\x82\xd3\xe4\x93\x02,\x12*/v0.6.0a10/complications/{complication_id}\x12\x90\x01\n\x0eGetTumourboard\x12*.ga4gh.schemas.ga4gh.GetTumourboardRequest\x1a .ga4gh.schemas.ga4gh.Tumourboard\"0\x82\xd3\xe4\x93\x02*\x12(/v0.6.0a10/tumourboards/{tumourboard_id}\x12\xa8\x01\n\x14SearchChemotherapies\x12\x30.ga4gh.schemas.ga4gh.SearchChemotherapiesRequest\x1a\x31.ga4gh.schemas.ga4gh.SearchChemotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/chemotherapies/search:\x01*\x12\xa8\x01\n\x14SearchRadiotherapies\x12\x30.ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest\x1a\x31.ga4gh.schemas.ga4gh.SearchRadiotherapiesResponse\"+\x82\xd3\xe4\x93\x02%\" /v0.6.0a10/radiotherapies/search:\x01*\x12\x94\x01\n\x0fSearchSurgeries\x12+.ga4gh.schemas.ga4gh.SearchSurgeriesRequest\x1a,.ga4gh.schemas.ga4gh.SearchSurgeriesResponse\"&\x82\xd3\xe4\x93\x02 \"\x1b/v0.6.0a10/surgeries/search:\x01*\x12\xac\x01\n\x15SearchImmunotherapies\x12\x31.ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest\x1a\x32.ga4gh.schemas.ga4gh.SearchImmunotherapiesResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/immunotherapies/search:\x01*\x12\xac\x01\n\x15SearchCelltransplants\x12\x31.ga4gh.schemas.ga4gh.SearchCelltransplantsRequest\x1a\x32.ga4gh.schemas.ga4gh.SearchCelltransplantsResponse\",\x82\xd3\xe4\x93\x02&\"!/v0.6.0a10/celltransplants/search:\x01*\x12\x88\x01\n\x0cSearchSlides\x12(.ga4gh.schemas.ga4gh.SearchSlidesRequest\x1a).ga4gh.schemas.ga4gh.SearchSlidesResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v0.6.0a10/slides/search:\x01*\x12\x8c\x01\n\rSearchStudies\x12).ga4gh.schemas.ga4gh.SearchStudiesRequest\x1a*.ga4gh.schemas.ga4gh.SearchStudiesResponse\"$\x82\xd3\xe4\x93\x02\x1e\"\x19/v0.6.0a10/studies/search:\x01*\x12\x90\x01\n\x0eSearchLabtests\x12*.ga4gh.schemas.ga4gh.SearchLabtestsRequest\x1a+.ga4gh.schemas.ga4gh.SearchLabtestsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.6.0a10/labtests/search:\x01*\x12\x96\x01\n\x0fGetChemotherapy\x12+.ga4gh.schemas.ga4gh.GetChemotherapyRequest\x1a!.ga4gh.schemas.ga4gh.Chemotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/chemotherapies/{chemotherapy_id}\x12\x96\x01\n\x0fGetRadiotherapy\x12+.ga4gh.schemas.ga4gh.GetRadiotherapyRequest\x1a!.ga4gh.schemas.ga4gh.Radiotherapy\"3\x82\xd3\xe4\x93\x02-\x12+/v0.6.0a10/radiotherapies/{radiotherapy_id}\x12}\n\nGetSurgery\x12&.ga4gh.schemas.ga4gh.GetSurgeryRequest\x1a\x1c.ga4gh.schemas.ga4gh.Surgery\")\x82\xd3\xe4\x93\x02#\x12!/v0.6.0a10/surgeries/{surgery_id}\x12\x9b\x01\n\x10GetImmunotherapy\x12,.ga4gh.schemas.ga4gh.GetImmunotherapyRequest\x1a\".ga4gh.schemas.ga4gh.Immunotherapy\"5\x82\xd3\xe4\x93\x02/\x12-/v0.6.0a10/immunotherapies/{immunotherapy_id}\x12\x9f\x01\n\x11GetCelltransplant\x12-.ga4gh.schemas.ga4gh.GetCelltransplantRequest\x1a#.ga4gh.schemas.ga4gh.Celltransplant\"6\x82\xd3\xe4\x93\x02\x30\x12./v0.6.0a10/celltransplants/{celltransplant_id}\x12r\n\x08GetSlide\x12$.ga4gh.schemas.ga4gh.GetSlideRequest\x1a\x1a.ga4gh.schemas.ga4gh.Slide\"$\x82\xd3\xe4\x93\x02\x1e\x12\x1c/v0.6.0a10/slides/{slide_id}\x12s\n\x08GetStudy\x12$.ga4gh.schemas.ga4gh.GetStudyRequest\x1a\x1a.ga4gh.schemas.ga4gh.Study\"%\x82\xd3\xe4\x93\x02\x1f\x12\x1d/v0.6.0a10/studies/{study_id}\x12|\n\nGetLabtest\x12&.ga4gh.schemas.ga4gh.GetLabtestRequest\x1a\x1c.ga4gh.schemas.ga4gh.Labtest\"(\x82\xd3\xe4\x93\x02\"\x12 /v0.6.0a10/labtests/{labtest_id}b\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_clinical__metadata__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -31,41 +31,41 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _SEARCHPATIENTSREQUEST = _descriptor.Descriptor(
   name='SearchPatientsRequest',
-  full_name='ga4gh.SearchPatientsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchPatientsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchPatientsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchPatientsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchPatientsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchPatientsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchPatientsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -83,20 +83,20 @@ _SEARCHPATIENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=186,
-  serialized_end=314,
+  serialized_start=200,
+  serialized_end=342,
 )
 
 
 _GETPATIENTREQUEST = _descriptor.Descriptor(
   name='GetPatientRequest',
-  full_name='ga4gh.GetPatientRequest',
+  full_name='ga4gh.schemas.ga4gh.GetPatientRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='patient_id', full_name='ga4gh.GetPatientRequest.patient_id', index=0,
+      name='patient_id', full_name='ga4gh.schemas.ga4gh.GetPatientRequest.patient_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -114,27 +114,27 @@ _GETPATIENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=316,
-  serialized_end=355,
+  serialized_start=344,
+  serialized_end=383,
 )
 
 
 _SEARCHPATIENTSRESPONSE = _descriptor.Descriptor(
   name='SearchPatientsResponse',
-  full_name='ga4gh.SearchPatientsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchPatientsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='patients', full_name='ga4gh.SearchPatientsResponse.patients', index=0,
+      name='patients', full_name='ga4gh.schemas.ga4gh.SearchPatientsResponse.patients', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchPatientsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchPatientsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -152,48 +152,48 @@ _SEARCHPATIENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=357,
-  serialized_end=440,
+  serialized_start=385,
+  serialized_end=482,
 )
 
 
 _SEARCHENROLLMENTSREQUEST = _descriptor.Descriptor(
   name='SearchEnrollmentsRequest',
-  full_name='ga4gh.SearchEnrollmentsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchEnrollmentsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchEnrollmentsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchEnrollmentsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchEnrollmentsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchEnrollmentsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -211,20 +211,20 @@ _SEARCHENROLLMENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=443,
-  serialized_end=574,
+  serialized_start=485,
+  serialized_end=630,
 )
 
 
 _GETENROLLMENTREQUEST = _descriptor.Descriptor(
   name='GetEnrollmentRequest',
-  full_name='ga4gh.GetEnrollmentRequest',
+  full_name='ga4gh.schemas.ga4gh.GetEnrollmentRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='enrollment_id', full_name='ga4gh.GetEnrollmentRequest.enrollment_id', index=0,
+      name='enrollment_id', full_name='ga4gh.schemas.ga4gh.GetEnrollmentRequest.enrollment_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -242,27 +242,27 @@ _GETENROLLMENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=576,
-  serialized_end=621,
+  serialized_start=632,
+  serialized_end=677,
 )
 
 
 _SEARCHENROLLMENTSRESPONSE = _descriptor.Descriptor(
   name='SearchEnrollmentsResponse',
-  full_name='ga4gh.SearchEnrollmentsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='enrollments', full_name='ga4gh.SearchEnrollmentsResponse.enrollments', index=0,
+      name='enrollments', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsResponse.enrollments', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchEnrollmentsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchEnrollmentsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -280,48 +280,48 @@ _SEARCHENROLLMENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=623,
-  serialized_end=715,
+  serialized_start=679,
+  serialized_end=785,
 )
 
 
 _SEARCHCONSENTSREQUEST = _descriptor.Descriptor(
   name='SearchConsentsRequest',
-  full_name='ga4gh.SearchConsentsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchConsentsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchConsentsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchConsentsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchConsentsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchConsentsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchConsentsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -339,20 +339,20 @@ _SEARCHCONSENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=718,
-  serialized_end=846,
+  serialized_start=788,
+  serialized_end=930,
 )
 
 
 _GETCONSENTREQUEST = _descriptor.Descriptor(
   name='GetConsentRequest',
-  full_name='ga4gh.GetConsentRequest',
+  full_name='ga4gh.schemas.ga4gh.GetConsentRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='consent_id', full_name='ga4gh.GetConsentRequest.consent_id', index=0,
+      name='consent_id', full_name='ga4gh.schemas.ga4gh.GetConsentRequest.consent_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -370,27 +370,27 @@ _GETCONSENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=848,
-  serialized_end=887,
+  serialized_start=932,
+  serialized_end=971,
 )
 
 
 _SEARCHCONSENTSRESPONSE = _descriptor.Descriptor(
   name='SearchConsentsResponse',
-  full_name='ga4gh.SearchConsentsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchConsentsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='consents', full_name='ga4gh.SearchConsentsResponse.consents', index=0,
+      name='consents', full_name='ga4gh.schemas.ga4gh.SearchConsentsResponse.consents', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchConsentsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchConsentsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -408,48 +408,48 @@ _SEARCHCONSENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=889,
-  serialized_end=972,
+  serialized_start=973,
+  serialized_end=1070,
 )
 
 
 _SEARCHDIAGNOSESREQUEST = _descriptor.Descriptor(
   name='SearchDiagnosesRequest',
-  full_name='ga4gh.SearchDiagnosesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchDiagnosesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchDiagnosesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchDiagnosesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchDiagnosesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchDiagnosesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -467,20 +467,20 @@ _SEARCHDIAGNOSESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=975,
-  serialized_end=1104,
+  serialized_start=1073,
+  serialized_end=1216,
 )
 
 
 _GETDIAGNOSISREQUEST = _descriptor.Descriptor(
   name='GetDiagnosisRequest',
-  full_name='ga4gh.GetDiagnosisRequest',
+  full_name='ga4gh.schemas.ga4gh.GetDiagnosisRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='diagnosis_id', full_name='ga4gh.GetDiagnosisRequest.diagnosis_id', index=0,
+      name='diagnosis_id', full_name='ga4gh.schemas.ga4gh.GetDiagnosisRequest.diagnosis_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -498,27 +498,27 @@ _GETDIAGNOSISREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1106,
-  serialized_end=1149,
+  serialized_start=1218,
+  serialized_end=1261,
 )
 
 
 _SEARCHDIAGNOSESRESPONSE = _descriptor.Descriptor(
   name='SearchDiagnosesResponse',
-  full_name='ga4gh.SearchDiagnosesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchDiagnosesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='diagnoses', full_name='ga4gh.SearchDiagnosesResponse.diagnoses', index=0,
+      name='diagnoses', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesResponse.diagnoses', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchDiagnosesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchDiagnosesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -536,48 +536,48 @@ _SEARCHDIAGNOSESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1151,
-  serialized_end=1238,
+  serialized_start=1263,
+  serialized_end=1364,
 )
 
 
 _SEARCHSAMPLESREQUEST = _descriptor.Descriptor(
   name='SearchSamplesRequest',
-  full_name='ga4gh.SearchSamplesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchSamplesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchSamplesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchSamplesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchSamplesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchSamplesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchSamplesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -595,20 +595,20 @@ _SEARCHSAMPLESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1240,
-  serialized_end=1367,
+  serialized_start=1367,
+  serialized_end=1508,
 )
 
 
 _GETSAMPLEREQUEST = _descriptor.Descriptor(
   name='GetSampleRequest',
-  full_name='ga4gh.GetSampleRequest',
+  full_name='ga4gh.schemas.ga4gh.GetSampleRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='sample_id', full_name='ga4gh.GetSampleRequest.sample_id', index=0,
+      name='sample_id', full_name='ga4gh.schemas.ga4gh.GetSampleRequest.sample_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -626,27 +626,27 @@ _GETSAMPLEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1369,
-  serialized_end=1406,
+  serialized_start=1510,
+  serialized_end=1547,
 )
 
 
 _SEARCHSAMPLESRESPONSE = _descriptor.Descriptor(
   name='SearchSamplesResponse',
-  full_name='ga4gh.SearchSamplesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchSamplesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='samples', full_name='ga4gh.SearchSamplesResponse.samples', index=0,
+      name='samples', full_name='ga4gh.schemas.ga4gh.SearchSamplesResponse.samples', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchSamplesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchSamplesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -664,48 +664,48 @@ _SEARCHSAMPLESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1408,
-  serialized_end=1488,
+  serialized_start=1549,
+  serialized_end=1643,
 )
 
 
 _SEARCHTREATMENTSREQUEST = _descriptor.Descriptor(
   name='SearchTreatmentsRequest',
-  full_name='ga4gh.SearchTreatmentsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchTreatmentsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchTreatmentsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchTreatmentsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchTreatmentsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchTreatmentsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -723,20 +723,20 @@ _SEARCHTREATMENTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1491,
-  serialized_end=1621,
+  serialized_start=1646,
+  serialized_end=1790,
 )
 
 
 _GETTREATMENTREQUEST = _descriptor.Descriptor(
   name='GetTreatmentRequest',
-  full_name='ga4gh.GetTreatmentRequest',
+  full_name='ga4gh.schemas.ga4gh.GetTreatmentRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='treatment_id', full_name='ga4gh.GetTreatmentRequest.treatment_id', index=0,
+      name='treatment_id', full_name='ga4gh.schemas.ga4gh.GetTreatmentRequest.treatment_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -754,27 +754,27 @@ _GETTREATMENTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1623,
-  serialized_end=1666,
+  serialized_start=1792,
+  serialized_end=1835,
 )
 
 
 _SEARCHTREATMENTSRESPONSE = _descriptor.Descriptor(
   name='SearchTreatmentsResponse',
-  full_name='ga4gh.SearchTreatmentsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchTreatmentsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='treatments', full_name='ga4gh.SearchTreatmentsResponse.treatments', index=0,
+      name='treatments', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsResponse.treatments', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchTreatmentsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchTreatmentsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -792,48 +792,48 @@ _SEARCHTREATMENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1668,
-  serialized_end=1757,
+  serialized_start=1837,
+  serialized_end=1940,
 )
 
 
 _SEARCHOUTCOMESREQUEST = _descriptor.Descriptor(
   name='SearchOutcomesRequest',
-  full_name='ga4gh.SearchOutcomesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchOutcomesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchOutcomesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchOutcomesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchOutcomesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchOutcomesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchOutcomesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -851,20 +851,20 @@ _SEARCHOUTCOMESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1760,
-  serialized_end=1888,
+  serialized_start=1943,
+  serialized_end=2085,
 )
 
 
 _GETOUTCOMEREQUEST = _descriptor.Descriptor(
   name='GetOutcomeRequest',
-  full_name='ga4gh.GetOutcomeRequest',
+  full_name='ga4gh.schemas.ga4gh.GetOutcomeRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='outcome_id', full_name='ga4gh.GetOutcomeRequest.outcome_id', index=0,
+      name='outcome_id', full_name='ga4gh.schemas.ga4gh.GetOutcomeRequest.outcome_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -882,27 +882,27 @@ _GETOUTCOMEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1890,
-  serialized_end=1929,
+  serialized_start=2087,
+  serialized_end=2126,
 )
 
 
 _SEARCHOUTCOMESRESPONSE = _descriptor.Descriptor(
   name='SearchOutcomesResponse',
-  full_name='ga4gh.SearchOutcomesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchOutcomesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='outcomes', full_name='ga4gh.SearchOutcomesResponse.outcomes', index=0,
+      name='outcomes', full_name='ga4gh.schemas.ga4gh.SearchOutcomesResponse.outcomes', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchOutcomesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchOutcomesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -920,48 +920,48 @@ _SEARCHOUTCOMESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1931,
-  serialized_end=2014,
+  serialized_start=2128,
+  serialized_end=2225,
 )
 
 
 _SEARCHCOMPLICATIONSREQUEST = _descriptor.Descriptor(
   name='SearchComplicationsRequest',
-  full_name='ga4gh.SearchComplicationsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchComplicationsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchComplicationsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchComplicationsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchComplicationsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchComplicationsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchComplicationsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -979,20 +979,20 @@ _SEARCHCOMPLICATIONSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2017,
-  serialized_end=2150,
+  serialized_start=2228,
+  serialized_end=2375,
 )
 
 
 _GETCOMPLICATIONREQUEST = _descriptor.Descriptor(
   name='GetComplicationRequest',
-  full_name='ga4gh.GetComplicationRequest',
+  full_name='ga4gh.schemas.ga4gh.GetComplicationRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='complication_id', full_name='ga4gh.GetComplicationRequest.complication_id', index=0,
+      name='complication_id', full_name='ga4gh.schemas.ga4gh.GetComplicationRequest.complication_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1010,27 +1010,27 @@ _GETCOMPLICATIONREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2152,
-  serialized_end=2201,
+  serialized_start=2377,
+  serialized_end=2426,
 )
 
 
 _SEARCHCOMPLICATIONSRESPONSE = _descriptor.Descriptor(
   name='SearchComplicationsResponse',
-  full_name='ga4gh.SearchComplicationsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchComplicationsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='complications', full_name='ga4gh.SearchComplicationsResponse.complications', index=0,
+      name='complications', full_name='ga4gh.schemas.ga4gh.SearchComplicationsResponse.complications', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchComplicationsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchComplicationsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1048,48 +1048,48 @@ _SEARCHCOMPLICATIONSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2203,
-  serialized_end=2301,
+  serialized_start=2428,
+  serialized_end=2540,
 )
 
 
 _SEARCHTUMOURBOARDSREQUEST = _descriptor.Descriptor(
   name='SearchTumourboardsRequest',
-  full_name='ga4gh.SearchTumourboardsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchTumourboardsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchTumourboardsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchTumourboardsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchTumourboardsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchTumourboardsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1107,20 +1107,20 @@ _SEARCHTUMOURBOARDSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2304,
-  serialized_end=2436,
+  serialized_start=2543,
+  serialized_end=2689,
 )
 
 
 _GETTUMOURBOARDREQUEST = _descriptor.Descriptor(
   name='GetTumourboardRequest',
-  full_name='ga4gh.GetTumourboardRequest',
+  full_name='ga4gh.schemas.ga4gh.GetTumourboardRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='tumourboard_id', full_name='ga4gh.GetTumourboardRequest.tumourboard_id', index=0,
+      name='tumourboard_id', full_name='ga4gh.schemas.ga4gh.GetTumourboardRequest.tumourboard_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1138,27 +1138,27 @@ _GETTUMOURBOARDREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2438,
-  serialized_end=2485,
+  serialized_start=2691,
+  serialized_end=2738,
 )
 
 
 _SEARCHTUMOURBOARDSRESPONSE = _descriptor.Descriptor(
   name='SearchTumourboardsResponse',
-  full_name='ga4gh.SearchTumourboardsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchTumourboardsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='tumourboards', full_name='ga4gh.SearchTumourboardsResponse.tumourboards', index=0,
+      name='tumourboards', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsResponse.tumourboards', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchTumourboardsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchTumourboardsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1176,48 +1176,48 @@ _SEARCHTUMOURBOARDSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2487,
-  serialized_end=2582,
+  serialized_start=2740,
+  serialized_end=2849,
 )
 
 
 _SEARCHCHEMOTHERAPIESREQUEST = _descriptor.Descriptor(
   name='SearchChemotherapiesRequest',
-  full_name='ga4gh.SearchChemotherapiesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchChemotherapiesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchChemotherapiesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchChemotherapiesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchChemotherapiesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchChemotherapiesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1235,20 +1235,20 @@ _SEARCHCHEMOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2585,
-  serialized_end=2719,
+  serialized_start=2852,
+  serialized_end=3000,
 )
 
 
 _GETCHEMOTHERAPYREQUEST = _descriptor.Descriptor(
   name='GetChemotherapyRequest',
-  full_name='ga4gh.GetChemotherapyRequest',
+  full_name='ga4gh.schemas.ga4gh.GetChemotherapyRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chemotherapy_id', full_name='ga4gh.GetChemotherapyRequest.chemotherapy_id', index=0,
+      name='chemotherapy_id', full_name='ga4gh.schemas.ga4gh.GetChemotherapyRequest.chemotherapy_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1266,27 +1266,27 @@ _GETCHEMOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2721,
-  serialized_end=2770,
+  serialized_start=3002,
+  serialized_end=3051,
 )
 
 
 _SEARCHCHEMOTHERAPIESRESPONSE = _descriptor.Descriptor(
   name='SearchChemotherapiesResponse',
-  full_name='ga4gh.SearchChemotherapiesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chemotherapies', full_name='ga4gh.SearchChemotherapiesResponse.chemotherapies', index=0,
+      name='chemotherapies', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesResponse.chemotherapies', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchChemotherapiesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchChemotherapiesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1304,48 +1304,48 @@ _SEARCHCHEMOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2772,
-  serialized_end=2872,
+  serialized_start=3053,
+  serialized_end=3167,
 )
 
 
 _SEARCHRADIOTHERAPIESREQUEST = _descriptor.Descriptor(
   name='SearchRadiotherapiesRequest',
-  full_name='ga4gh.SearchRadiotherapiesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchRadiotherapiesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchRadiotherapiesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchRadiotherapiesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchRadiotherapiesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchRadiotherapiesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1363,20 +1363,20 @@ _SEARCHRADIOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2875,
-  serialized_end=3009,
+  serialized_start=3170,
+  serialized_end=3318,
 )
 
 
 _GETRADIOTHERAPYREQUEST = _descriptor.Descriptor(
   name='GetRadiotherapyRequest',
-  full_name='ga4gh.GetRadiotherapyRequest',
+  full_name='ga4gh.schemas.ga4gh.GetRadiotherapyRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='radiotherapy_id', full_name='ga4gh.GetRadiotherapyRequest.radiotherapy_id', index=0,
+      name='radiotherapy_id', full_name='ga4gh.schemas.ga4gh.GetRadiotherapyRequest.radiotherapy_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1394,27 +1394,27 @@ _GETRADIOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3011,
-  serialized_end=3060,
+  serialized_start=3320,
+  serialized_end=3369,
 )
 
 
 _SEARCHRADIOTHERAPIESRESPONSE = _descriptor.Descriptor(
   name='SearchRadiotherapiesResponse',
-  full_name='ga4gh.SearchRadiotherapiesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='radiotherapies', full_name='ga4gh.SearchRadiotherapiesResponse.radiotherapies', index=0,
+      name='radiotherapies', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesResponse.radiotherapies', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchRadiotherapiesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchRadiotherapiesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1432,48 +1432,48 @@ _SEARCHRADIOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3062,
-  serialized_end=3162,
+  serialized_start=3371,
+  serialized_end=3485,
 )
 
 
 _SEARCHSURGERIESREQUEST = _descriptor.Descriptor(
   name='SearchSurgeriesRequest',
-  full_name='ga4gh.SearchSurgeriesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchSurgeriesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchSurgeriesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchSurgeriesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchSurgeriesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchSurgeriesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1491,20 +1491,20 @@ _SEARCHSURGERIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3165,
-  serialized_end=3294,
+  serialized_start=3488,
+  serialized_end=3631,
 )
 
 
 _GETSURGERYREQUEST = _descriptor.Descriptor(
   name='GetSurgeryRequest',
-  full_name='ga4gh.GetSurgeryRequest',
+  full_name='ga4gh.schemas.ga4gh.GetSurgeryRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='surgery_id', full_name='ga4gh.GetSurgeryRequest.surgery_id', index=0,
+      name='surgery_id', full_name='ga4gh.schemas.ga4gh.GetSurgeryRequest.surgery_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1522,27 +1522,27 @@ _GETSURGERYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3296,
-  serialized_end=3335,
+  serialized_start=3633,
+  serialized_end=3672,
 )
 
 
 _SEARCHSURGERIESRESPONSE = _descriptor.Descriptor(
   name='SearchSurgeriesResponse',
-  full_name='ga4gh.SearchSurgeriesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchSurgeriesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='surgeries', full_name='ga4gh.SearchSurgeriesResponse.surgeries', index=0,
+      name='surgeries', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesResponse.surgeries', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchSurgeriesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchSurgeriesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1560,48 +1560,48 @@ _SEARCHSURGERIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3337,
-  serialized_end=3422,
+  serialized_start=3674,
+  serialized_end=3773,
 )
 
 
 _SEARCHIMMUNOTHERAPIESREQUEST = _descriptor.Descriptor(
   name='SearchImmunotherapiesRequest',
-  full_name='ga4gh.SearchImmunotherapiesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchImmunotherapiesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchImmunotherapiesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchImmunotherapiesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchImmunotherapiesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchImmunotherapiesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1619,20 +1619,20 @@ _SEARCHIMMUNOTHERAPIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3425,
-  serialized_end=3560,
+  serialized_start=3776,
+  serialized_end=3925,
 )
 
 
 _GETIMMUNOTHERAPYREQUEST = _descriptor.Descriptor(
   name='GetImmunotherapyRequest',
-  full_name='ga4gh.GetImmunotherapyRequest',
+  full_name='ga4gh.schemas.ga4gh.GetImmunotherapyRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='immunotherapy_id', full_name='ga4gh.GetImmunotherapyRequest.immunotherapy_id', index=0,
+      name='immunotherapy_id', full_name='ga4gh.schemas.ga4gh.GetImmunotherapyRequest.immunotherapy_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1650,27 +1650,27 @@ _GETIMMUNOTHERAPYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3562,
-  serialized_end=3613,
+  serialized_start=3927,
+  serialized_end=3978,
 )
 
 
 _SEARCHIMMUNOTHERAPIESRESPONSE = _descriptor.Descriptor(
   name='SearchImmunotherapiesResponse',
-  full_name='ga4gh.SearchImmunotherapiesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='immunotherapies', full_name='ga4gh.SearchImmunotherapiesResponse.immunotherapies', index=0,
+      name='immunotherapies', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesResponse.immunotherapies', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchImmunotherapiesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchImmunotherapiesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1688,48 +1688,48 @@ _SEARCHIMMUNOTHERAPIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3615,
-  serialized_end=3718,
+  serialized_start=3980,
+  serialized_end=4097,
 )
 
 
 _SEARCHCELLTRANSPLANTSREQUEST = _descriptor.Descriptor(
   name='SearchCelltransplantsRequest',
-  full_name='ga4gh.SearchCelltransplantsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchCelltransplantsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchCelltransplantsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchCelltransplantsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchCelltransplantsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchCelltransplantsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1747,20 +1747,20 @@ _SEARCHCELLTRANSPLANTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3721,
-  serialized_end=3856,
+  serialized_start=4100,
+  serialized_end=4249,
 )
 
 
 _GETCELLTRANSPLANTREQUEST = _descriptor.Descriptor(
   name='GetCelltransplantRequest',
-  full_name='ga4gh.GetCelltransplantRequest',
+  full_name='ga4gh.schemas.ga4gh.GetCelltransplantRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='celltransplant_id', full_name='ga4gh.GetCelltransplantRequest.celltransplant_id', index=0,
+      name='celltransplant_id', full_name='ga4gh.schemas.ga4gh.GetCelltransplantRequest.celltransplant_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1778,27 +1778,27 @@ _GETCELLTRANSPLANTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3858,
-  serialized_end=3911,
+  serialized_start=4251,
+  serialized_end=4304,
 )
 
 
 _SEARCHCELLTRANSPLANTSRESPONSE = _descriptor.Descriptor(
   name='SearchCelltransplantsResponse',
-  full_name='ga4gh.SearchCelltransplantsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='celltransplants', full_name='ga4gh.SearchCelltransplantsResponse.celltransplants', index=0,
+      name='celltransplants', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsResponse.celltransplants', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchCelltransplantsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchCelltransplantsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1816,48 +1816,48 @@ _SEARCHCELLTRANSPLANTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3913,
-  serialized_end=4017,
+  serialized_start=4306,
+  serialized_end=4424,
 )
 
 
 _SEARCHSLIDESREQUEST = _descriptor.Descriptor(
   name='SearchSlidesRequest',
-  full_name='ga4gh.SearchSlidesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchSlidesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchSlidesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchSlidesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchSlidesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchSlidesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchSlidesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1875,20 +1875,20 @@ _SEARCHSLIDESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4019,
-  serialized_end=4145,
+  serialized_start=4427,
+  serialized_end=4567,
 )
 
 
 _GETSLIDEREQUEST = _descriptor.Descriptor(
   name='GetSlideRequest',
-  full_name='ga4gh.GetSlideRequest',
+  full_name='ga4gh.schemas.ga4gh.GetSlideRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='slide_id', full_name='ga4gh.GetSlideRequest.slide_id', index=0,
+      name='slide_id', full_name='ga4gh.schemas.ga4gh.GetSlideRequest.slide_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1906,27 +1906,27 @@ _GETSLIDEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4147,
-  serialized_end=4182,
+  serialized_start=4569,
+  serialized_end=4604,
 )
 
 
 _SEARCHSLIDESRESPONSE = _descriptor.Descriptor(
   name='SearchSlidesResponse',
-  full_name='ga4gh.SearchSlidesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchSlidesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='slides', full_name='ga4gh.SearchSlidesResponse.slides', index=0,
+      name='slides', full_name='ga4gh.schemas.ga4gh.SearchSlidesResponse.slides', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchSlidesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchSlidesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -1944,48 +1944,48 @@ _SEARCHSLIDESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4184,
-  serialized_end=4261,
+  serialized_start=4606,
+  serialized_end=4697,
 )
 
 
 _SEARCHSTUDIESREQUEST = _descriptor.Descriptor(
   name='SearchStudiesRequest',
-  full_name='ga4gh.SearchStudiesRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchStudiesRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchStudiesRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchStudiesRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchStudiesRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchStudiesRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchStudiesRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2003,20 +2003,20 @@ _SEARCHSTUDIESREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4263,
-  serialized_end=4390,
+  serialized_start=4700,
+  serialized_end=4841,
 )
 
 
 _GETSTUDYREQUEST = _descriptor.Descriptor(
   name='GetStudyRequest',
-  full_name='ga4gh.GetStudyRequest',
+  full_name='ga4gh.schemas.ga4gh.GetStudyRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='study_id', full_name='ga4gh.GetStudyRequest.study_id', index=0,
+      name='study_id', full_name='ga4gh.schemas.ga4gh.GetStudyRequest.study_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2034,27 +2034,27 @@ _GETSTUDYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4392,
-  serialized_end=4427,
+  serialized_start=4843,
+  serialized_end=4878,
 )
 
 
 _SEARCHSTUDIESRESPONSE = _descriptor.Descriptor(
   name='SearchStudiesResponse',
-  full_name='ga4gh.SearchStudiesResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchStudiesResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='studies', full_name='ga4gh.SearchStudiesResponse.studies', index=0,
+      name='studies', full_name='ga4gh.schemas.ga4gh.SearchStudiesResponse.studies', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchStudiesResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchStudiesResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2072,48 +2072,48 @@ _SEARCHSTUDIESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4429,
-  serialized_end=4508,
+  serialized_start=4880,
+  serialized_end=4973,
 )
 
 
 _SEARCHLABTESTSREQUEST = _descriptor.Descriptor(
   name='SearchLabtestsRequest',
-  full_name='ga4gh.SearchLabtestsRequest',
+  full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.SearchLabtestsRequest.dataset_id', index=0,
+      name='dataset_id', full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest.dataset_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.SearchLabtestsRequest.name', index=1,
+      name='name', full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='filters', full_name='ga4gh.SearchLabtestsRequest.filters', index=2,
+      name='filters', full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest.filters', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.SearchLabtestsRequest.page_size', index=3,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest.page_size', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.SearchLabtestsRequest.page_token', index=4,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.SearchLabtestsRequest.page_token', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2131,20 +2131,20 @@ _SEARCHLABTESTSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4511,
-  serialized_end=4639,
+  serialized_start=4976,
+  serialized_end=5118,
 )
 
 
 _GETLABTESTREQUEST = _descriptor.Descriptor(
   name='GetLabtestRequest',
-  full_name='ga4gh.GetLabtestRequest',
+  full_name='ga4gh.schemas.ga4gh.GetLabtestRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='labtest_id', full_name='ga4gh.GetLabtestRequest.labtest_id', index=0,
+      name='labtest_id', full_name='ga4gh.schemas.ga4gh.GetLabtestRequest.labtest_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2162,27 +2162,27 @@ _GETLABTESTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4641,
-  serialized_end=4680,
+  serialized_start=5120,
+  serialized_end=5159,
 )
 
 
 _SEARCHLABTESTSRESPONSE = _descriptor.Descriptor(
   name='SearchLabtestsResponse',
-  full_name='ga4gh.SearchLabtestsResponse',
+  full_name='ga4gh.schemas.ga4gh.SearchLabtestsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='labtests', full_name='ga4gh.SearchLabtestsResponse.labtests', index=0,
+      name='labtests', full_name='ga4gh.schemas.ga4gh.SearchLabtestsResponse.labtests', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.SearchLabtestsResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.SearchLabtestsResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -2200,8 +2200,8 @@ _SEARCHLABTESTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4682,
-  serialized_end=4765,
+  serialized_start=5161,
+  serialized_end=5258,
 )
 
 _SEARCHPATIENTSREQUEST.fields_by_name['filters'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._FILTER
@@ -2294,357 +2294,357 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 SearchPatientsRequest = _reflection.GeneratedProtocolMessageType('SearchPatientsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPATIENTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchPatientsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPatientsRequest)
   ))
 _sym_db.RegisterMessage(SearchPatientsRequest)
 
 GetPatientRequest = _reflection.GeneratedProtocolMessageType('GetPatientRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETPATIENTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetPatientRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetPatientRequest)
   ))
 _sym_db.RegisterMessage(GetPatientRequest)
 
 SearchPatientsResponse = _reflection.GeneratedProtocolMessageType('SearchPatientsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHPATIENTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchPatientsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchPatientsResponse)
   ))
 _sym_db.RegisterMessage(SearchPatientsResponse)
 
 SearchEnrollmentsRequest = _reflection.GeneratedProtocolMessageType('SearchEnrollmentsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHENROLLMENTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchEnrollmentsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchEnrollmentsRequest)
   ))
 _sym_db.RegisterMessage(SearchEnrollmentsRequest)
 
 GetEnrollmentRequest = _reflection.GeneratedProtocolMessageType('GetEnrollmentRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETENROLLMENTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetEnrollmentRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetEnrollmentRequest)
   ))
 _sym_db.RegisterMessage(GetEnrollmentRequest)
 
 SearchEnrollmentsResponse = _reflection.GeneratedProtocolMessageType('SearchEnrollmentsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHENROLLMENTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchEnrollmentsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchEnrollmentsResponse)
   ))
 _sym_db.RegisterMessage(SearchEnrollmentsResponse)
 
 SearchConsentsRequest = _reflection.GeneratedProtocolMessageType('SearchConsentsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCONSENTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchConsentsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchConsentsRequest)
   ))
 _sym_db.RegisterMessage(SearchConsentsRequest)
 
 GetConsentRequest = _reflection.GeneratedProtocolMessageType('GetConsentRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETCONSENTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetConsentRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetConsentRequest)
   ))
 _sym_db.RegisterMessage(GetConsentRequest)
 
 SearchConsentsResponse = _reflection.GeneratedProtocolMessageType('SearchConsentsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCONSENTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchConsentsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchConsentsResponse)
   ))
 _sym_db.RegisterMessage(SearchConsentsResponse)
 
 SearchDiagnosesRequest = _reflection.GeneratedProtocolMessageType('SearchDiagnosesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHDIAGNOSESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchDiagnosesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchDiagnosesRequest)
   ))
 _sym_db.RegisterMessage(SearchDiagnosesRequest)
 
 GetDiagnosisRequest = _reflection.GeneratedProtocolMessageType('GetDiagnosisRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETDIAGNOSISREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetDiagnosisRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetDiagnosisRequest)
   ))
 _sym_db.RegisterMessage(GetDiagnosisRequest)
 
 SearchDiagnosesResponse = _reflection.GeneratedProtocolMessageType('SearchDiagnosesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHDIAGNOSESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchDiagnosesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchDiagnosesResponse)
   ))
 _sym_db.RegisterMessage(SearchDiagnosesResponse)
 
 SearchSamplesRequest = _reflection.GeneratedProtocolMessageType('SearchSamplesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSAMPLESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSamplesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSamplesRequest)
   ))
 _sym_db.RegisterMessage(SearchSamplesRequest)
 
 GetSampleRequest = _reflection.GeneratedProtocolMessageType('GetSampleRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETSAMPLEREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetSampleRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetSampleRequest)
   ))
 _sym_db.RegisterMessage(GetSampleRequest)
 
 SearchSamplesResponse = _reflection.GeneratedProtocolMessageType('SearchSamplesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSAMPLESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSamplesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSamplesResponse)
   ))
 _sym_db.RegisterMessage(SearchSamplesResponse)
 
 SearchTreatmentsRequest = _reflection.GeneratedProtocolMessageType('SearchTreatmentsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHTREATMENTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchTreatmentsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchTreatmentsRequest)
   ))
 _sym_db.RegisterMessage(SearchTreatmentsRequest)
 
 GetTreatmentRequest = _reflection.GeneratedProtocolMessageType('GetTreatmentRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETTREATMENTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetTreatmentRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetTreatmentRequest)
   ))
 _sym_db.RegisterMessage(GetTreatmentRequest)
 
 SearchTreatmentsResponse = _reflection.GeneratedProtocolMessageType('SearchTreatmentsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHTREATMENTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchTreatmentsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchTreatmentsResponse)
   ))
 _sym_db.RegisterMessage(SearchTreatmentsResponse)
 
 SearchOutcomesRequest = _reflection.GeneratedProtocolMessageType('SearchOutcomesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHOUTCOMESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchOutcomesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchOutcomesRequest)
   ))
 _sym_db.RegisterMessage(SearchOutcomesRequest)
 
 GetOutcomeRequest = _reflection.GeneratedProtocolMessageType('GetOutcomeRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETOUTCOMEREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetOutcomeRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetOutcomeRequest)
   ))
 _sym_db.RegisterMessage(GetOutcomeRequest)
 
 SearchOutcomesResponse = _reflection.GeneratedProtocolMessageType('SearchOutcomesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHOUTCOMESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchOutcomesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchOutcomesResponse)
   ))
 _sym_db.RegisterMessage(SearchOutcomesResponse)
 
 SearchComplicationsRequest = _reflection.GeneratedProtocolMessageType('SearchComplicationsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCOMPLICATIONSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchComplicationsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchComplicationsRequest)
   ))
 _sym_db.RegisterMessage(SearchComplicationsRequest)
 
 GetComplicationRequest = _reflection.GeneratedProtocolMessageType('GetComplicationRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETCOMPLICATIONREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetComplicationRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetComplicationRequest)
   ))
 _sym_db.RegisterMessage(GetComplicationRequest)
 
 SearchComplicationsResponse = _reflection.GeneratedProtocolMessageType('SearchComplicationsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCOMPLICATIONSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchComplicationsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchComplicationsResponse)
   ))
 _sym_db.RegisterMessage(SearchComplicationsResponse)
 
 SearchTumourboardsRequest = _reflection.GeneratedProtocolMessageType('SearchTumourboardsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHTUMOURBOARDSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchTumourboardsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchTumourboardsRequest)
   ))
 _sym_db.RegisterMessage(SearchTumourboardsRequest)
 
 GetTumourboardRequest = _reflection.GeneratedProtocolMessageType('GetTumourboardRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETTUMOURBOARDREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetTumourboardRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetTumourboardRequest)
   ))
 _sym_db.RegisterMessage(GetTumourboardRequest)
 
 SearchTumourboardsResponse = _reflection.GeneratedProtocolMessageType('SearchTumourboardsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHTUMOURBOARDSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchTumourboardsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchTumourboardsResponse)
   ))
 _sym_db.RegisterMessage(SearchTumourboardsResponse)
 
 SearchChemotherapiesRequest = _reflection.GeneratedProtocolMessageType('SearchChemotherapiesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCHEMOTHERAPIESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchChemotherapiesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchChemotherapiesRequest)
   ))
 _sym_db.RegisterMessage(SearchChemotherapiesRequest)
 
 GetChemotherapyRequest = _reflection.GeneratedProtocolMessageType('GetChemotherapyRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETCHEMOTHERAPYREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetChemotherapyRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetChemotherapyRequest)
   ))
 _sym_db.RegisterMessage(GetChemotherapyRequest)
 
 SearchChemotherapiesResponse = _reflection.GeneratedProtocolMessageType('SearchChemotherapiesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCHEMOTHERAPIESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchChemotherapiesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchChemotherapiesResponse)
   ))
 _sym_db.RegisterMessage(SearchChemotherapiesResponse)
 
 SearchRadiotherapiesRequest = _reflection.GeneratedProtocolMessageType('SearchRadiotherapiesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHRADIOTHERAPIESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchRadiotherapiesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchRadiotherapiesRequest)
   ))
 _sym_db.RegisterMessage(SearchRadiotherapiesRequest)
 
 GetRadiotherapyRequest = _reflection.GeneratedProtocolMessageType('GetRadiotherapyRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETRADIOTHERAPYREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetRadiotherapyRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetRadiotherapyRequest)
   ))
 _sym_db.RegisterMessage(GetRadiotherapyRequest)
 
 SearchRadiotherapiesResponse = _reflection.GeneratedProtocolMessageType('SearchRadiotherapiesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHRADIOTHERAPIESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchRadiotherapiesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchRadiotherapiesResponse)
   ))
 _sym_db.RegisterMessage(SearchRadiotherapiesResponse)
 
 SearchSurgeriesRequest = _reflection.GeneratedProtocolMessageType('SearchSurgeriesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSURGERIESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSurgeriesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSurgeriesRequest)
   ))
 _sym_db.RegisterMessage(SearchSurgeriesRequest)
 
 GetSurgeryRequest = _reflection.GeneratedProtocolMessageType('GetSurgeryRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETSURGERYREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetSurgeryRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetSurgeryRequest)
   ))
 _sym_db.RegisterMessage(GetSurgeryRequest)
 
 SearchSurgeriesResponse = _reflection.GeneratedProtocolMessageType('SearchSurgeriesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSURGERIESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSurgeriesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSurgeriesResponse)
   ))
 _sym_db.RegisterMessage(SearchSurgeriesResponse)
 
 SearchImmunotherapiesRequest = _reflection.GeneratedProtocolMessageType('SearchImmunotherapiesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHIMMUNOTHERAPIESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchImmunotherapiesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchImmunotherapiesRequest)
   ))
 _sym_db.RegisterMessage(SearchImmunotherapiesRequest)
 
 GetImmunotherapyRequest = _reflection.GeneratedProtocolMessageType('GetImmunotherapyRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETIMMUNOTHERAPYREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetImmunotherapyRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetImmunotherapyRequest)
   ))
 _sym_db.RegisterMessage(GetImmunotherapyRequest)
 
 SearchImmunotherapiesResponse = _reflection.GeneratedProtocolMessageType('SearchImmunotherapiesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHIMMUNOTHERAPIESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchImmunotherapiesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchImmunotherapiesResponse)
   ))
 _sym_db.RegisterMessage(SearchImmunotherapiesResponse)
 
 SearchCelltransplantsRequest = _reflection.GeneratedProtocolMessageType('SearchCelltransplantsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCELLTRANSPLANTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchCelltransplantsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchCelltransplantsRequest)
   ))
 _sym_db.RegisterMessage(SearchCelltransplantsRequest)
 
 GetCelltransplantRequest = _reflection.GeneratedProtocolMessageType('GetCelltransplantRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETCELLTRANSPLANTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetCelltransplantRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetCelltransplantRequest)
   ))
 _sym_db.RegisterMessage(GetCelltransplantRequest)
 
 SearchCelltransplantsResponse = _reflection.GeneratedProtocolMessageType('SearchCelltransplantsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHCELLTRANSPLANTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchCelltransplantsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchCelltransplantsResponse)
   ))
 _sym_db.RegisterMessage(SearchCelltransplantsResponse)
 
 SearchSlidesRequest = _reflection.GeneratedProtocolMessageType('SearchSlidesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSLIDESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSlidesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSlidesRequest)
   ))
 _sym_db.RegisterMessage(SearchSlidesRequest)
 
 GetSlideRequest = _reflection.GeneratedProtocolMessageType('GetSlideRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETSLIDEREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetSlideRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetSlideRequest)
   ))
 _sym_db.RegisterMessage(GetSlideRequest)
 
 SearchSlidesResponse = _reflection.GeneratedProtocolMessageType('SearchSlidesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSLIDESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchSlidesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchSlidesResponse)
   ))
 _sym_db.RegisterMessage(SearchSlidesResponse)
 
 SearchStudiesRequest = _reflection.GeneratedProtocolMessageType('SearchStudiesRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSTUDIESREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchStudiesRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchStudiesRequest)
   ))
 _sym_db.RegisterMessage(SearchStudiesRequest)
 
 GetStudyRequest = _reflection.GeneratedProtocolMessageType('GetStudyRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETSTUDYREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetStudyRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetStudyRequest)
   ))
 _sym_db.RegisterMessage(GetStudyRequest)
 
 SearchStudiesResponse = _reflection.GeneratedProtocolMessageType('SearchStudiesResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHSTUDIESRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchStudiesResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchStudiesResponse)
   ))
 _sym_db.RegisterMessage(SearchStudiesResponse)
 
 SearchLabtestsRequest = _reflection.GeneratedProtocolMessageType('SearchLabtestsRequest', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHLABTESTSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchLabtestsRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchLabtestsRequest)
   ))
 _sym_db.RegisterMessage(SearchLabtestsRequest)
 
 GetLabtestRequest = _reflection.GeneratedProtocolMessageType('GetLabtestRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETLABTESTREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetLabtestRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetLabtestRequest)
   ))
 _sym_db.RegisterMessage(GetLabtestRequest)
 
 SearchLabtestsResponse = _reflection.GeneratedProtocolMessageType('SearchLabtestsResponse', (_message.Message,), dict(
   DESCRIPTOR = _SEARCHLABTESTSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.clinical_metadata_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.SearchLabtestsResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.SearchLabtestsResponse)
   ))
 _sym_db.RegisterMessage(SearchLabtestsResponse)
 
