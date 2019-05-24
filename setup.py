@@ -50,15 +50,15 @@ setup(
     name="ga4gh_schemas",
     description="GA4GH API Schemas",
     packages=[
-        "ga4gh",
-        "ga4gh.schemas",
-        "ga4gh.schemas.ga4gh",
-        "ga4gh.schemas.google",
-        "ga4gh.schemas.google.api"
+        "candig",
+        "candig.schemas",
+        "candig.schemas.candig",
+        "candig.schemas.google",
+        "candig.schemas.google.api"
     ],
-    namespace_packages=["ga4gh"],
-    url="https://github.com/ga4gh/ga4gh-schemas",
-    use_scm_version={"write_to": "python/ga4gh/schemas/_version.py"},
+    namespace_packages=["candig"],
+    url="https://github.com/candig/candig-schemas",
+    use_scm_version={"write_to": "python/candig/schemas/_version.py"},
     entry_points={},
     package_dir={'': 'python'},
     long_description=long_description,

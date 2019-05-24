@@ -1,0 +1,1649 @@
+// This file defines the metadata objects.
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+import "candig/common.proto";
+
+package candig;
+
+
+// The "Patient" object refers to
+//
+
+message Patient {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Patient specific fields
+    // ========================================================================
+
+    // Project or study identifier of the patient.
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    // Alternative identifiers of the patient.
+    string otherIds = 10;
+    int32 otherIdsTier = 11;
+
+    // Date of birth information
+    string dateOfBirth = 12;
+    int32 dateOfBirthTier = 13;
+
+    // Gender
+    string gender = 14;
+    int32 genderTier = 15;
+
+    // Ethnicity
+    string ethnicity = 16;
+    int32 ethnicityTier = 17;
+
+    // Race
+    string race = 18;
+    int32 raceTier = 19;
+
+    // Province or teritory information of the residence status.
+    string provinceOfResidence = 20;
+    int32 provinceOfResidenceTier = 21;
+
+    // Date of death
+    string dateOfDeath = 22;
+    int32 dateOfDeathTier = 23;
+
+    // Reason of death
+    string causeOfDeath = 24;
+    int32 causeOfDeathTier = 25;
+
+    // Indication whether autopsy tissue obtained from the patient can be used
+    // for research purposes.
+    string autopsyTissueForResearch = 26;
+    int32 autopsyTissueForResearchTier = 27;
+
+    // Information on any previous malignant disease.
+    string priorMalignancy = 28;
+    int32 priorMalignancyTier = 29;
+
+    // Date information of any previous malignant event.
+    string dateOfPriorMalignancy = 30;
+    int32 dateOfPriorMalignancyTier = 31;
+
+    // Any known risk factor of the family.
+    string familyHistoryAndRiskFactors = 32;
+    int32 familyHistoryAndRiskFactorsTier = 33;
+
+    // Any known genetic mutation known in the family that is inherited and 
+    // increases the chances of developing cancer.
+    string familyHistoryOfPredispositionSyndrome = 34;
+    int32 familyHistoryOfPredispositionSyndromeTier = 35;
+
+    // Detailed description of any predispodition.
+    string detailsOfPredispositionSyndrome = 36;
+    int32 detailsOfPredispositionSyndromeTier = 37;
+
+    // Any known cancer causing mutation of the patient.
+    string geneticCancerSyndrome = 38;
+    int32 geneticCancerSyndromeTier = 39;
+
+    // Information on any other known genetic mutation of the patient.
+    string otherGeneticConditionOrSignificantComorbidity = 40;
+    int32 otherGeneticConditionOrSignificantComorbidityTier = 41;
+
+    // Information whether the patient is/was exposed to any carcinogen due to
+    // occupational or environmental reasons.
+    string occupationalOrEnvironmentalExposure = 42;
+    int32 occupationalOrEnvironmentalExposureTier = 43;
+
+    } // End of the Patient object ============================================
+
+
+
+
+// The "Enrollment" object refers to
+//
+
+message Enrollment {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Enrollment specific fields
+    // ========================================================================
+
+    // Project or study identifier of the patient.
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    // Name of hospital, clinic or institute which recruited the patient.
+    string enrollmentInstitution = 10;
+    int32 enrollmentInstitutionTier = 11;
+
+    // Date information when the patient enrollemnt was approved.
+    string enrollmentApprovalDate = 12;
+    int32 enrollmentApprovalDateTier = 13;
+
+    // Information whether the patient was enrolled in any other study.
+    string crossEnrollment = 14;
+    int32 crossEnrollmentTier = 15;
+
+    // Name of any other drug test study - if any
+    string otherPersonalizedMedicineStudyName = 16;
+    int32 otherPersonalizedMedicineStudyNameTier = 17;
+
+    // Project or study ID of the patient in other drug test study.
+    string otherPersonalizedMedicineStudyId = 18;
+    int32 otherPersonalizedMedicineStudyIdTier = 19;
+
+    // Patient age in years when the enrollment happened.
+    string ageAtEnrollment = 20;
+    int32 ageAtEnrollmentTier = 21;
+
+    // Category inforamtion for the bases of the eligibility.
+    string eligibilityCategory = 22;
+    int32 eligibilityCategoryTier = 23;
+
+    // Disease status at the date of enrollment.
+    string statusAtEnrollment = 24;
+    int32 statusAtEnrollmentTier = 25;
+
+    // Full name of the patient's oncologist
+    string primaryOncologistName = 26;
+    int32 primaryOncologistNameTier = 27;
+
+    // Contact information of the oncologist
+    string primaryOncologistContact = 28;
+    int32 primaryOncologistContactTier = 29;
+
+    // Full name of the patient's physician
+    string referringPhysicianName = 30;
+    int32 referringPhysicianNameTier = 31;
+
+    // Contact information of the physician
+    string referringPhysicianContact = 32;
+    int32 referringPhysicianContactTier = 33;
+
+    // Short summary of the Enrollment Id request
+    string summaryOfIdRequest = 34;
+    int32 summaryOfIdRequestTier = 35;
+
+    // Name of the institution, hospital or clinic, where the patient is
+    // treated.
+    string treatingCentreName = 36;
+    int32 treatingCentreNameTier = 37;
+
+    // Name of the province or territory where the treating centre (hospital,
+    // clinic) is located.
+    string treatingCentreProvince = 38;
+    int32 treatingCentreProvinceTier = 39;
+
+    } // End of the Enrollment object ============================================
+
+
+
+
+// The "Consent" object refers to
+//
+
+message Consent {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Consent specific fields
+    // ========================================================================
+
+    // Project or study identifier of the patient.
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    // Identifier associated with this patient consent form.
+    string consentId = 10;
+    int32 consentIdTier = 11;
+
+    // Date patient provided consent to the study.
+    string consentDate = 12;
+    int32 consentDateTier = 13;
+
+    // Consent form version.
+    string consentVersion = 14;
+    int32 consentVersionTier = 15;
+
+    // Phrases, conditions to which the patient consented to.
+    // 1. Sample collection and molecular profiling
+    // 2. Biobanking for future research
+    // 3. Re-contact
+    // 4. Collection of tissues/fluids after death
+    // 5. other
+    string patientConsentedTo = 16;
+    int32 patientConsentedToTier = 17;
+
+    // Reason for the consent was rejected.
+    string reasonForRejection = 18;
+    int32 reasonForRejectionTier = 19;
+
+    // Indication that assent was collected.
+    string wasAssentObtained = 20;
+    int32 wasAssentObtainedTier = 21;
+
+    // Date when assent was collected.
+    string dateOfAssent = 22;
+    int32 dateOfAssentTier = 23;
+
+    // Assent form version.
+    string assentFormVersion = 24;
+    int32 assentFormVersionTier = 25;
+
+    // In case assent is mandatory, but was not obtained, this field contains
+    // the reason.
+    // 1. Too young to give assent
+    // 2. Incapable due to medical / cognitive / developmental issues
+    string ifAssentNotObtainedWhyNot = 26;
+    int32 ifAssentNotObtainedWhyNotTier = 27;
+
+    // Date of the patient was reconsented.
+    string reconsentDate = 28;
+    int32 reconsentDateTier = 29;
+
+    // Reconsent form version.
+    string reconsentVersion = 30;
+    int32 reconsentVersionTier = 31;
+
+    // Name of person who coordinates the consent forms.
+    string consentingCoordinatorName = 32;
+    int32 consentingCoordinatorNameTier = 33;
+
+    // Indication that the person perviously consented to this or other studies.
+    string previouslyConsented = 34;
+    int32 previouslyConsentedTier = 35;
+
+    // Name of the corresponding biobank, that store patient sample.
+    string nameOfOtherBiobank = 36;
+    int32 nameOfOtherBiobankTier = 37;
+
+    // Indication whether the consent is no longer in place.
+    string hasConsentBeenWithdrawn = 38;
+    int32 hasConsentBeenWithdrawnTier = 39;
+
+    // Date when the consent has been withdrawn.
+    string dateOfConsentWithdrawal = 40;
+    int32 dateOfConsentWithdrawalTier = 41;
+
+    // Type of consent withdrawal
+    string typeOfConsentWithdrawal = 42;
+    int32 typeOfConsentWithdrawalTier = 43;
+
+    // Reason or list of reasons, why patient withreawn the consent from the
+    // study.
+    string reasonForConsentWithdrawal = 44;
+    int32 reasonForConsentWithdrawalTier = 45;
+
+    // Indication whether the consent form was completed properly.
+    string consentFormComplete = 46;
+    int32 consentFormCompleteTier = 47;
+
+    } // End of the Consent object ============================================
+
+
+
+
+// The "Diagnosis" object refers to
+//
+
+message Diagnosis {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Diagnosis specific fields
+    // ========================================================================
+
+    // Project or study identifier of the patient.
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    // Any identifier related to this diagnosis event.
+    string diagnosisId = 10;
+    int32 diagnosisIdTier = 11;
+
+    // Date when the diagnosis was given.
+    string diagnosisDate = 12;
+    int32 diagnosisDateTier = 13;
+
+    // Patient age in years when diagnosis was given.
+    string ageAtDiagnosis = 14;
+    int32 ageAtDiagnosisTier = 15;
+
+    // Cancer category information - broad cancer type.
+    string cancerType = 16;
+    int32 cancerTypeTier = 17;
+
+    // Ontology classification - exact subtype information.
+    string classification = 18;
+    int32 classificationTier = 19;
+
+    // Anatomical site of origin (or organ system) of the tumour.
+    string cancerSite = 20;
+    int32 cancerSiteTier = 21;
+
+    // Cell type of the tumour, together with the behaviour (malignant or 
+    // benign).
+    string histology = 22;
+    int32 histologyTier = 23;
+
+    // Information on the diagnosis method used.
+    string methodOfDefinitiveDiagnosis = 24;
+    int32 methodOfDefinitiveDiagnosisTier = 25;
+
+    // Sample type, like liquid biopsy or somatic tissue.
+    string sampleType = 26;
+    int32 sampleTypeTier = 27;
+
+    // Anatomical site the sample was obtained from.
+    string sampleSite = 28;
+    int32 sampleSiteTier = 29;
+
+    // Grade level of the tumour developmental stage.
+    string tumorGrade = 30;
+    int32 tumorGradeTier = 31;
+
+    // Grading system used to classify the tumour grade.
+    string gradingSystemUsed = 32;
+    int32 gradingSystemUsedTier = 33;
+
+    // List of anatomoical sites where metastases confirmed.
+    string sitesOfMetastases = 34;
+    int32 sitesOfMetastasesTier = 35;
+
+    // Staging system used.
+    string stagingSystem = 36;
+    int32 stagingSystemTier = 37;
+
+    // Version of the staging system used.
+    string versionOrEditionOfTheStagingSystem = 38;
+    int32 versionOrEditionOfTheStagingSystemTier = 39;
+
+    // Tumour stage at the diagnosis.
+    string specificTumorStageAtDiagnosis = 40;
+    int32 specificTumorStageAtDiagnosisTier = 41;
+
+    // List of any cancer specific biomarker used / can be used for prognosis
+    // purpose.
+    string prognosticBiomarkers = 42;
+    int32 prognosticBiomarkersTier = 43;
+
+    // Quantity information of listed biomarkers.
+    string biomarkerQuantification = 44;
+    int32 biomarkerQuantificationTier = 45;
+
+    // Indication whether any additional testing was performed.
+    string additionalMolecularTesting = 46;
+    int32 additionalMolecularTestingTier = 47;
+
+    // Type of the additional molecular testing - if any.
+    string additionalTestType = 48;
+    int32 additionalTestTypeTier = 49;
+
+    // Name of the laboratory where the testing was done.
+    string laboratoryName = 50;
+    int32 laboratoryNameTier = 51;
+
+    // Address information of the laboratory where the testing was executed.
+    string laboratoryAddress = 52;
+    int32 laboratoryAddressTier = 53;
+
+    // ** field duplication - will be removed in the future.
+    string siteOfMetastases = 54;
+    int32 siteOfMetastasesTier = 55;
+
+    // ** field duplication - will be removed in the future.
+    string stagingSystemVersion = 56;
+    int32 stagingSystemVersionTier = 57;
+
+    // ** field duplication - will be removed in the future.
+    string specificStage = 58;
+    int32 specificStageTier = 59;
+
+    // ** field duplication - will be removed in the future.
+    string cancerSpecificBiomarkers = 60;
+    int32 cancerSpecificBiomarkersTier = 61;
+
+    // ** field duplication - will be removed in the future.
+    string additionalMolecularDiagnosticTestingPerformed = 62;
+    int32 additionalMolecularDiagnosticTestingPerformedTier = 63;
+
+    // ** field duplication - will be removed in the future.
+    string additionalTest = 64;
+    int32 additionalTestTier = 65;
+
+    } // End of the Diagnosis object ============================================
+
+
+
+
+// The "Sample" object refers to
+//
+
+message Sample {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Sample specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    //
+    string sampleId = 10;
+    int32 sampleIdTier = 11;
+
+    //
+    string diagnosisId = 12;
+    int32 diagnosisIdTier = 13;
+
+    //
+    string localBiobankId = 14;
+    int32 localBiobankIdTier = 15;
+
+    //
+    string collectionDate = 16;
+    int32 collectionDateTier = 17;
+
+    //
+    string collectionHospital = 18;
+    int32 collectionHospitalTier = 19;
+
+    //
+    string sampleType = 20;
+    int32 sampleTypeTier = 21;
+
+    //
+    string tissueDiseaseState = 22;
+    int32 tissueDiseaseStateTier = 23;
+
+    //
+    string anatomicSiteTheSampleObtainedFrom = 24;
+    int32 anatomicSiteTheSampleObtainedFromTier = 25;
+
+    //
+    string cancerType = 26;
+    int32 cancerTypeTier = 27;
+
+    //
+    string cancerSubtype = 28;
+    int32 cancerSubtypeTier = 29;
+
+    //
+    string pathologyReportId = 30;
+    int32 pathologyReportIdTier = 31;
+
+    //
+    string morphologicalCode = 32;
+    int32 morphologicalCodeTier = 33;
+
+    //
+    string topologicalCode = 34;
+    int32 topologicalCodeTier = 35;
+
+    //
+    string shippingDate = 36;
+    int32 shippingDateTier = 37;
+
+    //
+    string receivedDate = 38;
+    int32 receivedDateTier = 39;
+
+    //
+    string qualityControlPerformed = 40;
+    int32 qualityControlPerformedTier = 41;
+
+    //
+    string estimatedTumorContent = 42;
+    int32 estimatedTumorContentTier = 43;
+
+    //
+    string quantity = 44;
+    int32 quantityTier = 45;
+
+    //
+    string units = 46;
+    int32 unitsTier = 47;
+
+    //
+    string associatedBiobank = 48;
+    int32 associatedBiobankTier = 49;
+
+    //
+    string otherBiobank = 50;
+    int32 otherBiobankTier = 51;
+
+    //
+    string sopFollowed = 52;
+    int32 sopFollowedTier = 53;
+
+    //
+    string ifNotExplainAnyDeviation = 54;
+    int32 ifNotExplainAnyDeviationTier = 55;
+
+    //
+    string recordingDate = 56;
+    int32 recordingDateTier = 57;
+
+    //
+    string startInterval = 58;
+    int32 startIntervalTier = 59;
+
+    } // End of the Sample object ============================================
+
+
+// The "Treatment" object refers to
+//
+
+message Treatment {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Treatment specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    //
+    string courseNumber = 10;
+    int32 courseNumberTier = 11;
+
+    //
+    string therapeuticModality = 12;
+    int32 therapeuticModalityTier = 13;
+
+    //
+    string treatmentPlanType = 14;
+    int32 treatmentPlanTypeTier = 15;
+
+    //
+    string treatmentIntent = 16;
+    int32 treatmentIntentTier = 17;
+
+    //
+    string startDate = 18;
+    int32 startDateTier = 19;
+
+    //
+    string stopDate = 20;
+    int32 stopDateTier = 21;
+
+    //
+    string reasonForEndingTheTreatment = 22;
+    int32 reasonForEndingTheTreatmentTier = 23;
+
+    //
+    string responseToTreatment = 24;
+    int32 responseToTreatmentTier = 25;
+
+    //
+    string responseCriteriaUsed = 26;
+    int32 responseCriteriaUsedTier = 27;
+
+    //
+    string dateOfRecurrenceOrProgressionAfterThisTreatment = 28;
+    int32 dateOfRecurrenceOrProgressionAfterThisTreatmentTier = 29;
+
+    //
+    string unexpectedOrUnusualToxicityDuringTreatment = 30;
+    int32 unexpectedOrUnusualToxicityDuringTreatmentTier = 31;
+
+    //
+    string diagnosisId = 32;
+    int32 diagnosisIdTier = 33;
+
+    //
+    string treatmentPlanId = 34;
+    int32 treatmentPlanIdTier = 35;
+
+    } // End of the Treatment object ============================================
+
+
+
+
+// The "Outcome" object refers to
+//
+
+message Outcome {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Outcome specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    //
+    string physicalExamId = 10;
+    int32 physicalExamIdTier = 11;
+
+    //
+    string dateOfAssessment = 12;
+    int32 dateOfAssessmentTier = 13;
+
+    //
+    string diseaseResponseOrStatus = 14;
+    int32 diseaseResponseOrStatusTier = 15;
+
+    //
+    string otherResponseClassification = 16;
+    int32 otherResponseClassificationTier = 17;
+
+    //
+    string minimalResidualDiseaseAssessment = 18;
+    int32 minimalResidualDiseaseAssessmentTier = 19;
+
+    //
+    string methodOfResponseEvaluation = 20;
+    int32 methodOfResponseEvaluationTier = 21;
+
+    //
+    string responseCriteriaUsed = 22;
+    int32 responseCriteriaUsedTier = 23;
+
+    //
+    string summaryStage = 24;
+    int32 summaryStageTier = 25;
+
+    //
+    string sitesOfAnyProgressionOrRecurrence = 26;
+    int32 sitesOfAnyProgressionOrRecurrenceTier = 27;
+
+    //
+    string vitalStatus = 28;
+    int32 vitalStatusTier = 29;
+
+    //
+    string height = 30;
+    int32 heightTier = 31;
+
+    //
+    string weight = 32;
+    int32 weightTier = 33;
+
+    //
+    string heightUnits = 34;
+    int32 heightUnitsTier = 35;
+
+    //
+    string weightUnits = 36;
+    int32 weightUnitsTier = 37;
+
+    //
+    string performanceStatus = 38;
+    int32 performanceStatusTier = 39;
+
+    //
+    string overallSurvivalInMonths = 40;
+    int32 overallSurvivalInMonthsTier = 41;
+
+    //
+    string diseaseFreeSurvivalInMonths = 42;
+    int32 diseaseFreeSurvivalInMonthsTier = 43;
+
+    } // End of the Outcome object ============================================
+
+
+
+
+// The "Complication" object refers to
+//
+
+message Complication {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Complication specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    //
+    string date = 10;
+    int32 dateTier = 11;
+
+    //
+    string lateComplicationOfTherapyDeveloped = 12;
+    int32 lateComplicationOfTherapyDevelopedTier = 13;
+
+    //
+    string lateToxicityDetail = 14;
+    int32 lateToxicityDetailTier = 15;
+
+    //
+    string suspectedTreatmentInducedNeoplasmDeveloped = 16;
+    int32 suspectedTreatmentInducedNeoplasmDevelopedTier = 17;
+
+    //
+    string treatmentInducedNeoplasmDetails = 18;
+    int32 treatmentInducedNeoplasmDetailsTier = 19;
+
+    } // End of the Complication object ============================================
+
+
+
+
+// The "Tumourboard" object refers to
+//
+
+message Tumourboard {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Tumourboard specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    //
+    string dateOfMolecularTumorBoard = 10;
+    int32 dateOfMolecularTumorBoardTier = 11;
+
+    //
+    string typeOfSampleAnalyzed = 12;
+    int32 typeOfSampleAnalyzedTier = 13;
+
+    //
+    string typeOfTumourSampleAnalyzed = 14;
+    int32 typeOfTumourSampleAnalyzedTier = 15;
+
+    //
+    string analysesDiscussed = 16;
+    int32 analysesDiscussedTier = 17;
+
+    //
+    string somaticSampleType = 18;
+    int32 somaticSampleTypeTier = 19;
+
+    //
+    string normalExpressionComparator = 20;
+    int32 normalExpressionComparatorTier = 21;
+
+    //
+    string diseaseExpressionComparator = 22;
+    int32 diseaseExpressionComparatorTier = 23;
+
+    //
+    string hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer = 24;
+    int32 hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancerTier = 25;
+
+    //
+    string actionableTargetFound = 26;
+    int32 actionableTargetFoundTier = 27;
+
+    //
+    string molecularTumorBoardRecommendation = 28;
+    int32 molecularTumorBoardRecommendationTier = 29;
+
+    //
+    string germlineDnaSampleId = 30;
+    int32 germlineDnaSampleIdTier = 31;
+
+    //
+    string tumorDnaSampleId = 32;
+    int32 tumorDnaSampleIdTier = 33;
+
+    //
+    string tumorRnaSampleId = 34;
+    int32 tumorRnaSampleIdTier = 35;
+
+    //
+    string germlineSnvDiscussed = 36;
+    int32 germlineSnvDiscussedTier = 37;
+
+    //
+    string somaticSnvDiscussed = 38;
+    int32 somaticSnvDiscussedTier = 39;
+
+    //
+    string cnvsDiscussed = 40;
+    int32 cnvsDiscussedTier = 41;
+
+    //
+    string structuralVariantDiscussed = 42;
+    int32 structuralVariantDiscussedTier = 43;
+
+    //
+    string classificationOfVariants = 44;
+    int32 classificationOfVariantsTier = 45;
+
+    //
+    string clinicalValidationProgress = 46;
+    int32 clinicalValidationProgressTier = 47;
+
+    //
+    string typeOfValidation = 48;
+    int32 typeOfValidationTier = 49;
+
+    //
+    string agentOrDrugClass = 50;
+    int32 agentOrDrugClassTier = 51;
+
+    //
+    string levelOfEvidenceForExpressionTargetAgentMatch = 52;
+    int32 levelOfEvidenceForExpressionTargetAgentMatchTier = 53;
+
+    //
+    string didTreatmentPlanChangeBasedOnProfilingResult = 54;
+    int32 didTreatmentPlanChangeBasedOnProfilingResultTier = 55;
+
+    //
+    string howTreatmentHasAlteredBasedOnProfiling = 56;
+    int32 howTreatmentHasAlteredBasedOnProfilingTier = 57;
+
+    //
+    string reasonTreatmentPlanDidNotChangeBasedOnProfiling = 58;
+    int32 reasonTreatmentPlanDidNotChangeBasedOnProfilingTier = 59;
+
+    //
+    string detailsOfTreatmentPlanImpact = 60;
+    int32 detailsOfTreatmentPlanImpactTier = 61;
+
+    //
+    string patientOrFamilyInformedOfGermlineVariant = 62;
+    int32 patientOrFamilyInformedOfGermlineVariantTier = 63;
+
+    //
+    string patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling = 64;
+    int32 patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfilingTier = 65;
+
+    //
+    string summaryReport = 66;
+    int32 summaryReportTier = 67;
+
+    } // End of the Tumourboard object ========================================
+
+
+message Chemotherapy {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Chemotherapy specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string courseNumber = 10;
+    int32 courseNumberTier = 11;
+
+    string startDate = 12;
+    int32 startDateTier = 13;
+
+    string stopDate = 14;
+    int32 stopDateTier = 15;
+
+    string systematicTherapyAgentName = 16;
+    int32 systematicTherapyAgentNameTier = 17;
+
+    string route = 18;
+    int32 routeTier = 19;
+
+    string dose = 20;
+    int32 doseTier = 21;
+
+    string doseFrequency = 22;
+    int32 doseFrequencyTier = 23;
+
+    string doseUnit = 24;
+    int32 doseUnitTier = 25;
+
+    string daysPerCycle = 26;
+    int32 daysPerCycleTier = 27;
+
+    string numberOfCycle = 28;
+    int32 numberOfCycleTier = 29;
+
+    string treatmentIntent = 30;
+    int32 treatmentIntentTier = 31;
+
+    string treatingCentreName = 32;
+    int32 treatingCentreNameTier = 33;
+
+    string type = 34;
+    int32 typeTier = 35;
+
+    string protocolCode = 36;
+    int32 protocolCodeTier = 37;
+
+    string recordingDate = 38;
+    int32 recordingDateTier = 39;
+
+    string treatmentPlanId = 40;
+    int32 treatmentPlanIdTier = 41;
+
+    } // End of the Chemotherapy object ========================================
+
+
+message Radiotherapy {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Radiotherapy specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string courseNumber = 10;
+    int32 courseNumberTier = 11;
+
+    string startDate = 12;
+    int32 startDateTier = 13;
+
+    string stopDate = 14;
+    int32 stopDateTier = 15;
+
+    string therapeuticModality = 16;
+    int32 therapeuticModalityTier = 17;
+
+    string baseline = 18;
+    int32 baselineTier = 19;
+
+    string testResult = 20;
+    int32 testResultTier = 21;
+
+    string testResultStd = 22;
+    int32 testResultStdTier = 23;
+
+    string treatingCentreName = 24;
+    int32 treatingCentreNameTier = 25;
+
+    string startIntervalRad = 26;
+    int32 startIntervalRadTier = 27;
+
+    string startIntervalRadRaw = 28;
+    int32 startIntervalRadRawTier = 29;
+
+    string recordingDate = 30;
+    int32 recordingDateTier = 31;
+
+    string adjacentFields = 32;
+    int32 adjacentFieldsTier = 33;
+
+    string adjacentFractions = 34;
+    int32 adjacentFractionsTier = 35;
+
+    string complete = 36;
+    int32 completeTier = 37;
+
+    string brachytherapyDose = 38;
+    int32 brachytherapyDoseTier = 39;
+
+    string radiotherapyDose = 40;
+    int32 radiotherapyDoseTier = 41;
+
+    string siteNumber = 42;
+    int32 siteNumberTier = 43;
+
+    string technique = 44;
+    int32 techniqueTier = 45;
+
+    string treatedRegion = 46;
+    int32 treatedRegionTier = 47;
+
+    string treatmentPlanId = 48;
+    int32 treatmentPlanIdTier = 49;
+
+    string radiationType = 50;
+    int32 radiationTypeTier = 51;
+
+    string radiationSite = 52;
+    int32 radiationSiteTier = 53;
+
+    string totalDose = 54;
+    int32 totalDoseTier = 55;
+
+    string boostSite = 56;
+    int32 boostSiteTier = 57;
+
+    string boostDose = 58;
+    int32 boostDoseTier = 59;
+
+    } // End of the Radiotherapy object ========================================
+
+
+message Immunotherapy {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Immunotherapy specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string startDate = 10;
+    int32 startDateTier = 11;
+
+    string immunotherapyType = 12;
+    int32 immunotherapyTypeTier = 13;
+
+    string immunotherapyTarget = 14;
+    int32 immunotherapyTargetTier = 15;
+
+    string immunotherapyDetail = 16;
+    int32 immunotherapyDetailTier = 17;
+
+    string treatmentPlanId = 18;
+    int32 treatmentPlanIdTier = 19;
+
+    string courseNumber = 20;
+    int32 courseNumberTier = 21;
+
+    } // End of the Immunotherapy object ========================================
+
+
+message Surgery {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Surgery specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string startDate = 10;
+    int32 startDateTier = 11;
+
+    string stopDate = 12;
+    int32 stopDateTier = 13;
+
+    string sampleId = 14;
+    int32 sampleIdTier = 15;
+
+    string collectionTimePoint = 16;
+    int32 collectionTimePointTier = 17;
+
+    string diagnosisDate = 18;
+    int32 diagnosisDateTier = 19;
+
+    string site = 20;
+    int32 siteTier = 21;
+
+    string type = 22;
+    int32 typeTier = 23;
+
+    string recordingDate = 24;
+    int32 recordingDateTier = 25;
+
+    string treatmentPlanId = 26;
+    int32 treatmentPlanIdTier = 27;
+
+    string courseNumber = 28;
+    int32 courseNumberTier = 29;
+
+    } // End of the Surgery object ========================================
+
+
+message Celltransplant {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Celltransplant specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string startDate = 10;
+    int32 startDateTier = 11;
+
+    string cellSource = 12;
+    int32 cellSourceTier = 13;
+
+    string donorType = 14;
+    int32 donorTypeTier = 15;
+
+    string treatmentPlanId = 16;
+    int32 treatmentPlanIdTier = 17;
+
+    string courseNumber = 18;
+    int32 courseNumberTier = 19;
+
+    } // End of the CellTransplant object ========================================
+
+
+message Slide {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Slide specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string sampleId = 10;
+    int32 sampleIdTier = 11;
+
+    string slideId = 12;
+    int32 slideIdTier = 13;
+
+    string slideOtherId = 14;
+    int32 slideOtherIdTier = 15;
+
+    string lymphocyteInfiltrationPercent = 16;
+    int32 lymphocyteInfiltrationPercentTier = 17;
+
+    string tumorNucleiPercent = 18;
+    int32 tumorNucleiPercentTier = 19;
+
+    string monocyteInfiltrationPercent = 20;
+    int32 monocyteInfiltrationPercentTier = 21;
+
+    string normalCellsPercent = 22;
+    int32 normalCellsPercentTier = 23;
+
+    string tumorCellsPercent = 24;
+    int32 tumorCellsPercentTier = 25;
+
+    string stromalCellsPercent = 26;
+    int32 stromalCellsPercentTier = 27;
+
+    string eosinophilInfiltrationPercent = 28;
+    int32 eosinophilInfiltrationPercentTier = 29;
+
+    string neutrophilInfiltrationPercent = 30;
+    int32 neutrophilInfiltrationPercentTier = 31;
+
+    string granulocyteInfiltrationPercent = 32;
+    int32 granulocyteInfiltrationPercentTier = 33;
+
+    string necrosisPercent = 34;
+    int32 necrosisPercentTier = 35;
+
+    string inflammatoryInfiltrationPercent = 36;
+    int32 inflammatoryInfiltrationPercentTier = 37;
+
+    string proliferatingCellsNumber = 38;
+    int32 proliferatingCellsNumberTier = 39;
+
+    string sectionLocation = 40;
+    int32 sectionLocationTier = 41;
+
+    } // End of the Slide object ========================================
+
+
+message Study {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Study specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string startDate = 10;
+    int32 startDateTier = 11;
+
+    string endDate = 12;
+    int32 endDateTier = 13;
+
+    string status = 14;
+    int32 statusTier = 15;
+
+    string recordingDate = 16;
+    int32 recordingDateTier = 17;
+
+    } // End of the Study object ========================================
+
+
+message Labtest {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Labtest specific fields
+    // ========================================================================
+
+    //
+    string patientId = 8;
+    int32 patientIdTier = 9;
+
+    string startDate = 10;
+    int32 startDateTier = 11;
+
+    string collectionDate = 12;
+    int32 collectionDateTier = 13;
+
+    string endDate = 14;
+    int32 endDateTier = 15;
+
+    string eventType = 16;
+    int32 eventTypeTier = 17;
+
+    string testResults = 18;
+    int32 testResultsTier = 19;
+
+    string timePoint = 20;
+    int32 timePointTier = 21;
+
+    string recordingDate = 22;
+    int32 recordingDateTier = 23;
+
+    } // End of the Labtest object ========================================
