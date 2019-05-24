@@ -2,9 +2,8 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/schemas/ga4gh/rna_quantification.proto";
-import "ga4gh/schemas/ga4gh/common.proto";
-import "ga4gh/schemas/google/api/annotations.proto";
+import "ga4gh/rna_quantification.proto";
+import "google/api/annotations.proto";
 
 service RnaQuantificationService {
   // Gets a list of 'RnaQuantificationSet' matching the search criteria.

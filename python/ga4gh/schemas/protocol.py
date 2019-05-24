@@ -50,7 +50,7 @@ import hacks.googhack as googhack
 
 MIMETYPES = [
     "application/json",
-    "application/protobuf", 
+    "application/protobuf",
     "application/x-protobuf",
     ]
 

@@ -2,7 +2,7 @@
 syntax = "proto3";
 
 import "google/protobuf/struct.proto";
-import "ga4gh/schemas/ga4gh/common.proto";
+import "ga4gh/common.proto";
 
 package ga4gh;
 

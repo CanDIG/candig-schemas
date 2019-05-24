@@ -2,12 +2,11 @@
 
 syntax = "proto3";
 
-import "ga4gh/schemas/google/api/annotations.proto";
-import "ga4gh/schemas/ga4gh/common.proto";
-import "ga4gh/schemas/ga4gh/clinical_metadata.proto";
-import "ga4gh/schemas/ga4gh/clinical_metadata_service.proto";
-import "ga4gh/schemas/ga4gh/variants.proto";
-import "ga4gh/schemas/ga4gh/variant_service.proto";
+import "google/api/annotations.proto";
+import "ga4gh/clinical_metadata.proto";
+import "ga4gh/clinical_metadata_service.proto";
+import "ga4gh/variants.proto";
+import "ga4gh/variant_service.proto";
 
 package ga4gh;
 

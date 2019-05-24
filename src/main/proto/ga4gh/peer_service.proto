@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package ga4gh;
 
-import "ga4gh/schemas/ga4gh/common.proto";
-import "ga4gh/schemas/google/api/annotations.proto";
+import "ga4gh/common.proto";
+import "google/api/annotations.proto";
 
 /*
 This interface provides a peer listing functionality for servers.

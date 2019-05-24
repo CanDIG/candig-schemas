@@ -19,9 +19,9 @@ from ga4gh.schemas.google.api import annotations_pb2 as ga4gh_dot_schemas_dot_go
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/peer_service.proto',
-  package='ga4gh',
+  package='ga4gh.schemas.ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/peer_service.proto\x12\x05ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"9\n\x10ListPeersRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\"H\n\x11ListPeersResponse\x12\x1a\n\x05peers\x18\x01 \x03(\x0b\x32\x0b.ga4gh.Peer\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"0\n\x13\x41nnouncePeerRequest\x12\x19\n\x04peer\x18\x01 \x01(\x0b\x32\x0b.ga4gh.Peer\"N\n\x14\x41nnouncePeerResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12%\n\nattributes\x18\x02 \x01(\x0b\x32\x11.ga4gh.Attributes\"\x10\n\x0eGetInfoRequest\"R\n\x0fGetInfoResponse\x12\x18\n\x10protocol_version\x18\x01 \x01(\t\x12%\n\nattributes\x18\x02 \x01(\x0b\x32\x11.ga4gh.Attributes\":\n\x04Peer\x12\x0b\n\x03url\x18\x01 \x01(\t\x12%\n\nattributes\x18\x02 \x01(\x0b\x32\x11.ga4gh.Attributes2\xa5\x02\n\x0bPeerService\x12`\n\tListPeers\x12\x17.ga4gh.ListPeersRequest\x1a\x18.ga4gh.ListPeersResponse\" \x82\xd3\xe4\x93\x02\x1a\"\x15/v0.6.0a10/peers/list:\x01*\x12\x64\n\x0c\x41nnouncePeer\x12\x1a.ga4gh.AnnouncePeerRequest\x1a\x1b.ga4gh.AnnouncePeerResponse\"\x1b\x82\xd3\xe4\x93\x02\x15\"\x13/v0.6.0a10/announce\x12N\n\x04Info\x12\x15.ga4gh.GetInfoRequest\x1a\x16.ga4gh.GetInfoResponse\"\x17\x82\xd3\xe4\x93\x02\x11\x12\x0f/v0.6.0a10/infob\x06proto3')
+  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/peer_service.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\x1a*ga4gh/schemas/google/api/annotations.proto\"9\n\x10ListPeersRequest\x12\x11\n\tpage_size\x18\x01 \x01(\x05\x12\x12\n\npage_token\x18\x02 \x01(\t\"V\n\x11ListPeersResponse\x12(\n\x05peers\x18\x01 \x03(\x0b\x32\x19.ga4gh.schemas.ga4gh.Peer\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\">\n\x13\x41nnouncePeerRequest\x12\'\n\x04peer\x18\x01 \x01(\x0b\x32\x19.ga4gh.schemas.ga4gh.Peer\"\\\n\x14\x41nnouncePeerResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x33\n\nattributes\x18\x02 \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"\x10\n\x0eGetInfoRequest\"`\n\x0fGetInfoResponse\x12\x18\n\x10protocol_version\x18\x01 \x01(\t\x12\x33\n\nattributes\x18\x02 \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"H\n\x04Peer\x12\x0b\n\x03url\x18\x01 \x01(\t\x12\x33\n\nattributes\x18\x02 \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes2\xfa\x02\n\x0bPeerService\x12|\n\tListPeers\x12%.ga4gh.schemas.ga4gh.ListPeersRequest\x1a&.ga4gh.schemas.ga4gh.ListPeersResponse\" \x82\xd3\xe4\x93\x02\x1a\"\x15/v0.6.0a10/peers/list:\x01*\x12\x80\x01\n\x0c\x41nnouncePeer\x12(.ga4gh.schemas.ga4gh.AnnouncePeerRequest\x1a).ga4gh.schemas.ga4gh.AnnouncePeerResponse\"\x1b\x82\xd3\xe4\x93\x02\x15\"\x13/v0.6.0a10/announce\x12j\n\x04Info\x12#.ga4gh.schemas.ga4gh.GetInfoRequest\x1a$.ga4gh.schemas.ga4gh.GetInfoResponse\"\x17\x82\xd3\xe4\x93\x02\x11\x12\x0f/v0.6.0a10/infob\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,ga4gh_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -30,20 +30,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _LISTPEERSREQUEST = _descriptor.Descriptor(
   name='ListPeersRequest',
-  full_name='ga4gh.ListPeersRequest',
+  full_name='ga4gh.schemas.ga4gh.ListPeersRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='page_size', full_name='ga4gh.ListPeersRequest.page_size', index=0,
+      name='page_size', full_name='ga4gh.schemas.ga4gh.ListPeersRequest.page_size', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='page_token', full_name='ga4gh.ListPeersRequest.page_token', index=1,
+      name='page_token', full_name='ga4gh.schemas.ga4gh.ListPeersRequest.page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -61,27 +61,27 @@ _LISTPEERSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=127,
-  serialized_end=184,
+  serialized_start=141,
+  serialized_end=198,
 )
 
 
 _LISTPEERSRESPONSE = _descriptor.Descriptor(
   name='ListPeersResponse',
-  full_name='ga4gh.ListPeersResponse',
+  full_name='ga4gh.schemas.ga4gh.ListPeersResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='peers', full_name='ga4gh.ListPeersResponse.peers', index=0,
+      name='peers', full_name='ga4gh.schemas.ga4gh.ListPeersResponse.peers', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='next_page_token', full_name='ga4gh.ListPeersResponse.next_page_token', index=1,
+      name='next_page_token', full_name='ga4gh.schemas.ga4gh.ListPeersResponse.next_page_token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -99,20 +99,20 @@ _LISTPEERSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=186,
-  serialized_end=258,
+  serialized_start=200,
+  serialized_end=286,
 )
 
 
 _ANNOUNCEPEERREQUEST = _descriptor.Descriptor(
   name='AnnouncePeerRequest',
-  full_name='ga4gh.AnnouncePeerRequest',
+  full_name='ga4gh.schemas.ga4gh.AnnouncePeerRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='peer', full_name='ga4gh.AnnouncePeerRequest.peer', index=0,
+      name='peer', full_name='ga4gh.schemas.ga4gh.AnnouncePeerRequest.peer', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -130,27 +130,27 @@ _ANNOUNCEPEERREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=260,
-  serialized_end=308,
+  serialized_start=288,
+  serialized_end=350,
 )
 
 
 _ANNOUNCEPEERRESPONSE = _descriptor.Descriptor(
   name='AnnouncePeerResponse',
-  full_name='ga4gh.AnnouncePeerResponse',
+  full_name='ga4gh.schemas.ga4gh.AnnouncePeerResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='success', full_name='ga4gh.AnnouncePeerResponse.success', index=0,
+      name='success', full_name='ga4gh.schemas.ga4gh.AnnouncePeerResponse.success', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.AnnouncePeerResponse.attributes', index=1,
+      name='attributes', full_name='ga4gh.schemas.ga4gh.AnnouncePeerResponse.attributes', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -168,14 +168,14 @@ _ANNOUNCEPEERRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=310,
-  serialized_end=388,
+  serialized_start=352,
+  serialized_end=444,
 )
 
 
 _GETINFOREQUEST = _descriptor.Descriptor(
   name='GetInfoRequest',
-  full_name='ga4gh.GetInfoRequest',
+  full_name='ga4gh.schemas.ga4gh.GetInfoRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -192,27 +192,27 @@ _GETINFOREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=390,
-  serialized_end=406,
+  serialized_start=446,
+  serialized_end=462,
 )
 
 
 _GETINFORESPONSE = _descriptor.Descriptor(
   name='GetInfoResponse',
-  full_name='ga4gh.GetInfoResponse',
+  full_name='ga4gh.schemas.ga4gh.GetInfoResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='protocol_version', full_name='ga4gh.GetInfoResponse.protocol_version', index=0,
+      name='protocol_version', full_name='ga4gh.schemas.ga4gh.GetInfoResponse.protocol_version', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.GetInfoResponse.attributes', index=1,
+      name='attributes', full_name='ga4gh.schemas.ga4gh.GetInfoResponse.attributes', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -230,27 +230,27 @@ _GETINFORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=408,
-  serialized_end=490,
+  serialized_start=464,
+  serialized_end=560,
 )
 
 
 _PEER = _descriptor.Descriptor(
   name='Peer',
-  full_name='ga4gh.Peer',
+  full_name='ga4gh.schemas.ga4gh.Peer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='url', full_name='ga4gh.Peer.url', index=0,
+      name='url', full_name='ga4gh.schemas.ga4gh.Peer.url', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.Peer.attributes', index=1,
+      name='attributes', full_name='ga4gh.schemas.ga4gh.Peer.attributes', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -268,8 +268,8 @@ _PEER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=492,
-  serialized_end=550,
+  serialized_start=562,
+  serialized_end=634,
 )
 
 _LISTPEERSRESPONSE.fields_by_name['peers'].message_type = _PEER
@@ -289,93 +289,51 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 ListPeersRequest = _reflection.GeneratedProtocolMessageType('ListPeersRequest', (_message.Message,), dict(
   DESCRIPTOR = _LISTPEERSREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.ListPeersRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.ListPeersRequest)
   ))
 _sym_db.RegisterMessage(ListPeersRequest)
 
 ListPeersResponse = _reflection.GeneratedProtocolMessageType('ListPeersResponse', (_message.Message,), dict(
   DESCRIPTOR = _LISTPEERSRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.ListPeersResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.ListPeersResponse)
   ))
 _sym_db.RegisterMessage(ListPeersResponse)
 
 AnnouncePeerRequest = _reflection.GeneratedProtocolMessageType('AnnouncePeerRequest', (_message.Message,), dict(
   DESCRIPTOR = _ANNOUNCEPEERREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.AnnouncePeerRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.AnnouncePeerRequest)
   ))
 _sym_db.RegisterMessage(AnnouncePeerRequest)
 
 AnnouncePeerResponse = _reflection.GeneratedProtocolMessageType('AnnouncePeerResponse', (_message.Message,), dict(
   DESCRIPTOR = _ANNOUNCEPEERRESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.AnnouncePeerResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.AnnouncePeerResponse)
   ))
 _sym_db.RegisterMessage(AnnouncePeerResponse)
 
 GetInfoRequest = _reflection.GeneratedProtocolMessageType('GetInfoRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETINFOREQUEST,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetInfoRequest)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetInfoRequest)
   ))
 _sym_db.RegisterMessage(GetInfoRequest)
 
 GetInfoResponse = _reflection.GeneratedProtocolMessageType('GetInfoResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETINFORESPONSE,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.GetInfoResponse)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.GetInfoResponse)
   ))
 _sym_db.RegisterMessage(GetInfoResponse)
 
 Peer = _reflection.GeneratedProtocolMessageType('Peer', (_message.Message,), dict(
   DESCRIPTOR = _PEER,
   __module__ = 'ga4gh.schemas.ga4gh.peer_service_pb2'
-  # @@protoc_insertion_point(class_scope:ga4gh.Peer)
+  # @@protoc_insertion_point(class_scope:ga4gh.schemas.ga4gh.Peer)
   ))
 _sym_db.RegisterMessage(Peer)
 
-
-
-_PEERSERVICE = _descriptor.ServiceDescriptor(
-  name='PeerService',
-  full_name='ga4gh.PeerService',
-  file=DESCRIPTOR,
-  index=0,
-  options=None,
-  serialized_start=553,
-  serialized_end=846,
-  methods=[
-  _descriptor.MethodDescriptor(
-    name='ListPeers',
-    full_name='ga4gh.PeerService.ListPeers',
-    index=0,
-    containing_service=None,
-    input_type=_LISTPEERSREQUEST,
-    output_type=_LISTPEERSRESPONSE,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\032\"\025/v0.6.0a10/peers/list:\001*')),
-  ),
-  _descriptor.MethodDescriptor(
-    name='AnnouncePeer',
-    full_name='ga4gh.PeerService.AnnouncePeer',
-    index=1,
-    containing_service=None,
-    input_type=_ANNOUNCEPEERREQUEST,
-    output_type=_ANNOUNCEPEERRESPONSE,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\025\"\023/v0.6.0a10/announce')),
-  ),
-  _descriptor.MethodDescriptor(
-    name='Info',
-    full_name='ga4gh.PeerService.Info',
-    index=2,
-    containing_service=None,
-    input_type=_GETINFOREQUEST,
-    output_type=_GETINFORESPONSE,
-    options=_descriptor._ParseOptions(descriptor_pb2.MethodOptions(), _b('\202\323\344\223\002\021\022\017/v0.6.0a10/info')),
-  ),
-])
-_sym_db.RegisterServiceDescriptor(_PEERSERVICE)
-
-DESCRIPTOR.services_by_name['PeerService'] = _PEERSERVICE
 
 # @@protoc_insertion_point(module_scope)
