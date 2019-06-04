@@ -1,0 +1,437 @@
+// This file defines the metadata objects.
+syntax = "proto3";
+
+import "candig/common.proto";
+
+package candig;
+
+
+// The "Extraction" object refers to DNA/RNA Extraction methods
+//
+
+message Extraction {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Extraction specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string rnaBlood = 10;
+    int32 rnaBloodTier = 11;
+
+    string dnaBlood = 12;
+    int32 dnaBloodTier = 13;
+
+    string rnaTissue = 14;
+    int32 rnaTissueTier = 15;
+
+    string dnaTissue = 16;
+    int32 dnaTissueTier = 17;
+
+    string extractionId = 18;
+    int32 extractionIdTier = 19;
+
+    string site = 20;
+    int32 siteTier = 21;
+
+    }
+
+// The "Sequencing" object refers to library prep and sequencing metadata
+//
+
+message Sequencing {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Sequencing specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string dnaLibraryKit = 10;
+    int32 dnaLibraryKitTier = 11;
+
+    string dnaSeqPlatform = 12;
+    int32 dnaSeqPlatformTier = 13;
+
+    string dnaReadLength = 14;
+    int32 dnaReadLengthTier = 15;
+
+    string rnaLibraryKit = 16;
+    int32 rnaLibraryKitTier = 17;
+
+    string rnaSeqPlatform = 18;
+    int32 rnaSeqPlatformTier = 19;
+
+    string rnaReadLength = 20;
+    int32 rnaReadLengthTier = 21;
+
+    string pcrCycles = 22;
+    int32 pcrCyclesTier = 23;
+
+    string sequencingId = 24;
+    int32 sequencingIdTier = 25;
+
+    string extractionId = 26;
+    int32 extractionIdTier = 27;
+
+    string site = 28;
+    int32 siteTier = 29;
+
+    }
+
+
+// The "Alignment" object refers to DNA alignment metadata
+//
+
+message Alignment {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // Alignment specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string inHousePipeline = 10;
+    int32 inHousePipelineTier = 11;
+
+    string alignmentTool = 12;
+    int32 alignmentToolTier = 13;
+
+    string mergeTool = 14;
+    int32 mergeToolTier = 15;
+
+    string markDuplicates = 16;
+    int32 markDuplicatesTier = 17;
+
+    string realignerTarget = 18;
+    int32 realignerTargetTier = 19;
+
+    string indelRealigner = 20;
+    int32 indelRealignerTier = 21;
+
+    string baseRecalibrator = 22;
+    int32 baseRecalibratorTier = 23;
+
+    string printReads = 24;
+    int32 printReadsTier = 25;
+
+    string idxStats = 26;
+    int32 idxStatsTier = 27;
+
+    string flagStat = 28;
+    int32 flagStatTier = 29;
+
+    string coverage = 30;
+    int32 coverageTier = 31;
+
+    string insertSizeMetrics = 32;
+    int32 insertSizeMetricsTier = 33;
+
+    string fastqc = 34;
+    int32 fastqcTier = 35;
+
+    string reference = 36;
+    int32 referenceTier = 37;
+
+    string alignmentId = 38;
+    int32 alignmentIdTier = 39;
+
+    string sequencingId = 40;
+    int32 sequencingIdTier = 41;
+
+    string site = 42;
+    int32 siteTier = 43;
+
+    }
+
+
+// The "VariantCalling" object refers to variant calling software used
+//
+
+message VariantCalling {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // VariantCalling specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string inHousePipeline = 10;
+    int32 inHousePipelineTier = 11;
+
+    string variantCaller = 12;
+    int32 variantCallerTier = 13;
+
+    string tabulate = 14;
+    int32 tabulateTier = 15;
+
+    string annotation = 16;
+    int32 annotationTier = 17;
+
+    string mergeTool = 18;
+    int32 mergeToolTier = 19;
+
+    string rdaToTab = 20;
+    int32 rdaToTabTier = 21;
+
+    string delly = 22;
+    int32 dellyTier = 23;
+
+    string postFilter = 24;
+    int32 postFilterTier = 25;
+
+    string clipFilter = 26;
+    int32 clipFilterTier = 27;
+
+    string cosmic = 28;
+    int32 cosmicTier = 29;
+
+    string dbSnp = 30;
+    int32 dbSnpTier = 31;
+
+    string variantCallingId = 32;
+    int32 variantCallingIdTier = 33;
+
+    string alignmentId = 34;
+    int32 alignmentIdTier = 35;
+
+    string site = 36;
+    int32 siteTier = 37;
+
+    }
+
+// The "FusionDetection" object refers to fusion and SV detection metadata
+//
+
+message FusionDetection {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // FusionDetection specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string inHousePipeline = 10;
+    int32 inHousePipelineTier = 11;
+
+    string svDetection = 12;
+    int32 svDetectionTier = 13;
+
+    string fusionDetection = 14;
+    int32 fusionDetectionTier = 15;
+
+    string realignment = 16;
+    int32 realignmentTier = 17;
+
+    string annotation = 18;
+    int32 annotationTier = 19;
+
+    string genomeReference = 20;
+    int32 genomeReferenceTier = 21;
+
+    string geneModels = 22;
+    int32 geneModelsTier = 23;
+
+    string fusionDetectionId = 24;
+    int32 fusionDetectionIdTier = 25;
+
+    string alignmentId = 26;
+    int32 alignmentIdTier = 27;
+
+    string site = 28;
+    int32 siteTier = 29;
+
+    }
+
+// The "ExpressionAnalysis" object refers to expression analysis metadata
+//
+
+message ExpressionAnalysis {
+
+    // ========================================================================
+    // Common fields
+    // ========================================================================
+
+    // This is unique in the context of the server instance.
+    string id = 1;
+
+    // The ID of the dataset this object belongs to.
+    string dataset_id = 2;
+
+    // This is a label or symbolic identifier for this object.
+    string name = 3;
+
+    // This attribute contains human readable text.
+    string description = 4;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was created.
+    string created = 5;
+
+    // The :ref:`ISO 8601<metadata_date_time>` time at which this record was updated.
+    string updated = 6;
+
+    // A map of additional information.
+    Attributes attributes = 7;
+
+    // ========================================================================
+    // ExpressionAnalysis specific fields
+    // ========================================================================
+
+    string sampleId = 8;
+    int32 sampleIdTier = 9;
+
+    string readLength = 10;
+    int32 readLengthTier = 11;
+
+    string reference = 12;
+    int32 referenceTier = 13;
+
+    string alignmentTool = 14;
+    int32 alignmentToolTier = 15;
+
+    string bamHandling = 16;
+    int32 bamHandlingTier = 17;
+
+    string expressionEstimation = 18;
+    int32 expressionEstimationTier = 19;
+
+    string expressionAnalysisId = 20;
+    int32 expressionAnalysisIdTier = 21;
+
+    string sequencingId = 22;
+    int32 sequencingIdTier = 23;
+
+    string site = 24;
+    int32 siteTier = 25;
+    }

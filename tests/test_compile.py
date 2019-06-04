@@ -10,11 +10,11 @@ import tempfile
 import unittest
 
 # similar to dev_glue.py
-import ga4gh
-ga4gh.__path__.insert(0, 'python/ga4gh')
+import candig
+candig.__path__.insert(0, 'python/candig')
 
 import ga4gh.common.utils as utils  # NOQA
-import ga4gh.schemas._version as version  # NOQA
+import candig.schemas._version as version  # NOQA
 
 
 class TestCompile(unittest.TestCase):
@@ -49,8 +49,8 @@ class TestCompile(unittest.TestCase):
         # (we do it in two calls to avoid the build/ tree, etc.
         # in the python directory which may contain pb2 files)
         pb2Patterns = ["*_pb2.py"]
-        checkedInDirGa4gh = 'python/ga4gh/schemas/ga4gh/'
-        checkedInDirGoogle = 'python/ga4gh/schemas/google/'
+        checkedInDirGa4gh = 'python/candig/schemas/candig/'
+        checkedInDirGoogle = 'python/candig/schemas/google/'
         checkedInFilePathsGa4gh = utils.getFilePathsWithExtensionsInDirectory(
                 checkedInDirGa4gh, pb2Patterns)
         checkedInFilePathsGoogle = utils.getFilePathsWithExtensionsInDirectory(

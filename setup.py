@@ -47,18 +47,18 @@ except Exception:
     print("Couldn't find a good protoc, using precompiled protobuf.")
 
 setup(
-    name="ga4gh_schemas",
-    description="GA4GH API Schemas",
+    name="candig_schemas",
+    description="CanDIG API Schemas",
     packages=[
-        "ga4gh",
-        "ga4gh.schemas",
-        "ga4gh.schemas.ga4gh",
-        "ga4gh.schemas.google",
-        "ga4gh.schemas.google.api"
+        "candig",
+        "candig.schemas",
+        "candig.schemas.candig",
+        "candig.schemas.google",
+        "candig.schemas.google.api"
     ],
-    namespace_packages=["ga4gh"],
-    url="https://github.com/ga4gh/ga4gh-schemas",
-    use_scm_version={"write_to": "python/ga4gh/schemas/_version.py"},
+    namespace_packages=["candig"],
+    url="https://github.com/candig/candig-schemas",
+    use_scm_version={"write_to": "python/candig/schemas/_version.py"},
     entry_points={},
     package_dir={'': 'python'},
     long_description=long_description,
@@ -67,8 +67,8 @@ setup(
     license='Apache License 2.0',
     include_package_data=True,
     zip_safe=True,
-    author="Global Alliance for Genomics and Health",
-    author_email="theglobalalliance@genomicsandhealth.org",
+    author="CanDIG Team",
+    author_email="info@distributedgenomics.ca",
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
