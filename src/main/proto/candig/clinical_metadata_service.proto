@@ -18,7 +18,7 @@ service ClinicalMetadataService {
     rpc SearchPatients(SearchPatientsRequest)
         returns (SearchPatientsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/patients/search"
+                post: "/v0.8.0/patients/search"
                 body: "*"
             };
         };
@@ -32,7 +32,7 @@ service ClinicalMetadataService {
     rpc SearchEnrollments(SearchEnrollmentsRequest)
         returns (SearchEnrollmentsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/enrollments/search"
+                post: "/v0.8.0/enrollments/search"
                 body: "*"
             };
         };
@@ -46,7 +46,7 @@ service ClinicalMetadataService {
     rpc SearchConsents(SearchConsentsRequest)
         returns (SearchConsentsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/consents/search"
+                post: "/v0.8.0/consents/search"
                 body: "*"
             };
         };
@@ -60,7 +60,7 @@ service ClinicalMetadataService {
     rpc SearchDiagnoses(SearchDiagnosesRequest)
         returns (SearchDiagnosesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/diagnoses/search"
+                post: "/v0.8.0/diagnoses/search"
                 body: "*"
             };
         };
@@ -74,7 +74,7 @@ service ClinicalMetadataService {
     rpc SearchSamples(SearchSamplesRequest)
         returns (SearchSamplesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/samples/search"
+                post: "/v0.8.0/samples/search"
                 body: "*"
             };
         };
@@ -88,7 +88,7 @@ service ClinicalMetadataService {
     rpc SearchTreatments(SearchTreatmentsRequest)
         returns (SearchTreatmentsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/treatments/search"
+                post: "/v0.8.0/treatments/search"
                 body: "*"
             };
         };
@@ -102,7 +102,7 @@ service ClinicalMetadataService {
     rpc SearchOutcomes(SearchOutcomesRequest)
         returns (SearchOutcomesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/outcomes/search"
+                post: "/v0.8.0/outcomes/search"
                 body: "*"
             };
         };
@@ -116,7 +116,7 @@ service ClinicalMetadataService {
     rpc SearchComplications(SearchComplicationsRequest)
         returns (SearchComplicationsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/complications/search"
+                post: "/v0.8.0/complications/search"
                 body: "*"
             };
         };
@@ -130,7 +130,7 @@ service ClinicalMetadataService {
     rpc SearchTumourboards(SearchTumourboardsRequest)
         returns (SearchTumourboardsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/tumourboards/search"
+                post: "/v0.8.0/tumourboards/search"
                 body: "*"
             };
         };
@@ -143,7 +143,7 @@ service ClinicalMetadataService {
     rpc GetPatient(GetPatientRequest)
         returns (Patient) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/patients/{patient_id}"
+                get: "/v0.8.0/patients/{patient_id}"
             };
         };
 
@@ -154,7 +154,7 @@ service ClinicalMetadataService {
     rpc GetEnrollment(GetEnrollmentRequest)
         returns (Enrollment) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/enrollments/{enrollment_id}"
+                get: "/v0.8.0/enrollments/{enrollment_id}"
             };
         };
 
@@ -165,7 +165,7 @@ service ClinicalMetadataService {
     rpc GetConsent(GetConsentRequest)
         returns (Consent) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/consents/{consent_id}"
+                get: "/v0.8.0/consents/{consent_id}"
             };
         };
 
@@ -176,7 +176,7 @@ service ClinicalMetadataService {
     rpc GetDiagnosis(GetDiagnosisRequest)
         returns (Diagnosis) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/diagnoses/{diagnosis_id}"
+                get: "/v0.8.0/diagnoses/{diagnosis_id}"
             };
         };
 
@@ -187,7 +187,7 @@ service ClinicalMetadataService {
     rpc GetSample(GetSampleRequest)
         returns (Sample) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/samples/{sample_id}"
+                get: "/v0.8.0/samples/{sample_id}"
             };
         };
 
@@ -198,7 +198,7 @@ service ClinicalMetadataService {
     rpc GetTreatment(GetTreatmentRequest)
         returns (Treatment) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/treatments/{treatment_id}"
+                get: "/v0.8.0/treatments/{treatment_id}"
             };
         };
 
@@ -209,7 +209,7 @@ service ClinicalMetadataService {
     rpc GetOutcome(GetOutcomeRequest)
         returns (Outcome) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/outcomes/{outcome_id}"
+                get: "/v0.8.0/outcomes/{outcome_id}"
             };
         };
 
@@ -220,7 +220,7 @@ service ClinicalMetadataService {
     rpc GetComplication(GetComplicationRequest)
         returns (Complication) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/complications/{complication_id}"
+                get: "/v0.8.0/complications/{complication_id}"
             };
         };
 
@@ -231,7 +231,7 @@ service ClinicalMetadataService {
     rpc GetTumourboard(GetTumourboardRequest)
         returns (Tumourboard) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/tumourboards/{tumourboard_id}"
+                get: "/v0.8.0/tumourboards/{tumourboard_id}"
             };
         };
 
@@ -244,7 +244,7 @@ service ClinicalMetadataService {
     rpc SearchChemotherapies(SearchChemotherapiesRequest)
         returns (SearchChemotherapiesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/chemotherapies/search"
+                post: "/v0.8.0/chemotherapies/search"
                 body: "*"
             };
         };
@@ -258,7 +258,7 @@ service ClinicalMetadataService {
     rpc SearchRadiotherapies(SearchRadiotherapiesRequest)
         returns (SearchRadiotherapiesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/radiotherapies/search"
+                post: "/v0.8.0/radiotherapies/search"
                 body: "*"
             };
         };
@@ -272,7 +272,7 @@ service ClinicalMetadataService {
     rpc SearchSurgeries(SearchSurgeriesRequest)
         returns (SearchSurgeriesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/surgeries/search"
+                post: "/v0.8.0/surgeries/search"
                 body: "*"
             };
         };
@@ -286,7 +286,7 @@ service ClinicalMetadataService {
     rpc SearchImmunotherapies(SearchImmunotherapiesRequest)
         returns (SearchImmunotherapiesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/immunotherapies/search"
+                post: "/v0.8.0/immunotherapies/search"
                 body: "*"
             };
         };
@@ -300,7 +300,7 @@ service ClinicalMetadataService {
     rpc SearchCelltransplants(SearchCelltransplantsRequest)
         returns (SearchCelltransplantsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/celltransplants/search"
+                post: "/v0.8.0/celltransplants/search"
                 body: "*"
             };
         };
@@ -314,7 +314,7 @@ service ClinicalMetadataService {
     rpc SearchSlides(SearchSlidesRequest)
         returns (SearchSlidesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/slides/search"
+                post: "/v0.8.0/slides/search"
                 body: "*"
             };
         };
@@ -328,7 +328,7 @@ service ClinicalMetadataService {
     rpc SearchStudies(SearchStudiesRequest)
         returns (SearchStudiesResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/studies/search"
+                post: "/v0.8.0/studies/search"
                 body: "*"
             };
         };
@@ -342,7 +342,7 @@ service ClinicalMetadataService {
     rpc SearchLabtests(SearchLabtestsRequest)
         returns (SearchLabtestsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/labtests/search"
+                post: "/v0.8.0/labtests/search"
                 body: "*"
             };
         };
@@ -355,7 +355,7 @@ service ClinicalMetadataService {
     rpc GetChemotherapy(GetChemotherapyRequest)
         returns (Chemotherapy) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/chemotherapies/{chemotherapy_id}"
+                get: "/v0.8.0/chemotherapies/{chemotherapy_id}"
             };
         };
 
@@ -366,7 +366,7 @@ service ClinicalMetadataService {
     rpc GetRadiotherapy(GetRadiotherapyRequest)
         returns (Radiotherapy) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/radiotherapies/{radiotherapy_id}"
+                get: "/v0.8.0/radiotherapies/{radiotherapy_id}"
             };
         };
 
@@ -377,7 +377,7 @@ service ClinicalMetadataService {
     rpc GetSurgery(GetSurgeryRequest)
         returns (Surgery) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/surgeries/{surgery_id}"
+                get: "/v0.8.0/surgeries/{surgery_id}"
             };
         };
 
@@ -388,7 +388,7 @@ service ClinicalMetadataService {
     rpc GetImmunotherapy(GetImmunotherapyRequest)
         returns (Immunotherapy) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/immunotherapies/{immunotherapy_id}"
+                get: "/v0.8.0/immunotherapies/{immunotherapy_id}"
             };
         };
 
@@ -399,7 +399,7 @@ service ClinicalMetadataService {
     rpc GetCelltransplant(GetCelltransplantRequest)
         returns (Celltransplant) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/celltransplants/{celltransplant_id}"
+                get: "/v0.8.0/celltransplants/{celltransplant_id}"
             };
         };
 
@@ -410,7 +410,7 @@ service ClinicalMetadataService {
     rpc GetSlide(GetSlideRequest)
         returns (Slide) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/slides/{slide_id}"
+                get: "/v0.8.0/slides/{slide_id}"
             };
         };
 
@@ -421,7 +421,7 @@ service ClinicalMetadataService {
     rpc GetStudy(GetStudyRequest)
         returns (Study) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/studies/{study_id}"
+                get: "/v0.8.0/studies/{study_id}"
             };
         };
 
@@ -432,7 +432,7 @@ service ClinicalMetadataService {
     rpc GetLabtest(GetLabtestRequest)
         returns (Labtest) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/labtests/{labtest_id}"
+                get: "/v0.8.0/labtests/{labtest_id}"
             };
         };
 
