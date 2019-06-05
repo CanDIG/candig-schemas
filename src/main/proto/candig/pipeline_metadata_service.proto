@@ -18,7 +18,7 @@ service PipelineMetadataService {
     rpc SearchExtractions(SearchExtractionsRequest)
         returns (SearchExtractionsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/extractions/search"
+                post: "/v0.8.0/extractions/search"
                 body: "*"
             };
         };
@@ -32,7 +32,7 @@ service PipelineMetadataService {
     rpc SearchSequencing(SearchSequencingRequest)
         returns (SearchSequencingResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/sequencing/search"
+                post: "/v0.8.0/sequencing/search"
                 body: "*"
             };
         };
@@ -46,7 +46,7 @@ service PipelineMetadataService {
     rpc SearchAlignments(SearchAlignmentsRequest)
         returns (SearchAlignmentsResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/alignments/search"
+                post: "/v0.8.0/alignments/search"
                 body: "*"
             };
         };
@@ -60,7 +60,7 @@ service PipelineMetadataService {
     rpc SearchVariantCalling(SearchVariantCallingRequest)
         returns (SearchVariantCallingResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/variantcalling/search"
+                post: "/v0.8.0/variantcalling/search"
                 body: "*"
             };
         };
@@ -74,7 +74,7 @@ service PipelineMetadataService {
     rpc SearchFusionDetections(SearchFusionDetectionRequest)
         returns (SearchFusionDetectionResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/fusiondetections/search"
+                post: "/v0.8.0/fusiondetections/search"
                 body: "*"
             };
         };
@@ -88,7 +88,7 @@ service PipelineMetadataService {
     rpc SearchExpressionAnalysis(SearchExpressionAnalysisRequest)
         returns (SearchExpressionAnalysisResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/expressionanalysis/search"
+                post: "/v0.8.0/expressionanalysis/search"
                 body: "*"
             };
         };
@@ -100,7 +100,7 @@ service PipelineMetadataService {
     rpc GetExtraction(GetExtractionRequest)
         returns (Extraction) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/extractions/{extraction_id}"
+                get: "/v0.8.0/extractions/{extraction_id}"
             };
         };
 
@@ -111,7 +111,7 @@ service PipelineMetadataService {
     rpc GetSequencing(GetSequencingRequest)
         returns (Sequencing) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/sequencing/{sequencing_id}"
+                get: "/v0.8.0/sequencing/{sequencing_id}"
             };
         };
 
@@ -122,7 +122,7 @@ service PipelineMetadataService {
     rpc GetAlignment(GetAlignmentRequest)
         returns (Alignment) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/alignments/{alignment_id}"
+                get: "/v0.8.0/alignments/{alignment_id}"
             };
         };
 
@@ -133,7 +133,7 @@ service PipelineMetadataService {
     rpc GetVariantCalling(GetVariantCallingRequest)
         returns (VariantCalling) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/variantcalling/{variantcalling_id}"
+                get: "/v0.8.0/variantcalling/{variantcalling_id}"
             };
         };
 
@@ -144,7 +144,7 @@ service PipelineMetadataService {
     rpc GetFusionDetection(GetFusionDetectionRequest)
         returns (FusionDetection) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/fusiondetection/{fusiondetection_id}"
+                get: "/v0.8.0/fusiondetection/{fusiondetection_id}"
             };
         };
 
@@ -155,7 +155,7 @@ service PipelineMetadataService {
     rpc GetExpressionAnalysis(GetExpressionAnalysisRequest)
         returns (ExpressionAnalysis) {
             option (google.api.http) = {
-                get: "/v0.6.0a10/expressionanalysis/{expressionanalysis_id}"
+                get: "/v0.8.0/expressionanalysis/{expressionanalysis_id}"
             };
         };
 }
