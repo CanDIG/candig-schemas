@@ -15,7 +15,7 @@ service BioMetadataService {
   rpc SearchIndividuals(SearchIndividualsRequest)
     returns (SearchIndividualsResponse) {
       option (google.api.http) = {
-        post: "/v0.6.0a10/individuals/search"
+        post: "/v0.8.0/individuals/search"
         body: "*"
       };
     };
@@ -23,7 +23,7 @@ service BioMetadataService {
   rpc SearchExperiments(SearchExperimentsRequest)
     returns (SearchExperimentsResponse) {
       option (google.api.http) = {
-        post: "/v0.6.0a10/experiments/search"
+        post: "/v0.8.0/experiments/search"
         body: "*"
       };
     };
@@ -31,7 +31,7 @@ service BioMetadataService {
   rpc SearchAnalyses(SearchAnalysesRequest)
     returns (SearchAnalysesResponse) {
       option (google.api.http) = {
-        post: "/v0.6.0a10/analyses/search"
+        post: "/v0.8.0/analyses/search"
         body: "*"
       };
     };
@@ -42,7 +42,7 @@ service BioMetadataService {
   rpc SearchBiosamples(SearchBiosamplesRequest)
     returns (SearchBiosamplesResponse) {
       option (google.api.http) = {
-        post: "/v0.6.0a10/biosamples/search"
+        post: "/v0.8.0/biosamples/search"
         body: "*"
       };
     };
@@ -52,21 +52,21 @@ service BioMetadataService {
   rpc GetIndividual(GetIndividualRequest)
     returns (Individual) {
       option (google.api.http) = {
-        get: "/v0.6.0a10/individuals/{individual_id}"
+        get: "/v0.8.0/individuals/{individual_id}"
       };
     };
 
   rpc GetExperiment(GetExperimentRequest)
     returns (Experiment) {
       option (google.api.http) = {
-        get: "/v0.6.0a10/experiments/{experiment_id}"
+        get: "/v0.8.0/experiments/{experiment_id}"
       };
     };
 
   rpc GetAnalysis(GetAnalysisRequest)
     returns (Analysis) {
       option (google.api.http) = {
-        get: "/v0.6.0a10/analyses/{analysis_id}"
+        get: "/v0.8.0/analyses/{analysis_id}"
       };
     };
 
@@ -75,7 +75,7 @@ service BioMetadataService {
   rpc GetBiosample(GetBiosampleRequest)
     returns (Biosample) {
         option (google.api.http) = {
-          get: "/v0.6.0a10/biosamples/{biosample_id}"
+          get: "/v0.8.0/biosamples/{biosample_id}"
         };
       };
 }
