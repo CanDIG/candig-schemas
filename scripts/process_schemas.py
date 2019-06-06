@@ -156,9 +156,9 @@ class ProtobufGenerator(object):
                 os.path.realpath(source_path))
             raise Exception(msg)
 
-    # From https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3
+    # https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3
     def _cmp(self, a, b):
-        return (a > b) - (a < b) 
+        return (a > b) - (a < b)
 
     # From http://stackoverflow.com/a/1714190/320546
     def _version_compare(self, version1, version2):
