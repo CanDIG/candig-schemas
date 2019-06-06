@@ -27,7 +27,7 @@ class TestMaven(unittest.TestCase):
     def runCommandCheckWarnings(self, cmd):
         utils.log("Running '{}'".format(cmd))
         splits = shlex.split(cmd)
-        output = subprocess.check_output(splits).split('\n')
+        output = subprocess.check_output(splits).decode('utf-8').split('\n')
         self.ensureNoWarnings(output, cmd)
 
     def ensureNoWarnings(self, lines, streamName):
