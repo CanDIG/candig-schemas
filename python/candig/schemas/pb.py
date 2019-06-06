@@ -1,9 +1,9 @@
 """
 Utility methods for handling protocol buffer
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
+
+
+
 
 DEFAULT_STRING = ''
 DEFAULT_INT = 0

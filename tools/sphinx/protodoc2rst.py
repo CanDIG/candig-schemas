@@ -26,9 +26,9 @@ def typename(typeobject):
     elif typeobject['type'] == 'map':
       return 'map<%s, %s>' % (typename(typeobject['key']), typename(typeobject['value']))
     else:
-      raise Exception, "Unsupported type object: %s" %(typeobject['type'])
+      raise Exception("Unsupported type object: %s" %(typeobject['type']))
 
-  elif isinstance(typeobject, basestring):
+  elif isinstance(typeobject, str):
     return typeobject
 
   raise ValueError

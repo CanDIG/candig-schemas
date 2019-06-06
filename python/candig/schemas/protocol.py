@@ -1,9 +1,9 @@
 """
 Definitions of the GA4GH protocol types.
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
+
+
+
 
 import datetime
 import json
@@ -12,41 +12,42 @@ import sys
 import array
 import base64
 
-from _protocol_version import version  # noqa
-from candig.common_pb2 import *  # noqa
-from candig.metadata_pb2 import *  # noqa
-from candig.metadata_service_pb2 import *  # noqa
-from candig.read_service_pb2 import *  # noqa
-from candig.reads_pb2 import *  # noqa
-from candig.reference_service_pb2 import *  # noqa
-from candig.references_pb2 import *  # noqa
-from candig.variant_service_pb2 import *  # noqa
-from candig.genotype_service_pb2 import *  # noqa
-from candig.variants_pb2 import *  # noqa
-from candig.allele_annotations_pb2 import *  # noqa
-from candig.allele_annotation_service_pb2 import *  # noqa
-from candig.sequence_annotations_pb2 import *  # noqa
-from candig.sequence_annotation_service_pb2 import *  # noqa
-from candig.bio_metadata_pb2 import *  # noqa
-from candig.bio_metadata_service_pb2 import *  # noqa
-from candig.genotype_phenotype_pb2 import *  # noqa
-from candig.genotype_phenotype_service_pb2 import *  # noqa
-from candig.rna_quantification_pb2 import *  # noqa
-from candig.rna_quantification_service_pb2 import *  # noqa
-from candig.peer_service_pb2 import *  # noqa
+from ._protocol_version import version  # noqa
+from .candig.common_pb2 import *  # noqa
+from .candig.metadata_pb2 import *  # noqa
+from .candig.metadata_service_pb2 import *  # noqa
+from .candig.read_service_pb2 import *  # noqa
+from .candig.reads_pb2 import *  # noqa
+from .candig.reference_service_pb2 import *  # noqa
+from .candig.references_pb2 import *  # noqa
+from .candig.variant_service_pb2 import *  # noqa
+from .candig.genotype_service_pb2 import *  # noqa
+from .candig.variants_pb2 import *  # noqa
+from .candig.allele_annotations_pb2 import *  # noqa
+from .candig.allele_annotation_service_pb2 import *  # noqa
+from .candig.sequence_annotations_pb2 import *  # noqa
+from .candig.sequence_annotation_service_pb2 import *  # noqa
+from .candig.bio_metadata_pb2 import *  # noqa
+from .candig.bio_metadata_service_pb2 import *  # noqa
+from .candig.genotype_phenotype_pb2 import *  # noqa
+from .candig.genotype_phenotype_service_pb2 import *  # noqa
+from .candig.rna_quantification_pb2 import *  # noqa
+from .candig.rna_quantification_service_pb2 import *  # noqa
+from .candig.peer_service_pb2 import *  # noqa
 
 # METADATA
-from candig.clinical_metadata_pb2 import *  # noqa
-from candig.clinical_metadata_service_pb2 import *  # noqa
-from candig.pipeline_metadata_pb2 import * # noqa
-from candig.pipeline_metadata_service_pb2 import * # noqa
+from .candig.clinical_metadata_pb2 import *  # noqa
+from .candig.clinical_metadata_service_pb2 import *  # noqa
+from .candig.pipeline_metadata_pb2 import * # noqa
+from .candig.pipeline_metadata_service_pb2 import * # noqa
 
 # SEARCH
-from candig.search_service_pb2 import * # noqa
+from .candig.search_service_pb2 import * # noqa
 
-import candig.common_pb2 as common
+from . import candig.common_pb2 as common
 
-import hacks.googhack as googhack
+from . import hacks.googhack as googhack
+from functools import reduce
 
 MIMETYPES = [
     "application/json",
@@ -71,7 +72,7 @@ def setAttribute(values, value):
         values.add().int32_value = value
     elif isinstance(value, float):
         values.add().double_value = value
-    elif isinstance(value, long):
+    elif isinstance(value, int):
         values.add().int64_value = value
     elif isinstance(value, str):
         values.add().string_value = value

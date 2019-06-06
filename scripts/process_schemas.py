@@ -4,9 +4,6 @@ from a copy of the Protocol Buffers schema and use it to generate
 the Python class definitions. These are also stored in revision
 control to aid Travis building.
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
 
 import os
 import os.path
@@ -167,8 +164,8 @@ class ProtobufGenerator(object):
 
     def _getProtoc(self, destination_path):
         protocs = [os.path.realpath(x) for x in
-                   "{}/protobuf/src/protoc".format(destination_path),
-                   self._find_in_path("protoc")
+                   ("{}/protobuf/src/protoc".format(destination_path),
+                   self._find_in_path("protoc"))
                    if x is not None]
         protoc = None
         for c in protocs:

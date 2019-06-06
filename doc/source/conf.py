@@ -53,7 +53,7 @@ for root, dirs, files in os.walk(schema_dir):
         fullpath = os.path.join(root, f)
         json_file = f + ".json"
         cmd = "protoc --proto_path %s --plugin=protoc-gen-custom=%s --custom_out=%s %s" % (base_dir, os.path.join(sphinx_path, "protobuf-json-docs.py"), json_dir, fullpath)
-        print cmd
+        print(cmd)
         subprocess.check_call(cmd, shell=True)
 
 for root, dirs, files in os.walk(json_dir):
@@ -61,14 +61,14 @@ for root, dirs, files in os.walk(json_dir):
         if not f.endswith(".json"):
             continue
         cmd = "python %s %s/%s schemas/" %(os.path.join(sphinx_path, "protodoc2rst.py"), root, f)
-        print cmd
+        print(cmd)
         subprocess.check_call(cmd, shell=True)
 
 # Generate the svg of the schema UML diagram
 ga4gh_schema_dir = os.path.join(schema_dir, "candig")
 uml_dir = os.path.join("_build", "generated_images")
 cmd = "protoc --proto_path %s --plugin=protoc-gen-custom=%s --custom_out=%s %s" % (base_dir, os.path.join(sphinx_path, "protobuf-uml.py"), uml_dir, os.path.join(ga4gh_schema_dir, "*.proto"))
-print cmd
+print(cmd)
 subprocess.check_call(cmd, shell=True)
 
 # Add any paths that contain templates here, relative to this directory.
@@ -86,9 +86,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'GA4GH Schemas'
-copyright = u'2015, Global Alliance for Genomics and Health'
-author = u'Global Alliance for Genomics and Health'
+project = 'GA4GH Schemas'
+copyright = '2015, Global Alliance for Genomics and Health'
+author = 'Global Alliance for Genomics and Health'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -262,8 +262,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'ga4ghschemas.tex', u'GA4GH Schemas Documentation',
-   u'Jeltje van Baren', 'manual'),
+  (master_doc, 'ga4ghschemas.tex', 'GA4GH Schemas Documentation',
+   'Jeltje van Baren', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -292,7 +292,7 @@ latex_logo = "_static/logo_ga.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ga4ghschemas', u'GA4GH Schemas Documentation',
+    (master_doc, 'ga4ghschemas', 'GA4GH Schemas Documentation',
      [author], 1)
 ]
 
@@ -306,7 +306,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'ga4ghschemas', u'GA4GH Schemas Documentation',
+  (master_doc, 'ga4ghschemas', 'GA4GH Schemas Documentation',
    author, 'ga4ghschemas', 'One line description of project.',
    'Miscellaneous'),
 ]
