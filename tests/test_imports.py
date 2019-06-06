@@ -2,9 +2,6 @@
 Tests for schemas
 """
 
-
-
-
 import unittest
 
 # similar to dev_glue.py

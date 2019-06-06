@@ -2,9 +2,6 @@
 Utility methods for handling protocol buffer
 """
 
-
-
-
 DEFAULT_STRING = ''
 DEFAULT_INT = 0
 

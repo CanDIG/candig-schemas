@@ -2,9 +2,6 @@
 Tests the schema compilation
 """
 
-
-
-
 import os
 import tempfile
 import unittest

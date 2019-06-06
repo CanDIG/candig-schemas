@@ -156,11 +156,15 @@ class ProtobufGenerator(object):
                 os.path.realpath(source_path))
             raise Exception(msg)
 
+    # From https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3
+    def _cmp(self, a, b):
+        return (a > b) - (a < b) 
+
     # From http://stackoverflow.com/a/1714190/320546
     def _version_compare(self, version1, version2):
         def normalize(v):
             return [int(x) for x in re.sub(r'(\.0+)*$', '', v).split(".")]
-        return cmp(normalize(version1), normalize(version2))
+        return self._cmp(normalize(version1), normalize(version2))
 
     def _getProtoc(self, destination_path):
         protocs = [os.path.realpath(x) for x in
@@ -173,7 +177,7 @@ class ProtobufGenerator(object):
                 continue
             output = subprocess.check_output([c, "--version"]).strip()
             try:
-                (lib, version) = output.split(" ")
+                (lib, version) = output.decode('utf-8').split(" ")
                 if lib != "libprotoc":
                     raise Exception("lib didn't match 'libprotoc'")
                 if self._version_compare("3.0.0", version) > 0:

@@ -2,9 +2,6 @@
 Hack for getting a handle to the top-level google module, etc.
 """
 
-
-
-
 import google.protobuf.json_format as json_format
 import google.protobuf.message as message
 import google.protobuf.struct_pb2 as struct_pb2

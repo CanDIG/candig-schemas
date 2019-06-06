@@ -2,9 +2,6 @@
 Tests the constraints invariants
 """
 
-
-
-
 import unittest
 
 import ga4gh.common.utils as utils

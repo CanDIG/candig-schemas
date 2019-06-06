@@ -2,9 +2,6 @@
 Tests for protocol.py
 """
 
-
-
-
 import datetime
 import unittest
 

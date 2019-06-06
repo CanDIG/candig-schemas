@@ -2,9 +2,6 @@
 Runs the maven tests
 """
 
-
-
-
 import shlex
 import subprocess
 import unittest

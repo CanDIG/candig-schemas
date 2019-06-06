@@ -6,8 +6,5 @@ See __path__ documentation at:
     https://docs.python.org/2/tutorial/modules.html
 """
 
-
-
-
 import candig
 candig.__path__.insert(0, 'candig')

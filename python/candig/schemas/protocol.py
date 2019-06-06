@@ -2,9 +2,6 @@
 Definitions of the candig protocol types.
 """
 
-
-
-
 import datetime
 import json
 import inspect
