@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 
 import unittest
 
-import candig.common.utils as utils
+import ga4gh.common.utils as utils
 
 
 class TestConstraints(unittest.TestCase):

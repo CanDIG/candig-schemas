@@ -9,7 +9,7 @@ import shlex
 import subprocess
 import unittest
 
-import candig.common.utils as utils
+import ga4gh.common.utils as utils
 
 
 class TestMaven(unittest.TestCase):
