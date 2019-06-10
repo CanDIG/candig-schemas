@@ -34,7 +34,7 @@ service PeerService {
   rpc ListPeers(ListPeersRequest)
     returns (ListPeersResponse) {
       option (google.api.http) = {
-        post: "/v0.8.0/peers/list"
+        post: "/v0.6.0a10/peers/list"
         body: "*"
       };
     };
@@ -52,7 +52,7 @@ service PeerService {
   rpc AnnouncePeer(AnnouncePeerRequest)
     returns (AnnouncePeerResponse) {
       option (google.api.http) = {
-        post: "/v0.8.0/announce"
+        post: "/v0.6.0a10/announce"
       };
     };
 
@@ -65,7 +65,7 @@ service PeerService {
   rpc Info(GetInfoRequest)
     returns (GetInfoResponse) {
       option (google.api.http) = {
-        get: "/v0.8.0/info"
+        get: "/v0.6.0a10/info"
       };
     };
 
