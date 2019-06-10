@@ -41,7 +41,7 @@ def parse_message(cluster, fields, containments, nests, id_targets, id_reference
         # containment can be determined by looking at field.type_name.
         # Maps will also come up as type 11 and will have a
         # field.type_name of something like
-        # .ga4gh.Feature.AttributesEntry, where the actual field name
+        # .candig.Feature.AttributesEntry, where the actual field name
         # is attributes
         if field.type == 11 or field.type == 14:
             # We are likely adding containments of trivial maps,
