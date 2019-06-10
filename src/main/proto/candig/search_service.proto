@@ -15,7 +15,7 @@ service SearchService {
     rpc GetItem (SearchQueryRequest) 
         returns (SearchQueryResponse) {
             option (google.api.http) = {
-                post: "/v0.6.0a10/search"
+                post: "/v0.8.0/search"
                 body: "*"
             };
     };

@@ -30,7 +30,7 @@ service GenotypesService {
   rpc SearchGenotypes(SearchGenotypesRequest)
     returns (SearchGenotypesResponse) {
       option (google.api.http) = {
-        post: "/v0.6.0a10/genotypes/search"
+        post: "/v0.8.0/genotypes/search"
         body: "*"
       };
     };
