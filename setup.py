@@ -47,7 +47,7 @@ except Exception:
     print("Couldn't find a good protoc, using precompiled protobuf.")
 
 setup(
-    name="ga4gh_schemas",
+    name="candig_schemas",
     description="CanDIG API Schemas",
     packages=[
         "candig",
