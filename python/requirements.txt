@@ -3,5 +3,5 @@
 #
 # These requirements are read directly into setup.py, so specify them
 # in the order that they should be in in setup.py
-git+git://github.com/CanDIG/candig-common.git@master#egg=candig_common
+candig-common
 protobuf==3.3.0
