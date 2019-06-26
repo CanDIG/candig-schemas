@@ -23,5 +23,4 @@
 #
 # ga4gh-common==0.1.0
 #
-git+git://github.com/CanDIG/candig-common.git@master#egg=candig_common
-
+git+git://github.com/CanDIG/candig-common.git@archived_py2#egg=ga4gh_common

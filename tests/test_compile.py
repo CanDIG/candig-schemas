@@ -10,7 +10,7 @@ import unittest
 import candig
 candig.__path__.append('python/candig')
 
-import candig.common.utils as utils  # NOQA
+import ga4gh.common.utils as utils  # NOQA
 import candig.schemas._version as version  # NOQA
 
 
