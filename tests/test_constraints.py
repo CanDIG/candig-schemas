@@ -4,7 +4,7 @@ Tests the constraints invariants
 
 import unittest
 
-import ga4gh.common.utils as utils
+import candig.common.utils as utils
 
 
 class TestConstraints(unittest.TestCase):
