@@ -8,7 +8,7 @@ import unittest
 
 # similar to dev_glue.py
 import candig
-candig.__path__.insert(0, 'python/candig')
+candig.__path__.append('python/candig')
 
 import candig.common.utils as utils  # NOQA
 import candig.schemas._version as version  # NOQA

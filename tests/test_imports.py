@@ -7,7 +7,7 @@ import unittest
 # similar to dev_glue.py
 import candig
 
-candig.__path__.insert(0, 'python/candig')
+candig.__path__.append('python/candig')
 
 import candig.schemas._protocol_version as version  # NOQA
 
