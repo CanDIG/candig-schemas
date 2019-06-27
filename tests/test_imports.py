@@ -5,9 +5,9 @@ Tests for schemas
 import unittest
 
 # similar to dev_glue.py
-import candig
+# import candig
 
-candig.__path__.append('python/candig')
+# candig.__path__.append('python/candig')
 
 import candig.schemas._protocol_version as version  # NOQA
 
