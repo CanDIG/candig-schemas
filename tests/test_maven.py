@@ -6,7 +6,7 @@ import shlex
 import subprocess
 import unittest
 
-import candig.common.utils as utils
+import utils as utils
 
 
 class TestMaven(unittest.TestCase):

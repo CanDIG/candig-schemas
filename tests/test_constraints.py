@@ -4,7 +4,7 @@ Tests the constraints invariants
 
 import unittest
 
-import candig.common.utils as utils
+import utils as utils
 
 
 class TestConstraints(unittest.TestCase):
