@@ -4,13 +4,7 @@ Tests for schemas
 
 import unittest
 
-# similar to dev_glue.py
-# import candig
-
-# candig.__path__.append('python/candig')
-
 import candig.schemas._protocol_version as version  # NOQA
-
 import candig.schemas.candig.common_pb2 as common_pb2  # NOQA
 import candig.schemas.candig.metadata_pb2 as metadata_pb2  # NOQA
 import candig.schemas.candig.metadata_service_pb2 as metadata_service_pb2  # NOQA

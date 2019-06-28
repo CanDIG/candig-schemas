@@ -5,14 +5,6 @@ Tests the schema compilation
 import os
 import tempfile
 import unittest
-
-
-
-# similar to dev_glue.py
-# import candig
-# candig.__path__.append('python/candig')
-
-
 import utils as utils  # NOQA
 import candig.schemas._version as version  # NOQA
 

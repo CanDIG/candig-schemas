@@ -3,7 +3,6 @@ Tests the constraints invariants
 """
 
 import unittest
-
 import utils as utils
 
 
