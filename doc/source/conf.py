@@ -65,7 +65,7 @@ for root, dirs, files in os.walk(json_dir):
         subprocess.check_call(cmd, shell=True)
 
 # Generate the svg of the schema UML diagram
-ga4gh_schema_dir = os.path.join(schema_dir, "candig")
+ga4gh_schema_dir = os.path.join(schema_dir, "ga4gh")
 uml_dir = os.path.join("_build", "generated_images")
 cmd = "protoc --proto_path %s --plugin=protoc-gen-custom=%s --custom_out=%s %s" % (base_dir, os.path.join(sphinx_path, "protobuf-uml.py"), uml_dir, os.path.join(ga4gh_schema_dir, "*.proto"))
 print(cmd)

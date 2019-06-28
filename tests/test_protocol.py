@@ -7,10 +7,10 @@ import unittest
 
 import google.protobuf.message as message
 
-import candig.schemas.protocol as protocol
-import candig.schemas.candig.common_pb2 as common
+import ga4gh.schemas.protocol as protocol
+import ga4gh.schemas.ga4gh.common_pb2 as common
 
-from candig.schemas.candig.metadata_pb2 import Dataset
+from ga4gh.schemas.ga4gh.metadata_pb2 import Dataset
 
 
 class TestProtocol(unittest.TestCase):
