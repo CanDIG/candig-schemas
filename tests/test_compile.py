@@ -6,11 +6,14 @@ import os
 import tempfile
 import unittest
 
+from candig import common
+import common.utils as utils
+
 # similar to dev_glue.py
 # import candig
 # candig.__path__.append('python/candig')
 
-import candig.common.utils as utils  # NOQA
+# import candig.common.utils as utils  # NOQA
 import candig.schemas._version as version  # NOQA
 
 
