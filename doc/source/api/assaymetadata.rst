@@ -10,7 +10,7 @@
 AssayMetadata: *Experiment* Object
 **********************************
 
-Experiment in the GA4GH Schema
+Experiment in the CanDIG Schema
 ------------------------------
 
 
@@ -37,7 +37,7 @@ Attribute             Notes
 AssayMetadata: *Analysis* Object
 ********************************
 
-Analysis in the GA4GH Schema
+Analysis in the CanDIG Schema
 ------------------------------
 
 

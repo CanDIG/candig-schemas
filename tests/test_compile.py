@@ -1,19 +1,11 @@
 """
 Tests the schema compilation
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
 
 import os
 import tempfile
 import unittest
-
-# similar to dev_glue.py
-import candig
-candig.__path__.insert(0, 'python/candig')
-
-import ga4gh.common.utils as utils  # NOQA
+import utils
 import candig.schemas._version as version  # NOQA
 
 

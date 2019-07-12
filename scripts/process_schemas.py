@@ -4,9 +4,6 @@ from a copy of the Protocol Buffers schema and use it to generate
 the Python class definitions. These are also stored in revision
 control to aid Travis building.
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
 
 import os
 import os.path
@@ -159,16 +156,20 @@ class ProtobufGenerator(object):
                 os.path.realpath(source_path))
             raise Exception(msg)
 
+    # https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3
+    def _cmp(self, a, b):
+        return (a > b) - (a < b)
+
     # From http://stackoverflow.com/a/1714190/320546
     def _version_compare(self, version1, version2):
         def normalize(v):
             return [int(x) for x in re.sub(r'(\.0+)*$', '', v).split(".")]
-        return cmp(normalize(version1), normalize(version2))
+        return self._cmp(normalize(version1), normalize(version2))
 
     def _getProtoc(self, destination_path):
         protocs = [os.path.realpath(x) for x in
-                   "{}/protobuf/src/protoc".format(destination_path),
-                   self._find_in_path("protoc")
+                   ("{}/protobuf/src/protoc".format(destination_path),
+                   self._find_in_path("protoc"))
                    if x is not None]
         protoc = None
         for c in protocs:
@@ -176,7 +177,7 @@ class ProtobufGenerator(object):
                 continue
             output = subprocess.check_output([c, "--version"]).strip()
             try:
-                (lib, version) = output.split(" ")
+                (lib, version) = output.decode('utf-8').split(" ")
                 if lib != "libprotoc":
                     raise Exception("lib didn't match 'libprotoc'")
                 if self._version_compare("3.0.0", version) > 0:

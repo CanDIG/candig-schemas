@@ -53,7 +53,7 @@ something in common:
       information about what differences were found.
 
 The following diagram shows the relationship of these four entities to
-each other and to other GA4GH API entities. It shows which entities
+each other and to other CanDIG API entities. It shows which entities
 contain other entities (such as :protobuf:message:`VariantSetMetadata`),
 and which contain IDs that can be used to get information from other
 entities (such as :protobuf:message:`Variant`'s ``variantSetId``). The

@@ -6,13 +6,13 @@ The JSON Format
 
 JSON, or JavaScript Object Notation, is officially defined `here <http://json.org/example>`_. It is the standard data interchange format for web APIs.
 
-The GA4GH Web API uses a JSON wire protocol, exchanging JSON representations of the objects defined in its Protocol Buffers schemas. More information on the schemas is available in :ref:`proto`; basically, the Protocol Buffers type definitions say what attributes any given JSON object ought to have, and what ought to be stored in each of them.
+The CanDIG Web API uses a JSON wire protocol, exchanging JSON representations of the objects defined in its Protocol Buffers schemas. More information on the schemas is available in :ref:`proto`; basically, the Protocol Buffers type definitions say what attributes any given JSON object ought to have, and what ought to be stored in each of them.
 
 ------------------------
-GA4GH JSON Serialization
+CanDIG JSON Serialization
 ------------------------
 
-The GA4GH web APIs use Protocol Buffers IDL to define their schemas, and use the associated Google Protocol Buffers JSON serialization libraries. Notice that the Protocol Buffers IDL uses snake case, while the on-the-wire protocol is in camel case.
+The CanDIG web APIs use Protocol Buffers IDL to define their schemas, and use the associated Google Protocol Buffers JSON serialization libraries. Notice that the Protocol Buffers IDL uses snake case, while the on-the-wire protocol is in camel case.
 
 ---------------------
 Serialization example

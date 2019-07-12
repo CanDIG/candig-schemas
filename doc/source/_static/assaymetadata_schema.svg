@@ -64,7 +64,7 @@ x2="180"
 y2="960"
 />
 <rect x="20" y="980" width="160" height="25" />
-<text transform="translate(40 980)" ><tspan x="0" dy="18" font-weight="900">OtherGA4GHobject</tspan>
+<text transform="translate(40 980)" ><tspan x="0" dy="18" font-weight="900">OtherCanDIGobject</tspan>
 </text>
 <rect x="20" y="1005" width="160" height="82" />
 <text transform="translate(40 1005)" ><tspan  style="font-weight: 900; fill: red;" 	x="0" dy="18">id</tspan><tspan  font-style="italic" style="" 	x="0" dy="18">biosampleId</tspan><tspan 	x="0" dy="18">datasetId</tspan><tspan  font-style="italic" style="" 	x="0" dy="18">experimentId</tspan></text>

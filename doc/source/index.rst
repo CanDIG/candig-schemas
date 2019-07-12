@@ -2,10 +2,10 @@
 
 ----
 
-GA4GH Genomics API
+CanDIG Genomics API
 !!!!!!!!!!!!!!!!!!
 
-The `GA4GH`_ API attempts to gather together protocols and data models useful
+The `CanDIG`_ API attempts to gather together protocols and data models useful
 for genomics data interchange. It offers protocols that can be
 implemented over existing Genomics data stores to make these results more
 easily discovered, shared, and replicated.

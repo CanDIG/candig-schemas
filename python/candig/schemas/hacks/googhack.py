@@ -1,9 +1,6 @@
 """
 Hack for getting a handle to the top-level google module, etc.
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
 
 import google.protobuf.json_format as json_format
 import google.protobuf.message as message

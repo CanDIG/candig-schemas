@@ -99,7 +99,7 @@ with genomic features.
 Network
 @@@@@@@
 
-GA4GH services can communicate with each other about the services they offer
+CanDIG services can communicate with each other about the services they offer
 over network protocols. This includes the Peer Service.
 
 .. toctree::

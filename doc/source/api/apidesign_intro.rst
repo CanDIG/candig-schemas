@@ -91,14 +91,14 @@ For the Dataset schema definition see the `Metadata schema
 Unresolved Issues
 @@@@@@@@@@@@@@@@@
 
-* Is the GA4GH object design a conceptual data model that must be
+* Is the CanDIG object design a conceptual data model that must be
   followed or only containers for data exchange.  If they are
   containers, where is the conceptual data model defined?
 
-* Are GA4GH objects idempotent?  In particular, can one obtain an
+* Are CanDIG objects idempotent?  In particular, can one obtain an
   object with a subset of it's fields?
 
-* Is object life-cycle semantics in the scope of GA4GH API? Which
+* Is object life-cycle semantics in the scope of CanDIG API? Which
   objects are immutable and which are mutable?  If objects are
   mutable, how does one know they have changed?  How does one protect
   against changes while using the objects over a given time-frame?

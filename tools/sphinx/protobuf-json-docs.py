@@ -53,7 +53,7 @@ def convert_protodef_to_editable(proto):
                 self.input_type = prot.input_type
                 self.output_type = prot.output_type
             else:
-                raise Exception, type(prot)
+                raise Exception(type(prot))
 
     return Editable(proto)
 
@@ -95,7 +95,7 @@ def traverse(proto_file):
                             if method_comment != {}:
                                 item.method[k].comment = _collapse_comments(method_comment)
                 else:
-                    raise Exception, item.kind
+                    raise Exception(item.kind)
 
             yield item, package
 
@@ -114,7 +114,7 @@ def traverse(proto_file):
         if loc.leading_comments or loc.trailing_comments:
             place = tree
             for p in loc.path:
-                if not place.has_key(p):
+                if p not in place:
                     place[p] = collections.defaultdict(collections.defaultdict)
                 place = place[p]
             place["leading_comments"] = loc.leading_comments
@@ -122,7 +122,7 @@ def traverse(proto_file):
     
     # Only message, services, enums, extensions, options
     if set(tree.keys()).difference(set([4, 5, 6, 7, 8])) != set():
-        raise Exception, tree
+        raise Exception(tree)
 
     return {"types":
         list(itertools.chain(
@@ -185,7 +185,7 @@ def type_to_string(f, map_types):
     elif f.type in [18]:
         return "sint64"
     else:
-        raise Exception, f.type
+        raise Exception(f.type)
 
 def generate_code(request, response):
     """
@@ -201,7 +201,7 @@ def generate_code(request, response):
         def full_name(package, item):
             return "%s.%s" % (package, item.name)
         for item, package in results["types"]:
-            if item.options.has_key("map_entry"):
+            if "map_entry" in item.options:
                 map_types[full_name(package, item)] = dict([(x.name,x) for x in item.field])
         for item, package in results["types"]:
             name = full_name(package, item)
@@ -252,7 +252,7 @@ def generate_code(request, response):
                         "errors" : [ ":protobuf:message:`GAException`" ]
                     }
             else:
-                raise Exception, item.kind
+                raise Exception(item.kind)
 
         comments = "\n".join(results["file"])
         output = {

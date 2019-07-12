@@ -2,11 +2,11 @@
 
 
 *************************
-Connecting GA4GH Services
+Connecting CanDIG Services
 *************************
 
 
-The GA4GH aims to create an easy to implement network of Genomics data
+The CanDIG aims to create an easy to implement network of Genomics data
 services. To achieve this end, the protocol presents some message, endpoints,
 and methods that are dedicated to communicating about a service's status
 when establishing peers.
@@ -34,7 +34,7 @@ Use Cases
    She first announces her service to Bob and then adds Bob’s service to
    her list of peers.
 -  Alice would like to get a list of all the available datasets on a
-   GA4GH network. She first requests the dataset from a known member of
+   CanDIG network. She first requests the dataset from a known member of
    the network. She then requests that service’s list of peers. She then
    requests the list of datasets from each peer in the peer list. By
    recursively following peer lists she can list all the datasets on the
@@ -50,7 +50,7 @@ Ad-hoc private networks can be established between peers, as well as hub and
 spoke models.
 
 Institutions may choose to take advantage of the Peer Service to tier
-services. This is done by presenting a service to the public on the GA4GH
+services. This is done by presenting a service to the public on the CanDIG
 network that performs aggregations of data on underlying peers. These peers
 only expose their services to the aggregation service.
 
@@ -125,7 +125,7 @@ Listing Peers
 
 Each service, in addition to receiving announcements about the presence of
 other peers, shares its list of peers at the ``peers/list`` endpoint. This
-list can be paged through similar to other GA4GH endpoints. Each entry
+list can be paged through similar to other CanDIG endpoints. Each entry
 in the `ListPeersResponse
 <../schemas/peer_service.proto.html#protobuf.ListPeersResponse>`_ includes a URL
 to a possible peer. It is up to individual services to maintain

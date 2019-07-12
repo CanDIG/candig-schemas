@@ -16,7 +16,7 @@ Goals and Scope
 * a schema of how objects relate to each other
 
 The metadata API provides information on the primary data objects
-available via the GA4GH API, and facilities to organize primary data
+available via the CanDIG API, and facilities to organize primary data
 objects.
 
 The current metadata API is immature and will evolve in future.
@@ -28,7 +28,7 @@ Metadata Records
 :ref:`Dataset<metadata_dataset>`
 ====================================
 
-All GA4GH data objects are part of a *dataset*. A dataset is a
+All CanDIG data objects are part of a *dataset*. A dataset is a
 data-provider-specified collection of related data of multiple types.
 Logically, it's akin to a folder, where it's up to the provider what
 goes into the folder. Individual data objects are linked by
@@ -116,7 +116,7 @@ They are indicated with a leading "P", followed by unit delimited
 quantifiers. A leading "T" is required before the start of the time components.
 Durations do not have to be normalized; "PT50H" is equally valid as "P2T2H".
 A frequent use of durations in biomedical data resources are *age* values,
-e.g. "age at diagnosis"; but also "progression free survival", "followup" or "time to recurrence" (these are descriptive labels, which do not necessarily represent GA4GH schema use).
+e.g. "age at diagnosis"; but also "progression free survival", "followup" or "time to recurrence" (these are descriptive labels, which do not necessarily represent CanDIG schema use).
 
 **Examples**
 
@@ -165,7 +165,7 @@ Dataset
 
 .. _metadata_dataset:
 
-All GA4GH data objects are part of a *dataset*. A dataset is a
+All CanDIG data objects are part of a *dataset*. A dataset is a
 data-provider-specified collection of related data of multiple types.
 Logically, it's akin to a folder, where it's up to the provider what
 goes into the folder. Individual data objects are linked by
