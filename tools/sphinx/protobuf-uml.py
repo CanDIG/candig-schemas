@@ -134,7 +134,7 @@ def write_graph(fields, containments, nests, matched_references, clusters):
     graph += "]\n\n"
 
     # Draw each node/type/record as a table
-    for type_name, field_list in list(fields.items()):
+    for type_name, field_list in fields.items():
 
         graph += "{} [label=<\n".format(type_name)
         graph += "<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0' CELLPADDING='4' bgcolor='#002060' color='#002060'>\n"
@@ -166,7 +166,7 @@ def write_graph(fields, containments, nests, matched_references, clusters):
         graph += "</TABLE>>];\n\n"
 
     # Now define the clusters/subgraphs
-    for cluster_name, cluster_types in list(clusters.items()):
+    for cluster_name, cluster_types in clusters.items():
         graph += "subgraph cluster_{} {{\n".format(cluster_name.replace(".", "_").replace("/", "_"))
         graph += "\tstyle=\"rounded, filled\";\n"
         graph += "\tcolor=lightgrey;\n"
