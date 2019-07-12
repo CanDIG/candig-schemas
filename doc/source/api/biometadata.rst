@@ -10,10 +10,10 @@
 BioMetadata: *Biosample* Object
 *******************************
 
-Biosample in the GA4GH Schema
+Biosample in the CanDIG Schema
 ------------------------------
 
-The majority of use cases of GA4GH
+The majority of use cases of CanDIG
 schema compatible resources will serve to facilitate the retrieval of *molecular
 features* (DNA sequence variations, gene expression, protein variants) measured
 by performing *experimental* (whole genome sequencing, expression arrays, mass
@@ -22,7 +22,7 @@ preparation of target molecules (e.g. DNA, RNA) which has been extracted from a
 *biological sample* (e.g. tissue biopsy, single cell from FACS,
 environmental sample).
 
-In the GA4GH schema, a *Biosample* represents the main "biological
+In the CanDIG schema, a *Biosample* represents the main "biological
 item" against which molecular variants are referenced.
 
 Biosample attributes
@@ -50,10 +50,10 @@ Attribute             Notes
 BioMetadata: *Individual* Object
 ********************************
 
-Individual in the GA4GH Schema
+Individual in the CanDIG Schema
 ------------------------------
 
-An *Individual* is a GA4GH data object representing a biological instance
+An *Individual* is a CanDIG data object representing a biological instance
 (most commonly a human being or other individual organism) on whose *Biosamples*
 experimental analyses are performed.
 

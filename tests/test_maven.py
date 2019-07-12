@@ -1,17 +1,15 @@
 """
 Runs the maven tests
 """
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
 
 import shlex
 import subprocess
 import unittest
 
-import ga4gh.common.utils as utils
+import utils
 
 
+@unittest.skip("Disabled, unused")
 class TestMaven(unittest.TestCase):
     """
     Uses maven to run tests
@@ -27,7 +25,7 @@ class TestMaven(unittest.TestCase):
     def runCommandCheckWarnings(self, cmd):
         utils.log("Running '{}'".format(cmd))
         splits = shlex.split(cmd)
-        output = subprocess.check_output(splits).split('\n')
+        output = subprocess.check_output(splits).decode('utf-8').split('\n')
         self.ensureNoWarnings(output, cmd)
 
     def ensureNoWarnings(self, lines, streamName):

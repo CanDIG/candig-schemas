@@ -123,7 +123,7 @@ Schema Release ``v0.6.0a5``
 Changes to ``ga4gh/schemas`` ``master`` branch since version
 ``v0.6.0a4`` (Apr 7, 2016)
 
-First Protocol Buffers (protobuf v3.0.0) version of the GA4GH API. Same
+First Protocol Buffers (protobuf v3.0.0) version of the CanDIG API. Same
 set of features (messages, endpoints) as previous alpha release.
 
 IMPORTANT: The switch from AVRO to protobuf in this pre-release will

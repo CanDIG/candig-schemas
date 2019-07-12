@@ -8,7 +8,7 @@ Summary
 =======
 
 This API allows users to search for genotype-phenotype
-associations in a GA4GH datastore. The user can search for associations
+associations in a CanDIG datastore. The user can search for associations
 by building queries composed of features, phenotypes, and/or evidence
 terms. The API is designed to accommodate search terms specified as
 either a string, external identifier, ontology identifier, or as an
@@ -37,7 +37,7 @@ G2P servers are planned to be implemented in three different contexts:
    :alt: image
 
 
--  Coupled with sequence annotation and GA4GH datasets. Clients will
+-  Coupled with sequence annotation and CanDIG datasets. Clients will
    want implementation specific featureId/genotypeId to match and
    integrate with the rest of the APIs.
 
@@ -79,7 +79,7 @@ by the Monarch project was the source of Evidence.
    :alt: image
 
 
-Intent: The GA4GH Ontology schema provides structures for unambiguous
+Intent: The CanDIG Ontology schema provides structures for unambiguous
 references to ontological concepts and/or controlled vocabularies
 within Protocol Buffers. The structures provided are not intended for
 de novo modeling of ontologies, or representing complete ontologies
@@ -127,7 +127,7 @@ Entity Searches
 
    -  Given a SearchFeaturesRequest, return matching *features* in the
       ``current 'omics dataset``. Intended for sequence annotation and
-      GA4GH datasets.
+      CanDIG datasets.
 
 -  ``/phenotypes/search``
 
@@ -145,7 +145,7 @@ Association Search
 Usage
 -----
 
-1. As a GA4GH client, use entity queries for the genotypes and
+1. As a CanDIG client, use entity queries for the genotypes and
    phenotypes you are interested in.
 2. Create an association search using the entity identifiers from step
    1.

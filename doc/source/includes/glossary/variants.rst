@@ -7,7 +7,7 @@ Genetic variants are differences in the genome sequence from one
 individual to the next. Such variation can manifest at different
 scales, from small changes affecting just one or a few DNA base pairs,
 to copy number variations of whole exons or genes, to large structural
-variations affecting megabases or more. The GA4GH Variants schema
+variations affecting megabases or more. The CanDIG Variants schema
 focuses on small variants for now, because there's less consensus on
 how to represent the larger kinds of variation.
 
@@ -71,7 +71,7 @@ There remain some outstanding challenges with this model of small
 variants. For example, the same edit to the reference sequence can be
 represented in multiple ways. There are also different ways to
 represent clusters of alleles that affect overlapping but non-equal
-portions of the reference. The GA4GH doesn't yet prescribe resolutions
+portions of the reference. The CanDIG doesn't yet prescribe resolutions
 to these ambiguities, and different conventions are used in practice.
 
 (TODO possible additional/advanced topics: homozygous ref vs. no-call;

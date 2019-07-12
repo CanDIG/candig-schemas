@@ -1,10 +1,10 @@
 Documention
 !!!!!!!!!!!
 
-This directory contains source and tools to build the GA4GH schemas
+This directory contains source and tools to build the CanDIG schemas
 documentation.
 
-The `GA4GH schemas documentation
+The `CanDIG schemas documentation
 <http://ga4gh-schemas.readthedocs.org/>`_ is built automatically by
 Read the Docs, typically within two minutes of a commit to the master
 branch.
