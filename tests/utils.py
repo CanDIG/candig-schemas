@@ -1,5 +1,5 @@
 """
-Utilities used across many GA4GH packages
+Utilities used across many CanDIG packages
 """
 import io
 import contextlib
