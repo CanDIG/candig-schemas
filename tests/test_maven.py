@@ -9,6 +9,7 @@ import unittest
 import utils as utils
 
 
+@unittest.skip("Disabled, unused")
 class TestMaven(unittest.TestCase):
     """
     Uses maven to run tests
@@ -18,8 +19,8 @@ class TestMaven(unittest.TestCase):
         mvnInstall = \
             "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
         self.runCommandCheckWarnings(mvnInstall)
-        # mvnTest = "mvn test -B"
-        # self.runCommandCheckWarnings(mvnTest)
+        mvnTest = "mvn test -B"
+        self.runCommandCheckWarnings(mvnTest)
 
     def runCommandCheckWarnings(self, cmd):
         utils.log("Running '{}'".format(cmd))
