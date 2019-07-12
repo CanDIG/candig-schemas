@@ -84,7 +84,7 @@ using a list of known good peers.
 Public Initial Peers
 ********************
 
-The CanDIG attempts to bootstrap this network by maintaining the latest
+The GA4GH attempts to bootstrap this network by maintaining the latest
 released network protocol at http://1kgenomes.ga4gh.org . However, the
 process of evaluating announcements requires human curation, so do not expect
 your peer to be listed immediately.
