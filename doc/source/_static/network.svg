@@ -223,7 +223,7 @@
     <tspan x="123" y="988">hostnames and both list each other.</tspan>
   </text>
   <text font-size="20.4216" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="560" y="-53">
-    <tspan x="560" y="-53">GA4GH Network Diagram</tspan>
+    <tspan x="560" y="-53">CanDIG Network Diagram</tspan>
   </text>
   <text font-size="20.4216" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617" y="-19">
     <tspan x="617" y="-19">March 7, 2017</tspan>
@@ -303,7 +303,7 @@
     <tspan x="141" y="155.5">the Genomics API.</tspan>
     <tspan x="141" y="171.5"></tspan>
     <tspan x="141" y="187.5">It is our goal to make beacon the discovery</tspan>
-    <tspan x="141" y="203.5">layer for further GA4GH inquiry.</tspan>
+    <tspan x="141" y="203.5">layer for further CanDIG inquiry.</tspan>
   </text>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="352.8" y="646.6">
     <tspan x="352.8" y="646.6"></tspan>

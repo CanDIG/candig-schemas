@@ -33,7 +33,7 @@ Wikipedia also has good overviews of `bioinformatics <https://en.wikipedia.org/w
 and `DNA sequencing <https://en.wikipedia.org/wiki/DNA_sequencing>`_
 
 
-The GA4GH web API
+The CanDIG web API
 @@@@@@@@@@@@@@@@@
 
 This API was created to enable researchers to better access and
@@ -42,7 +42,7 @@ complete BAM files or whole genome annotations, the API allows
 retrieval of information on, for instance, single genes or genomic
 regions.
 
-For a full list of the GA4GH API goals, see :ref:`apigoals`
+For a full list of the CanDIG API goals, see :ref:`apigoals`
 
 
 Schemas and formats
@@ -55,7 +55,7 @@ actually representing pieces of genomics data.
 
 The schemas are written in Protocol Buffers Interface Description
 Language (extension .proto). For more details on Protocol Buffers
-and how it is used in the GA4GH APIs, see :ref:`proto`.
+and how it is used in the CanDIG APIs, see :ref:`proto`.
 
 Here is an example schema definition for a Variant (with comments
 removed)::
@@ -75,7 +75,7 @@ removed)::
     repeated Call calls = 12;
   }
 
-On the wire, the GA4GH web API takes the form of a client and a server
+On the wire, the CanDIG web API takes the form of a client and a server
 exchanging JSON-serialized objects over HTTP or HTTPS. For more
-details on JSON, including how the GA4GH web API serializes and
+details on JSON, including how the CanDIG web API serializes and
 deserializes Protocol Buffers objects in JSON, see :ref:`json`.

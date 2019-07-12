@@ -1,13 +1,13 @@
 .. _metadata_ontologies:
 
-Use of Ontologies in GA4GH API
+Use of Ontologies in CanDIG API
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 Examples for OntologyTerm use
 -----------------------------
 
 * Info: Ontogenesis blog
-* Info: Working implementation of the GA4GH docsystem's Ontologies document
+* Info: Working implementation of the CanDIG docsystem's Ontologies document
 
 
 Why should we use an ontology term?
@@ -33,7 +33,7 @@ which may have a varying depth, the executioner of the query has to judge
 about the optimal scope of the returned data.
 
 
-What is the minimum attribute requirement for  OntologyTerm in GA4GH?
+What is the minimum attribute requirement for  OntologyTerm in CanDIG?
 =====================================================================
 
 Conceptually (and consistent with the metadata branch)

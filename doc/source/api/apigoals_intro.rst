@@ -5,9 +5,9 @@ API Goals
 !!!!!!!!!
 
 
-* From the `GA4GH DWG <http://ga4gh.org/#/documentation>`_ site:
+* From the `CanDIG DWG <http://ga4gh.org/#/documentation>`_ site:
 
-    The Global Alliance for Genomics and Health (GA4GH) Genomics [API]
+    The Global Alliance for Genomics and Health (CanDIG) Genomics [API]
     will allow the interoperable exchange of genomic information
     across multiple organizations and on multiple platforms. This is a
     freely available open standard for interoperability, that uses

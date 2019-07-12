@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# GA4GH Schemas documentation build configuration file, created by
+# CanDIG Schemas documentation build configuration file, created by
 # sphinx-quickstart on Thu Jul  2 16:00:07 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -86,7 +86,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'GA4GH Schemas'
+project = 'CanDIG Schemas'
 copyright = '2015, Global Alliance for Genomics and Health'
 author = 'Global Alliance for Genomics and Health'
 
@@ -262,7 +262,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'ga4ghschemas.tex', 'GA4GH Schemas Documentation',
+  (master_doc, 'ga4ghschemas.tex', 'CanDIG Schemas Documentation',
    'Jeltje van Baren', 'manual'),
 ]
 
@@ -292,7 +292,7 @@ latex_logo = "_static/logo_ga.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ga4ghschemas', 'GA4GH Schemas Documentation',
+    (master_doc, 'ga4ghschemas', 'CanDIG Schemas Documentation',
      [author], 1)
 ]
 
@@ -306,7 +306,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'ga4ghschemas', 'GA4GH Schemas Documentation',
+  (master_doc, 'ga4ghschemas', 'CanDIG Schemas Documentation',
    author, 'ga4ghschemas', 'One line description of project.',
    'Miscellaneous'),
 ]
