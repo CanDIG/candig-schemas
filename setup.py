@@ -70,14 +70,13 @@ setup(
     author="CanDIG Team",
     author_email="info@distributedgenomics.ca",
     classifiers=[
-        'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Scientific/Engineering :: Bio-Informatics',
     ],
-    keywords=['genomics', 'reference'],
+    keywords=['genomics', 'candig'],
     # Use setuptools_scm to set the version number automatically from Git
     setup_requires=['setuptools_scm'],
 )
