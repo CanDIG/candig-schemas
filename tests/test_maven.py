@@ -6,9 +6,10 @@ import shlex
 import subprocess
 import unittest
 
-import candig.common.utils as utils
+import utils as utils
 
 
+@unittest.skip("Disabled, unused")
 class TestMaven(unittest.TestCase):
     """
     Uses maven to run tests

@@ -11,6 +11,7 @@ cache:
     directories:
     - /tmp/proto3.3.2
 before_install:
+    - pip install -U pip
     - sudo apt-get update -qq
     - sudo apt-get install graphviz
     - bash tools/travis-install-protoc.sh 3.3.2
