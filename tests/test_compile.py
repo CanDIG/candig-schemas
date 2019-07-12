@@ -5,7 +5,7 @@ Tests the schema compilation
 import os
 import tempfile
 import unittest
-import utils as utils  # NOQA
+import utils
 import candig.schemas._version as version  # NOQA
 
 

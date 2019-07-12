@@ -6,7 +6,7 @@ import shlex
 import subprocess
 import unittest
 
-import utils as utils
+import utils
 
 
 @unittest.skip("Disabled, unused")
