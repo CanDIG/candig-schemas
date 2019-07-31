@@ -1,9 +1,10 @@
 # n.b. whenprotobuf version changes, it must be update in three places in this
 # file (no macros or variables in YAML).
-
+dist: xenial
 language: python
 python:
   - "3.6"
+  - "3.7"
 
 install:
     - python setup.py install
