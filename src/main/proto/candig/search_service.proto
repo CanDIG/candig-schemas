@@ -100,7 +100,7 @@ message Result {
     string end = 4;
 
     // Reference genome. Used if the user is requesting variants endpoint.
-    string referenceName = 5;
+    string reference_name = 5;
 
     // Gene name. Used if the user is requesting variantsByGene endpoint.
     string gene = 6;
