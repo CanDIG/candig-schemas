@@ -223,6 +223,15 @@ message OntologyTerm {
 
   // Ontology term - the label of the ontology term the termId is pointing to.
   string term = 2;
+
+  // Shorthand of the term name. Only used in Data Use Ontology.
+  string shorthand = 3;
+
+  // Definition of the ontology term
+  string definition = 4;
+
+  // An additional comment on the term. Only used in Data Use Ontology.
+  string modifier = 5;
 }
 
 // A Program describes software used in data processing or analysis.

@@ -19,5 +19,7 @@ message Dataset {
 
   // A map of additional dataset information.
   Attributes attributes = 5;
-}
 
+  // A list of Data Use Ontology Terms that describes how the dataset can be used.
+  repeated OntologyTerm terms_of_use = 6;
+}
