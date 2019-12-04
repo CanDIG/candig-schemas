@@ -29,11 +29,10 @@ class TestCompile(unittest.TestCase):
         pb2 files from being checked in.
         """
         # compile the schemas to a temporary directory
-        scriptPath = 'process_schemas.py'
+        scriptPath = 'scripts/process_schemas.py'
         schemaVersion = '.'.join(version.version.split('.')[0:3])
         schemasDir = 'src/main/proto/'
         schemaDest = tempfile.mkdtemp()
-        os.chdir("scripts")
         cmd = "python {} {} -s {} -d {}".format(
             scriptPath, schemaVersion, schemasDir, schemaDest)
         utils.runCommand(cmd, silent=True)
