@@ -33,7 +33,7 @@ class TestCompile(unittest.TestCase):
         schemaVersion = '.'.join(version.version.split('.')[0:3])
         schemasDir = 'src/main/proto/'
         schemaDest = tempfile.mkdtemp()
-        os.chdir("/scripts")
+        os.chdir("scripts")
         cmd = "python {} {} -s {} -d {}".format(
             scriptPath, schemaVersion, schemasDir, schemaDest)
         utils.runCommand(cmd, silent=True)
