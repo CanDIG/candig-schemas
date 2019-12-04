@@ -227,10 +227,10 @@ class ProtobufGenerator(object):
 
     def _deleteProtoFilesInDestinationPath(self, destination_path):
 
-        filelist = glob.glob(os.path.join(destination_path, "candig/schemas/candig/*.proto"))
+        filelist = glob.glob(os.path.join(
+            destination_path, "candig/schemas/candig/*.proto"))
 
         for f in filelist:
-            print(f)
             os.remove(f)
 
         print("Temporary proto files all deleted")
