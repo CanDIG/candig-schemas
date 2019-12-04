@@ -223,7 +223,7 @@ class ProtobufGenerator(object):
             with open(versionFilePath, "w") as version_file:
                 self._writeVersion(version_file)
         except FileNotFoundError:
-            # This is where compilation actually happens
+            # Write version when running from /scripts
             with open("../" + versionFilePath, "w") as version_file:
                 self._writeVersion(version_file)
 
