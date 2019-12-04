@@ -2,7 +2,7 @@
 
 import scripts.process_schemas as process_schemas
 
-PROTOCOL_VERSION = "0.8.0"
+PROTOCOL_VERSION = "1.0.0"
 
 # First, we try to use setuptools. If it's not available locally,
 # we fall back on ez_setup.
