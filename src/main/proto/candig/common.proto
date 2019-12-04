@@ -223,6 +223,15 @@ message OntologyTerm {
 
   // Ontology term - the label of the ontology term the termId is pointing to.
   string term = 2;
+
+  // Shorthand of the DUO Term
+  string shorthand = 3;
+
+  // Definition of the DUO term
+  string definition = 4;
+
+  // A modifier required for selected DUO terms
+  string modifier = 5;
 }
 
 // A Program describes software used in data processing or analysis.

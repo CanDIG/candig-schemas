@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='candig/schemas/candig/metadata.proto',
   package='candig.schemas.candig',
   syntax='proto3',
-  serialized_pb=_b('\n$candig/schemas/candig/metadata.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\"candig/schemas/candig/common.proto\"o\n\x07\x44\x61taset\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x35\n\nattributes\x18\x05 \x01(\x0b\x32!.candig.schemas.candig.Attributesb\x06proto3')
+  serialized_pb=_b('\n$candig/schemas/candig/metadata.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\"candig/schemas/candig/common.proto\"\xaa\x01\n\x07\x44\x61taset\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x35\n\nattributes\x18\x05 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x39\n\x0cterms_of_use\x18\x06 \x03(\x0b\x32#.candig.schemas.candig.OntologyTermb\x06proto3')
   ,
   dependencies=[candig_dot_schemas_dot_candig_dot_common__pb2.DESCRIPTOR,])
 
@@ -62,6 +62,13 @@ _DATASET = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='terms_of_use', full_name='candig.schemas.candig.Dataset.terms_of_use', index=4,
+      number=6, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -74,11 +81,12 @@ _DATASET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=99,
-  serialized_end=210,
+  serialized_start=100,
+  serialized_end=270,
 )
 
 _DATASET.fields_by_name['attributes'].message_type = candig_dot_schemas_dot_candig_dot_common__pb2._ATTRIBUTES
+_DATASET.fields_by_name['terms_of_use'].message_type = candig_dot_schemas_dot_candig_dot_common__pb2._ONTOLOGYTERM
 DESCRIPTOR.message_types_by_name['Dataset'] = _DATASET
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
