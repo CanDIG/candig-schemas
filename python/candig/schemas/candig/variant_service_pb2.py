@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='candig/schemas/candig/variant_service.proto',
   package='candig.schemas.candig',
   syntax='proto3',
-  serialized_pb=_b('\n+candig/schemas/candig/variant_service.proto\x12\x15\x63\x61ndig.schemas.candig\x1a$candig/schemas/candig/variants.proto\x1a+candig/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"m\n\x19SearchVariantSetsResponse\x12\x37\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32!.candig.schemas.candig.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xb5\x01\n\x15SearchVariantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\x12\x17\n\x0fvariant_set_ids\x18\t \x03(\t\"c\n\x16SearchVariantsResponse\x12\x30\n\x08variants\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"d\n\x16SearchCallSetsResponse\x12\x31\n\tcall_sets\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t\"\xca\x01\n\x1fSearchVariantsByGeneNameRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x14\n\x0cpatient_list\x18\x05 \x03(\t\x12\r\n\x05start\x18\x06 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x07 \x01(\x03\x12\x16\n\x0ereference_name\x18\x08 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\t \x03(\t\"m\n SearchVariantsByGeneNameResponse\x12\x30\n\x08variants\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\x9e\x08\n\x0eVariantService\x12\x9d\x01\n\x11SearchVariantSets\x12/.candig.schemas.candig.SearchVariantSetsRequest\x1a\x30.candig.schemas.candig.SearchVariantSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.8.0/variantsets/search:\x01*\x12\xb4\x01\n\x18SearchVariantsByGeneName\x12\x36.candig.schemas.candig.SearchVariantsByGeneNameRequest\x1a\x37.candig.schemas.candig.SearchVariantsByGeneNameResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.8.0/variantsbygenesearch:\x01*\x12\x8d\x01\n\rGetVariantSet\x12+.candig.schemas.candig.GetVariantSetRequest\x1a!.candig.schemas.candig.VariantSet\",\x82\xd3\xe4\x93\x02&\x12$/v0.8.0/variantsets/{variant_set_id}\x12\x91\x01\n\x0eSearchVariants\x12,.candig.schemas.candig.SearchVariantsRequest\x1a-.candig.schemas.candig.SearchVariantsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.8.0/variants/search:\x01*\x12}\n\nGetVariant\x12(.candig.schemas.candig.GetVariantRequest\x1a\x1e.candig.schemas.candig.Variant\"%\x82\xd3\xe4\x93\x02\x1f\"\x1d/v0.8.0/variants/{variant_id}\x12\x91\x01\n\x0eSearchCallSets\x12,.candig.schemas.candig.SearchCallSetsRequest\x1a-.candig.schemas.candig.SearchCallSetsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.8.0/callsets/search:\x01*\x12~\n\nGetCallSet\x12(.candig.schemas.candig.GetCallSetRequest\x1a\x1e.candig.schemas.candig.CallSet\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.8.0/callsets/{call_set_id}b\x06proto3')
+  serialized_pb=_b('\n+candig/schemas/candig/variant_service.proto\x12\x15\x63\x61ndig.schemas.candig\x1a$candig/schemas/candig/variants.proto\x1a+candig/schemas/google/api/annotations.proto\"U\n\x18SearchVariantSetsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t\"m\n\x19SearchVariantSetsResponse\x12\x37\n\x0cvariant_sets\x18\x01 \x03(\x0b\x32!.candig.schemas.candig.VariantSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\".\n\x14GetVariantSetRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\"\xc3\x01\n\x15SearchVariantsRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\x02 \x03(\t\x12\x16\n\x0ereference_name\x18\x03 \x01(\t\x12\r\n\x05start\x18\x04 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x05 \x01(\x03\x12\x11\n\tpage_size\x18\x06 \x01(\x05\x12\x12\n\npage_token\x18\x07 \x01(\t\x12\x17\n\x0fvariant_set_ids\x18\t \x03(\t\x12\x0c\n\x04gene\x18\n \x01(\t\"c\n\x16SearchVariantsResponse\x12\x30\n\x08variants\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"\'\n\x11GetVariantRequest\x12\x12\n\nvariant_id\x18\x01 \x01(\t\"z\n\x15SearchCallSetsRequest\x12\x16\n\x0evariant_set_id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x03 \x01(\t\x12\x11\n\tpage_size\x18\x04 \x01(\x05\x12\x12\n\npage_token\x18\x05 \x01(\t\"d\n\x16SearchCallSetsResponse\x12\x31\n\tcall_sets\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.CallSet\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t\"(\n\x11GetCallSetRequest\x12\x13\n\x0b\x63\x61ll_set_id\x18\x01 \x01(\t\"\xca\x01\n\x1fSearchVariantsByGeneNameRequest\x12\x12\n\ndataset_id\x18\x01 \x01(\t\x12\x0c\n\x04gene\x18\x02 \x01(\t\x12\x11\n\tpage_size\x18\x03 \x01(\x05\x12\x12\n\npage_token\x18\x04 \x01(\t\x12\x14\n\x0cpatient_list\x18\x05 \x03(\t\x12\r\n\x05start\x18\x06 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x07 \x01(\x03\x12\x16\n\x0ereference_name\x18\x08 \x01(\t\x12\x14\n\x0c\x63\x61ll_set_ids\x18\t \x03(\t\"m\n SearchVariantsByGeneNameResponse\x12\x30\n\x08variants\x18\x01 \x03(\x0b\x32\x1e.candig.schemas.candig.Variant\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t2\x9e\x08\n\x0eVariantService\x12\x9d\x01\n\x11SearchVariantSets\x12/.candig.schemas.candig.SearchVariantSetsRequest\x1a\x30.candig.schemas.candig.SearchVariantSetsResponse\"%\x82\xd3\xe4\x93\x02\x1f\"\x1a/v0.8.0/variantsets/search:\x01*\x12\xb4\x01\n\x18SearchVariantsByGeneName\x12\x36.candig.schemas.candig.SearchVariantsByGeneNameRequest\x1a\x37.candig.schemas.candig.SearchVariantsByGeneNameResponse\"\'\x82\xd3\xe4\x93\x02!\"\x1c/v0.8.0/variantsbygenesearch:\x01*\x12\x8d\x01\n\rGetVariantSet\x12+.candig.schemas.candig.GetVariantSetRequest\x1a!.candig.schemas.candig.VariantSet\",\x82\xd3\xe4\x93\x02&\x12$/v0.8.0/variantsets/{variant_set_id}\x12\x91\x01\n\x0eSearchVariants\x12,.candig.schemas.candig.SearchVariantsRequest\x1a-.candig.schemas.candig.SearchVariantsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.8.0/variants/search:\x01*\x12}\n\nGetVariant\x12(.candig.schemas.candig.GetVariantRequest\x1a\x1e.candig.schemas.candig.Variant\"%\x82\xd3\xe4\x93\x02\x1f\"\x1d/v0.8.0/variants/{variant_id}\x12\x91\x01\n\x0eSearchCallSets\x12,.candig.schemas.candig.SearchCallSetsRequest\x1a-.candig.schemas.candig.SearchCallSetsResponse\"\"\x82\xd3\xe4\x93\x02\x1c\"\x17/v0.8.0/callsets/search:\x01*\x12~\n\nGetCallSet\x12(.candig.schemas.candig.GetCallSetRequest\x1a\x1e.candig.schemas.candig.CallSet\"&\x82\xd3\xe4\x93\x02 \x12\x1e/v0.8.0/callsets/{call_set_id}b\x06proto3')
   ,
   dependencies=[candig_dot_schemas_dot_candig_dot_variants__pb2.DESCRIPTOR,candig_dot_schemas_dot_google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
 
@@ -205,6 +205,13 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='gene', full_name='candig.schemas.candig.SearchVariantsRequest.gene', index=8,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -218,7 +225,7 @@ _SEARCHVARIANTSREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=400,
-  serialized_end=581,
+  serialized_end=595,
 )
 
 
@@ -255,8 +262,8 @@ _SEARCHVARIANTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=583,
-  serialized_end=682,
+  serialized_start=597,
+  serialized_end=696,
 )
 
 
@@ -286,8 +293,8 @@ _GETVARIANTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=684,
-  serialized_end=723,
+  serialized_start=698,
+  serialized_end=737,
 )
 
 
@@ -345,8 +352,8 @@ _SEARCHCALLSETSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=725,
-  serialized_end=847,
+  serialized_start=739,
+  serialized_end=861,
 )
 
 
@@ -383,8 +390,8 @@ _SEARCHCALLSETSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=849,
-  serialized_end=949,
+  serialized_start=863,
+  serialized_end=963,
 )
 
 
@@ -414,8 +421,8 @@ _GETCALLSETREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=951,
-  serialized_end=991,
+  serialized_start=965,
+  serialized_end=1005,
 )
 
 
@@ -501,8 +508,8 @@ _SEARCHVARIANTSBYGENENAMEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=994,
-  serialized_end=1196,
+  serialized_start=1008,
+  serialized_end=1210,
 )
 
 
@@ -539,8 +546,8 @@ _SEARCHVARIANTSBYGENENAMERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1198,
-  serialized_end=1307,
+  serialized_start=1212,
+  serialized_end=1321,
 )
 
 _SEARCHVARIANTSETSRESPONSE.fields_by_name['variant_sets'].message_type = candig_dot_schemas_dot_candig_dot_variants__pb2._VARIANTSET

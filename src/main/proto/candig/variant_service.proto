@@ -159,6 +159,9 @@ message SearchVariantsRequest {
 
   // a list of variant sets to search from
   repeated string variant_set_ids = 9;
+
+  // The gene name to search for. Only used for /search and /count endpoints.
+  string gene = 10;
 }
 
 // This is the response from `POST /variants/search` expressed as JSON.

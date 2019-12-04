@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='candig/schemas/candig/common.proto',
   package='candig.schemas.candig',
   syntax='proto3',
-  serialized_pb=_b('\n\"candig/schemas/candig/common.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\x1cgoogle/protobuf/struct.proto\"2\n\x0bGAException\x12\x12\n\nerror_code\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t\"H\n\x06\x46ilter\x12\r\n\x05\x66ield\x18\x01 \x01(\t\x12\x10\n\x08operator\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12\x0e\n\x06values\x18\x04 \x03(\t\"c\n\x08Position\x12\x16\n\x0ereference_name\x18\x01 \x01(\t\x12\x10\n\x08position\x18\x02 \x01(\x03\x12-\n\x06strand\x18\x03 \x01(\x0e\x32\x1d.candig.schemas.candig.Strand\"K\n\x12\x45xternalIdentifier\x12\x10\n\x08\x64\x61tabase\x18\x01 \x01(\t\x12\x12\n\nidentifier\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"\xf3\x04\n\nExperiment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x1b\n\x13message_create_time\x18\x04 \x01(\t\x12\x1b\n\x13message_update_time\x18\x05 \x01(\t\x12\x10\n\x08run_time\x18\x06 \x01(\t\x12\x10\n\x08molecule\x18\x07 \x01(\t\x12\x10\n\x08strategy\x18\x08 \x01(\t\x12\x11\n\tselection\x18\t \x01(\t\x12\x0f\n\x07library\x18\n \x01(\t\x12\x16\n\x0elibrary_layout\x18\x0b \x01(\t\x12\x18\n\x10instrument_model\x18\x0c \x01(\t\x12\x1c\n\x14instrument_data_file\x18\r \x01(\t\x12\x19\n\x11sequencing_center\x18\x0e \x01(\t\x12\x15\n\rplatform_unit\x18\x0f \x01(\t\x12\x35\n\nattributes\x18\x11 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x12\n\ndataset_id\x18\x12 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x13 \x01(\t\x12\'\n\x1f\x64na_library_construction_method\x18\x14 \x01(\t\x12&\n\x1ewgs_sequencing_completion_date\x18\x15 \x01(\t\x12\'\n\x1frna_library_construction_method\x18\x16 \x01(\t\x12&\n\x1erna_sequencing_completion_date\x18\x17 \x01(\t\x12\x1d\n\x15panel_completion_date\x18\x18 \x01(\t\"\xaa\x02\n\x08\x41nalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x0f\n\x07\x63reated\x18\x04 \x01(\t\x12\x0f\n\x07updated\x18\x05 \x01(\t\x12\x0c\n\x04type\x18\x06 \x01(\t\x12\x10\n\x08software\x18\x07 \x03(\t\x12\x35\n\nattributes\x18\t \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x12\n\ndataset_id\x18\n \x01(\t\x12\x15\n\rexperiment_id\x18\x0b \x01(\t\x12!\n\x19other_analysis_descriptor\x18\x0c \x01(\t\x12(\n other_analysis_completition_date\x18\r \x01(\t\"-\n\x0cOntologyTerm\x12\x0f\n\x07term_id\x18\x01 \x01(\t\x12\x0c\n\x04term\x18\x02 \x01(\t\"c\n\x07Program\x12\x14\n\x0c\x63ommand_line\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x17\n\x0fprev_program_id\x18\x04 \x01(\t\x12\x0f\n\x07version\x18\x05 \x01(\t\"\xec\x04\n\x0e\x41ttributeValue\x12\x16\n\x0cstring_value\x18\x01 \x01(\tH\x00\x12\x15\n\x0bint64_value\x18\x02 \x01(\x03H\x00\x12\x15\n\x0bint32_value\x18\x03 \x01(\x05H\x00\x12\x14\n\nbool_value\x18\x04 \x01(\x08H\x00\x12\x16\n\x0c\x64ouble_value\x18\x05 \x01(\x01H\x00\x12H\n\x13\x65xternal_identifier\x18\x06 \x01(\x0b\x32).candig.schemas.candig.ExternalIdentifierH\x00\x12<\n\rontology_term\x18\x07 \x01(\x0b\x32#.candig.schemas.candig.OntologyTermH\x00\x12\x37\n\nexperiment\x18\x08 \x01(\x0b\x32!.candig.schemas.candig.ExperimentH\x00\x12\x31\n\x07program\x18\t \x01(\x0b\x32\x1e.candig.schemas.candig.ProgramH\x00\x12\x33\n\x08\x61nalysis\x18\n \x01(\x0b\x32\x1f.candig.schemas.candig.AnalysisH\x00\x12\x36\n\nnull_value\x18\x0b \x01(\x0e\x32 .candig.schemas.candig.NullValueH\x00\x12\x37\n\nattributes\x18\x0c \x01(\x0b\x32!.candig.schemas.candig.AttributesH\x00\x12\x43\n\x0e\x61ttribute_list\x18\r \x01(\x0b\x32).candig.schemas.candig.AttributeValueListH\x00\x42\x07\n\x05value\"K\n\x12\x41ttributeValueList\x12\x35\n\x06values\x18\x01 \x03(\x0b\x32%.candig.schemas.candig.AttributeValue\"\x9f\x01\n\nAttributes\x12\x39\n\x04\x61ttr\x18\x01 \x03(\x0b\x32+.candig.schemas.candig.Attributes.AttrEntry\x1aV\n\tAttrEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x38\n\x05value\x18\x02 \x01(\x0b\x32).candig.schemas.candig.AttributeValueList:\x02\x38\x01*@\n\x06Strand\x12\x16\n\x12STRAND_UNSPECIFIED\x10\x00\x12\x0e\n\nNEG_STRAND\x10\x01\x12\x0e\n\nPOS_STRAND\x10\x02*\x1b\n\tNullValue\x12\x0e\n\nNULL_VALUE\x10\x00\x62\x06proto3')
+  serialized_pb=_b('\n\"candig/schemas/candig/common.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\x1cgoogle/protobuf/struct.proto\"2\n\x0bGAException\x12\x12\n\nerror_code\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t\"H\n\x06\x46ilter\x12\r\n\x05\x66ield\x18\x01 \x01(\t\x12\x10\n\x08operator\x18\x02 \x01(\t\x12\r\n\x05value\x18\x03 \x01(\t\x12\x0e\n\x06values\x18\x04 \x03(\t\"c\n\x08Position\x12\x16\n\x0ereference_name\x18\x01 \x01(\t\x12\x10\n\x08position\x18\x02 \x01(\x03\x12-\n\x06strand\x18\x03 \x01(\x0e\x32\x1d.candig.schemas.candig.Strand\"K\n\x12\x45xternalIdentifier\x12\x10\n\x08\x64\x61tabase\x18\x01 \x01(\t\x12\x12\n\nidentifier\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"\xf3\x04\n\nExperiment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x1b\n\x13message_create_time\x18\x04 \x01(\t\x12\x1b\n\x13message_update_time\x18\x05 \x01(\t\x12\x10\n\x08run_time\x18\x06 \x01(\t\x12\x10\n\x08molecule\x18\x07 \x01(\t\x12\x10\n\x08strategy\x18\x08 \x01(\t\x12\x11\n\tselection\x18\t \x01(\t\x12\x0f\n\x07library\x18\n \x01(\t\x12\x16\n\x0elibrary_layout\x18\x0b \x01(\t\x12\x18\n\x10instrument_model\x18\x0c \x01(\t\x12\x1c\n\x14instrument_data_file\x18\r \x01(\t\x12\x19\n\x11sequencing_center\x18\x0e \x01(\t\x12\x15\n\rplatform_unit\x18\x0f \x01(\t\x12\x35\n\nattributes\x18\x11 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x12\n\ndataset_id\x18\x12 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x13 \x01(\t\x12\'\n\x1f\x64na_library_construction_method\x18\x14 \x01(\t\x12&\n\x1ewgs_sequencing_completion_date\x18\x15 \x01(\t\x12\'\n\x1frna_library_construction_method\x18\x16 \x01(\t\x12&\n\x1erna_sequencing_completion_date\x18\x17 \x01(\t\x12\x1d\n\x15panel_completion_date\x18\x18 \x01(\t\"\xaa\x02\n\x08\x41nalysis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\x0f\n\x07\x63reated\x18\x04 \x01(\t\x12\x0f\n\x07updated\x18\x05 \x01(\t\x12\x0c\n\x04type\x18\x06 \x01(\t\x12\x10\n\x08software\x18\x07 \x03(\t\x12\x35\n\nattributes\x18\t \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x12\n\ndataset_id\x18\n \x01(\t\x12\x15\n\rexperiment_id\x18\x0b \x01(\t\x12!\n\x19other_analysis_descriptor\x18\x0c \x01(\t\x12(\n other_analysis_completition_date\x18\r \x01(\t\"f\n\x0cOntologyTerm\x12\x0f\n\x07term_id\x18\x01 \x01(\t\x12\x0c\n\x04term\x18\x02 \x01(\t\x12\x11\n\tshorthand\x18\x03 \x01(\t\x12\x12\n\ndefinition\x18\x04 \x01(\t\x12\x10\n\x08modifier\x18\x05 \x01(\t\"c\n\x07Program\x12\x14\n\x0c\x63ommand_line\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x17\n\x0fprev_program_id\x18\x04 \x01(\t\x12\x0f\n\x07version\x18\x05 \x01(\t\"\xec\x04\n\x0e\x41ttributeValue\x12\x16\n\x0cstring_value\x18\x01 \x01(\tH\x00\x12\x15\n\x0bint64_value\x18\x02 \x01(\x03H\x00\x12\x15\n\x0bint32_value\x18\x03 \x01(\x05H\x00\x12\x14\n\nbool_value\x18\x04 \x01(\x08H\x00\x12\x16\n\x0c\x64ouble_value\x18\x05 \x01(\x01H\x00\x12H\n\x13\x65xternal_identifier\x18\x06 \x01(\x0b\x32).candig.schemas.candig.ExternalIdentifierH\x00\x12<\n\rontology_term\x18\x07 \x01(\x0b\x32#.candig.schemas.candig.OntologyTermH\x00\x12\x37\n\nexperiment\x18\x08 \x01(\x0b\x32!.candig.schemas.candig.ExperimentH\x00\x12\x31\n\x07program\x18\t \x01(\x0b\x32\x1e.candig.schemas.candig.ProgramH\x00\x12\x33\n\x08\x61nalysis\x18\n \x01(\x0b\x32\x1f.candig.schemas.candig.AnalysisH\x00\x12\x36\n\nnull_value\x18\x0b \x01(\x0e\x32 .candig.schemas.candig.NullValueH\x00\x12\x37\n\nattributes\x18\x0c \x01(\x0b\x32!.candig.schemas.candig.AttributesH\x00\x12\x43\n\x0e\x61ttribute_list\x18\r \x01(\x0b\x32).candig.schemas.candig.AttributeValueListH\x00\x42\x07\n\x05value\"K\n\x12\x41ttributeValueList\x12\x35\n\x06values\x18\x01 \x03(\x0b\x32%.candig.schemas.candig.AttributeValue\"\x9f\x01\n\nAttributes\x12\x39\n\x04\x61ttr\x18\x01 \x03(\x0b\x32+.candig.schemas.candig.Attributes.AttrEntry\x1aV\n\tAttrEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x38\n\x05value\x18\x02 \x01(\x0b\x32).candig.schemas.candig.AttributeValueList:\x02\x38\x01*@\n\x06Strand\x12\x16\n\x12STRAND_UNSPECIFIED\x10\x00\x12\x0e\n\nNEG_STRAND\x10\x01\x12\x0e\n\nPOS_STRAND\x10\x02*\x1b\n\tNullValue\x12\x0e\n\nNULL_VALUE\x10\x00\x62\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
 
@@ -46,8 +46,8 @@ _STRAND = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2336,
-  serialized_end=2400,
+  serialized_start=2393,
+  serialized_end=2457,
 )
 _sym_db.RegisterEnumDescriptor(_STRAND)
 
@@ -65,8 +65,8 @@ _NULLVALUE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2402,
-  serialized_end=2429,
+  serialized_start=2459,
+  serialized_end=2486,
 )
 _sym_db.RegisterEnumDescriptor(_NULLVALUE)
 
@@ -572,6 +572,27 @@ _ONTOLOGYTERM = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='shorthand', full_name='candig.schemas.candig.OntologyTerm.shorthand', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='definition', full_name='candig.schemas.candig.OntologyTerm.definition', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='modifier', full_name='candig.schemas.candig.OntologyTerm.modifier', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -585,7 +606,7 @@ _ONTOLOGYTERM = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1326,
-  serialized_end=1371,
+  serialized_end=1428,
 )
 
 
@@ -643,8 +664,8 @@ _PROGRAM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1373,
-  serialized_end=1472,
+  serialized_start=1430,
+  serialized_end=1529,
 )
 
 
@@ -761,8 +782,8 @@ _ATTRIBUTEVALUE = _descriptor.Descriptor(
       name='value', full_name='candig.schemas.candig.AttributeValue.value',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=1475,
-  serialized_end=2095,
+  serialized_start=1532,
+  serialized_end=2152,
 )
 
 
@@ -792,8 +813,8 @@ _ATTRIBUTEVALUELIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2097,
-  serialized_end=2172,
+  serialized_start=2154,
+  serialized_end=2229,
 )
 
 
@@ -830,8 +851,8 @@ _ATTRIBUTES_ATTRENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2248,
-  serialized_end=2334,
+  serialized_start=2305,
+  serialized_end=2391,
 )
 
 _ATTRIBUTES = _descriptor.Descriptor(
@@ -860,8 +881,8 @@ _ATTRIBUTES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2175,
-  serialized_end=2334,
+  serialized_start=2232,
+  serialized_end=2391,
 )
 
 _POSITION.fields_by_name['strand'].enum_type = _STRAND
