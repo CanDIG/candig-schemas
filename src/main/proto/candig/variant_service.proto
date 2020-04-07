@@ -286,9 +286,17 @@ message SearchCNVSetRequest {
   // The `patient_id` to search.
   string patient_id = 2;
 
-  
+  // The `sample_id` to search.
+  string sample_id = 3;
 
-  // TODO
+  // The `name` to search
+  string name = 4;
+  
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 5;
+
 }
 
 // This is the response from `POST /variants/cnvsets/search` expressed as JSON.
@@ -301,8 +309,6 @@ message SearchCNVSetResponse {
   // results. This field will be empty if there aren't any additional results.
   string next_page_token = 2;
 
-  // TODO
-
 }
 
 // ******************  /variants/cnv/search  *********************
@@ -311,12 +317,35 @@ message SearchCNVRequest {
   // The `CNVSet` to search.
   string cnv_set_id = 1;
 
-  // TODO
+  // The `patient_id` to search.
+  string patient_id = 2;
+
+  // The `sample_id` to search.
+  string sample_id = 3;
+
+  // The `chromosome` to search.
+  string chromosome = 4;
+
+  // The `start_position` to search.
+  string start_position = 5;
+
+  // The 'end_position' to search
+  string end_position = 6;
+
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 7;
 }
 
 // This is the response from `POST /variants/cnv/search` expressed as JSON.
 message SearchCNVResponse {
+  // A list of CNVs
+  repeated CNV cnv = 1
 
-  // TODO
-
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 2;
+ 
 }

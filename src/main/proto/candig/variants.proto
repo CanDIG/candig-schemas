@@ -264,5 +264,22 @@ message CNV {
   // The CNV Record ID
   string id = 1;
 
-  // TODO
+  // The CNV sample id.
+  string sample_id = 2;
+
+  // The CNV start position.
+  int64 start_position = 3;
+
+  // The CNV end position.
+  int64 end_position = 4;
+
+  // The CNV copy number.
+  float copy_number = 5;
+
+  // The CNV ploidy corrected
+  int64 copy_number_ploidy_corrected = 6;
+
+  // The CNV chromosome
+  string chromosome = 7 
+ 
 }
