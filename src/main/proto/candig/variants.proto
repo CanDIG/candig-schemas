@@ -240,3 +240,29 @@ message Variant {
   // when variants are being returned.
   string patientId = 21;
 }
+
+// A CNVSet is a collection of CNV Records that belong to the same sample
+message CNVSet {
+  // The CNV set ID.
+  string id = 1;
+
+  // The CNV set name.
+  string name = 2;
+
+  // The ID of the dataset this CNV set belongs to.
+  string dataset_id = 3;
+  
+  // For CNV data identification and search join purposes
+  string patient_id = 4;
+  
+  // For CNV data identification and search join purposes
+  string sample_id = 5;
+}
+
+// A CNV Message represents a single record that belongs to be CNVSet
+message CNV {
+  // The CNV Record ID
+  string id = 1;
+
+  // TODO
+}

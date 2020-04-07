@@ -276,3 +276,19 @@ message SearchVariantsByGeneNameResponse {
   // results. This field will be empty if there aren't any additional results.
   string next_page_token = 2;
 }
+
+// ******************  /variants/cnv/search  *********************
+// This request maps to the body of `POST /variants/cnv/search` as JSON.
+message SearchVariantsCNVRequest {
+  // The `CNVSet` to search.
+  string dataset_id = 1;
+
+  // TODO
+}
+
+// This is the response from `POST /variantsbygenename` expressed as JSON.
+message SearchVariantsCNVResponse {
+
+  // TODO
+
+}
