@@ -277,17 +277,45 @@ message SearchVariantsByGeneNameResponse {
   string next_page_token = 2;
 }
 
-// ******************  /variants/cnv/search  *********************
-// This request maps to the body of `POST /variants/cnv/search` as JSON.
-message SearchVariantsCNVRequest {
-  // The `CNVSet` to search.
+// ******************  /variants/cnvsets/search  *********************
+// This request maps to the body of `POST /variants/cnvsets/search` as JSON.
+message SearchCNVSetRequest {
+  // The `dataset_id` to search.
   string dataset_id = 1;
+
+  // The `patient_id` to search.
+  string patient_id = 2;
+
+  
 
   // TODO
 }
 
-// This is the response from `POST /variantsbygenename` expressed as JSON.
-message SearchVariantsCNVResponse {
+// This is the response from `POST /variants/cnvsets/search` expressed as JSON.
+message SearchCNVSetResponse {
+
+  repeated CNVSet cnv_sets = 1;
+
+  // The continuation token, which is used to page through large result sets.
+  // Provide this value in a subsequent request to return the next page of
+  // results. This field will be empty if there aren't any additional results.
+  string next_page_token = 2;
+
+  // TODO
+
+}
+
+// ******************  /variants/cnv/search  *********************
+// This request maps to the body of `POST /variants/cnv/search` as JSON.
+message SearchCNVRequest {
+  // The `CNVSet` to search.
+  string cnv_set_id = 1;
+
+  // TODO
+}
+
+// This is the response from `POST /variants/cnv/search` expressed as JSON.
+message SearchCNVResponse {
 
   // TODO
 
