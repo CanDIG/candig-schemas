@@ -853,6 +853,26 @@ message Outcome {
     string diseaseFreeSurvivalInMonths = 42;
     int32 diseaseFreeSurvivalInMonthsTier = 43;
 
+    // Following fields are added for Profyle Schema update 20200528
+
+    string siteOfRelapseOrProgression = 44;
+    int32 siteOfRelapseOrProgressionTier = 45;
+
+    string intervalProgressionOrRecurrence = 46;
+    int32 intervalProgressionOrRecurrenceTier = 47;
+
+    string intervalRegressionOrDecreaseInDisease = 48;
+    int32 intervalRegressionOrDecreaseInDiseaseTier = 49;
+
+    string levelOfMalignancy = 50;
+    int32 levelOfMalignancyTier = 51;
+
+    string treatmentInducedNeoplasmSite = 52;
+    int32 treatmentInducedNeoplasmSiteTier = 53;
+
+    string dateOfDiagnosisOfTreatmentInducedNeoplasm = 54;
+    int32 dateOfDiagnosisOfTreatmentInducedNeoplasmTier = 55;
+
     } // End of the Outcome object ============================================
 
 
@@ -1074,6 +1094,83 @@ message Tumourboard {
     //
     string summaryReport = 66;
     int32 summaryReportTier = 67;
+
+    // Following are the new profyle fields added in 2020 05 28
+
+    string actionableExpressionOutlier = 68;
+    int32 actionableExpressionOutlierTier = 69;
+
+    string actionableGermlineVariant = 70;
+    int32 actionableGermlineVariantTier = 71;
+
+    string germlineVariantsDrug = 72;
+    int32 germlineVariantsDrugTier = 73;
+
+    string germlineVariantsDrugClass = 74;
+    int32 germlineVariantsDrugClassTier = 75;
+
+    string germlineVariantsDiscussed = 76;
+    int32 germlineVariantsDiscussedTier = 77;
+
+    string actionableSomaticVariants = 78;
+    int32 actionableSomaticVariantsTier = 79;
+
+    string somaticVariantsDrug = 80;
+    int32 somaticVariantsDrugTier = 81;
+
+    string somaticVariantsDrugClass = 82;
+    int32 somaticVariantsDrugClassTier = 83;
+
+    string somaticVariantsDiscussed = 84;
+    int32 somaticVariantsDiscussedTier = 85;
+
+    string anyActionableExpressionOutlier = 86;
+    int32 anyActionableExpressionOutlierTier = 87;
+
+    string expressionDrug = 88;
+    int32 expressionDrugTier = 89;
+
+    string expressionDrugClass = 90;
+    int32 expressionDrugClassTier = 91;
+
+    string expressionTypeOfAnalysisUsed = 92;
+    int32 expressionTypeOfAnalysisUsedTier = 93;
+
+    string expressionTypeOfInformationUtility = 94;
+    int32 expressionTypeOfInformationUtilityTier = 95;
+
+    string expressionAlteredGene = 96;
+    int32 expressionAlteredGeneTier = 97;
+
+    string expressionNonActionableGene = 98;
+    int32 expressionNonActionableGeneTier = 99;
+
+    string expressionTypeOfAlteration = 100;
+    int32 expressionTypeOfAlterationTier = 101;
+
+    string anyActionableGermlineVariants = 102;
+    int32 anyActionableGermlineVariantsTier = 103;
+
+    string germlineVariantsTypeOfAnalysisUsed = 104;
+    int32 germlineVariantsTypeOfAnalysisUsedTier = 105;
+
+    string germlineVariantsClassificationOfVariants = 106;
+    int32 germlineVariantsClassificationOfVariantsTier = 107;
+
+    string germlineVariantsTypeOfInformationUtility = 108;
+    int32 germlineVariantsTypeOfInformationUtilityTier = 109;
+
+    string anyActionableSomaticVariants = 110;
+    int32 anyActionableSomaticVariantsTier = 111;
+
+    string somaticVariantsTypeOfAnalysisUsed = 112;
+    int32 somaticVariantsTypeOfAnalysisUsedTier = 113;
+
+    string somaticVariantsTypeOfInformationUtility = 114;
+    int32 somaticVariantsTypeOfInformationUtilityTier = 115;
+
+    string somaticVariantsNonActionable = 116;
+    int32 somaticVariantsNonActionableTier = 117;
 
     } // End of the Tumourboard object ========================================
 
