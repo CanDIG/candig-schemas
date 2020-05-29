@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='candig/schemas/candig/clinical_metadata.proto',
   package='candig.schemas.candig',
   syntax='proto3',
-  serialized_pb=_b('\n-candig/schemas/candig/clinical_metadata.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\x1cgoogle/protobuf/struct.proto\x1a\"candig/schemas/candig/common.proto\"\x87\n\n\x07Patient\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08otherIds\x18\n \x01(\t\x12\x14\n\x0cotherIdsTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x64\x61teOfBirth\x18\x0c \x01(\t\x12\x17\n\x0f\x64\x61teOfBirthTier\x18\r \x01(\x05\x12\x0e\n\x06gender\x18\x0e \x01(\t\x12\x12\n\ngenderTier\x18\x0f \x01(\x05\x12\x11\n\tethnicity\x18\x10 \x01(\t\x12\x15\n\rethnicityTier\x18\x11 \x01(\x05\x12\x0c\n\x04race\x18\x12 \x01(\t\x12\x10\n\x08raceTier\x18\x13 \x01(\x05\x12\x1b\n\x13provinceOfResidence\x18\x14 \x01(\t\x12\x1f\n\x17provinceOfResidenceTier\x18\x15 \x01(\x05\x12\x13\n\x0b\x64\x61teOfDeath\x18\x16 \x01(\t\x12\x17\n\x0f\x64\x61teOfDeathTier\x18\x17 \x01(\x05\x12\x14\n\x0c\x63\x61useOfDeath\x18\x18 \x01(\t\x12\x18\n\x10\x63\x61useOfDeathTier\x18\x19 \x01(\x05\x12 \n\x18\x61utopsyTissueForResearch\x18\x1a \x01(\t\x12$\n\x1c\x61utopsyTissueForResearchTier\x18\x1b \x01(\x05\x12\x17\n\x0fpriorMalignancy\x18\x1c \x01(\t\x12\x1b\n\x13priorMalignancyTier\x18\x1d \x01(\x05\x12\x1d\n\x15\x64\x61teOfPriorMalignancy\x18\x1e \x01(\t\x12!\n\x19\x64\x61teOfPriorMalignancyTier\x18\x1f \x01(\x05\x12#\n\x1b\x66\x61milyHistoryAndRiskFactors\x18  \x01(\t\x12\'\n\x1f\x66\x61milyHistoryAndRiskFactorsTier\x18! \x01(\x05\x12-\n%familyHistoryOfPredispositionSyndrome\x18\" \x01(\t\x12\x31\n)familyHistoryOfPredispositionSyndromeTier\x18# \x01(\x05\x12\'\n\x1f\x64\x65tailsOfPredispositionSyndrome\x18$ \x01(\t\x12+\n#detailsOfPredispositionSyndromeTier\x18% \x01(\x05\x12\x1d\n\x15geneticCancerSyndrome\x18& \x01(\t\x12!\n\x19geneticCancerSyndromeTier\x18\' \x01(\x05\x12\x35\n-otherGeneticConditionOrSignificantComorbidity\x18( \x01(\t\x12\x39\n1otherGeneticConditionOrSignificantComorbidityTier\x18) \x01(\x05\x12+\n#occupationalOrEnvironmentalExposure\x18* \x01(\t\x12/\n\'occupationalOrEnvironmentalExposureTier\x18+ \x01(\x05\"\xc6\t\n\nEnrollment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x1d\n\x15\x65nrollmentInstitution\x18\n \x01(\t\x12!\n\x19\x65nrollmentInstitutionTier\x18\x0b \x01(\x05\x12\x1e\n\x16\x65nrollmentApprovalDate\x18\x0c \x01(\t\x12\"\n\x1a\x65nrollmentApprovalDateTier\x18\r \x01(\x05\x12\x17\n\x0f\x63rossEnrollment\x18\x0e \x01(\t\x12\x1b\n\x13\x63rossEnrollmentTier\x18\x0f \x01(\x05\x12*\n\"otherPersonalizedMedicineStudyName\x18\x10 \x01(\t\x12.\n&otherPersonalizedMedicineStudyNameTier\x18\x11 \x01(\x05\x12(\n otherPersonalizedMedicineStudyId\x18\x12 \x01(\t\x12,\n$otherPersonalizedMedicineStudyIdTier\x18\x13 \x01(\x05\x12\x17\n\x0f\x61geAtEnrollment\x18\x14 \x01(\t\x12\x1b\n\x13\x61geAtEnrollmentTier\x18\x15 \x01(\x05\x12\x1b\n\x13\x65ligibilityCategory\x18\x16 \x01(\t\x12\x1f\n\x17\x65ligibilityCategoryTier\x18\x17 \x01(\x05\x12\x1a\n\x12statusAtEnrollment\x18\x18 \x01(\t\x12\x1e\n\x16statusAtEnrollmentTier\x18\x19 \x01(\x05\x12\x1d\n\x15primaryOncologistName\x18\x1a \x01(\t\x12!\n\x19primaryOncologistNameTier\x18\x1b \x01(\x05\x12 \n\x18primaryOncologistContact\x18\x1c \x01(\t\x12$\n\x1cprimaryOncologistContactTier\x18\x1d \x01(\x05\x12\x1e\n\x16referringPhysicianName\x18\x1e \x01(\t\x12\"\n\x1areferringPhysicianNameTier\x18\x1f \x01(\x05\x12!\n\x19referringPhysicianContact\x18  \x01(\t\x12%\n\x1dreferringPhysicianContactTier\x18! \x01(\x05\x12\x1a\n\x12summaryOfIdRequest\x18\" \x01(\t\x12\x1e\n\x16summaryOfIdRequestTier\x18# \x01(\x05\x12\x1a\n\x12treatingCentreName\x18$ \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18% \x01(\x05\x12\x1e\n\x16treatingCentreProvince\x18& \x01(\t\x12\"\n\x1atreatingCentreProvinceTier\x18\' \x01(\x05\"\xcb\n\n\x07\x43onsent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tconsentId\x18\n \x01(\t\x12\x15\n\rconsentIdTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x63onsentDate\x18\x0c \x01(\t\x12\x17\n\x0f\x63onsentDateTier\x18\r \x01(\x05\x12\x16\n\x0e\x63onsentVersion\x18\x0e \x01(\t\x12\x1a\n\x12\x63onsentVersionTier\x18\x0f \x01(\x05\x12\x1a\n\x12patientConsentedTo\x18\x10 \x01(\t\x12\x1e\n\x16patientConsentedToTier\x18\x11 \x01(\x05\x12\x1a\n\x12reasonForRejection\x18\x12 \x01(\t\x12\x1e\n\x16reasonForRejectionTier\x18\x13 \x01(\x05\x12\x19\n\x11wasAssentObtained\x18\x14 \x01(\t\x12\x1d\n\x15wasAssentObtainedTier\x18\x15 \x01(\x05\x12\x14\n\x0c\x64\x61teOfAssent\x18\x16 \x01(\t\x12\x18\n\x10\x64\x61teOfAssentTier\x18\x17 \x01(\x05\x12\x19\n\x11\x61ssentFormVersion\x18\x18 \x01(\t\x12\x1d\n\x15\x61ssentFormVersionTier\x18\x19 \x01(\x05\x12!\n\x19ifAssentNotObtainedWhyNot\x18\x1a \x01(\t\x12%\n\x1difAssentNotObtainedWhyNotTier\x18\x1b \x01(\x05\x12\x15\n\rreconsentDate\x18\x1c \x01(\t\x12\x19\n\x11reconsentDateTier\x18\x1d \x01(\x05\x12\x18\n\x10reconsentVersion\x18\x1e \x01(\t\x12\x1c\n\x14reconsentVersionTier\x18\x1f \x01(\x05\x12!\n\x19\x63onsentingCoordinatorName\x18  \x01(\t\x12%\n\x1d\x63onsentingCoordinatorNameTier\x18! \x01(\x05\x12\x1b\n\x13previouslyConsented\x18\" \x01(\t\x12\x1f\n\x17previouslyConsentedTier\x18# \x01(\x05\x12\x1a\n\x12nameOfOtherBiobank\x18$ \x01(\t\x12\x1e\n\x16nameOfOtherBiobankTier\x18% \x01(\x05\x12\x1f\n\x17hasConsentBeenWithdrawn\x18& \x01(\t\x12#\n\x1bhasConsentBeenWithdrawnTier\x18\' \x01(\x05\x12\x1f\n\x17\x64\x61teOfConsentWithdrawal\x18( \x01(\t\x12#\n\x1b\x64\x61teOfConsentWithdrawalTier\x18) \x01(\x05\x12\x1f\n\x17typeOfConsentWithdrawal\x18* \x01(\t\x12#\n\x1btypeOfConsentWithdrawalTier\x18+ \x01(\x05\x12\"\n\x1areasonForConsentWithdrawal\x18, \x01(\t\x12&\n\x1ereasonForConsentWithdrawalTier\x18- \x01(\x05\x12\x1b\n\x13\x63onsentFormComplete\x18. \x01(\t\x12\x1f\n\x17\x63onsentFormCompleteTier\x18/ \x01(\x05\"\xd5\x0e\n\tDiagnosis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18\n \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18\x0b \x01(\x05\x12\x15\n\rdiagnosisDate\x18\x0c \x01(\t\x12\x19\n\x11\x64iagnosisDateTier\x18\r \x01(\x05\x12\x16\n\x0e\x61geAtDiagnosis\x18\x0e \x01(\t\x12\x1a\n\x12\x61geAtDiagnosisTier\x18\x0f \x01(\x05\x12\x12\n\ncancerType\x18\x10 \x01(\t\x12\x16\n\x0e\x63\x61ncerTypeTier\x18\x11 \x01(\x05\x12\x16\n\x0e\x63lassification\x18\x12 \x01(\t\x12\x1a\n\x12\x63lassificationTier\x18\x13 \x01(\x05\x12\x12\n\ncancerSite\x18\x14 \x01(\t\x12\x16\n\x0e\x63\x61ncerSiteTier\x18\x15 \x01(\x05\x12\x11\n\thistology\x18\x16 \x01(\t\x12\x15\n\rhistologyTier\x18\x17 \x01(\x05\x12#\n\x1bmethodOfDefinitiveDiagnosis\x18\x18 \x01(\t\x12\'\n\x1fmethodOfDefinitiveDiagnosisTier\x18\x19 \x01(\x05\x12\x12\n\nsampleType\x18\x1a \x01(\t\x12\x16\n\x0esampleTypeTier\x18\x1b \x01(\x05\x12\x12\n\nsampleSite\x18\x1c \x01(\t\x12\x16\n\x0esampleSiteTier\x18\x1d \x01(\x05\x12\x12\n\ntumorGrade\x18\x1e \x01(\t\x12\x16\n\x0etumorGradeTier\x18\x1f \x01(\x05\x12\x19\n\x11gradingSystemUsed\x18  \x01(\t\x12\x1d\n\x15gradingSystemUsedTier\x18! \x01(\x05\x12\x19\n\x11sitesOfMetastases\x18\" \x01(\t\x12\x1d\n\x15sitesOfMetastasesTier\x18# \x01(\x05\x12\x15\n\rstagingSystem\x18$ \x01(\t\x12\x19\n\x11stagingSystemTier\x18% \x01(\x05\x12*\n\"versionOrEditionOfTheStagingSystem\x18& \x01(\t\x12.\n&versionOrEditionOfTheStagingSystemTier\x18\' \x01(\x05\x12%\n\x1dspecificTumorStageAtDiagnosis\x18( \x01(\t\x12)\n!specificTumorStageAtDiagnosisTier\x18) \x01(\x05\x12\x1c\n\x14prognosticBiomarkers\x18* \x01(\t\x12 \n\x18prognosticBiomarkersTier\x18+ \x01(\x05\x12\x1f\n\x17\x62iomarkerQuantification\x18, \x01(\t\x12#\n\x1b\x62iomarkerQuantificationTier\x18- \x01(\x05\x12\"\n\x1a\x61\x64\x64itionalMolecularTesting\x18. \x01(\t\x12&\n\x1e\x61\x64\x64itionalMolecularTestingTier\x18/ \x01(\x05\x12\x1a\n\x12\x61\x64\x64itionalTestType\x18\x30 \x01(\t\x12\x1e\n\x16\x61\x64\x64itionalTestTypeTier\x18\x31 \x01(\x05\x12\x16\n\x0elaboratoryName\x18\x32 \x01(\t\x12\x1a\n\x12laboratoryNameTier\x18\x33 \x01(\x05\x12\x19\n\x11laboratoryAddress\x18\x34 \x01(\t\x12\x1d\n\x15laboratoryAddressTier\x18\x35 \x01(\x05\x12\x18\n\x10siteOfMetastases\x18\x36 \x01(\t\x12\x1c\n\x14siteOfMetastasesTier\x18\x37 \x01(\x05\x12\x1c\n\x14stagingSystemVersion\x18\x38 \x01(\t\x12 \n\x18stagingSystemVersionTier\x18\x39 \x01(\x05\x12\x15\n\rspecificStage\x18: \x01(\t\x12\x19\n\x11specificStageTier\x18; \x01(\x05\x12 \n\x18\x63\x61ncerSpecificBiomarkers\x18< \x01(\t\x12$\n\x1c\x63\x61ncerSpecificBiomarkersTier\x18= \x01(\x05\x12\x35\n-additionalMolecularDiagnosticTestingPerformed\x18> \x01(\t\x12\x39\n1additionalMolecularDiagnosticTestingPerformedTier\x18? \x01(\x05\x12\x16\n\x0e\x61\x64\x64itionalTest\x18@ \x01(\t\x12\x1a\n\x12\x61\x64\x64itionalTestTier\x18\x41 \x01(\x05\"\x88\x0c\n\x06Sample\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08sampleId\x18\n \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18\x0c \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18\r \x01(\x05\x12\x16\n\x0elocalBiobankId\x18\x0e \x01(\t\x12\x1a\n\x12localBiobankIdTier\x18\x0f \x01(\x05\x12\x16\n\x0e\x63ollectionDate\x18\x10 \x01(\t\x12\x1a\n\x12\x63ollectionDateTier\x18\x11 \x01(\x05\x12\x1a\n\x12\x63ollectionHospital\x18\x12 \x01(\t\x12\x1e\n\x16\x63ollectionHospitalTier\x18\x13 \x01(\x05\x12\x12\n\nsampleType\x18\x14 \x01(\t\x12\x16\n\x0esampleTypeTier\x18\x15 \x01(\x05\x12\x1a\n\x12tissueDiseaseState\x18\x16 \x01(\t\x12\x1e\n\x16tissueDiseaseStateTier\x18\x17 \x01(\x05\x12)\n!anatomicSiteTheSampleObtainedFrom\x18\x18 \x01(\t\x12-\n%anatomicSiteTheSampleObtainedFromTier\x18\x19 \x01(\x05\x12\x12\n\ncancerType\x18\x1a \x01(\t\x12\x16\n\x0e\x63\x61ncerTypeTier\x18\x1b \x01(\x05\x12\x15\n\rcancerSubtype\x18\x1c \x01(\t\x12\x19\n\x11\x63\x61ncerSubtypeTier\x18\x1d \x01(\x05\x12\x19\n\x11pathologyReportId\x18\x1e \x01(\t\x12\x1d\n\x15pathologyReportIdTier\x18\x1f \x01(\x05\x12\x19\n\x11morphologicalCode\x18  \x01(\t\x12\x1d\n\x15morphologicalCodeTier\x18! \x01(\x05\x12\x17\n\x0ftopologicalCode\x18\" \x01(\t\x12\x1b\n\x13topologicalCodeTier\x18# \x01(\x05\x12\x14\n\x0cshippingDate\x18$ \x01(\t\x12\x18\n\x10shippingDateTier\x18% \x01(\x05\x12\x14\n\x0creceivedDate\x18& \x01(\t\x12\x18\n\x10receivedDateTier\x18\' \x01(\x05\x12\x1f\n\x17qualityControlPerformed\x18( \x01(\t\x12#\n\x1bqualityControlPerformedTier\x18) \x01(\x05\x12\x1d\n\x15\x65stimatedTumorContent\x18* \x01(\t\x12!\n\x19\x65stimatedTumorContentTier\x18+ \x01(\x05\x12\x10\n\x08quantity\x18, \x01(\t\x12\x14\n\x0cquantityTier\x18- \x01(\x05\x12\r\n\x05units\x18. \x01(\t\x12\x11\n\tunitsTier\x18/ \x01(\x05\x12\x19\n\x11\x61ssociatedBiobank\x18\x30 \x01(\t\x12\x1d\n\x15\x61ssociatedBiobankTier\x18\x31 \x01(\x05\x12\x14\n\x0cotherBiobank\x18\x32 \x01(\t\x12\x18\n\x10otherBiobankTier\x18\x33 \x01(\x05\x12\x13\n\x0bsopFollowed\x18\x34 \x01(\t\x12\x17\n\x0fsopFollowedTier\x18\x35 \x01(\x05\x12 \n\x18ifNotExplainAnyDeviation\x18\x36 \x01(\t\x12$\n\x1cifNotExplainAnyDeviationTier\x18\x37 \x01(\x05\x12\x15\n\rrecordingDate\x18\x38 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x39 \x01(\x05\x12\x15\n\rstartInterval\x18: \x01(\t\x12\x19\n\x11startIntervalTier\x18; \x01(\x05\"\x93\x08\n\tTreatment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x1b\n\x13therapeuticModality\x18\x0c \x01(\t\x12\x1f\n\x17therapeuticModalityTier\x18\r \x01(\x05\x12\x19\n\x11treatmentPlanType\x18\x0e \x01(\t\x12\x1d\n\x15treatmentPlanTypeTier\x18\x0f \x01(\x05\x12\x17\n\x0ftreatmentIntent\x18\x10 \x01(\t\x12\x1b\n\x13treatmentIntentTier\x18\x11 \x01(\x05\x12\x11\n\tstartDate\x18\x12 \x01(\t\x12\x15\n\rstartDateTier\x18\x13 \x01(\x05\x12\x10\n\x08stopDate\x18\x14 \x01(\t\x12\x14\n\x0cstopDateTier\x18\x15 \x01(\x05\x12#\n\x1breasonForEndingTheTreatment\x18\x16 \x01(\t\x12\'\n\x1freasonForEndingTheTreatmentTier\x18\x17 \x01(\x05\x12\x1b\n\x13responseToTreatment\x18\x18 \x01(\t\x12\x1f\n\x17responseToTreatmentTier\x18\x19 \x01(\x05\x12\x1c\n\x14responseCriteriaUsed\x18\x1a \x01(\t\x12 \n\x18responseCriteriaUsedTier\x18\x1b \x01(\x05\x12\x37\n/dateOfRecurrenceOrProgressionAfterThisTreatment\x18\x1c \x01(\t\x12;\n3dateOfRecurrenceOrProgressionAfterThisTreatmentTier\x18\x1d \x01(\x05\x12\x32\n*unexpectedOrUnusualToxicityDuringTreatment\x18\x1e \x01(\t\x12\x36\n.unexpectedOrUnusualToxicityDuringTreatmentTier\x18\x1f \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18  \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18! \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\" \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18# \x01(\x05\"\xdd\t\n\x07Outcome\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x16\n\x0ephysicalExamId\x18\n \x01(\t\x12\x1a\n\x12physicalExamIdTier\x18\x0b \x01(\x05\x12\x18\n\x10\x64\x61teOfAssessment\x18\x0c \x01(\t\x12\x1c\n\x14\x64\x61teOfAssessmentTier\x18\r \x01(\x05\x12\x1f\n\x17\x64iseaseResponseOrStatus\x18\x0e \x01(\t\x12#\n\x1b\x64iseaseResponseOrStatusTier\x18\x0f \x01(\x05\x12#\n\x1botherResponseClassification\x18\x10 \x01(\t\x12\'\n\x1fotherResponseClassificationTier\x18\x11 \x01(\x05\x12(\n minimalResidualDiseaseAssessment\x18\x12 \x01(\t\x12,\n$minimalResidualDiseaseAssessmentTier\x18\x13 \x01(\x05\x12\"\n\x1amethodOfResponseEvaluation\x18\x14 \x01(\t\x12&\n\x1emethodOfResponseEvaluationTier\x18\x15 \x01(\x05\x12\x1c\n\x14responseCriteriaUsed\x18\x16 \x01(\t\x12 \n\x18responseCriteriaUsedTier\x18\x17 \x01(\x05\x12\x14\n\x0csummaryStage\x18\x18 \x01(\t\x12\x18\n\x10summaryStageTier\x18\x19 \x01(\x05\x12)\n!sitesOfAnyProgressionOrRecurrence\x18\x1a \x01(\t\x12-\n%sitesOfAnyProgressionOrRecurrenceTier\x18\x1b \x01(\x05\x12\x13\n\x0bvitalStatus\x18\x1c \x01(\t\x12\x17\n\x0fvitalStatusTier\x18\x1d \x01(\x05\x12\x0e\n\x06height\x18\x1e \x01(\t\x12\x12\n\nheightTier\x18\x1f \x01(\x05\x12\x0e\n\x06weight\x18  \x01(\t\x12\x12\n\nweightTier\x18! \x01(\x05\x12\x13\n\x0bheightUnits\x18\" \x01(\t\x12\x17\n\x0fheightUnitsTier\x18# \x01(\x05\x12\x13\n\x0bweightUnits\x18$ \x01(\t\x12\x17\n\x0fweightUnitsTier\x18% \x01(\x05\x12\x19\n\x11performanceStatus\x18& \x01(\t\x12\x1d\n\x15performanceStatusTier\x18\' \x01(\x05\x12\x1f\n\x17overallSurvivalInMonths\x18( \x01(\t\x12#\n\x1boverallSurvivalInMonthsTier\x18) \x01(\x05\x12#\n\x1b\x64iseaseFreeSurvivalInMonths\x18* \x01(\t\x12\'\n\x1f\x64iseaseFreeSurvivalInMonthsTier\x18+ \x01(\x05\"\xce\x04\n\x0c\x43omplication\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x0c\n\x04\x64\x61te\x18\n \x01(\t\x12\x10\n\x08\x64\x61teTier\x18\x0b \x01(\x05\x12*\n\"lateComplicationOfTherapyDeveloped\x18\x0c \x01(\t\x12.\n&lateComplicationOfTherapyDevelopedTier\x18\r \x01(\x05\x12\x1a\n\x12lateToxicityDetail\x18\x0e \x01(\t\x12\x1e\n\x16lateToxicityDetailTier\x18\x0f \x01(\x05\x12\x32\n*suspectedTreatmentInducedNeoplasmDeveloped\x18\x10 \x01(\t\x12\x36\n.suspectedTreatmentInducedNeoplasmDevelopedTier\x18\x11 \x01(\x05\x12\'\n\x1ftreatmentInducedNeoplasmDetails\x18\x12 \x01(\t\x12+\n#treatmentInducedNeoplasmDetailsTier\x18\x13 \x01(\x05\"\xf9\x13\n\x0bTumourboard\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12!\n\x19\x64\x61teOfMolecularTumorBoard\x18\n \x01(\t\x12%\n\x1d\x64\x61teOfMolecularTumorBoardTier\x18\x0b \x01(\x05\x12\x1c\n\x14typeOfSampleAnalyzed\x18\x0c \x01(\t\x12 \n\x18typeOfSampleAnalyzedTier\x18\r \x01(\x05\x12\"\n\x1atypeOfTumourSampleAnalyzed\x18\x0e \x01(\t\x12&\n\x1etypeOfTumourSampleAnalyzedTier\x18\x0f \x01(\x05\x12\x19\n\x11\x61nalysesDiscussed\x18\x10 \x01(\t\x12\x1d\n\x15\x61nalysesDiscussedTier\x18\x11 \x01(\x05\x12\x19\n\x11somaticSampleType\x18\x12 \x01(\t\x12\x1d\n\x15somaticSampleTypeTier\x18\x13 \x01(\x05\x12\"\n\x1anormalExpressionComparator\x18\x14 \x01(\t\x12&\n\x1enormalExpressionComparatorTier\x18\x15 \x01(\x05\x12#\n\x1b\x64iseaseExpressionComparator\x18\x16 \x01(\t\x12\'\n\x1f\x64iseaseExpressionComparatorTier\x18\x17 \x01(\x05\x12M\nEhasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer\x18\x18 \x01(\t\x12Q\nIhasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancerTier\x18\x19 \x01(\x05\x12\x1d\n\x15\x61\x63tionableTargetFound\x18\x1a \x01(\t\x12!\n\x19\x61\x63tionableTargetFoundTier\x18\x1b \x01(\x05\x12)\n!molecularTumorBoardRecommendation\x18\x1c \x01(\t\x12-\n%molecularTumorBoardRecommendationTier\x18\x1d \x01(\x05\x12\x1b\n\x13germlineDnaSampleId\x18\x1e \x01(\t\x12\x1f\n\x17germlineDnaSampleIdTier\x18\x1f \x01(\x05\x12\x18\n\x10tumorDnaSampleId\x18  \x01(\t\x12\x1c\n\x14tumorDnaSampleIdTier\x18! \x01(\x05\x12\x18\n\x10tumorRnaSampleId\x18\" \x01(\t\x12\x1c\n\x14tumorRnaSampleIdTier\x18# \x01(\x05\x12\x1c\n\x14germlineSnvDiscussed\x18$ \x01(\t\x12 \n\x18germlineSnvDiscussedTier\x18% \x01(\x05\x12\x1b\n\x13somaticSnvDiscussed\x18& \x01(\t\x12\x1f\n\x17somaticSnvDiscussedTier\x18\' \x01(\x05\x12\x15\n\rcnvsDiscussed\x18( \x01(\t\x12\x19\n\x11\x63nvsDiscussedTier\x18) \x01(\x05\x12\"\n\x1astructuralVariantDiscussed\x18* \x01(\t\x12&\n\x1estructuralVariantDiscussedTier\x18+ \x01(\x05\x12 \n\x18\x63lassificationOfVariants\x18, \x01(\t\x12$\n\x1c\x63lassificationOfVariantsTier\x18- \x01(\x05\x12\"\n\x1a\x63linicalValidationProgress\x18. \x01(\t\x12&\n\x1e\x63linicalValidationProgressTier\x18/ \x01(\x05\x12\x18\n\x10typeOfValidation\x18\x30 \x01(\t\x12\x1c\n\x14typeOfValidationTier\x18\x31 \x01(\x05\x12\x18\n\x10\x61gentOrDrugClass\x18\x32 \x01(\t\x12\x1c\n\x14\x61gentOrDrugClassTier\x18\x33 \x01(\x05\x12\x34\n,levelOfEvidenceForExpressionTargetAgentMatch\x18\x34 \x01(\t\x12\x38\n0levelOfEvidenceForExpressionTargetAgentMatchTier\x18\x35 \x01(\x05\x12\x34\n,didTreatmentPlanChangeBasedOnProfilingResult\x18\x36 \x01(\t\x12\x38\n0didTreatmentPlanChangeBasedOnProfilingResultTier\x18\x37 \x01(\x05\x12.\n&howTreatmentHasAlteredBasedOnProfiling\x18\x38 \x01(\t\x12\x32\n*howTreatmentHasAlteredBasedOnProfilingTier\x18\x39 \x01(\x05\x12\x37\n/reasonTreatmentPlanDidNotChangeBasedOnProfiling\x18: \x01(\t\x12;\n3reasonTreatmentPlanDidNotChangeBasedOnProfilingTier\x18; \x01(\x05\x12$\n\x1c\x64\x65tailsOfTreatmentPlanImpact\x18< \x01(\t\x12(\n detailsOfTreatmentPlanImpactTier\x18= \x01(\x05\x12\x30\n(patientOrFamilyInformedOfGermlineVariant\x18> \x01(\t\x12\x34\n,patientOrFamilyInformedOfGermlineVariantTier\x18? \x01(\x05\x12U\nMpatientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling\x18@ \x01(\t\x12Y\nQpatientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfilingTier\x18\x41 \x01(\x05\x12\x15\n\rsummaryReport\x18\x42 \x01(\t\x12\x19\n\x11summaryReportTier\x18\x43 \x01(\x05\"\xca\x07\n\x0c\x43hemotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x11\n\tstartDate\x18\x0c \x01(\t\x12\x15\n\rstartDateTier\x18\r \x01(\x05\x12\x10\n\x08stopDate\x18\x0e \x01(\t\x12\x14\n\x0cstopDateTier\x18\x0f \x01(\x05\x12\"\n\x1asystematicTherapyAgentName\x18\x10 \x01(\t\x12&\n\x1esystematicTherapyAgentNameTier\x18\x11 \x01(\x05\x12\r\n\x05route\x18\x12 \x01(\t\x12\x11\n\trouteTier\x18\x13 \x01(\x05\x12\x0c\n\x04\x64ose\x18\x14 \x01(\t\x12\x10\n\x08\x64oseTier\x18\x15 \x01(\x05\x12\x15\n\rdoseFrequency\x18\x16 \x01(\t\x12\x19\n\x11\x64oseFrequencyTier\x18\x17 \x01(\x05\x12\x10\n\x08\x64oseUnit\x18\x18 \x01(\t\x12\x14\n\x0c\x64oseUnitTier\x18\x19 \x01(\x05\x12\x14\n\x0c\x64\x61ysPerCycle\x18\x1a \x01(\t\x12\x18\n\x10\x64\x61ysPerCycleTier\x18\x1b \x01(\x05\x12\x15\n\rnumberOfCycle\x18\x1c \x01(\t\x12\x19\n\x11numberOfCycleTier\x18\x1d \x01(\x05\x12\x17\n\x0ftreatmentIntent\x18\x1e \x01(\t\x12\x1b\n\x13treatmentIntentTier\x18\x1f \x01(\x05\x12\x1a\n\x12treatingCentreName\x18  \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18! \x01(\x05\x12\x0c\n\x04type\x18\" \x01(\t\x12\x10\n\x08typeTier\x18# \x01(\x05\x12\x14\n\x0cprotocolCode\x18$ \x01(\t\x12\x18\n\x10protocolCodeTier\x18% \x01(\x05\x12\x15\n\rrecordingDate\x18& \x01(\t\x12\x19\n\x11recordingDateTier\x18\' \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18( \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18) \x01(\x05\"\xa6\x0b\n\x0cRadiotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x11\n\tstartDate\x18\x0c \x01(\t\x12\x15\n\rstartDateTier\x18\r \x01(\x05\x12\x10\n\x08stopDate\x18\x0e \x01(\t\x12\x14\n\x0cstopDateTier\x18\x0f \x01(\x05\x12\x1b\n\x13therapeuticModality\x18\x10 \x01(\t\x12\x1f\n\x17therapeuticModalityTier\x18\x11 \x01(\x05\x12\x10\n\x08\x62\x61seline\x18\x12 \x01(\t\x12\x14\n\x0c\x62\x61selineTier\x18\x13 \x01(\x05\x12\x12\n\ntestResult\x18\x14 \x01(\t\x12\x16\n\x0etestResultTier\x18\x15 \x01(\x05\x12\x15\n\rtestResultStd\x18\x16 \x01(\t\x12\x19\n\x11testResultStdTier\x18\x17 \x01(\x05\x12\x1a\n\x12treatingCentreName\x18\x18 \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18\x19 \x01(\x05\x12\x18\n\x10startIntervalRad\x18\x1a \x01(\t\x12\x1c\n\x14startIntervalRadTier\x18\x1b \x01(\x05\x12\x1b\n\x13startIntervalRadRaw\x18\x1c \x01(\t\x12\x1f\n\x17startIntervalRadRawTier\x18\x1d \x01(\x05\x12\x15\n\rrecordingDate\x18\x1e \x01(\t\x12\x19\n\x11recordingDateTier\x18\x1f \x01(\x05\x12\x16\n\x0e\x61\x64jacentFields\x18  \x01(\t\x12\x1a\n\x12\x61\x64jacentFieldsTier\x18! \x01(\x05\x12\x19\n\x11\x61\x64jacentFractions\x18\" \x01(\t\x12\x1d\n\x15\x61\x64jacentFractionsTier\x18# \x01(\x05\x12\x10\n\x08\x63omplete\x18$ \x01(\t\x12\x14\n\x0c\x63ompleteTier\x18% \x01(\x05\x12\x19\n\x11\x62rachytherapyDose\x18& \x01(\t\x12\x1d\n\x15\x62rachytherapyDoseTier\x18\' \x01(\x05\x12\x18\n\x10radiotherapyDose\x18( \x01(\t\x12\x1c\n\x14radiotherapyDoseTier\x18) \x01(\x05\x12\x12\n\nsiteNumber\x18* \x01(\t\x12\x16\n\x0esiteNumberTier\x18+ \x01(\x05\x12\x11\n\ttechnique\x18, \x01(\t\x12\x15\n\rtechniqueTier\x18- \x01(\x05\x12\x15\n\rtreatedRegion\x18. \x01(\t\x12\x19\n\x11treatedRegionTier\x18/ \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x30 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x31 \x01(\x05\x12\x15\n\rradiationType\x18\x32 \x01(\t\x12\x19\n\x11radiationTypeTier\x18\x33 \x01(\x05\x12\x15\n\rradiationSite\x18\x34 \x01(\t\x12\x19\n\x11radiationSiteTier\x18\x35 \x01(\x05\x12\x11\n\ttotalDose\x18\x36 \x01(\t\x12\x15\n\rtotalDoseTier\x18\x37 \x01(\x05\x12\x11\n\tboostSite\x18\x38 \x01(\t\x12\x15\n\rboostSiteTier\x18\x39 \x01(\x05\x12\x11\n\tboostDose\x18: \x01(\t\x12\x15\n\rboostDoseTier\x18; \x01(\x05\"\x9b\x04\n\rImmunotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x19\n\x11immunotherapyType\x18\x0c \x01(\t\x12\x1d\n\x15immunotherapyTypeTier\x18\r \x01(\x05\x12\x1b\n\x13immunotherapyTarget\x18\x0e \x01(\t\x12\x1f\n\x17immunotherapyTargetTier\x18\x0f \x01(\x05\x12\x1b\n\x13immunotherapyDetail\x18\x10 \x01(\t\x12\x1f\n\x17immunotherapyDetailTier\x18\x11 \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x12 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x13 \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x14 \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x15 \x01(\x05\"\x91\x05\n\x07Surgery\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x10\n\x08stopDate\x18\x0c \x01(\t\x12\x14\n\x0cstopDateTier\x18\r \x01(\x05\x12\x10\n\x08sampleId\x18\x0e \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0f \x01(\x05\x12\x1b\n\x13\x63ollectionTimePoint\x18\x10 \x01(\t\x12\x1f\n\x17\x63ollectionTimePointTier\x18\x11 \x01(\x05\x12\x15\n\rdiagnosisDate\x18\x12 \x01(\t\x12\x19\n\x11\x64iagnosisDateTier\x18\x13 \x01(\x05\x12\x0c\n\x04site\x18\x14 \x01(\t\x12\x10\n\x08siteTier\x18\x15 \x01(\x05\x12\x0c\n\x04type\x18\x16 \x01(\t\x12\x10\n\x08typeTier\x18\x17 \x01(\x05\x12\x15\n\rrecordingDate\x18\x18 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x19 \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x1a \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x1b \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x1c \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x1d \x01(\x05\"\xbc\x03\n\x0e\x43\x65lltransplant\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x12\n\ncellSource\x18\x0c \x01(\t\x12\x16\n\x0e\x63\x65llSourceTier\x18\r \x01(\x05\x12\x11\n\tdonorType\x18\x0e \x01(\t\x12\x15\n\rdonorTypeTier\x18\x0f \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x10 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x11 \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x12 \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x13 \x01(\x05\"\xdd\t\n\x05Slide\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08sampleId\x18\n \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0b \x01(\x05\x12\x0f\n\x07slideId\x18\x0c \x01(\t\x12\x13\n\x0bslideIdTier\x18\r \x01(\x05\x12\x14\n\x0cslideOtherId\x18\x0e \x01(\t\x12\x18\n\x10slideOtherIdTier\x18\x0f \x01(\x05\x12%\n\x1dlymphocyteInfiltrationPercent\x18\x10 \x01(\t\x12)\n!lymphocyteInfiltrationPercentTier\x18\x11 \x01(\x05\x12\x1a\n\x12tumorNucleiPercent\x18\x12 \x01(\t\x12\x1e\n\x16tumorNucleiPercentTier\x18\x13 \x01(\x05\x12#\n\x1bmonocyteInfiltrationPercent\x18\x14 \x01(\t\x12\'\n\x1fmonocyteInfiltrationPercentTier\x18\x15 \x01(\x05\x12\x1a\n\x12normalCellsPercent\x18\x16 \x01(\t\x12\x1e\n\x16normalCellsPercentTier\x18\x17 \x01(\x05\x12\x19\n\x11tumorCellsPercent\x18\x18 \x01(\t\x12\x1d\n\x15tumorCellsPercentTier\x18\x19 \x01(\x05\x12\x1b\n\x13stromalCellsPercent\x18\x1a \x01(\t\x12\x1f\n\x17stromalCellsPercentTier\x18\x1b \x01(\x05\x12%\n\x1d\x65osinophilInfiltrationPercent\x18\x1c \x01(\t\x12)\n!eosinophilInfiltrationPercentTier\x18\x1d \x01(\x05\x12%\n\x1dneutrophilInfiltrationPercent\x18\x1e \x01(\t\x12)\n!neutrophilInfiltrationPercentTier\x18\x1f \x01(\x05\x12&\n\x1egranulocyteInfiltrationPercent\x18  \x01(\t\x12*\n\"granulocyteInfiltrationPercentTier\x18! \x01(\x05\x12\x17\n\x0fnecrosisPercent\x18\" \x01(\t\x12\x1b\n\x13necrosisPercentTier\x18# \x01(\x05\x12\'\n\x1finflammatoryInfiltrationPercent\x18$ \x01(\t\x12+\n#inflammatoryInfiltrationPercentTier\x18% \x01(\x05\x12 \n\x18proliferatingCellsNumber\x18& \x01(\t\x12$\n\x1cproliferatingCellsNumberTier\x18\' \x01(\x05\x12\x17\n\x0fsectionLocation\x18( \x01(\t\x12\x1b\n\x13sectionLocationTier\x18) \x01(\x05\"\xf3\x02\n\x05Study\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x0f\n\x07\x65ndDate\x18\x0c \x01(\t\x12\x13\n\x0b\x65ndDateTier\x18\r \x01(\x05\x12\x0e\n\x06status\x18\x0e \x01(\t\x12\x12\n\nstatusTier\x18\x0f \x01(\x05\x12\x15\n\rrecordingDate\x18\x10 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x11 \x01(\x05\"\x87\x04\n\x07Labtest\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x63ollectionDate\x18\x0c \x01(\t\x12\x1a\n\x12\x63ollectionDateTier\x18\r \x01(\x05\x12\x0f\n\x07\x65ndDate\x18\x0e \x01(\t\x12\x13\n\x0b\x65ndDateTier\x18\x0f \x01(\x05\x12\x11\n\teventType\x18\x10 \x01(\t\x12\x15\n\reventTypeTier\x18\x11 \x01(\x05\x12\x13\n\x0btestResults\x18\x12 \x01(\t\x12\x17\n\x0ftestResultsTier\x18\x13 \x01(\x05\x12\x11\n\ttimePoint\x18\x14 \x01(\t\x12\x15\n\rtimePointTier\x18\x15 \x01(\x05\x12\x15\n\rrecordingDate\x18\x16 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x17 \x01(\x05\x62\x06proto3')
+  serialized_pb=_b('\n-candig/schemas/candig/clinical_metadata.proto\x12\x15\x63\x61ndig.schemas.candig\x1a\x1cgoogle/protobuf/struct.proto\x1a\"candig/schemas/candig/common.proto\"\x87\n\n\x07Patient\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08otherIds\x18\n \x01(\t\x12\x14\n\x0cotherIdsTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x64\x61teOfBirth\x18\x0c \x01(\t\x12\x17\n\x0f\x64\x61teOfBirthTier\x18\r \x01(\x05\x12\x0e\n\x06gender\x18\x0e \x01(\t\x12\x12\n\ngenderTier\x18\x0f \x01(\x05\x12\x11\n\tethnicity\x18\x10 \x01(\t\x12\x15\n\rethnicityTier\x18\x11 \x01(\x05\x12\x0c\n\x04race\x18\x12 \x01(\t\x12\x10\n\x08raceTier\x18\x13 \x01(\x05\x12\x1b\n\x13provinceOfResidence\x18\x14 \x01(\t\x12\x1f\n\x17provinceOfResidenceTier\x18\x15 \x01(\x05\x12\x13\n\x0b\x64\x61teOfDeath\x18\x16 \x01(\t\x12\x17\n\x0f\x64\x61teOfDeathTier\x18\x17 \x01(\x05\x12\x14\n\x0c\x63\x61useOfDeath\x18\x18 \x01(\t\x12\x18\n\x10\x63\x61useOfDeathTier\x18\x19 \x01(\x05\x12 \n\x18\x61utopsyTissueForResearch\x18\x1a \x01(\t\x12$\n\x1c\x61utopsyTissueForResearchTier\x18\x1b \x01(\x05\x12\x17\n\x0fpriorMalignancy\x18\x1c \x01(\t\x12\x1b\n\x13priorMalignancyTier\x18\x1d \x01(\x05\x12\x1d\n\x15\x64\x61teOfPriorMalignancy\x18\x1e \x01(\t\x12!\n\x19\x64\x61teOfPriorMalignancyTier\x18\x1f \x01(\x05\x12#\n\x1b\x66\x61milyHistoryAndRiskFactors\x18  \x01(\t\x12\'\n\x1f\x66\x61milyHistoryAndRiskFactorsTier\x18! \x01(\x05\x12-\n%familyHistoryOfPredispositionSyndrome\x18\" \x01(\t\x12\x31\n)familyHistoryOfPredispositionSyndromeTier\x18# \x01(\x05\x12\'\n\x1f\x64\x65tailsOfPredispositionSyndrome\x18$ \x01(\t\x12+\n#detailsOfPredispositionSyndromeTier\x18% \x01(\x05\x12\x1d\n\x15geneticCancerSyndrome\x18& \x01(\t\x12!\n\x19geneticCancerSyndromeTier\x18\' \x01(\x05\x12\x35\n-otherGeneticConditionOrSignificantComorbidity\x18( \x01(\t\x12\x39\n1otherGeneticConditionOrSignificantComorbidityTier\x18) \x01(\x05\x12+\n#occupationalOrEnvironmentalExposure\x18* \x01(\t\x12/\n\'occupationalOrEnvironmentalExposureTier\x18+ \x01(\x05\"\xc6\t\n\nEnrollment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x1d\n\x15\x65nrollmentInstitution\x18\n \x01(\t\x12!\n\x19\x65nrollmentInstitutionTier\x18\x0b \x01(\x05\x12\x1e\n\x16\x65nrollmentApprovalDate\x18\x0c \x01(\t\x12\"\n\x1a\x65nrollmentApprovalDateTier\x18\r \x01(\x05\x12\x17\n\x0f\x63rossEnrollment\x18\x0e \x01(\t\x12\x1b\n\x13\x63rossEnrollmentTier\x18\x0f \x01(\x05\x12*\n\"otherPersonalizedMedicineStudyName\x18\x10 \x01(\t\x12.\n&otherPersonalizedMedicineStudyNameTier\x18\x11 \x01(\x05\x12(\n otherPersonalizedMedicineStudyId\x18\x12 \x01(\t\x12,\n$otherPersonalizedMedicineStudyIdTier\x18\x13 \x01(\x05\x12\x17\n\x0f\x61geAtEnrollment\x18\x14 \x01(\t\x12\x1b\n\x13\x61geAtEnrollmentTier\x18\x15 \x01(\x05\x12\x1b\n\x13\x65ligibilityCategory\x18\x16 \x01(\t\x12\x1f\n\x17\x65ligibilityCategoryTier\x18\x17 \x01(\x05\x12\x1a\n\x12statusAtEnrollment\x18\x18 \x01(\t\x12\x1e\n\x16statusAtEnrollmentTier\x18\x19 \x01(\x05\x12\x1d\n\x15primaryOncologistName\x18\x1a \x01(\t\x12!\n\x19primaryOncologistNameTier\x18\x1b \x01(\x05\x12 \n\x18primaryOncologistContact\x18\x1c \x01(\t\x12$\n\x1cprimaryOncologistContactTier\x18\x1d \x01(\x05\x12\x1e\n\x16referringPhysicianName\x18\x1e \x01(\t\x12\"\n\x1areferringPhysicianNameTier\x18\x1f \x01(\x05\x12!\n\x19referringPhysicianContact\x18  \x01(\t\x12%\n\x1dreferringPhysicianContactTier\x18! \x01(\x05\x12\x1a\n\x12summaryOfIdRequest\x18\" \x01(\t\x12\x1e\n\x16summaryOfIdRequestTier\x18# \x01(\x05\x12\x1a\n\x12treatingCentreName\x18$ \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18% \x01(\x05\x12\x1e\n\x16treatingCentreProvince\x18& \x01(\t\x12\"\n\x1atreatingCentreProvinceTier\x18\' \x01(\x05\"\xcb\n\n\x07\x43onsent\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tconsentId\x18\n \x01(\t\x12\x15\n\rconsentIdTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x63onsentDate\x18\x0c \x01(\t\x12\x17\n\x0f\x63onsentDateTier\x18\r \x01(\x05\x12\x16\n\x0e\x63onsentVersion\x18\x0e \x01(\t\x12\x1a\n\x12\x63onsentVersionTier\x18\x0f \x01(\x05\x12\x1a\n\x12patientConsentedTo\x18\x10 \x01(\t\x12\x1e\n\x16patientConsentedToTier\x18\x11 \x01(\x05\x12\x1a\n\x12reasonForRejection\x18\x12 \x01(\t\x12\x1e\n\x16reasonForRejectionTier\x18\x13 \x01(\x05\x12\x19\n\x11wasAssentObtained\x18\x14 \x01(\t\x12\x1d\n\x15wasAssentObtainedTier\x18\x15 \x01(\x05\x12\x14\n\x0c\x64\x61teOfAssent\x18\x16 \x01(\t\x12\x18\n\x10\x64\x61teOfAssentTier\x18\x17 \x01(\x05\x12\x19\n\x11\x61ssentFormVersion\x18\x18 \x01(\t\x12\x1d\n\x15\x61ssentFormVersionTier\x18\x19 \x01(\x05\x12!\n\x19ifAssentNotObtainedWhyNot\x18\x1a \x01(\t\x12%\n\x1difAssentNotObtainedWhyNotTier\x18\x1b \x01(\x05\x12\x15\n\rreconsentDate\x18\x1c \x01(\t\x12\x19\n\x11reconsentDateTier\x18\x1d \x01(\x05\x12\x18\n\x10reconsentVersion\x18\x1e \x01(\t\x12\x1c\n\x14reconsentVersionTier\x18\x1f \x01(\x05\x12!\n\x19\x63onsentingCoordinatorName\x18  \x01(\t\x12%\n\x1d\x63onsentingCoordinatorNameTier\x18! \x01(\x05\x12\x1b\n\x13previouslyConsented\x18\" \x01(\t\x12\x1f\n\x17previouslyConsentedTier\x18# \x01(\x05\x12\x1a\n\x12nameOfOtherBiobank\x18$ \x01(\t\x12\x1e\n\x16nameOfOtherBiobankTier\x18% \x01(\x05\x12\x1f\n\x17hasConsentBeenWithdrawn\x18& \x01(\t\x12#\n\x1bhasConsentBeenWithdrawnTier\x18\' \x01(\x05\x12\x1f\n\x17\x64\x61teOfConsentWithdrawal\x18( \x01(\t\x12#\n\x1b\x64\x61teOfConsentWithdrawalTier\x18) \x01(\x05\x12\x1f\n\x17typeOfConsentWithdrawal\x18* \x01(\t\x12#\n\x1btypeOfConsentWithdrawalTier\x18+ \x01(\x05\x12\"\n\x1areasonForConsentWithdrawal\x18, \x01(\t\x12&\n\x1ereasonForConsentWithdrawalTier\x18- \x01(\x05\x12\x1b\n\x13\x63onsentFormComplete\x18. \x01(\t\x12\x1f\n\x17\x63onsentFormCompleteTier\x18/ \x01(\x05\"\xd5\x0e\n\tDiagnosis\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18\n \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18\x0b \x01(\x05\x12\x15\n\rdiagnosisDate\x18\x0c \x01(\t\x12\x19\n\x11\x64iagnosisDateTier\x18\r \x01(\x05\x12\x16\n\x0e\x61geAtDiagnosis\x18\x0e \x01(\t\x12\x1a\n\x12\x61geAtDiagnosisTier\x18\x0f \x01(\x05\x12\x12\n\ncancerType\x18\x10 \x01(\t\x12\x16\n\x0e\x63\x61ncerTypeTier\x18\x11 \x01(\x05\x12\x16\n\x0e\x63lassification\x18\x12 \x01(\t\x12\x1a\n\x12\x63lassificationTier\x18\x13 \x01(\x05\x12\x12\n\ncancerSite\x18\x14 \x01(\t\x12\x16\n\x0e\x63\x61ncerSiteTier\x18\x15 \x01(\x05\x12\x11\n\thistology\x18\x16 \x01(\t\x12\x15\n\rhistologyTier\x18\x17 \x01(\x05\x12#\n\x1bmethodOfDefinitiveDiagnosis\x18\x18 \x01(\t\x12\'\n\x1fmethodOfDefinitiveDiagnosisTier\x18\x19 \x01(\x05\x12\x12\n\nsampleType\x18\x1a \x01(\t\x12\x16\n\x0esampleTypeTier\x18\x1b \x01(\x05\x12\x12\n\nsampleSite\x18\x1c \x01(\t\x12\x16\n\x0esampleSiteTier\x18\x1d \x01(\x05\x12\x12\n\ntumorGrade\x18\x1e \x01(\t\x12\x16\n\x0etumorGradeTier\x18\x1f \x01(\x05\x12\x19\n\x11gradingSystemUsed\x18  \x01(\t\x12\x1d\n\x15gradingSystemUsedTier\x18! \x01(\x05\x12\x19\n\x11sitesOfMetastases\x18\" \x01(\t\x12\x1d\n\x15sitesOfMetastasesTier\x18# \x01(\x05\x12\x15\n\rstagingSystem\x18$ \x01(\t\x12\x19\n\x11stagingSystemTier\x18% \x01(\x05\x12*\n\"versionOrEditionOfTheStagingSystem\x18& \x01(\t\x12.\n&versionOrEditionOfTheStagingSystemTier\x18\' \x01(\x05\x12%\n\x1dspecificTumorStageAtDiagnosis\x18( \x01(\t\x12)\n!specificTumorStageAtDiagnosisTier\x18) \x01(\x05\x12\x1c\n\x14prognosticBiomarkers\x18* \x01(\t\x12 \n\x18prognosticBiomarkersTier\x18+ \x01(\x05\x12\x1f\n\x17\x62iomarkerQuantification\x18, \x01(\t\x12#\n\x1b\x62iomarkerQuantificationTier\x18- \x01(\x05\x12\"\n\x1a\x61\x64\x64itionalMolecularTesting\x18. \x01(\t\x12&\n\x1e\x61\x64\x64itionalMolecularTestingTier\x18/ \x01(\x05\x12\x1a\n\x12\x61\x64\x64itionalTestType\x18\x30 \x01(\t\x12\x1e\n\x16\x61\x64\x64itionalTestTypeTier\x18\x31 \x01(\x05\x12\x16\n\x0elaboratoryName\x18\x32 \x01(\t\x12\x1a\n\x12laboratoryNameTier\x18\x33 \x01(\x05\x12\x19\n\x11laboratoryAddress\x18\x34 \x01(\t\x12\x1d\n\x15laboratoryAddressTier\x18\x35 \x01(\x05\x12\x18\n\x10siteOfMetastases\x18\x36 \x01(\t\x12\x1c\n\x14siteOfMetastasesTier\x18\x37 \x01(\x05\x12\x1c\n\x14stagingSystemVersion\x18\x38 \x01(\t\x12 \n\x18stagingSystemVersionTier\x18\x39 \x01(\x05\x12\x15\n\rspecificStage\x18: \x01(\t\x12\x19\n\x11specificStageTier\x18; \x01(\x05\x12 \n\x18\x63\x61ncerSpecificBiomarkers\x18< \x01(\t\x12$\n\x1c\x63\x61ncerSpecificBiomarkersTier\x18= \x01(\x05\x12\x35\n-additionalMolecularDiagnosticTestingPerformed\x18> \x01(\t\x12\x39\n1additionalMolecularDiagnosticTestingPerformedTier\x18? \x01(\x05\x12\x16\n\x0e\x61\x64\x64itionalTest\x18@ \x01(\t\x12\x1a\n\x12\x61\x64\x64itionalTestTier\x18\x41 \x01(\x05\"\x88\x0c\n\x06Sample\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08sampleId\x18\n \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0b \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18\x0c \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18\r \x01(\x05\x12\x16\n\x0elocalBiobankId\x18\x0e \x01(\t\x12\x1a\n\x12localBiobankIdTier\x18\x0f \x01(\x05\x12\x16\n\x0e\x63ollectionDate\x18\x10 \x01(\t\x12\x1a\n\x12\x63ollectionDateTier\x18\x11 \x01(\x05\x12\x1a\n\x12\x63ollectionHospital\x18\x12 \x01(\t\x12\x1e\n\x16\x63ollectionHospitalTier\x18\x13 \x01(\x05\x12\x12\n\nsampleType\x18\x14 \x01(\t\x12\x16\n\x0esampleTypeTier\x18\x15 \x01(\x05\x12\x1a\n\x12tissueDiseaseState\x18\x16 \x01(\t\x12\x1e\n\x16tissueDiseaseStateTier\x18\x17 \x01(\x05\x12)\n!anatomicSiteTheSampleObtainedFrom\x18\x18 \x01(\t\x12-\n%anatomicSiteTheSampleObtainedFromTier\x18\x19 \x01(\x05\x12\x12\n\ncancerType\x18\x1a \x01(\t\x12\x16\n\x0e\x63\x61ncerTypeTier\x18\x1b \x01(\x05\x12\x15\n\rcancerSubtype\x18\x1c \x01(\t\x12\x19\n\x11\x63\x61ncerSubtypeTier\x18\x1d \x01(\x05\x12\x19\n\x11pathologyReportId\x18\x1e \x01(\t\x12\x1d\n\x15pathologyReportIdTier\x18\x1f \x01(\x05\x12\x19\n\x11morphologicalCode\x18  \x01(\t\x12\x1d\n\x15morphologicalCodeTier\x18! \x01(\x05\x12\x17\n\x0ftopologicalCode\x18\" \x01(\t\x12\x1b\n\x13topologicalCodeTier\x18# \x01(\x05\x12\x14\n\x0cshippingDate\x18$ \x01(\t\x12\x18\n\x10shippingDateTier\x18% \x01(\x05\x12\x14\n\x0creceivedDate\x18& \x01(\t\x12\x18\n\x10receivedDateTier\x18\' \x01(\x05\x12\x1f\n\x17qualityControlPerformed\x18( \x01(\t\x12#\n\x1bqualityControlPerformedTier\x18) \x01(\x05\x12\x1d\n\x15\x65stimatedTumorContent\x18* \x01(\t\x12!\n\x19\x65stimatedTumorContentTier\x18+ \x01(\x05\x12\x10\n\x08quantity\x18, \x01(\t\x12\x14\n\x0cquantityTier\x18- \x01(\x05\x12\r\n\x05units\x18. \x01(\t\x12\x11\n\tunitsTier\x18/ \x01(\x05\x12\x19\n\x11\x61ssociatedBiobank\x18\x30 \x01(\t\x12\x1d\n\x15\x61ssociatedBiobankTier\x18\x31 \x01(\x05\x12\x14\n\x0cotherBiobank\x18\x32 \x01(\t\x12\x18\n\x10otherBiobankTier\x18\x33 \x01(\x05\x12\x13\n\x0bsopFollowed\x18\x34 \x01(\t\x12\x17\n\x0fsopFollowedTier\x18\x35 \x01(\x05\x12 \n\x18ifNotExplainAnyDeviation\x18\x36 \x01(\t\x12$\n\x1cifNotExplainAnyDeviationTier\x18\x37 \x01(\x05\x12\x15\n\rrecordingDate\x18\x38 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x39 \x01(\x05\x12\x15\n\rstartInterval\x18: \x01(\t\x12\x19\n\x11startIntervalTier\x18; \x01(\x05\"\x93\x08\n\tTreatment\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x1b\n\x13therapeuticModality\x18\x0c \x01(\t\x12\x1f\n\x17therapeuticModalityTier\x18\r \x01(\x05\x12\x19\n\x11treatmentPlanType\x18\x0e \x01(\t\x12\x1d\n\x15treatmentPlanTypeTier\x18\x0f \x01(\x05\x12\x17\n\x0ftreatmentIntent\x18\x10 \x01(\t\x12\x1b\n\x13treatmentIntentTier\x18\x11 \x01(\x05\x12\x11\n\tstartDate\x18\x12 \x01(\t\x12\x15\n\rstartDateTier\x18\x13 \x01(\x05\x12\x10\n\x08stopDate\x18\x14 \x01(\t\x12\x14\n\x0cstopDateTier\x18\x15 \x01(\x05\x12#\n\x1breasonForEndingTheTreatment\x18\x16 \x01(\t\x12\'\n\x1freasonForEndingTheTreatmentTier\x18\x17 \x01(\x05\x12\x1b\n\x13responseToTreatment\x18\x18 \x01(\t\x12\x1f\n\x17responseToTreatmentTier\x18\x19 \x01(\x05\x12\x1c\n\x14responseCriteriaUsed\x18\x1a \x01(\t\x12 \n\x18responseCriteriaUsedTier\x18\x1b \x01(\x05\x12\x37\n/dateOfRecurrenceOrProgressionAfterThisTreatment\x18\x1c \x01(\t\x12;\n3dateOfRecurrenceOrProgressionAfterThisTreatmentTier\x18\x1d \x01(\x05\x12\x32\n*unexpectedOrUnusualToxicityDuringTreatment\x18\x1e \x01(\t\x12\x36\n.unexpectedOrUnusualToxicityDuringTreatmentTier\x18\x1f \x01(\x05\x12\x13\n\x0b\x64iagnosisId\x18  \x01(\t\x12\x17\n\x0f\x64iagnosisIdTier\x18! \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\" \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18# \x01(\x05\"\xd5\r\n\x07Outcome\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x16\n\x0ephysicalExamId\x18\n \x01(\t\x12\x1a\n\x12physicalExamIdTier\x18\x0b \x01(\x05\x12\x18\n\x10\x64\x61teOfAssessment\x18\x0c \x01(\t\x12\x1c\n\x14\x64\x61teOfAssessmentTier\x18\r \x01(\x05\x12\x1f\n\x17\x64iseaseResponseOrStatus\x18\x0e \x01(\t\x12#\n\x1b\x64iseaseResponseOrStatusTier\x18\x0f \x01(\x05\x12#\n\x1botherResponseClassification\x18\x10 \x01(\t\x12\'\n\x1fotherResponseClassificationTier\x18\x11 \x01(\x05\x12(\n minimalResidualDiseaseAssessment\x18\x12 \x01(\t\x12,\n$minimalResidualDiseaseAssessmentTier\x18\x13 \x01(\x05\x12\"\n\x1amethodOfResponseEvaluation\x18\x14 \x01(\t\x12&\n\x1emethodOfResponseEvaluationTier\x18\x15 \x01(\x05\x12\x1c\n\x14responseCriteriaUsed\x18\x16 \x01(\t\x12 \n\x18responseCriteriaUsedTier\x18\x17 \x01(\x05\x12\x14\n\x0csummaryStage\x18\x18 \x01(\t\x12\x18\n\x10summaryStageTier\x18\x19 \x01(\x05\x12)\n!sitesOfAnyProgressionOrRecurrence\x18\x1a \x01(\t\x12-\n%sitesOfAnyProgressionOrRecurrenceTier\x18\x1b \x01(\x05\x12\x13\n\x0bvitalStatus\x18\x1c \x01(\t\x12\x17\n\x0fvitalStatusTier\x18\x1d \x01(\x05\x12\x0e\n\x06height\x18\x1e \x01(\t\x12\x12\n\nheightTier\x18\x1f \x01(\x05\x12\x0e\n\x06weight\x18  \x01(\t\x12\x12\n\nweightTier\x18! \x01(\x05\x12\x13\n\x0bheightUnits\x18\" \x01(\t\x12\x17\n\x0fheightUnitsTier\x18# \x01(\x05\x12\x13\n\x0bweightUnits\x18$ \x01(\t\x12\x17\n\x0fweightUnitsTier\x18% \x01(\x05\x12\x19\n\x11performanceStatus\x18& \x01(\t\x12\x1d\n\x15performanceStatusTier\x18\' \x01(\x05\x12\x1f\n\x17overallSurvivalInMonths\x18( \x01(\t\x12#\n\x1boverallSurvivalInMonthsTier\x18) \x01(\x05\x12#\n\x1b\x64iseaseFreeSurvivalInMonths\x18* \x01(\t\x12\'\n\x1f\x64iseaseFreeSurvivalInMonthsTier\x18+ \x01(\x05\x12\"\n\x1asiteOfRelapseOrProgression\x18, \x01(\t\x12&\n\x1esiteOfRelapseOrProgressionTier\x18- \x01(\x05\x12\'\n\x1fintervalProgressionOrRecurrence\x18. \x01(\t\x12+\n#intervalProgressionOrRecurrenceTier\x18/ \x01(\x05\x12-\n%intervalRegressionOrDecreaseInDisease\x18\x30 \x01(\t\x12\x31\n)intervalRegressionOrDecreaseInDiseaseTier\x18\x31 \x01(\x05\x12\x19\n\x11levelOfMalignancy\x18\x32 \x01(\t\x12\x1d\n\x15levelOfMalignancyTier\x18\x33 \x01(\x05\x12$\n\x1ctreatmentInducedNeoplasmSite\x18\x34 \x01(\t\x12(\n treatmentInducedNeoplasmSiteTier\x18\x35 \x01(\x05\x12\x31\n)dateOfDiagnosisOfTreatmentInducedNeoplasm\x18\x36 \x01(\t\x12\x35\n-dateOfDiagnosisOfTreatmentInducedNeoplasmTier\x18\x37 \x01(\x05\"\xce\x04\n\x0c\x43omplication\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x0c\n\x04\x64\x61te\x18\n \x01(\t\x12\x10\n\x08\x64\x61teTier\x18\x0b \x01(\x05\x12*\n\"lateComplicationOfTherapyDeveloped\x18\x0c \x01(\t\x12.\n&lateComplicationOfTherapyDevelopedTier\x18\r \x01(\x05\x12\x1a\n\x12lateToxicityDetail\x18\x0e \x01(\t\x12\x1e\n\x16lateToxicityDetailTier\x18\x0f \x01(\x05\x12\x32\n*suspectedTreatmentInducedNeoplasmDeveloped\x18\x10 \x01(\t\x12\x36\n.suspectedTreatmentInducedNeoplasmDevelopedTier\x18\x11 \x01(\x05\x12\'\n\x1ftreatmentInducedNeoplasmDetails\x18\x12 \x01(\t\x12+\n#treatmentInducedNeoplasmDetailsTier\x18\x13 \x01(\x05\"\xa9#\n\x0bTumourboard\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12!\n\x19\x64\x61teOfMolecularTumorBoard\x18\n \x01(\t\x12%\n\x1d\x64\x61teOfMolecularTumorBoardTier\x18\x0b \x01(\x05\x12\x1c\n\x14typeOfSampleAnalyzed\x18\x0c \x01(\t\x12 \n\x18typeOfSampleAnalyzedTier\x18\r \x01(\x05\x12\"\n\x1atypeOfTumourSampleAnalyzed\x18\x0e \x01(\t\x12&\n\x1etypeOfTumourSampleAnalyzedTier\x18\x0f \x01(\x05\x12\x19\n\x11\x61nalysesDiscussed\x18\x10 \x01(\t\x12\x1d\n\x15\x61nalysesDiscussedTier\x18\x11 \x01(\x05\x12\x19\n\x11somaticSampleType\x18\x12 \x01(\t\x12\x1d\n\x15somaticSampleTypeTier\x18\x13 \x01(\x05\x12\"\n\x1anormalExpressionComparator\x18\x14 \x01(\t\x12&\n\x1enormalExpressionComparatorTier\x18\x15 \x01(\x05\x12#\n\x1b\x64iseaseExpressionComparator\x18\x16 \x01(\t\x12\'\n\x1f\x64iseaseExpressionComparatorTier\x18\x17 \x01(\x05\x12M\nEhasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer\x18\x18 \x01(\t\x12Q\nIhasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancerTier\x18\x19 \x01(\x05\x12\x1d\n\x15\x61\x63tionableTargetFound\x18\x1a \x01(\t\x12!\n\x19\x61\x63tionableTargetFoundTier\x18\x1b \x01(\x05\x12)\n!molecularTumorBoardRecommendation\x18\x1c \x01(\t\x12-\n%molecularTumorBoardRecommendationTier\x18\x1d \x01(\x05\x12\x1b\n\x13germlineDnaSampleId\x18\x1e \x01(\t\x12\x1f\n\x17germlineDnaSampleIdTier\x18\x1f \x01(\x05\x12\x18\n\x10tumorDnaSampleId\x18  \x01(\t\x12\x1c\n\x14tumorDnaSampleIdTier\x18! \x01(\x05\x12\x18\n\x10tumorRnaSampleId\x18\" \x01(\t\x12\x1c\n\x14tumorRnaSampleIdTier\x18# \x01(\x05\x12\x1c\n\x14germlineSnvDiscussed\x18$ \x01(\t\x12 \n\x18germlineSnvDiscussedTier\x18% \x01(\x05\x12\x1b\n\x13somaticSnvDiscussed\x18& \x01(\t\x12\x1f\n\x17somaticSnvDiscussedTier\x18\' \x01(\x05\x12\x15\n\rcnvsDiscussed\x18( \x01(\t\x12\x19\n\x11\x63nvsDiscussedTier\x18) \x01(\x05\x12\"\n\x1astructuralVariantDiscussed\x18* \x01(\t\x12&\n\x1estructuralVariantDiscussedTier\x18+ \x01(\x05\x12 \n\x18\x63lassificationOfVariants\x18, \x01(\t\x12$\n\x1c\x63lassificationOfVariantsTier\x18- \x01(\x05\x12\"\n\x1a\x63linicalValidationProgress\x18. \x01(\t\x12&\n\x1e\x63linicalValidationProgressTier\x18/ \x01(\x05\x12\x18\n\x10typeOfValidation\x18\x30 \x01(\t\x12\x1c\n\x14typeOfValidationTier\x18\x31 \x01(\x05\x12\x18\n\x10\x61gentOrDrugClass\x18\x32 \x01(\t\x12\x1c\n\x14\x61gentOrDrugClassTier\x18\x33 \x01(\x05\x12\x34\n,levelOfEvidenceForExpressionTargetAgentMatch\x18\x34 \x01(\t\x12\x38\n0levelOfEvidenceForExpressionTargetAgentMatchTier\x18\x35 \x01(\x05\x12\x34\n,didTreatmentPlanChangeBasedOnProfilingResult\x18\x36 \x01(\t\x12\x38\n0didTreatmentPlanChangeBasedOnProfilingResultTier\x18\x37 \x01(\x05\x12.\n&howTreatmentHasAlteredBasedOnProfiling\x18\x38 \x01(\t\x12\x32\n*howTreatmentHasAlteredBasedOnProfilingTier\x18\x39 \x01(\x05\x12\x37\n/reasonTreatmentPlanDidNotChangeBasedOnProfiling\x18: \x01(\t\x12;\n3reasonTreatmentPlanDidNotChangeBasedOnProfilingTier\x18; \x01(\x05\x12$\n\x1c\x64\x65tailsOfTreatmentPlanImpact\x18< \x01(\t\x12(\n detailsOfTreatmentPlanImpactTier\x18= \x01(\x05\x12\x30\n(patientOrFamilyInformedOfGermlineVariant\x18> \x01(\t\x12\x34\n,patientOrFamilyInformedOfGermlineVariantTier\x18? \x01(\x05\x12U\nMpatientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling\x18@ \x01(\t\x12Y\nQpatientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfilingTier\x18\x41 \x01(\x05\x12\x15\n\rsummaryReport\x18\x42 \x01(\t\x12\x19\n\x11summaryReportTier\x18\x43 \x01(\x05\x12#\n\x1b\x61\x63tionableExpressionOutlier\x18\x44 \x01(\t\x12\'\n\x1f\x61\x63tionableExpressionOutlierTier\x18\x45 \x01(\x05\x12!\n\x19\x61\x63tionableGermlineVariant\x18\x46 \x01(\t\x12%\n\x1d\x61\x63tionableGermlineVariantTier\x18G \x01(\x05\x12\x1c\n\x14germlineVariantsDrug\x18H \x01(\t\x12 \n\x18germlineVariantsDrugTier\x18I \x01(\x05\x12!\n\x19germlineVariantsDrugClass\x18J \x01(\t\x12%\n\x1dgermlineVariantsDrugClassTier\x18K \x01(\x05\x12!\n\x19germlineVariantsDiscussed\x18L \x01(\t\x12%\n\x1dgermlineVariantsDiscussedTier\x18M \x01(\x05\x12!\n\x19\x61\x63tionableSomaticVariants\x18N \x01(\t\x12%\n\x1d\x61\x63tionableSomaticVariantsTier\x18O \x01(\x05\x12\x1b\n\x13somaticVariantsDrug\x18P \x01(\t\x12\x1f\n\x17somaticVariantsDrugTier\x18Q \x01(\x05\x12 \n\x18somaticVariantsDrugClass\x18R \x01(\t\x12$\n\x1csomaticVariantsDrugClassTier\x18S \x01(\x05\x12 \n\x18somaticVariantsDiscussed\x18T \x01(\t\x12$\n\x1csomaticVariantsDiscussedTier\x18U \x01(\x05\x12&\n\x1e\x61nyActionableExpressionOutlier\x18V \x01(\t\x12*\n\"anyActionableExpressionOutlierTier\x18W \x01(\x05\x12\x16\n\x0e\x65xpressionDrug\x18X \x01(\t\x12\x1a\n\x12\x65xpressionDrugTier\x18Y \x01(\x05\x12\x1b\n\x13\x65xpressionDrugClass\x18Z \x01(\t\x12\x1f\n\x17\x65xpressionDrugClassTier\x18[ \x01(\x05\x12$\n\x1c\x65xpressionTypeOfAnalysisUsed\x18\\ \x01(\t\x12(\n expressionTypeOfAnalysisUsedTier\x18] \x01(\x05\x12*\n\"expressionTypeOfInformationUtility\x18^ \x01(\t\x12.\n&expressionTypeOfInformationUtilityTier\x18_ \x01(\x05\x12\x1d\n\x15\x65xpressionAlteredGene\x18` \x01(\t\x12!\n\x19\x65xpressionAlteredGeneTier\x18\x61 \x01(\x05\x12#\n\x1b\x65xpressionNonActionableGene\x18\x62 \x01(\t\x12\'\n\x1f\x65xpressionNonActionableGeneTier\x18\x63 \x01(\x05\x12\"\n\x1a\x65xpressionTypeOfAlteration\x18\x64 \x01(\t\x12&\n\x1e\x65xpressionTypeOfAlterationTier\x18\x65 \x01(\x05\x12%\n\x1d\x61nyActionableGermlineVariants\x18\x66 \x01(\t\x12)\n!anyActionableGermlineVariantsTier\x18g \x01(\x05\x12*\n\"germlineVariantsTypeOfAnalysisUsed\x18h \x01(\t\x12.\n&germlineVariantsTypeOfAnalysisUsedTier\x18i \x01(\x05\x12\x30\n(germlineVariantsClassificationOfVariants\x18j \x01(\t\x12\x34\n,germlineVariantsClassificationOfVariantsTier\x18k \x01(\x05\x12\x30\n(germlineVariantsTypeOfInformationUtility\x18l \x01(\t\x12\x34\n,germlineVariantsTypeOfInformationUtilityTier\x18m \x01(\x05\x12$\n\x1c\x61nyActionableSomaticVariants\x18n \x01(\t\x12(\n anyActionableSomaticVariantsTier\x18o \x01(\x05\x12)\n!somaticVariantsTypeOfAnalysisUsed\x18p \x01(\t\x12-\n%somaticVariantsTypeOfAnalysisUsedTier\x18q \x01(\x05\x12/\n\'somaticVariantsTypeOfInformationUtility\x18r \x01(\t\x12\x33\n+somaticVariantsTypeOfInformationUtilityTier\x18s \x01(\x05\x12$\n\x1csomaticVariantsNonActionable\x18t \x01(\t\x12(\n somaticVariantsNonActionableTier\x18u \x01(\x05\"\xca\x07\n\x0c\x43hemotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x11\n\tstartDate\x18\x0c \x01(\t\x12\x15\n\rstartDateTier\x18\r \x01(\x05\x12\x10\n\x08stopDate\x18\x0e \x01(\t\x12\x14\n\x0cstopDateTier\x18\x0f \x01(\x05\x12\"\n\x1asystematicTherapyAgentName\x18\x10 \x01(\t\x12&\n\x1esystematicTherapyAgentNameTier\x18\x11 \x01(\x05\x12\r\n\x05route\x18\x12 \x01(\t\x12\x11\n\trouteTier\x18\x13 \x01(\x05\x12\x0c\n\x04\x64ose\x18\x14 \x01(\t\x12\x10\n\x08\x64oseTier\x18\x15 \x01(\x05\x12\x15\n\rdoseFrequency\x18\x16 \x01(\t\x12\x19\n\x11\x64oseFrequencyTier\x18\x17 \x01(\x05\x12\x10\n\x08\x64oseUnit\x18\x18 \x01(\t\x12\x14\n\x0c\x64oseUnitTier\x18\x19 \x01(\x05\x12\x14\n\x0c\x64\x61ysPerCycle\x18\x1a \x01(\t\x12\x18\n\x10\x64\x61ysPerCycleTier\x18\x1b \x01(\x05\x12\x15\n\rnumberOfCycle\x18\x1c \x01(\t\x12\x19\n\x11numberOfCycleTier\x18\x1d \x01(\x05\x12\x17\n\x0ftreatmentIntent\x18\x1e \x01(\t\x12\x1b\n\x13treatmentIntentTier\x18\x1f \x01(\x05\x12\x1a\n\x12treatingCentreName\x18  \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18! \x01(\x05\x12\x0c\n\x04type\x18\" \x01(\t\x12\x10\n\x08typeTier\x18# \x01(\x05\x12\x14\n\x0cprotocolCode\x18$ \x01(\t\x12\x18\n\x10protocolCodeTier\x18% \x01(\x05\x12\x15\n\rrecordingDate\x18& \x01(\t\x12\x19\n\x11recordingDateTier\x18\' \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18( \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18) \x01(\x05\"\xa6\x0b\n\x0cRadiotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\n \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x0b \x01(\x05\x12\x11\n\tstartDate\x18\x0c \x01(\t\x12\x15\n\rstartDateTier\x18\r \x01(\x05\x12\x10\n\x08stopDate\x18\x0e \x01(\t\x12\x14\n\x0cstopDateTier\x18\x0f \x01(\x05\x12\x1b\n\x13therapeuticModality\x18\x10 \x01(\t\x12\x1f\n\x17therapeuticModalityTier\x18\x11 \x01(\x05\x12\x10\n\x08\x62\x61seline\x18\x12 \x01(\t\x12\x14\n\x0c\x62\x61selineTier\x18\x13 \x01(\x05\x12\x12\n\ntestResult\x18\x14 \x01(\t\x12\x16\n\x0etestResultTier\x18\x15 \x01(\x05\x12\x15\n\rtestResultStd\x18\x16 \x01(\t\x12\x19\n\x11testResultStdTier\x18\x17 \x01(\x05\x12\x1a\n\x12treatingCentreName\x18\x18 \x01(\t\x12\x1e\n\x16treatingCentreNameTier\x18\x19 \x01(\x05\x12\x18\n\x10startIntervalRad\x18\x1a \x01(\t\x12\x1c\n\x14startIntervalRadTier\x18\x1b \x01(\x05\x12\x1b\n\x13startIntervalRadRaw\x18\x1c \x01(\t\x12\x1f\n\x17startIntervalRadRawTier\x18\x1d \x01(\x05\x12\x15\n\rrecordingDate\x18\x1e \x01(\t\x12\x19\n\x11recordingDateTier\x18\x1f \x01(\x05\x12\x16\n\x0e\x61\x64jacentFields\x18  \x01(\t\x12\x1a\n\x12\x61\x64jacentFieldsTier\x18! \x01(\x05\x12\x19\n\x11\x61\x64jacentFractions\x18\" \x01(\t\x12\x1d\n\x15\x61\x64jacentFractionsTier\x18# \x01(\x05\x12\x10\n\x08\x63omplete\x18$ \x01(\t\x12\x14\n\x0c\x63ompleteTier\x18% \x01(\x05\x12\x19\n\x11\x62rachytherapyDose\x18& \x01(\t\x12\x1d\n\x15\x62rachytherapyDoseTier\x18\' \x01(\x05\x12\x18\n\x10radiotherapyDose\x18( \x01(\t\x12\x1c\n\x14radiotherapyDoseTier\x18) \x01(\x05\x12\x12\n\nsiteNumber\x18* \x01(\t\x12\x16\n\x0esiteNumberTier\x18+ \x01(\x05\x12\x11\n\ttechnique\x18, \x01(\t\x12\x15\n\rtechniqueTier\x18- \x01(\x05\x12\x15\n\rtreatedRegion\x18. \x01(\t\x12\x19\n\x11treatedRegionTier\x18/ \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x30 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x31 \x01(\x05\x12\x15\n\rradiationType\x18\x32 \x01(\t\x12\x19\n\x11radiationTypeTier\x18\x33 \x01(\x05\x12\x15\n\rradiationSite\x18\x34 \x01(\t\x12\x19\n\x11radiationSiteTier\x18\x35 \x01(\x05\x12\x11\n\ttotalDose\x18\x36 \x01(\t\x12\x15\n\rtotalDoseTier\x18\x37 \x01(\x05\x12\x11\n\tboostSite\x18\x38 \x01(\t\x12\x15\n\rboostSiteTier\x18\x39 \x01(\x05\x12\x11\n\tboostDose\x18: \x01(\t\x12\x15\n\rboostDoseTier\x18; \x01(\x05\"\x9b\x04\n\rImmunotherapy\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x19\n\x11immunotherapyType\x18\x0c \x01(\t\x12\x1d\n\x15immunotherapyTypeTier\x18\r \x01(\x05\x12\x1b\n\x13immunotherapyTarget\x18\x0e \x01(\t\x12\x1f\n\x17immunotherapyTargetTier\x18\x0f \x01(\x05\x12\x1b\n\x13immunotherapyDetail\x18\x10 \x01(\t\x12\x1f\n\x17immunotherapyDetailTier\x18\x11 \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x12 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x13 \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x14 \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x15 \x01(\x05\"\x91\x05\n\x07Surgery\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x10\n\x08stopDate\x18\x0c \x01(\t\x12\x14\n\x0cstopDateTier\x18\r \x01(\x05\x12\x10\n\x08sampleId\x18\x0e \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0f \x01(\x05\x12\x1b\n\x13\x63ollectionTimePoint\x18\x10 \x01(\t\x12\x1f\n\x17\x63ollectionTimePointTier\x18\x11 \x01(\x05\x12\x15\n\rdiagnosisDate\x18\x12 \x01(\t\x12\x19\n\x11\x64iagnosisDateTier\x18\x13 \x01(\x05\x12\x0c\n\x04site\x18\x14 \x01(\t\x12\x10\n\x08siteTier\x18\x15 \x01(\x05\x12\x0c\n\x04type\x18\x16 \x01(\t\x12\x10\n\x08typeTier\x18\x17 \x01(\x05\x12\x15\n\rrecordingDate\x18\x18 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x19 \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x1a \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x1b \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x1c \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x1d \x01(\x05\"\xbc\x03\n\x0e\x43\x65lltransplant\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x12\n\ncellSource\x18\x0c \x01(\t\x12\x16\n\x0e\x63\x65llSourceTier\x18\r \x01(\x05\x12\x11\n\tdonorType\x18\x0e \x01(\t\x12\x15\n\rdonorTypeTier\x18\x0f \x01(\x05\x12\x17\n\x0ftreatmentPlanId\x18\x10 \x01(\t\x12\x1b\n\x13treatmentPlanIdTier\x18\x11 \x01(\x05\x12\x14\n\x0c\x63ourseNumber\x18\x12 \x01(\t\x12\x18\n\x10\x63ourseNumberTier\x18\x13 \x01(\x05\"\xdd\t\n\x05Slide\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x10\n\x08sampleId\x18\n \x01(\t\x12\x14\n\x0csampleIdTier\x18\x0b \x01(\x05\x12\x0f\n\x07slideId\x18\x0c \x01(\t\x12\x13\n\x0bslideIdTier\x18\r \x01(\x05\x12\x14\n\x0cslideOtherId\x18\x0e \x01(\t\x12\x18\n\x10slideOtherIdTier\x18\x0f \x01(\x05\x12%\n\x1dlymphocyteInfiltrationPercent\x18\x10 \x01(\t\x12)\n!lymphocyteInfiltrationPercentTier\x18\x11 \x01(\x05\x12\x1a\n\x12tumorNucleiPercent\x18\x12 \x01(\t\x12\x1e\n\x16tumorNucleiPercentTier\x18\x13 \x01(\x05\x12#\n\x1bmonocyteInfiltrationPercent\x18\x14 \x01(\t\x12\'\n\x1fmonocyteInfiltrationPercentTier\x18\x15 \x01(\x05\x12\x1a\n\x12normalCellsPercent\x18\x16 \x01(\t\x12\x1e\n\x16normalCellsPercentTier\x18\x17 \x01(\x05\x12\x19\n\x11tumorCellsPercent\x18\x18 \x01(\t\x12\x1d\n\x15tumorCellsPercentTier\x18\x19 \x01(\x05\x12\x1b\n\x13stromalCellsPercent\x18\x1a \x01(\t\x12\x1f\n\x17stromalCellsPercentTier\x18\x1b \x01(\x05\x12%\n\x1d\x65osinophilInfiltrationPercent\x18\x1c \x01(\t\x12)\n!eosinophilInfiltrationPercentTier\x18\x1d \x01(\x05\x12%\n\x1dneutrophilInfiltrationPercent\x18\x1e \x01(\t\x12)\n!neutrophilInfiltrationPercentTier\x18\x1f \x01(\x05\x12&\n\x1egranulocyteInfiltrationPercent\x18  \x01(\t\x12*\n\"granulocyteInfiltrationPercentTier\x18! \x01(\x05\x12\x17\n\x0fnecrosisPercent\x18\" \x01(\t\x12\x1b\n\x13necrosisPercentTier\x18# \x01(\x05\x12\'\n\x1finflammatoryInfiltrationPercent\x18$ \x01(\t\x12+\n#inflammatoryInfiltrationPercentTier\x18% \x01(\x05\x12 \n\x18proliferatingCellsNumber\x18& \x01(\t\x12$\n\x1cproliferatingCellsNumberTier\x18\' \x01(\x05\x12\x17\n\x0fsectionLocation\x18( \x01(\t\x12\x1b\n\x13sectionLocationTier\x18) \x01(\x05\"\xf3\x02\n\x05Study\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x0f\n\x07\x65ndDate\x18\x0c \x01(\t\x12\x13\n\x0b\x65ndDateTier\x18\r \x01(\x05\x12\x0e\n\x06status\x18\x0e \x01(\t\x12\x12\n\nstatusTier\x18\x0f \x01(\x05\x12\x15\n\rrecordingDate\x18\x10 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x11 \x01(\x05\"\x87\x04\n\x07Labtest\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x35\n\nattributes\x18\x07 \x01(\x0b\x32!.candig.schemas.candig.Attributes\x12\x11\n\tpatientId\x18\x08 \x01(\t\x12\x15\n\rpatientIdTier\x18\t \x01(\x05\x12\x11\n\tstartDate\x18\n \x01(\t\x12\x15\n\rstartDateTier\x18\x0b \x01(\x05\x12\x16\n\x0e\x63ollectionDate\x18\x0c \x01(\t\x12\x1a\n\x12\x63ollectionDateTier\x18\r \x01(\x05\x12\x0f\n\x07\x65ndDate\x18\x0e \x01(\t\x12\x13\n\x0b\x65ndDateTier\x18\x0f \x01(\x05\x12\x11\n\teventType\x18\x10 \x01(\t\x12\x15\n\reventTypeTier\x18\x11 \x01(\x05\x12\x13\n\x0btestResults\x18\x12 \x01(\t\x12\x17\n\x0ftestResultsTier\x18\x13 \x01(\x05\x12\x11\n\ttimePoint\x18\x14 \x01(\t\x12\x15\n\rtimePointTier\x18\x15 \x01(\x05\x12\x15\n\rrecordingDate\x18\x16 \x01(\t\x12\x19\n\x11recordingDateTier\x18\x17 \x01(\x05\x62\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,candig_dot_schemas_dot_candig_dot_common__pb2.DESCRIPTOR,])
 
@@ -2496,6 +2496,90 @@ _OUTCOME = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='siteOfRelapseOrProgression', full_name='candig.schemas.candig.Outcome.siteOfRelapseOrProgression', index=43,
+      number=44, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='siteOfRelapseOrProgressionTier', full_name='candig.schemas.candig.Outcome.siteOfRelapseOrProgressionTier', index=44,
+      number=45, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='intervalProgressionOrRecurrence', full_name='candig.schemas.candig.Outcome.intervalProgressionOrRecurrence', index=45,
+      number=46, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='intervalProgressionOrRecurrenceTier', full_name='candig.schemas.candig.Outcome.intervalProgressionOrRecurrenceTier', index=46,
+      number=47, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='intervalRegressionOrDecreaseInDisease', full_name='candig.schemas.candig.Outcome.intervalRegressionOrDecreaseInDisease', index=47,
+      number=48, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='intervalRegressionOrDecreaseInDiseaseTier', full_name='candig.schemas.candig.Outcome.intervalRegressionOrDecreaseInDiseaseTier', index=48,
+      number=49, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='levelOfMalignancy', full_name='candig.schemas.candig.Outcome.levelOfMalignancy', index=49,
+      number=50, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='levelOfMalignancyTier', full_name='candig.schemas.candig.Outcome.levelOfMalignancyTier', index=50,
+      number=51, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='treatmentInducedNeoplasmSite', full_name='candig.schemas.candig.Outcome.treatmentInducedNeoplasmSite', index=51,
+      number=52, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='treatmentInducedNeoplasmSiteTier', full_name='candig.schemas.candig.Outcome.treatmentInducedNeoplasmSiteTier', index=52,
+      number=53, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='dateOfDiagnosisOfTreatmentInducedNeoplasm', full_name='candig.schemas.candig.Outcome.dateOfDiagnosisOfTreatmentInducedNeoplasm', index=53,
+      number=54, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='dateOfDiagnosisOfTreatmentInducedNeoplasmTier', full_name='candig.schemas.candig.Outcome.dateOfDiagnosisOfTreatmentInducedNeoplasmTier', index=54,
+      number=55, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -2509,7 +2593,7 @@ _OUTCOME = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=8485,
-  serialized_end=9730,
+  serialized_end=10234,
 )
 
 
@@ -2665,8 +2749,8 @@ _COMPLICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9733,
-  serialized_end=10323,
+  serialized_start=10237,
+  serialized_end=10827,
 )
 
 
@@ -3146,6 +3230,356 @@ _TUMOURBOARD = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableExpressionOutlier', full_name='candig.schemas.candig.Tumourboard.actionableExpressionOutlier', index=67,
+      number=68, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableExpressionOutlierTier', full_name='candig.schemas.candig.Tumourboard.actionableExpressionOutlierTier', index=68,
+      number=69, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableGermlineVariant', full_name='candig.schemas.candig.Tumourboard.actionableGermlineVariant', index=69,
+      number=70, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableGermlineVariantTier', full_name='candig.schemas.candig.Tumourboard.actionableGermlineVariantTier', index=70,
+      number=71, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDrug', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDrug', index=71,
+      number=72, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDrugTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDrugTier', index=72,
+      number=73, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDrugClass', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDrugClass', index=73,
+      number=74, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDrugClassTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDrugClassTier', index=74,
+      number=75, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDiscussed', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDiscussed', index=75,
+      number=76, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsDiscussedTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsDiscussedTier', index=76,
+      number=77, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableSomaticVariants', full_name='candig.schemas.candig.Tumourboard.actionableSomaticVariants', index=77,
+      number=78, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='actionableSomaticVariantsTier', full_name='candig.schemas.candig.Tumourboard.actionableSomaticVariantsTier', index=78,
+      number=79, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDrug', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDrug', index=79,
+      number=80, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDrugTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDrugTier', index=80,
+      number=81, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDrugClass', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDrugClass', index=81,
+      number=82, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDrugClassTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDrugClassTier', index=82,
+      number=83, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDiscussed', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDiscussed', index=83,
+      number=84, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsDiscussedTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsDiscussedTier', index=84,
+      number=85, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableExpressionOutlier', full_name='candig.schemas.candig.Tumourboard.anyActionableExpressionOutlier', index=85,
+      number=86, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableExpressionOutlierTier', full_name='candig.schemas.candig.Tumourboard.anyActionableExpressionOutlierTier', index=86,
+      number=87, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionDrug', full_name='candig.schemas.candig.Tumourboard.expressionDrug', index=87,
+      number=88, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionDrugTier', full_name='candig.schemas.candig.Tumourboard.expressionDrugTier', index=88,
+      number=89, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionDrugClass', full_name='candig.schemas.candig.Tumourboard.expressionDrugClass', index=89,
+      number=90, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionDrugClassTier', full_name='candig.schemas.candig.Tumourboard.expressionDrugClassTier', index=90,
+      number=91, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfAnalysisUsed', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfAnalysisUsed', index=91,
+      number=92, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfAnalysisUsedTier', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfAnalysisUsedTier', index=92,
+      number=93, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfInformationUtility', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfInformationUtility', index=93,
+      number=94, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfInformationUtilityTier', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfInformationUtilityTier', index=94,
+      number=95, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionAlteredGene', full_name='candig.schemas.candig.Tumourboard.expressionAlteredGene', index=95,
+      number=96, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionAlteredGeneTier', full_name='candig.schemas.candig.Tumourboard.expressionAlteredGeneTier', index=96,
+      number=97, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionNonActionableGene', full_name='candig.schemas.candig.Tumourboard.expressionNonActionableGene', index=97,
+      number=98, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionNonActionableGeneTier', full_name='candig.schemas.candig.Tumourboard.expressionNonActionableGeneTier', index=98,
+      number=99, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfAlteration', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfAlteration', index=99,
+      number=100, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='expressionTypeOfAlterationTier', full_name='candig.schemas.candig.Tumourboard.expressionTypeOfAlterationTier', index=100,
+      number=101, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableGermlineVariants', full_name='candig.schemas.candig.Tumourboard.anyActionableGermlineVariants', index=101,
+      number=102, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableGermlineVariantsTier', full_name='candig.schemas.candig.Tumourboard.anyActionableGermlineVariantsTier', index=102,
+      number=103, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsTypeOfAnalysisUsed', full_name='candig.schemas.candig.Tumourboard.germlineVariantsTypeOfAnalysisUsed', index=103,
+      number=104, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsTypeOfAnalysisUsedTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsTypeOfAnalysisUsedTier', index=104,
+      number=105, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsClassificationOfVariants', full_name='candig.schemas.candig.Tumourboard.germlineVariantsClassificationOfVariants', index=105,
+      number=106, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsClassificationOfVariantsTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsClassificationOfVariantsTier', index=106,
+      number=107, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsTypeOfInformationUtility', full_name='candig.schemas.candig.Tumourboard.germlineVariantsTypeOfInformationUtility', index=107,
+      number=108, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='germlineVariantsTypeOfInformationUtilityTier', full_name='candig.schemas.candig.Tumourboard.germlineVariantsTypeOfInformationUtilityTier', index=108,
+      number=109, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableSomaticVariants', full_name='candig.schemas.candig.Tumourboard.anyActionableSomaticVariants', index=109,
+      number=110, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='anyActionableSomaticVariantsTier', full_name='candig.schemas.candig.Tumourboard.anyActionableSomaticVariantsTier', index=110,
+      number=111, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsTypeOfAnalysisUsed', full_name='candig.schemas.candig.Tumourboard.somaticVariantsTypeOfAnalysisUsed', index=111,
+      number=112, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsTypeOfAnalysisUsedTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsTypeOfAnalysisUsedTier', index=112,
+      number=113, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsTypeOfInformationUtility', full_name='candig.schemas.candig.Tumourboard.somaticVariantsTypeOfInformationUtility', index=113,
+      number=114, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsTypeOfInformationUtilityTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsTypeOfInformationUtilityTier', index=114,
+      number=115, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsNonActionable', full_name='candig.schemas.candig.Tumourboard.somaticVariantsNonActionable', index=115,
+      number=116, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='somaticVariantsNonActionableTier', full_name='candig.schemas.candig.Tumourboard.somaticVariantsNonActionableTier', index=116,
+      number=117, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -3158,8 +3592,8 @@ _TUMOURBOARD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10326,
-  serialized_end=12879,
+  serialized_start=10830,
+  serialized_end=15351,
 )
 
 
@@ -3469,8 +3903,8 @@ _CHEMOTHERAPY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12882,
-  serialized_end=13852,
+  serialized_start=15354,
+  serialized_end=16324,
 )
 
 
@@ -3906,8 +4340,8 @@ _RADIOTHERAPY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13855,
-  serialized_end=15301,
+  serialized_start=16327,
+  serialized_end=17773,
 )
 
 
@@ -4077,8 +4511,8 @@ _IMMUNOTHERAPY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15304,
-  serialized_end=15843,
+  serialized_start=17776,
+  serialized_end=18315,
 )
 
 
@@ -4304,8 +4738,8 @@ _SURGERY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15846,
-  serialized_end=16503,
+  serialized_start=18318,
+  serialized_end=18975,
 )
 
 
@@ -4461,8 +4895,8 @@ _CELLTRANSPLANT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16506,
-  serialized_end=16950,
+  serialized_start=18978,
+  serialized_end=19422,
 )
 
 
@@ -4772,8 +5206,8 @@ _SLIDE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16953,
-  serialized_end=18198,
+  serialized_start=19425,
+  serialized_end=20670,
 )
 
 
@@ -4915,8 +5349,8 @@ _STUDY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18201,
-  serialized_end=18572,
+  serialized_start=20673,
+  serialized_end=21044,
 )
 
 
@@ -5100,8 +5534,8 @@ _LABTEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18575,
-  serialized_end=19094,
+  serialized_start=21047,
+  serialized_end=21566,
 )
 
 _PATIENT.fields_by_name['attributes'].message_type = candig_dot_schemas_dot_candig_dot_common__pb2._ATTRIBUTES
