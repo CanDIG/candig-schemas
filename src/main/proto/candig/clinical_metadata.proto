@@ -853,7 +853,7 @@ message Outcome {
     string diseaseFreeSurvivalInMonths = 42;
     int32 diseaseFreeSurvivalInMonthsTier = 43;
 
-    // Following fields are added for Profyle Schema update 20200528
+    // New PROFYLE fields added in May 2020
 
     string siteOfRelapseOrProgression = 44;
     int32 siteOfRelapseOrProgressionTier = 45;
@@ -1095,7 +1095,7 @@ message Tumourboard {
     string summaryReport = 66;
     int32 summaryReportTier = 67;
 
-    // Following are the new profyle fields added in 2020 05 28
+    // New PROFYLE fields added in May 2020
 
     string actionableExpressionOutlier = 68;
     int32 actionableExpressionOutlierTier = 69;
