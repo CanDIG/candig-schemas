@@ -3,4 +3,4 @@
 #
 # These requirements are read directly into setup.py, so specify them
 # in the order that they should be in in setup.py
-protobuf==3.3.0
+protobuf==3.18.3
